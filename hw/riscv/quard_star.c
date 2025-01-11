@@ -36,11 +36,15 @@
 static const MemMapEntry quard_star_memmap[] = {
     [QUARD_STAR_MROM]  = {        0x0,        0x8000 },   
     [QUARD_STAR_SRAM]  = {     0x8000,        0x8000 },
+    [QUARD_STAR_CLINT] = { 0x02000000,       0x10000 },
+    [QUARD_STAR_PLIC]  = { 0x0c000000,      0x210000 },
     [QUARD_STAR_UART0] = { 0x10000000,         0x1000 },
-    [QUARD_STAR_DRAM]  = { 0x80000000,    0x40000000 },   
-    [QUARD_STAR_FLASH] = { 0x20000000,       0x2000000},
-    [QUARD_STAR_CLINT] = { 0X02000000,   0X10000},
-    [QUARD_STAR_PLIC] =  { 0x0c000000,   0x4000000},
+    [QUARD_STAR_UART1] = { 0x10001000,         0x1000 },
+    [QUARD_STAR_UART2] = { 0x10002000,         0x1000 },
+    [QUARD_STAR_RTC]   = { 0x10003000,        0x1000 },
+    [QUARD_STAR_FLASH] = { 0x20000000,    0x2000000 },   
+    [QUARD_STAR_DRAM]  = { 0x80000000,    0x40000000 }, 
+    
 };
 
 /*创建CPU */
@@ -201,6 +205,29 @@ static void quard_star_aclint_create(MachineState *machine)
             RISCV_ACLINT_DEFAULT_TIMEBASE_FREQ, true);
     }
 }
+//创建RTC
+static void quard_star_rtc_create(MachineState *machine)
+{
+    QuardStarState *s = RISCV_VIRT_MACHINE(machine);
+    sysbus_create_simple("goldfish_rtc", quard_star_memmap[QUARD_STAR_RTC].base, qdev_get_gpio_in(DEVICE(s->plic[0]),QUARD_STAR_RTC_IRQ));
+}
+ /* 创建3个 uart */
+static void quard_star_serial_create(MachineState *machine)
+{
+    MemoryRegion *system_memory = get_system_memory();
+    QuardStarState *s = RISCV_VIRT_MACHINE(machine);
+    
+    serial_mm_init(system_memory, quard_star_memmap[QUARD_STAR_UART0].base,
+        0, qdev_get_gpio_in(DEVICE(s->plic[0]), QUARD_STAR_UART0_IRQ), 399193,
+        serial_hd(0), DEVICE_LITTLE_ENDIAN);
+    serial_mm_init(system_memory, quard_star_memmap[QUARD_STAR_UART1].base,
+        0, qdev_get_gpio_in(DEVICE(s->plic[0]), QUARD_STAR_UART1_IRQ), 399193,
+        serial_hd(1), DEVICE_LITTLE_ENDIAN);
+    serial_mm_init(system_memory, quard_star_memmap[QUARD_STAR_UART2].base,
+        0, qdev_get_gpio_in(DEVICE(s->plic[0]), QUARD_STAR_UART2_IRQ), 399193,
+        serial_hd(2), DEVICE_LITTLE_ENDIAN);
+ } 
+
 /* quard-star 初始化各种硬件 */
 static void quard_star_machine_init(MachineState *machine)
 {
@@ -214,6 +241,10 @@ static void quard_star_machine_init(MachineState *machine)
     quard_star_plic_create(machine);
     //创建RISCV_ACLINT
     quard_star_aclint_create(machine);
+    //创建三个uart
+    quard_star_serial_create(machine);
+    //创建RTC
+    quard_star_rtc_create(machine);
 
 }
 
