@@ -91,14 +91,14 @@ static inline void _nocheck__trace_kvm_ioctl(int type, void * arg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_ioctl " "type 0x%x, arg %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, arg);
 #line 100 "trace/trace-accel_kvm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_ioctl " "type 0x%x, arg %p" "\n", type, arg);
 #line 104 "trace/trace-accel_kvm.h"
         }
@@ -122,14 +122,14 @@ static inline void _nocheck__trace_kvm_vm_ioctl(int type, void * arg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_vm_ioctl " "type 0x%x, arg %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, arg);
 #line 131 "trace/trace-accel_kvm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_vm_ioctl " "type 0x%x, arg %p" "\n", type, arg);
 #line 135 "trace/trace-accel_kvm.h"
         }
@@ -153,14 +153,14 @@ static inline void _nocheck__trace_kvm_vcpu_ioctl(int cpu_index, int type, void 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_vcpu_ioctl " "cpu_index %d, type 0x%x, arg %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, type, arg);
 #line 162 "trace/trace-accel_kvm.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_vcpu_ioctl " "cpu_index %d, type 0x%x, arg %p" "\n", cpu_index, type, arg);
 #line 166 "trace/trace-accel_kvm.h"
         }
@@ -184,14 +184,14 @@ static inline void _nocheck__trace_kvm_run_exit(int cpu_index, uint32_t reason)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_run_exit " "cpu_index %d, reason %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, reason);
 #line 193 "trace/trace-accel_kvm.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_run_exit " "cpu_index %d, reason %d" "\n", cpu_index, reason);
 #line 197 "trace/trace-accel_kvm.h"
         }
@@ -215,14 +215,14 @@ static inline void _nocheck__trace_kvm_device_ioctl(int fd, int type, void * arg
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_device_ioctl " "dev fd %d, type 0x%x, arg %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, type, arg);
 #line 224 "trace/trace-accel_kvm.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_device_ioctl " "dev fd %d, type 0x%x, arg %p" "\n", fd, type, arg);
 #line 228 "trace/trace-accel_kvm.h"
         }
@@ -246,14 +246,14 @@ static inline void _nocheck__trace_kvm_failed_reg_get(uint64_t id, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_reg_get " "Warning: Unable to retrieve ONEREG %" PRIu64 " from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, msg);
 #line 255 "trace/trace-accel_kvm.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_failed_reg_get " "Warning: Unable to retrieve ONEREG %" PRIu64 " from KVM: %s" "\n", id, msg);
 #line 259 "trace/trace-accel_kvm.h"
         }
@@ -277,14 +277,14 @@ static inline void _nocheck__trace_kvm_failed_reg_set(uint64_t id, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_reg_set " "Warning: Unable to set ONEREG %" PRIu64 " to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, msg);
 #line 286 "trace/trace-accel_kvm.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_failed_reg_set " "Warning: Unable to set ONEREG %" PRIu64 " to KVM: %s" "\n", id, msg);
 #line 290 "trace/trace-accel_kvm.h"
         }
@@ -308,14 +308,14 @@ static inline void _nocheck__trace_kvm_init_vcpu(int cpu_index, unsigned long ar
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_init_vcpu " "index: %d id: %lu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, arch_cpu_id);
 #line 317 "trace/trace-accel_kvm.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_init_vcpu " "index: %d id: %lu" "\n", cpu_index, arch_cpu_id);
 #line 321 "trace/trace-accel_kvm.h"
         }
@@ -339,14 +339,14 @@ static inline void _nocheck__trace_kvm_irqchip_commit_routes(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_irqchip_commit_routes " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 348 "trace/trace-accel_kvm.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_irqchip_commit_routes " "" "\n");
 #line 352 "trace/trace-accel_kvm.h"
         }
@@ -370,14 +370,14 @@ static inline void _nocheck__trace_kvm_irqchip_add_msi_route(char * name, int ve
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_irqchip_add_msi_route " "dev %s vector %d virq %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, vector, virq);
 #line 379 "trace/trace-accel_kvm.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_irqchip_add_msi_route " "dev %s vector %d virq %d" "\n", name, vector, virq);
 #line 383 "trace/trace-accel_kvm.h"
         }
@@ -401,14 +401,14 @@ static inline void _nocheck__trace_kvm_irqchip_update_msi_route(int virq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_irqchip_update_msi_route " "Updating MSI route virq=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , virq);
 #line 410 "trace/trace-accel_kvm.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_irqchip_update_msi_route " "Updating MSI route virq=%d" "\n", virq);
 #line 414 "trace/trace-accel_kvm.h"
         }
@@ -432,14 +432,14 @@ static inline void _nocheck__trace_kvm_irqchip_release_virq(int virq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_irqchip_release_virq " "virq %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , virq);
 #line 441 "trace/trace-accel_kvm.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_irqchip_release_virq " "virq %d" "\n", virq);
 #line 445 "trace/trace-accel_kvm.h"
         }
@@ -463,14 +463,14 @@ static inline void _nocheck__trace_kvm_set_ioeventfd_mmio(int fd, uint64_t addr,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_set_ioeventfd_mmio " "fd: %d @0x%" PRIx64 " val=0x%x assign: %d size: %d match: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, addr, val, assign, size, datamatch);
 #line 472 "trace/trace-accel_kvm.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_set_ioeventfd_mmio " "fd: %d @0x%" PRIx64 " val=0x%x assign: %d size: %d match: %d" "\n", fd, addr, val, assign, size, datamatch);
 #line 476 "trace/trace-accel_kvm.h"
         }
@@ -494,14 +494,14 @@ static inline void _nocheck__trace_kvm_set_ioeventfd_pio(int fd, uint16_t addr, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_set_ioeventfd_pio " "fd: %d @0x%x val=0x%x assign: %d size: %d match: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, addr, val, assign, size, datamatch);
 #line 503 "trace/trace-accel_kvm.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_set_ioeventfd_pio " "fd: %d @0x%x val=0x%x assign: %d size: %d match: %d" "\n", fd, addr, val, assign, size, datamatch);
 #line 507 "trace/trace-accel_kvm.h"
         }
@@ -525,14 +525,14 @@ static inline void _nocheck__trace_kvm_set_user_memory(uint32_t slot, uint32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_set_user_memory " "Slot#%d flags=0x%x gpa=0x%"PRIx64 " size=0x%"PRIx64 " ua=0x%"PRIx64 " ret=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slot, flags, guest_phys_addr, memory_size, userspace_addr, ret);
 #line 534 "trace/trace-accel_kvm.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_set_user_memory " "Slot#%d flags=0x%x gpa=0x%"PRIx64 " size=0x%"PRIx64 " ua=0x%"PRIx64 " ret=%d" "\n", slot, flags, guest_phys_addr, memory_size, userspace_addr, ret);
 #line 538 "trace/trace-accel_kvm.h"
         }
@@ -556,14 +556,14 @@ static inline void _nocheck__trace_kvm_clear_dirty_log(uint32_t slot, uint64_t s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_clear_dirty_log " "slot#%"PRId32" start 0x%"PRIx64" size 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slot, start, size);
 #line 565 "trace/trace-accel_kvm.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_clear_dirty_log " "slot#%"PRId32" start 0x%"PRIx64" size 0x%"PRIx32 "\n", slot, start, size);
 #line 569 "trace/trace-accel_kvm.h"
         }
@@ -587,14 +587,14 @@ static inline void _nocheck__trace_kvm_resample_fd_notify(int gsi)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_resample_fd_notify " "gsi %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gsi);
 #line 596 "trace/trace-accel_kvm.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_resample_fd_notify " "gsi %d" "\n", gsi);
 #line 600 "trace/trace-accel_kvm.h"
         }
@@ -618,14 +618,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_full(int id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_full " "vcpu %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 627 "trace/trace-accel_kvm.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_full " "vcpu %d" "\n", id);
 #line 631 "trace/trace-accel_kvm.h"
         }
@@ -649,14 +649,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_reap_vcpu(int id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_reap_vcpu " "vcpu %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 658 "trace/trace-accel_kvm.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_reap_vcpu " "vcpu %d" "\n", id);
 #line 662 "trace/trace-accel_kvm.h"
         }
@@ -680,14 +680,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_page(int vcpu, uint32_t slot, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_page " "vcpu %d fetch %"PRIu32" offset 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vcpu, slot, offset);
 #line 689 "trace/trace-accel_kvm.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_page " "vcpu %d fetch %"PRIu32" offset 0x%"PRIx64 "\n", vcpu, slot, offset);
 #line 693 "trace/trace-accel_kvm.h"
         }
@@ -711,14 +711,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_reaper(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_reaper " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 720 "trace/trace-accel_kvm.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_reaper " "%s" "\n", s);
 #line 724 "trace/trace-accel_kvm.h"
         }
@@ -742,14 +742,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_reap(uint64_t count, int64_t t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_reap " "reaped %"PRIu64" pages (took %"PRIi64" us)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , count, t);
 #line 751 "trace/trace-accel_kvm.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_reap " "reaped %"PRIu64" pages (took %"PRIi64" us)" "\n", count, t);
 #line 755 "trace/trace-accel_kvm.h"
         }
@@ -773,14 +773,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_reaper_kick(const char * reaso
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_reaper_kick " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reason);
 #line 782 "trace/trace-accel_kvm.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_reaper_kick " "%s" "\n", reason);
 #line 786 "trace/trace-accel_kvm.h"
         }
@@ -804,14 +804,14 @@ static inline void _nocheck__trace_kvm_dirty_ring_flush(int finished)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_dirty_ring_flush " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , finished);
 #line 813 "trace/trace-accel_kvm.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/kvm/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/kvm/trace-events"
             qemu_log("kvm_dirty_ring_flush " "%d" "\n", finished);
 #line 817 "trace/trace-accel_kvm.h"
         }

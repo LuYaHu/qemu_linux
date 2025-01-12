@@ -118,14 +118,14 @@ static inline void _nocheck__trace_kvm_failed_spr_set(int spr, const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_spr_set " "Warning: Unable to set SPR %d to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , spr, msg);
 #line 127 "trace/trace-target_ppc.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_spr_set " "Warning: Unable to set SPR %d to KVM: %s" "\n", spr, msg);
 #line 131 "trace/trace-target_ppc.h"
         }
@@ -149,14 +149,14 @@ static inline void _nocheck__trace_kvm_failed_spr_get(int spr, const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_spr_get " "Warning: Unable to retrieve SPR %d from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , spr, msg);
 #line 158 "trace/trace-target_ppc.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_spr_get " "Warning: Unable to retrieve SPR %d from KVM: %s" "\n", spr, msg);
 #line 162 "trace/trace-target_ppc.h"
         }
@@ -180,14 +180,14 @@ static inline void _nocheck__trace_kvm_failed_fpscr_set(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_fpscr_set " "Unable to set FPSCR to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 189 "trace/trace-target_ppc.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_fpscr_set " "Unable to set FPSCR to KVM: %s" "\n", msg);
 #line 193 "trace/trace-target_ppc.h"
         }
@@ -211,14 +211,14 @@ static inline void _nocheck__trace_kvm_failed_fp_set(const char * fpname, int fp
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_fp_set " "Unable to set %s%d to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fpname, fpnum, msg);
 #line 220 "trace/trace-target_ppc.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_fp_set " "Unable to set %s%d to KVM: %s" "\n", fpname, fpnum, msg);
 #line 224 "trace/trace-target_ppc.h"
         }
@@ -242,14 +242,14 @@ static inline void _nocheck__trace_kvm_failed_vscr_set(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vscr_set " "Unable to set VSCR to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 251 "trace/trace-target_ppc.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vscr_set " "Unable to set VSCR to KVM: %s" "\n", msg);
 #line 255 "trace/trace-target_ppc.h"
         }
@@ -273,14 +273,14 @@ static inline void _nocheck__trace_kvm_failed_vr_set(int vr, const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vr_set " "Unable to set VR%d to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vr, msg);
 #line 282 "trace/trace-target_ppc.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vr_set " "Unable to set VR%d to KVM: %s" "\n", vr, msg);
 #line 286 "trace/trace-target_ppc.h"
         }
@@ -304,14 +304,14 @@ static inline void _nocheck__trace_kvm_failed_fpscr_get(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_fpscr_get " "Unable to get FPSCR from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 313 "trace/trace-target_ppc.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_fpscr_get " "Unable to get FPSCR from KVM: %s" "\n", msg);
 #line 317 "trace/trace-target_ppc.h"
         }
@@ -335,14 +335,14 @@ static inline void _nocheck__trace_kvm_failed_fp_get(const char * fpname, int fp
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_fp_get " "Unable to get %s%d from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fpname, fpnum, msg);
 #line 344 "trace/trace-target_ppc.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_fp_get " "Unable to get %s%d from KVM: %s" "\n", fpname, fpnum, msg);
 #line 348 "trace/trace-target_ppc.h"
         }
@@ -366,14 +366,14 @@ static inline void _nocheck__trace_kvm_failed_vscr_get(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vscr_get " "Unable to get VSCR from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 375 "trace/trace-target_ppc.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vscr_get " "Unable to get VSCR from KVM: %s" "\n", msg);
 #line 379 "trace/trace-target_ppc.h"
         }
@@ -397,14 +397,14 @@ static inline void _nocheck__trace_kvm_failed_vr_get(int vr, const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vr_get " "Unable to get VR%d from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vr, msg);
 #line 406 "trace/trace-target_ppc.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vr_get " "Unable to get VR%d from KVM: %s" "\n", vr, msg);
 #line 410 "trace/trace-target_ppc.h"
         }
@@ -428,14 +428,14 @@ static inline void _nocheck__trace_kvm_failed_vpa_addr_get(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vpa_addr_get " "Unable to get VPA address from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 437 "trace/trace-target_ppc.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vpa_addr_get " "Unable to get VPA address from KVM: %s" "\n", msg);
 #line 441 "trace/trace-target_ppc.h"
         }
@@ -459,14 +459,14 @@ static inline void _nocheck__trace_kvm_failed_slb_get(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_slb_get " "Unable to get SLB shadow state from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 468 "trace/trace-target_ppc.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_slb_get " "Unable to get SLB shadow state from KVM: %s" "\n", msg);
 #line 472 "trace/trace-target_ppc.h"
         }
@@ -490,14 +490,14 @@ static inline void _nocheck__trace_kvm_failed_dtl_get(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_dtl_get " "Unable to get dispatch trace log state from KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 499 "trace/trace-target_ppc.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_dtl_get " "Unable to get dispatch trace log state from KVM: %s" "\n", msg);
 #line 503 "trace/trace-target_ppc.h"
         }
@@ -521,14 +521,14 @@ static inline void _nocheck__trace_kvm_failed_vpa_addr_set(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_vpa_addr_set " "Unable to set VPA address to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 530 "trace/trace-target_ppc.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_vpa_addr_set " "Unable to set VPA address to KVM: %s" "\n", msg);
 #line 534 "trace/trace-target_ppc.h"
         }
@@ -552,14 +552,14 @@ static inline void _nocheck__trace_kvm_failed_slb_set(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_slb_set " "Unable to set SLB shadow state to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 561 "trace/trace-target_ppc.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_slb_set " "Unable to set SLB shadow state to KVM: %s" "\n", msg);
 #line 565 "trace/trace-target_ppc.h"
         }
@@ -583,14 +583,14 @@ static inline void _nocheck__trace_kvm_failed_dtl_set(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_dtl_set " "Unable to set dispatch trace log state to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 592 "trace/trace-target_ppc.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_dtl_set " "Unable to set dispatch trace log state to KVM: %s" "\n", msg);
 #line 596 "trace/trace-target_ppc.h"
         }
@@ -614,14 +614,14 @@ static inline void _nocheck__trace_kvm_failed_null_vpa_addr_set(const char * msg
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_null_vpa_addr_set " "Unable to set VPA address to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 623 "trace/trace-target_ppc.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_null_vpa_addr_set " "Unable to set VPA address to KVM: %s" "\n", msg);
 #line 627 "trace/trace-target_ppc.h"
         }
@@ -645,14 +645,14 @@ static inline void _nocheck__trace_kvm_failed_put_vpa(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_put_vpa " "Warning: Unable to set VPA information to KVM" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 654 "trace/trace-target_ppc.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_put_vpa " "Warning: Unable to set VPA information to KVM" "\n");
 #line 658 "trace/trace-target_ppc.h"
         }
@@ -676,14 +676,14 @@ static inline void _nocheck__trace_kvm_failed_get_vpa(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_get_vpa " "Warning: Unable to get VPA information from KVM" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 685 "trace/trace-target_ppc.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_failed_get_vpa " "Warning: Unable to get VPA information from KVM" "\n");
 #line 689 "trace/trace-target_ppc.h"
         }
@@ -707,14 +707,14 @@ static inline void _nocheck__trace_kvm_handle_dcr_write(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_dcr_write " "handle dcr write" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 716 "trace/trace-target_ppc.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_dcr_write " "handle dcr write" "\n");
 #line 720 "trace/trace-target_ppc.h"
         }
@@ -738,14 +738,14 @@ static inline void _nocheck__trace_kvm_handle_dcr_read(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_dcr_read " "handle dcr read" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 747 "trace/trace-target_ppc.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_dcr_read " "handle dcr read" "\n");
 #line 751 "trace/trace-target_ppc.h"
         }
@@ -769,14 +769,14 @@ static inline void _nocheck__trace_kvm_handle_halt(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_halt " "handle halt" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 778 "trace/trace-target_ppc.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_halt " "handle halt" "\n");
 #line 782 "trace/trace-target_ppc.h"
         }
@@ -800,14 +800,14 @@ static inline void _nocheck__trace_kvm_handle_papr_hcall(uint64_t hcall)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_papr_hcall " "0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hcall);
 #line 809 "trace/trace-target_ppc.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_papr_hcall " "0x%" PRIx64 "\n", hcall);
 #line 813 "trace/trace-target_ppc.h"
         }
@@ -831,14 +831,14 @@ static inline void _nocheck__trace_kvm_handle_epr(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_epr " "handle epr" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 840 "trace/trace-target_ppc.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_epr " "handle epr" "\n");
 #line 844 "trace/trace-target_ppc.h"
         }
@@ -862,14 +862,14 @@ static inline void _nocheck__trace_kvm_handle_watchdog_expiry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_watchdog_expiry " "handle watchdog expiry" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 871 "trace/trace-target_ppc.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_watchdog_expiry " "handle watchdog expiry" "\n");
 #line 875 "trace/trace-target_ppc.h"
         }
@@ -893,14 +893,14 @@ static inline void _nocheck__trace_kvm_handle_debug_exception(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_debug_exception " "handle debug exception" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 902 "trace/trace-target_ppc.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_debug_exception " "handle debug exception" "\n");
 #line 906 "trace/trace-target_ppc.h"
         }
@@ -924,14 +924,14 @@ static inline void _nocheck__trace_kvm_handle_nmi_exception(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_handle_nmi_exception " "handle NMI exception" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 933 "trace/trace-target_ppc.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("kvm_handle_nmi_exception " "handle NMI exception" "\n");
 #line 937 "trace/trace-target_ppc.h"
         }
@@ -955,14 +955,14 @@ static inline void _nocheck__trace_ppc_excp_rfi(uint64_t nip, uint64_t msr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_rfi " "Return from exception at 0x%" PRIx64 " with flags 0x%016" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nip, msr);
 #line 964 "trace/trace-target_ppc.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_rfi " "Return from exception at 0x%" PRIx64 " with flags 0x%016" PRIx64 "\n", nip, msr);
 #line 968 "trace/trace-target_ppc.h"
         }
@@ -986,14 +986,14 @@ static inline void _nocheck__trace_ppc_excp_dsi(uint64_t dsisr, uint64_t dar)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_dsi " "DSI exception: DSISR=0x%" PRIx64 " DAR=0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dsisr, dar);
 #line 995 "trace/trace-target_ppc.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_dsi " "DSI exception: DSISR=0x%" PRIx64 " DAR=0x%" PRIx64 "\n", dsisr, dar);
 #line 999 "trace/trace-target_ppc.h"
         }
@@ -1017,14 +1017,14 @@ static inline void _nocheck__trace_ppc_excp_isi(uint64_t msr, uint64_t nip)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_isi " "ISI exception: msr=0x%016" PRIx64 " nip=0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msr, nip);
 #line 1026 "trace/trace-target_ppc.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_isi " "ISI exception: msr=0x%016" PRIx64 " nip=0x%" PRIx64 "\n", msr, nip);
 #line 1030 "trace/trace-target_ppc.h"
         }
@@ -1048,14 +1048,14 @@ static inline void _nocheck__trace_ppc_excp_fp_ignore(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_fp_ignore " "Ignore floating point exception" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1057 "trace/trace-target_ppc.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_fp_ignore " "Ignore floating point exception" "\n");
 #line 1061 "trace/trace-target_ppc.h"
         }
@@ -1079,14 +1079,14 @@ static inline void _nocheck__trace_ppc_excp_inval(uint64_t nip)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_inval " "Invalid instruction at 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nip);
 #line 1088 "trace/trace-target_ppc.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_inval " "Invalid instruction at 0x%" PRIx64 "\n", nip);
 #line 1092 "trace/trace-target_ppc.h"
         }
@@ -1110,14 +1110,14 @@ static inline void _nocheck__trace_ppc_excp_print(const char * excp)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("%d@%zu.%06zu:ppc_excp_print " "%s exception" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , excp);
 #line 1119 "trace/trace-target_ppc.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/target/ppc/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/ppc/trace-events"
             qemu_log("ppc_excp_print " "%s exception" "\n", excp);
 #line 1123 "trace/trace-target_ppc.h"
         }

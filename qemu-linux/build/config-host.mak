@@ -2,11 +2,11 @@
 
 all:
 GIT=git
-GIT_SUBMODULES=ui/keycodemapdb meson tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc
-GIT_SUBMODULES_ACTION=update
+GIT_SUBMODULES=ui/keycodemapdb tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc
+GIT_SUBMODULES_ACTION=ignore
 CONFIG_POSIX=y
 CONFIG_LINUX=y
-SRC_PATH=/home/luyahu/qemu_linux/qemu-8.0.2
+SRC_PATH=/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux
 TARGET_DIRS=riscv64-softmmu
 CONFIG_COROUTINE_BACKEND=ucontext
 CONFIG_PLUGIN=y
@@ -15,7 +15,7 @@ ROMS=
 MAKE=make
 PYTHON=/usr/bin/python3 -B
 GENISOIMAGE=/usr/bin/genisoimage
-MESON=/usr/bin/python3 -B /home/luyahu/qemu_linux/qemu-8.0.2/meson/meson.py
+MESON=/usr/bin/python3 -B /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/meson/meson.py
 NINJA=/usr/bin/ninja
 CC=cc
 QEMU_CFLAGS=-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -Wundef -Wwrite-strings -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wmissing-format-attribute -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong

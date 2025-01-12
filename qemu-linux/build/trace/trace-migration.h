@@ -973,14 +973,14 @@ static inline void _nocheck__trace_qemu_loadvm_state_section(unsigned int sectio
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_loadvm_state_section " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , section_type);
 #line 982 "trace/trace-migration.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_loadvm_state_section " "%d" "\n", section_type);
 #line 986 "trace/trace-migration.h"
         }
@@ -1004,14 +1004,14 @@ static inline void _nocheck__trace_qemu_loadvm_state_section_command(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_loadvm_state_section_command " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1013 "trace/trace-migration.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_loadvm_state_section_command " "%d" "\n", ret);
 #line 1017 "trace/trace-migration.h"
         }
@@ -1035,14 +1035,14 @@ static inline void _nocheck__trace_qemu_loadvm_state_section_partend(uint32_t se
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_loadvm_state_section_partend " "%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , section_id);
 #line 1044 "trace/trace-migration.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_loadvm_state_section_partend " "%u" "\n", section_id);
 #line 1048 "trace/trace-migration.h"
         }
@@ -1066,14 +1066,14 @@ static inline void _nocheck__trace_qemu_loadvm_state_post_main(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_loadvm_state_post_main " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1075 "trace/trace-migration.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_loadvm_state_post_main " "%d" "\n", ret);
 #line 1079 "trace/trace-migration.h"
         }
@@ -1097,14 +1097,14 @@ static inline void _nocheck__trace_qemu_loadvm_state_section_startfull(uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_loadvm_state_section_startfull " "%u(%s) %u %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , section_id, idstr, instance_id, version_id);
 #line 1106 "trace/trace-migration.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_loadvm_state_section_startfull " "%u(%s) %u %u" "\n", section_id, idstr, instance_id, version_id);
 #line 1110 "trace/trace-migration.h"
         }
@@ -1128,14 +1128,14 @@ static inline void _nocheck__trace_qemu_savevm_send_packaged(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_savevm_send_packaged " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1137 "trace/trace-migration.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_savevm_send_packaged " "" "\n");
 #line 1141 "trace/trace-migration.h"
         }
@@ -1159,14 +1159,14 @@ static inline void _nocheck__trace_loadvm_state_setup(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_state_setup " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1168 "trace/trace-migration.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_state_setup " "" "\n");
 #line 1172 "trace/trace-migration.h"
         }
@@ -1190,14 +1190,14 @@ static inline void _nocheck__trace_loadvm_state_cleanup(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_state_cleanup " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1199 "trace/trace-migration.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_state_cleanup " "" "\n");
 #line 1203 "trace/trace-migration.h"
         }
@@ -1221,14 +1221,14 @@ static inline void _nocheck__trace_loadvm_handle_cmd_packaged(unsigned int lengt
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_handle_cmd_packaged " "%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , length);
 #line 1230 "trace/trace-migration.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_handle_cmd_packaged " "%u" "\n", length);
 #line 1234 "trace/trace-migration.h"
         }
@@ -1252,14 +1252,14 @@ static inline void _nocheck__trace_loadvm_handle_cmd_packaged_main(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_handle_cmd_packaged_main " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1261 "trace/trace-migration.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_handle_cmd_packaged_main " "%d" "\n", ret);
 #line 1265 "trace/trace-migration.h"
         }
@@ -1283,14 +1283,14 @@ static inline void _nocheck__trace_loadvm_handle_cmd_packaged_received(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_handle_cmd_packaged_received " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1292 "trace/trace-migration.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_handle_cmd_packaged_received " "%d" "\n", ret);
 #line 1296 "trace/trace-migration.h"
         }
@@ -1314,14 +1314,14 @@ static inline void _nocheck__trace_loadvm_handle_recv_bitmap(char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_handle_recv_bitmap " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1323 "trace/trace-migration.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_handle_recv_bitmap " "%s" "\n", s);
 #line 1327 "trace/trace-migration.h"
         }
@@ -1345,14 +1345,14 @@ static inline void _nocheck__trace_loadvm_postcopy_handle_advise(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_handle_advise " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1354 "trace/trace-migration.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_handle_advise " "" "\n");
 #line 1358 "trace/trace-migration.h"
         }
@@ -1376,14 +1376,14 @@ static inline void _nocheck__trace_loadvm_postcopy_handle_listen(const char * st
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_handle_listen " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 1385 "trace/trace-migration.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_handle_listen " "%s" "\n", str);
 #line 1389 "trace/trace-migration.h"
         }
@@ -1407,14 +1407,14 @@ static inline void _nocheck__trace_loadvm_postcopy_handle_run(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_handle_run " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1416 "trace/trace-migration.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_handle_run " "" "\n");
 #line 1420 "trace/trace-migration.h"
         }
@@ -1438,14 +1438,14 @@ static inline void _nocheck__trace_loadvm_postcopy_handle_run_bh(const char * st
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_handle_run_bh " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 1447 "trace/trace-migration.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_handle_run_bh " "%s" "\n", str);
 #line 1451 "trace/trace-migration.h"
         }
@@ -1469,14 +1469,14 @@ static inline void _nocheck__trace_loadvm_postcopy_handle_resume(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_handle_resume " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1478 "trace/trace-migration.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_handle_resume " "" "\n");
 #line 1482 "trace/trace-migration.h"
         }
@@ -1500,14 +1500,14 @@ static inline void _nocheck__trace_loadvm_postcopy_ram_handle_discard(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_ram_handle_discard " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1509 "trace/trace-migration.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_ram_handle_discard " "" "\n");
 #line 1513 "trace/trace-migration.h"
         }
@@ -1531,14 +1531,14 @@ static inline void _nocheck__trace_loadvm_postcopy_ram_handle_discard_end(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_ram_handle_discard_end " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1540 "trace/trace-migration.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_ram_handle_discard_end " "" "\n");
 #line 1544 "trace/trace-migration.h"
         }
@@ -1562,14 +1562,14 @@ static inline void _nocheck__trace_loadvm_postcopy_ram_handle_discard_header(con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_postcopy_ram_handle_discard_header " "%s: %ud" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramid, len);
 #line 1571 "trace/trace-migration.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_postcopy_ram_handle_discard_header " "%s: %ud" "\n", ramid, len);
 #line 1575 "trace/trace-migration.h"
         }
@@ -1593,14 +1593,14 @@ static inline void _nocheck__trace_loadvm_process_command(const char * s, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_process_command " "com=%s len=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, len);
 #line 1602 "trace/trace-migration.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_process_command " "com=%s len=%d" "\n", s, len);
 #line 1606 "trace/trace-migration.h"
         }
@@ -1624,14 +1624,14 @@ static inline void _nocheck__trace_loadvm_process_command_ping(uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:loadvm_process_command_ping " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , val);
 #line 1633 "trace/trace-migration.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("loadvm_process_command_ping " "0x%x" "\n", val);
 #line 1637 "trace/trace-migration.h"
         }
@@ -1655,14 +1655,14 @@ static inline void _nocheck__trace_postcopy_ram_listen_thread_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_listen_thread_exit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1664 "trace/trace-migration.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_listen_thread_exit " "" "\n");
 #line 1668 "trace/trace-migration.h"
         }
@@ -1686,14 +1686,14 @@ static inline void _nocheck__trace_postcopy_ram_listen_thread_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_listen_thread_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1695 "trace/trace-migration.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_listen_thread_start " "" "\n");
 #line 1699 "trace/trace-migration.h"
         }
@@ -1717,14 +1717,14 @@ static inline void _nocheck__trace_qemu_savevm_send_postcopy_advise(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_savevm_send_postcopy_advise " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1726 "trace/trace-migration.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_savevm_send_postcopy_advise " "" "\n");
 #line 1730 "trace/trace-migration.h"
         }
@@ -1748,14 +1748,14 @@ static inline void _nocheck__trace_qemu_savevm_send_postcopy_ram_discard(const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_savevm_send_postcopy_ram_discard " "%s: %ud" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, len);
 #line 1757 "trace/trace-migration.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_savevm_send_postcopy_ram_discard " "%s: %ud" "\n", id, len);
 #line 1761 "trace/trace-migration.h"
         }
@@ -1779,14 +1779,14 @@ static inline void _nocheck__trace_savevm_command_send(uint16_t command, uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_command_send " "com=0x%x len=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , command, len);
 #line 1788 "trace/trace-migration.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_command_send " "com=0x%x len=%d" "\n", command, len);
 #line 1792 "trace/trace-migration.h"
         }
@@ -1810,14 +1810,14 @@ static inline void _nocheck__trace_savevm_section_start(const char * id, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_section_start " "%s, section_id %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, section_id);
 #line 1819 "trace/trace-migration.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_section_start " "%s, section_id %u" "\n", id, section_id);
 #line 1823 "trace/trace-migration.h"
         }
@@ -1841,14 +1841,14 @@ static inline void _nocheck__trace_savevm_section_end(const char * id, unsigned 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_section_end " "%s, section_id %u -> %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, section_id, ret);
 #line 1850 "trace/trace-migration.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_section_end " "%s, section_id %u -> %d" "\n", id, section_id, ret);
 #line 1854 "trace/trace-migration.h"
         }
@@ -1872,14 +1872,14 @@ static inline void _nocheck__trace_savevm_section_skip(const char * id, unsigned
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_section_skip " "%s, section_id %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, section_id);
 #line 1881 "trace/trace-migration.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_section_skip " "%s, section_id %u" "\n", id, section_id);
 #line 1885 "trace/trace-migration.h"
         }
@@ -1903,14 +1903,14 @@ static inline void _nocheck__trace_savevm_send_open_return_path(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_open_return_path " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1912 "trace/trace-migration.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_open_return_path " "" "\n");
 #line 1916 "trace/trace-migration.h"
         }
@@ -1934,14 +1934,14 @@ static inline void _nocheck__trace_savevm_send_ping(uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_ping " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , val);
 #line 1943 "trace/trace-migration.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_ping " "0x%x" "\n", val);
 #line 1947 "trace/trace-migration.h"
         }
@@ -1965,14 +1965,14 @@ static inline void _nocheck__trace_savevm_send_postcopy_listen(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_postcopy_listen " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 1974 "trace/trace-migration.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_postcopy_listen " "" "\n");
 #line 1978 "trace/trace-migration.h"
         }
@@ -1996,14 +1996,14 @@ static inline void _nocheck__trace_savevm_send_postcopy_run(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_postcopy_run " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2005 "trace/trace-migration.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_postcopy_run " "" "\n");
 #line 2009 "trace/trace-migration.h"
         }
@@ -2027,14 +2027,14 @@ static inline void _nocheck__trace_savevm_send_postcopy_resume(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_postcopy_resume " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2036 "trace/trace-migration.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_postcopy_resume " "" "\n");
 #line 2040 "trace/trace-migration.h"
         }
@@ -2058,14 +2058,14 @@ static inline void _nocheck__trace_savevm_send_colo_enable(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_colo_enable " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2067 "trace/trace-migration.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_colo_enable " "" "\n");
 #line 2071 "trace/trace-migration.h"
         }
@@ -2089,14 +2089,14 @@ static inline void _nocheck__trace_savevm_send_recv_bitmap(char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_send_recv_bitmap " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 2098 "trace/trace-migration.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_send_recv_bitmap " "%s" "\n", name);
 #line 2102 "trace/trace-migration.h"
         }
@@ -2120,14 +2120,14 @@ static inline void _nocheck__trace_savevm_state_setup(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_setup " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2129 "trace/trace-migration.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_setup " "" "\n");
 #line 2133 "trace/trace-migration.h"
         }
@@ -2151,14 +2151,14 @@ static inline void _nocheck__trace_savevm_state_resume_prepare(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_resume_prepare " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2160 "trace/trace-migration.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_resume_prepare " "" "\n");
 #line 2164 "trace/trace-migration.h"
         }
@@ -2182,14 +2182,14 @@ static inline void _nocheck__trace_savevm_state_header(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_header " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2191 "trace/trace-migration.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_header " "" "\n");
 #line 2195 "trace/trace-migration.h"
         }
@@ -2213,14 +2213,14 @@ static inline void _nocheck__trace_savevm_state_iterate(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_iterate " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2222 "trace/trace-migration.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_iterate " "" "\n");
 #line 2226 "trace/trace-migration.h"
         }
@@ -2244,14 +2244,14 @@ static inline void _nocheck__trace_savevm_state_cleanup(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_cleanup " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2253 "trace/trace-migration.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_cleanup " "" "\n");
 #line 2257 "trace/trace-migration.h"
         }
@@ -2275,14 +2275,14 @@ static inline void _nocheck__trace_savevm_state_complete_precopy(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:savevm_state_complete_precopy " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2284 "trace/trace-migration.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("savevm_state_complete_precopy " "" "\n");
 #line 2288 "trace/trace-migration.h"
         }
@@ -2306,14 +2306,14 @@ static inline void _nocheck__trace_vmstate_save(const char * idstr, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_save " "%s, %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr, vmsd_name);
 #line 2315 "trace/trace-migration.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_save " "%s, %s" "\n", idstr, vmsd_name);
 #line 2319 "trace/trace-migration.h"
         }
@@ -2337,14 +2337,14 @@ static inline void _nocheck__trace_vmstate_load(const char * idstr, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_load " "%s, %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr, vmsd_name);
 #line 2346 "trace/trace-migration.h"
         } else {
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_load " "%s, %s" "\n", idstr, vmsd_name);
 #line 2350 "trace/trace-migration.h"
         }
@@ -2368,14 +2368,14 @@ static inline void _nocheck__trace_postcopy_pause_incoming(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_incoming " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2377 "trace/trace-migration.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_incoming " "" "\n");
 #line 2381 "trace/trace-migration.h"
         }
@@ -2399,14 +2399,14 @@ static inline void _nocheck__trace_postcopy_pause_incoming_continued(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_incoming_continued " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2408 "trace/trace-migration.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_incoming_continued " "" "\n");
 #line 2412 "trace/trace-migration.h"
         }
@@ -2430,14 +2430,14 @@ static inline void _nocheck__trace_postcopy_page_req_sync(void * host_addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_page_req_sync " "sync page req %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host_addr);
 #line 2439 "trace/trace-migration.h"
         } else {
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_page_req_sync " "sync page req %p" "\n", host_addr);
 #line 2443 "trace/trace-migration.h"
         }
@@ -2461,14 +2461,14 @@ static inline void _nocheck__trace_vmstate_load_field_error(const char * field, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_load_field_error " "field \"%s\" load failed, ret = %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field, ret);
 #line 2470 "trace/trace-migration.h"
         } else {
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_load_field_error " "field \"%s\" load failed, ret = %d" "\n", field, ret);
 #line 2474 "trace/trace-migration.h"
         }
@@ -2492,14 +2492,14 @@ static inline void _nocheck__trace_vmstate_load_state(const char * name, int ver
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_load_state " "%s v%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, version_id);
 #line 2501 "trace/trace-migration.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_load_state " "%s v%d" "\n", name, version_id);
 #line 2505 "trace/trace-migration.h"
         }
@@ -2523,14 +2523,14 @@ static inline void _nocheck__trace_vmstate_load_state_end(const char * name, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_load_state_end " "%s %s/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, reason, val);
 #line 2532 "trace/trace-migration.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_load_state_end " "%s %s/%d" "\n", name, reason, val);
 #line 2536 "trace/trace-migration.h"
         }
@@ -2554,14 +2554,14 @@ static inline void _nocheck__trace_vmstate_load_state_field(const char * name, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_load_state_field " "%s:%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, field);
 #line 2563 "trace/trace-migration.h"
         } else {
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_load_state_field " "%s:%s" "\n", name, field);
 #line 2567 "trace/trace-migration.h"
         }
@@ -2585,14 +2585,14 @@ static inline void _nocheck__trace_vmstate_n_elems(const char * name, int n_elem
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_n_elems " "%s: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, n_elems);
 #line 2594 "trace/trace-migration.h"
         } else {
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_n_elems " "%s: %d" "\n", name, n_elems);
 #line 2598 "trace/trace-migration.h"
         }
@@ -2616,14 +2616,14 @@ static inline void _nocheck__trace_vmstate_subsection_load(const char * parent)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_subsection_load " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , parent);
 #line 2625 "trace/trace-migration.h"
         } else {
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_subsection_load " "%s" "\n", parent);
 #line 2629 "trace/trace-migration.h"
         }
@@ -2647,14 +2647,14 @@ static inline void _nocheck__trace_vmstate_subsection_load_bad(const char * pare
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_subsection_load_bad " "%s: %s/%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , parent, sub, sub2);
 #line 2656 "trace/trace-migration.h"
         } else {
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_subsection_load_bad " "%s: %s/%s" "\n", parent, sub, sub2);
 #line 2660 "trace/trace-migration.h"
         }
@@ -2678,14 +2678,14 @@ static inline void _nocheck__trace_vmstate_subsection_load_good(const char * par
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_subsection_load_good " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , parent);
 #line 2687 "trace/trace-migration.h"
         } else {
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_subsection_load_good " "%s" "\n", parent);
 #line 2691 "trace/trace-migration.h"
         }
@@ -2709,14 +2709,14 @@ static inline void _nocheck__trace_vmstate_save_state_pre_save_res(const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_save_state_pre_save_res " "%s/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, res);
 #line 2718 "trace/trace-migration.h"
         } else {
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_save_state_pre_save_res " "%s/%d" "\n", name, res);
 #line 2722 "trace/trace-migration.h"
         }
@@ -2740,14 +2740,14 @@ static inline void _nocheck__trace_vmstate_save_state_loop(const char * name, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_save_state_loop " "%s/%s[%d]" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, field, n_elems);
 #line 2749 "trace/trace-migration.h"
         } else {
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_save_state_loop " "%s/%s[%d]" "\n", name, field, n_elems);
 #line 2753 "trace/trace-migration.h"
         }
@@ -2771,14 +2771,14 @@ static inline void _nocheck__trace_vmstate_save_state_top(const char * idstr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_save_state_top " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr);
 #line 2780 "trace/trace-migration.h"
         } else {
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_save_state_top " "%s" "\n", idstr);
 #line 2784 "trace/trace-migration.h"
         }
@@ -2802,14 +2802,14 @@ static inline void _nocheck__trace_vmstate_subsection_save_loop(const char * nam
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_subsection_save_loop " "%s/%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, sub);
 #line 2811 "trace/trace-migration.h"
         } else {
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_subsection_save_loop " "%s/%s" "\n", name, sub);
 #line 2815 "trace/trace-migration.h"
         }
@@ -2833,14 +2833,14 @@ static inline void _nocheck__trace_vmstate_subsection_save_top(const char * idst
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:vmstate_subsection_save_top " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr);
 #line 2842 "trace/trace-migration.h"
         } else {
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("vmstate_subsection_save_top " "%s" "\n", idstr);
 #line 2846 "trace/trace-migration.h"
         }
@@ -2864,14 +2864,14 @@ static inline void _nocheck__trace_get_qtailq(const char * name, int version_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_qtailq " "%s v%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, version_id);
 #line 2873 "trace/trace-migration.h"
         } else {
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_qtailq " "%s v%d" "\n", name, version_id);
 #line 2877 "trace/trace-migration.h"
         }
@@ -2895,14 +2895,14 @@ static inline void _nocheck__trace_get_qtailq_end(const char * name, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_qtailq_end " "%s %s/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, reason, val);
 #line 2904 "trace/trace-migration.h"
         } else {
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_qtailq_end " "%s %s/%d" "\n", name, reason, val);
 #line 2908 "trace/trace-migration.h"
         }
@@ -2926,14 +2926,14 @@ static inline void _nocheck__trace_put_qtailq(const char * name, int version_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_qtailq " "%s v%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, version_id);
 #line 2935 "trace/trace-migration.h"
         } else {
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_qtailq " "%s v%d" "\n", name, version_id);
 #line 2939 "trace/trace-migration.h"
         }
@@ -2957,14 +2957,14 @@ static inline void _nocheck__trace_put_qtailq_end(const char * name, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_qtailq_end " "%s %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, reason);
 #line 2966 "trace/trace-migration.h"
         } else {
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_qtailq_end " "%s %s" "\n", name, reason);
 #line 2970 "trace/trace-migration.h"
         }
@@ -2988,14 +2988,14 @@ static inline void _nocheck__trace_get_gtree(const char * field_name, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_gtree " "%s(%s/%s) nnodes=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, key_vmsd_name, val_vmsd_name, nnodes);
 #line 2997 "trace/trace-migration.h"
         } else {
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_gtree " "%s(%s/%s) nnodes=%d" "\n", field_name, key_vmsd_name, val_vmsd_name, nnodes);
 #line 3001 "trace/trace-migration.h"
         }
@@ -3019,14 +3019,14 @@ static inline void _nocheck__trace_get_gtree_end(const char * field_name, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_gtree_end " "%s(%s/%s) %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, key_vmsd_name, val_vmsd_name, ret);
 #line 3028 "trace/trace-migration.h"
         } else {
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_gtree_end " "%s(%s/%s) %d" "\n", field_name, key_vmsd_name, val_vmsd_name, ret);
 #line 3032 "trace/trace-migration.h"
         }
@@ -3050,14 +3050,14 @@ static inline void _nocheck__trace_put_gtree(const char * field_name, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_gtree " "%s(%s/%s) nnodes=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, key_vmsd_name, val_vmsd_name, nnodes);
 #line 3059 "trace/trace-migration.h"
         } else {
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_gtree " "%s(%s/%s) nnodes=%d" "\n", field_name, key_vmsd_name, val_vmsd_name, nnodes);
 #line 3063 "trace/trace-migration.h"
         }
@@ -3081,14 +3081,14 @@ static inline void _nocheck__trace_put_gtree_end(const char * field_name, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_gtree_end " "%s(%s/%s) %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, key_vmsd_name, val_vmsd_name, ret);
 #line 3090 "trace/trace-migration.h"
         } else {
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_gtree_end " "%s(%s/%s) %d" "\n", field_name, key_vmsd_name, val_vmsd_name, ret);
 #line 3094 "trace/trace-migration.h"
         }
@@ -3112,14 +3112,14 @@ static inline void _nocheck__trace_get_qlist(const char * field_name, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_qlist " "%s(%s v%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, vmsd_name, version_id);
 #line 3121 "trace/trace-migration.h"
         } else {
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_qlist " "%s(%s v%d)" "\n", field_name, vmsd_name, version_id);
 #line 3125 "trace/trace-migration.h"
         }
@@ -3143,14 +3143,14 @@ static inline void _nocheck__trace_get_qlist_end(const char * field_name, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_qlist_end " "%s(%s)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, vmsd_name);
 #line 3152 "trace/trace-migration.h"
         } else {
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_qlist_end " "%s(%s)" "\n", field_name, vmsd_name);
 #line 3156 "trace/trace-migration.h"
         }
@@ -3174,14 +3174,14 @@ static inline void _nocheck__trace_put_qlist(const char * field_name, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_qlist " "%s(%s v%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, vmsd_name, version_id);
 #line 3183 "trace/trace-migration.h"
         } else {
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_qlist " "%s(%s v%d)" "\n", field_name, vmsd_name, version_id);
 #line 3187 "trace/trace-migration.h"
         }
@@ -3205,14 +3205,14 @@ static inline void _nocheck__trace_put_qlist_end(const char * field_name, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:put_qlist_end " "%s(%s)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , field_name, vmsd_name);
 #line 3214 "trace/trace-migration.h"
         } else {
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("put_qlist_end " "%s(%s)" "\n", field_name, vmsd_name);
 #line 3218 "trace/trace-migration.h"
         }
@@ -3236,14 +3236,14 @@ static inline void _nocheck__trace_qemu_file_fclose(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_fclose " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3245 "trace/trace-migration.h"
         } else {
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_file_fclose " "" "\n");
 #line 3249 "trace/trace-migration.h"
         }
@@ -3267,14 +3267,14 @@ static inline void _nocheck__trace_get_queued_page(const char * block_name, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_queued_page " "%s/0x%" PRIx64 " page_abs=0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block_name, tmp_offset, page_abs);
 #line 3276 "trace/trace-migration.h"
         } else {
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_queued_page " "%s/0x%" PRIx64 " page_abs=0x%lx" "\n", block_name, tmp_offset, page_abs);
 #line 3280 "trace/trace-migration.h"
         }
@@ -3298,14 +3298,14 @@ static inline void _nocheck__trace_get_queued_page_not_dirty(const char * block_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_queued_page_not_dirty " "%s/0x%" PRIx64 " page_abs=0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block_name, tmp_offset, page_abs);
 #line 3307 "trace/trace-migration.h"
         } else {
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_queued_page_not_dirty " "%s/0x%" PRIx64 " page_abs=0x%lx" "\n", block_name, tmp_offset, page_abs);
 #line 3311 "trace/trace-migration.h"
         }
@@ -3329,14 +3329,14 @@ static inline void _nocheck__trace_migration_bitmap_sync_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_bitmap_sync_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3338 "trace/trace-migration.h"
         } else {
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_bitmap_sync_start " "" "\n");
 #line 3342 "trace/trace-migration.h"
         }
@@ -3360,14 +3360,14 @@ static inline void _nocheck__trace_migration_bitmap_sync_end(uint64_t dirty_page
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_bitmap_sync_end " "dirty_pages %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dirty_pages);
 #line 3369 "trace/trace-migration.h"
         } else {
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_bitmap_sync_end " "dirty_pages %" PRIu64 "\n", dirty_pages);
 #line 3373 "trace/trace-migration.h"
         }
@@ -3391,14 +3391,14 @@ static inline void _nocheck__trace_migration_bitmap_clear_dirty(char * str, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_bitmap_clear_dirty " "rb %s start 0x%"PRIx64" size 0x%"PRIx64" page 0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str, start, size, page);
 #line 3400 "trace/trace-migration.h"
         } else {
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_bitmap_clear_dirty " "rb %s start 0x%"PRIx64" size 0x%"PRIx64" page 0x%lx" "\n", str, start, size, page);
 #line 3404 "trace/trace-migration.h"
         }
@@ -3422,14 +3422,14 @@ static inline void _nocheck__trace_migration_throttle(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_throttle " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3431 "trace/trace-migration.h"
         } else {
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_throttle " "" "\n");
 #line 3435 "trace/trace-migration.h"
         }
@@ -3453,14 +3453,14 @@ static inline void _nocheck__trace_ram_discard_range(const char * rbname, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_discard_range " "%s: start: %" PRIx64 " %zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rbname, start, len);
 #line 3462 "trace/trace-migration.h"
         } else {
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_discard_range " "%s: start: %" PRIx64 " %zx" "\n", rbname, start, len);
 #line 3466 "trace/trace-migration.h"
         }
@@ -3484,14 +3484,14 @@ static inline void _nocheck__trace_ram_load_loop(const char * rbname, uint64_t a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_load_loop " "%s: addr: 0x%" PRIx64 " flags: 0x%x host: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rbname, addr, flags, host);
 #line 3493 "trace/trace-migration.h"
         } else {
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_load_loop " "%s: addr: 0x%" PRIx64 " flags: 0x%x host: %p" "\n", rbname, addr, flags, host);
 #line 3497 "trace/trace-migration.h"
         }
@@ -3515,14 +3515,14 @@ static inline void _nocheck__trace_ram_load_postcopy_loop(int channel, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_load_postcopy_loop " "chan=%d addr=0x%" PRIx64 " flags=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , channel, addr, flags);
 #line 3524 "trace/trace-migration.h"
         } else {
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_load_postcopy_loop " "chan=%d addr=0x%" PRIx64 " flags=0x%x" "\n", channel, addr, flags);
 #line 3528 "trace/trace-migration.h"
         }
@@ -3546,14 +3546,14 @@ static inline void _nocheck__trace_ram_postcopy_send_discard_bitmap(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_postcopy_send_discard_bitmap " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3555 "trace/trace-migration.h"
         } else {
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_postcopy_send_discard_bitmap " "" "\n");
 #line 3559 "trace/trace-migration.h"
         }
@@ -3577,14 +3577,14 @@ static inline void _nocheck__trace_ram_save_page(const char * rbname, uint64_t o
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_save_page " "%s: offset: 0x%" PRIx64 " host: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rbname, offset, host);
 #line 3586 "trace/trace-migration.h"
         } else {
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_save_page " "%s: offset: 0x%" PRIx64 " host: %p" "\n", rbname, offset, host);
 #line 3590 "trace/trace-migration.h"
         }
@@ -3608,14 +3608,14 @@ static inline void _nocheck__trace_ram_save_queue_pages(const char * rbname, siz
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_save_queue_pages " "%s: start: 0x%zx len: 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rbname, start, len);
 #line 3617 "trace/trace-migration.h"
         } else {
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_save_queue_pages " "%s: start: 0x%zx len: 0x%zx" "\n", rbname, start, len);
 #line 3621 "trace/trace-migration.h"
         }
@@ -3639,14 +3639,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_request(char * str)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_request " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 3648 "trace/trace-migration.h"
         } else {
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_request " "%s" "\n", str);
 #line 3652 "trace/trace-migration.h"
         }
@@ -3670,14 +3670,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_reload_begin(char * str)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_reload_begin " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 3679 "trace/trace-migration.h"
         } else {
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_reload_begin " "%s" "\n", str);
 #line 3683 "trace/trace-migration.h"
         }
@@ -3701,14 +3701,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_reload_complete(char * str)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_reload_complete " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 3710 "trace/trace-migration.h"
         } else {
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_reload_complete " "%s" "\n", str);
 #line 3714 "trace/trace-migration.h"
         }
@@ -3732,14 +3732,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_sync_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_sync_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3741 "trace/trace-migration.h"
         } else {
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_sync_start " "" "\n");
 #line 3745 "trace/trace-migration.h"
         }
@@ -3763,14 +3763,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_sync_wait(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_sync_wait " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3772 "trace/trace-migration.h"
         } else {
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_sync_wait " "" "\n");
 #line 3776 "trace/trace-migration.h"
         }
@@ -3794,14 +3794,14 @@ static inline void _nocheck__trace_ram_dirty_bitmap_sync_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_dirty_bitmap_sync_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3803 "trace/trace-migration.h"
         } else {
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_dirty_bitmap_sync_complete " "" "\n");
 #line 3807 "trace/trace-migration.h"
         }
@@ -3825,14 +3825,14 @@ static inline void _nocheck__trace_ram_state_resume_prepare(uint64_t v)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_state_resume_prepare " "%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , v);
 #line 3834 "trace/trace-migration.h"
         } else {
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_state_resume_prepare " "%" PRId64 "\n", v);
 #line 3838 "trace/trace-migration.h"
         }
@@ -3856,14 +3856,14 @@ static inline void _nocheck__trace_colo_flush_ram_cache_begin(uint64_t dirty_pag
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_flush_ram_cache_begin " "dirty_pages %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dirty_pages);
 #line 3865 "trace/trace-migration.h"
         } else {
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_flush_ram_cache_begin " "dirty_pages %" PRIu64 "\n", dirty_pages);
 #line 3869 "trace/trace-migration.h"
         }
@@ -3887,14 +3887,14 @@ static inline void _nocheck__trace_colo_flush_ram_cache_end(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_flush_ram_cache_end " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3896 "trace/trace-migration.h"
         } else {
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_flush_ram_cache_end " "" "\n");
 #line 3900 "trace/trace-migration.h"
         }
@@ -3918,14 +3918,14 @@ static inline void _nocheck__trace_save_xbzrle_page_skipping(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:save_xbzrle_page_skipping " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3927 "trace/trace-migration.h"
         } else {
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("save_xbzrle_page_skipping " "" "\n");
 #line 3931 "trace/trace-migration.h"
         }
@@ -3949,14 +3949,14 @@ static inline void _nocheck__trace_save_xbzrle_page_overflow(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:save_xbzrle_page_overflow " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3958 "trace/trace-migration.h"
         } else {
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("save_xbzrle_page_overflow " "" "\n");
 #line 3962 "trace/trace-migration.h"
         }
@@ -3980,14 +3980,14 @@ static inline void _nocheck__trace_ram_save_iterate_big_wait(uint64_t milliconds
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_save_iterate_big_wait " "big wait: %" PRIu64 " milliseconds, %d iterations" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , milliconds, iterations);
 #line 3989 "trace/trace-migration.h"
         } else {
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_save_iterate_big_wait " "big wait: %" PRIu64 " milliseconds, %d iterations" "\n", milliconds, iterations);
 #line 3993 "trace/trace-migration.h"
         }
@@ -4011,14 +4011,14 @@ static inline void _nocheck__trace_ram_load_complete(int ret, uint64_t seq_iter)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_load_complete " "exit_code %d seq iteration %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret, seq_iter);
 #line 4020 "trace/trace-migration.h"
         } else {
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_load_complete " "exit_code %d seq iteration %" PRIu64 "\n", ret, seq_iter);
 #line 4024 "trace/trace-migration.h"
         }
@@ -4042,14 +4042,14 @@ static inline void _nocheck__trace_ram_write_tracking_ramblock_start(const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_write_tracking_ramblock_start " "%s: page_size: %zu addr: %p length: %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block_id, page_size, addr, length);
 #line 4051 "trace/trace-migration.h"
         } else {
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_write_tracking_ramblock_start " "%s: page_size: %zu addr: %p length: %zu" "\n", block_id, page_size, addr, length);
 #line 4055 "trace/trace-migration.h"
         }
@@ -4073,14 +4073,14 @@ static inline void _nocheck__trace_ram_write_tracking_ramblock_stop(const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:ram_write_tracking_ramblock_stop " "%s: page_size: %zu addr: %p length: %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block_id, page_size, addr, length);
 #line 4082 "trace/trace-migration.h"
         } else {
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("ram_write_tracking_ramblock_stop " "%s: page_size: %zu addr: %p length: %zu" "\n", block_id, page_size, addr, length);
 #line 4086 "trace/trace-migration.h"
         }
@@ -4104,14 +4104,14 @@ static inline void _nocheck__trace_postcopy_preempt_triggered(char * str, unsign
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_triggered " "during sending ramblock %s offset 0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str, page);
 #line 4113 "trace/trace-migration.h"
         } else {
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_triggered " "during sending ramblock %s offset 0x%lx" "\n", str, page);
 #line 4117 "trace/trace-migration.h"
         }
@@ -4135,14 +4135,14 @@ static inline void _nocheck__trace_postcopy_preempt_restored(char * str, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_restored " "ramblock %s offset 0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str, page);
 #line 4144 "trace/trace-migration.h"
         } else {
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_restored " "ramblock %s offset 0x%lx" "\n", str, page);
 #line 4148 "trace/trace-migration.h"
         }
@@ -4166,14 +4166,14 @@ static inline void _nocheck__trace_postcopy_preempt_hit(char * str, uint64_t off
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_hit " "ramblock %s offset 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str, offset);
 #line 4175 "trace/trace-migration.h"
         } else {
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_hit " "ramblock %s offset 0x%"PRIx64 "\n", str, offset);
 #line 4179 "trace/trace-migration.h"
         }
@@ -4197,14 +4197,14 @@ static inline void _nocheck__trace_postcopy_preempt_send_host_page(char * str, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_send_host_page " "ramblock %s offset 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str, offset);
 #line 4206 "trace/trace-migration.h"
         } else {
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_send_host_page " "ramblock %s offset 0x%"PRIx64 "\n", str, offset);
 #line 4210 "trace/trace-migration.h"
         }
@@ -4228,14 +4228,14 @@ static inline void _nocheck__trace_postcopy_preempt_switch_channel(int channel)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_switch_channel " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , channel);
 #line 4237 "trace/trace-migration.h"
         } else {
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_switch_channel " "%d" "\n", channel);
 #line 4241 "trace/trace-migration.h"
         }
@@ -4259,14 +4259,14 @@ static inline void _nocheck__trace_postcopy_preempt_reset_channel(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_reset_channel " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4268 "trace/trace-migration.h"
         } else {
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_reset_channel " "" "\n");
 #line 4272 "trace/trace-migration.h"
         }
@@ -4290,14 +4290,14 @@ static inline void _nocheck__trace_multifd_new_send_channel_async(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_new_send_channel_async " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4299 "trace/trace-migration.h"
         } else {
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_new_send_channel_async " "channel %u" "\n", id);
 #line 4303 "trace/trace-migration.h"
         }
@@ -4321,14 +4321,14 @@ static inline void _nocheck__trace_multifd_recv(uint8_t id, uint64_t packet_num,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv " "channel %u packet_num %" PRIu64 " pages %u flags 0x%x next packet size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, packet_num, used, flags, next_packet_size);
 #line 4330 "trace/trace-migration.h"
         } else {
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv " "channel %u packet_num %" PRIu64 " pages %u flags 0x%x next packet size %u" "\n", id, packet_num, used, flags, next_packet_size);
 #line 4334 "trace/trace-migration.h"
         }
@@ -4352,14 +4352,14 @@ static inline void _nocheck__trace_multifd_recv_new_channel(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_new_channel " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4361 "trace/trace-migration.h"
         } else {
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_new_channel " "channel %u" "\n", id);
 #line 4365 "trace/trace-migration.h"
         }
@@ -4383,14 +4383,14 @@ static inline void _nocheck__trace_multifd_recv_sync_main(long packet_num)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_sync_main " "packet num %ld" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , packet_num);
 #line 4392 "trace/trace-migration.h"
         } else {
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_sync_main " "packet num %ld" "\n", packet_num);
 #line 4396 "trace/trace-migration.h"
         }
@@ -4414,14 +4414,14 @@ static inline void _nocheck__trace_multifd_recv_sync_main_signal(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_sync_main_signal " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4423 "trace/trace-migration.h"
         } else {
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_sync_main_signal " "channel %u" "\n", id);
 #line 4427 "trace/trace-migration.h"
         }
@@ -4445,14 +4445,14 @@ static inline void _nocheck__trace_multifd_recv_sync_main_wait(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_sync_main_wait " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4454 "trace/trace-migration.h"
         } else {
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_sync_main_wait " "channel %u" "\n", id);
 #line 4458 "trace/trace-migration.h"
         }
@@ -4476,14 +4476,14 @@ static inline void _nocheck__trace_multifd_recv_terminate_threads(bool error)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_terminate_threads " "error %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , error);
 #line 4485 "trace/trace-migration.h"
         } else {
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_terminate_threads " "error %d" "\n", error);
 #line 4489 "trace/trace-migration.h"
         }
@@ -4507,14 +4507,14 @@ static inline void _nocheck__trace_multifd_recv_thread_end(uint8_t id, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_thread_end " "channel %u packets %" PRIu64 " pages %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, packets, pages);
 #line 4516 "trace/trace-migration.h"
         } else {
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_thread_end " "channel %u packets %" PRIu64 " pages %" PRIu64 "\n", id, packets, pages);
 #line 4520 "trace/trace-migration.h"
         }
@@ -4538,14 +4538,14 @@ static inline void _nocheck__trace_multifd_recv_thread_start(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_recv_thread_start " "%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4547 "trace/trace-migration.h"
         } else {
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_recv_thread_start " "%u" "\n", id);
 #line 4551 "trace/trace-migration.h"
         }
@@ -4569,14 +4569,14 @@ static inline void _nocheck__trace_multifd_send(uint8_t id, uint64_t packet_num,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send " "channel %u packet_num %" PRIu64 " normal pages %u flags 0x%x next packet size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, packet_num, normal, flags, next_packet_size);
 #line 4578 "trace/trace-migration.h"
         } else {
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send " "channel %u packet_num %" PRIu64 " normal pages %u flags 0x%x next packet size %u" "\n", id, packet_num, normal, flags, next_packet_size);
 #line 4582 "trace/trace-migration.h"
         }
@@ -4600,14 +4600,14 @@ static inline void _nocheck__trace_multifd_send_error(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_error " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4609 "trace/trace-migration.h"
         } else {
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_error " "channel %u" "\n", id);
 #line 4613 "trace/trace-migration.h"
         }
@@ -4631,14 +4631,14 @@ static inline void _nocheck__trace_multifd_send_sync_main(long packet_num)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_sync_main " "packet num %ld" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , packet_num);
 #line 4640 "trace/trace-migration.h"
         } else {
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_sync_main " "packet num %ld" "\n", packet_num);
 #line 4644 "trace/trace-migration.h"
         }
@@ -4662,14 +4662,14 @@ static inline void _nocheck__trace_multifd_send_sync_main_signal(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_sync_main_signal " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4671 "trace/trace-migration.h"
         } else {
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_sync_main_signal " "channel %u" "\n", id);
 #line 4675 "trace/trace-migration.h"
         }
@@ -4693,14 +4693,14 @@ static inline void _nocheck__trace_multifd_send_sync_main_wait(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_sync_main_wait " "channel %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4702 "trace/trace-migration.h"
         } else {
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_sync_main_wait " "channel %u" "\n", id);
 #line 4706 "trace/trace-migration.h"
         }
@@ -4724,14 +4724,14 @@ static inline void _nocheck__trace_multifd_send_terminate_threads(bool error)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_terminate_threads " "error %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , error);
 #line 4733 "trace/trace-migration.h"
         } else {
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_terminate_threads " "error %d" "\n", error);
 #line 4737 "trace/trace-migration.h"
         }
@@ -4755,14 +4755,14 @@ static inline void _nocheck__trace_multifd_send_thread_end(uint8_t id, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_thread_end " "channel %u packets %" PRIu64 " normal pages %"  PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, packets, normal_pages);
 #line 4764 "trace/trace-migration.h"
         } else {
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_thread_end " "channel %u packets %" PRIu64 " normal pages %"  PRIu64 "\n", id, packets, normal_pages);
 #line 4768 "trace/trace-migration.h"
         }
@@ -4786,14 +4786,14 @@ static inline void _nocheck__trace_multifd_send_thread_start(uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_send_thread_start " "%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 4795 "trace/trace-migration.h"
         } else {
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_send_thread_start " "%u" "\n", id);
 #line 4799 "trace/trace-migration.h"
         }
@@ -4817,14 +4817,14 @@ static inline void _nocheck__trace_multifd_tls_outgoing_handshake_start(void * i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_tls_outgoing_handshake_start " "ioc=%p tioc=%p hostname=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc, tioc, hostname);
 #line 4826 "trace/trace-migration.h"
         } else {
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_tls_outgoing_handshake_start " "ioc=%p tioc=%p hostname=%s" "\n", ioc, tioc, hostname);
 #line 4830 "trace/trace-migration.h"
         }
@@ -4848,14 +4848,14 @@ static inline void _nocheck__trace_multifd_tls_outgoing_handshake_error(void * i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_tls_outgoing_handshake_error " "ioc=%p err=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc, err);
 #line 4857 "trace/trace-migration.h"
         } else {
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_tls_outgoing_handshake_error " "ioc=%p err=%s" "\n", ioc, err);
 #line 4861 "trace/trace-migration.h"
         }
@@ -4879,14 +4879,14 @@ static inline void _nocheck__trace_multifd_tls_outgoing_handshake_complete(void 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_tls_outgoing_handshake_complete " "ioc=%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc);
 #line 4888 "trace/trace-migration.h"
         } else {
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_tls_outgoing_handshake_complete " "ioc=%p" "\n", ioc);
 #line 4892 "trace/trace-migration.h"
         }
@@ -4910,14 +4910,14 @@ static inline void _nocheck__trace_multifd_set_outgoing_channel(void * ioc, cons
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:multifd_set_outgoing_channel " "ioc=%p ioctype=%s hostname=%s err=%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc, ioctype, hostname, err);
 #line 4919 "trace/trace-migration.h"
         } else {
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("multifd_set_outgoing_channel " "ioc=%p ioctype=%s hostname=%s err=%p" "\n", ioc, ioctype, hostname, err);
 #line 4923 "trace/trace-migration.h"
         }
@@ -4941,14 +4941,14 @@ static inline void _nocheck__trace_await_return_path_close_on_source_close(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:await_return_path_close_on_source_close " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4950 "trace/trace-migration.h"
         } else {
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("await_return_path_close_on_source_close " "" "\n");
 #line 4954 "trace/trace-migration.h"
         }
@@ -4972,14 +4972,14 @@ static inline void _nocheck__trace_await_return_path_close_on_source_joining(voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:await_return_path_close_on_source_joining " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4981 "trace/trace-migration.h"
         } else {
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("await_return_path_close_on_source_joining " "" "\n");
 #line 4985 "trace/trace-migration.h"
         }
@@ -5003,14 +5003,14 @@ static inline void _nocheck__trace_migrate_set_state(const char * new_state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_set_state " "new state %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_state);
 #line 5012 "trace/trace-migration.h"
         } else {
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_set_state " "new state %s" "\n", new_state);
 #line 5016 "trace/trace-migration.h"
         }
@@ -5034,14 +5034,14 @@ static inline void _nocheck__trace_migrate_fd_cleanup(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_fd_cleanup " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5043 "trace/trace-migration.h"
         } else {
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_fd_cleanup " "" "\n");
 #line 5047 "trace/trace-migration.h"
         }
@@ -5065,14 +5065,14 @@ static inline void _nocheck__trace_migrate_fd_error(const char * error_desc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_fd_error " "error=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , error_desc);
 #line 5074 "trace/trace-migration.h"
         } else {
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_fd_error " "error=%s" "\n", error_desc);
 #line 5078 "trace/trace-migration.h"
         }
@@ -5096,14 +5096,14 @@ static inline void _nocheck__trace_migrate_fd_cancel(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_fd_cancel " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5105 "trace/trace-migration.h"
         } else {
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_fd_cancel " "" "\n");
 #line 5109 "trace/trace-migration.h"
         }
@@ -5127,14 +5127,14 @@ static inline void _nocheck__trace_migrate_handle_rp_req_pages(const char * rbna
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_handle_rp_req_pages " "in %s at 0x%zx len 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rbname, start, len);
 #line 5136 "trace/trace-migration.h"
         } else {
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_handle_rp_req_pages " "in %s at 0x%zx len 0x%zx" "\n", rbname, start, len);
 #line 5140 "trace/trace-migration.h"
         }
@@ -5158,14 +5158,14 @@ static inline void _nocheck__trace_migrate_pending_exact(uint64_t size, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_pending_exact " "exact pending size %" PRIu64 " (pre = %" PRIu64 " post=%" PRIu64 ")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, pre, post);
 #line 5167 "trace/trace-migration.h"
         } else {
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_pending_exact " "exact pending size %" PRIu64 " (pre = %" PRIu64 " post=%" PRIu64 ")" "\n", size, pre, post);
 #line 5171 "trace/trace-migration.h"
         }
@@ -5189,14 +5189,14 @@ static inline void _nocheck__trace_migrate_pending_estimate(uint64_t size, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_pending_estimate " "estimate pending size %" PRIu64 " (pre = %" PRIu64 " post=%" PRIu64 ")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, pre, post);
 #line 5198 "trace/trace-migration.h"
         } else {
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_pending_estimate " "estimate pending size %" PRIu64 " (pre = %" PRIu64 " post=%" PRIu64 ")" "\n", size, pre, post);
 #line 5202 "trace/trace-migration.h"
         }
@@ -5220,14 +5220,14 @@ static inline void _nocheck__trace_migrate_send_rp_message(int msg_type, uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_send_rp_message " "%d: len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg_type, len);
 #line 5229 "trace/trace-migration.h"
         } else {
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_send_rp_message " "%d: len %d" "\n", msg_type, len);
 #line 5233 "trace/trace-migration.h"
         }
@@ -5251,14 +5251,14 @@ static inline void _nocheck__trace_migrate_send_rp_recv_bitmap(char * name, int6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_send_rp_recv_bitmap " "block '%s' size 0x%"PRIi64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, size);
 #line 5260 "trace/trace-migration.h"
         } else {
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_send_rp_recv_bitmap " "block '%s' size 0x%"PRIi64 "\n", name, size);
 #line 5264 "trace/trace-migration.h"
         }
@@ -5282,14 +5282,14 @@ static inline void _nocheck__trace_migration_completion_file_err(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_completion_file_err " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5291 "trace/trace-migration.h"
         } else {
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_completion_file_err " "" "\n");
 #line 5295 "trace/trace-migration.h"
         }
@@ -5313,14 +5313,14 @@ static inline void _nocheck__trace_migration_completion_vm_stop(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_completion_vm_stop " "ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 5322 "trace/trace-migration.h"
         } else {
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_completion_vm_stop " "ret %d" "\n", ret);
 #line 5326 "trace/trace-migration.h"
         }
@@ -5344,14 +5344,14 @@ static inline void _nocheck__trace_migration_completion_postcopy_end(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_completion_postcopy_end " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5353 "trace/trace-migration.h"
         } else {
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_completion_postcopy_end " "" "\n");
 #line 5357 "trace/trace-migration.h"
         }
@@ -5375,14 +5375,14 @@ static inline void _nocheck__trace_migration_completion_postcopy_end_after_compl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_completion_postcopy_end_after_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5384 "trace/trace-migration.h"
         } else {
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_completion_postcopy_end_after_complete " "" "\n");
 #line 5388 "trace/trace-migration.h"
         }
@@ -5406,14 +5406,14 @@ static inline void _nocheck__trace_migration_rate_limit_pre(int ms)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_rate_limit_pre " "%d ms" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ms);
 #line 5415 "trace/trace-migration.h"
         } else {
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_rate_limit_pre " "%d ms" "\n", ms);
 #line 5419 "trace/trace-migration.h"
         }
@@ -5437,14 +5437,14 @@ static inline void _nocheck__trace_migration_rate_limit_post(int urgent)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_rate_limit_post " "urgent: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , urgent);
 #line 5446 "trace/trace-migration.h"
         } else {
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_rate_limit_post " "urgent: %d" "\n", urgent);
 #line 5450 "trace/trace-migration.h"
         }
@@ -5468,14 +5468,14 @@ static inline void _nocheck__trace_migration_return_path_end_before(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_return_path_end_before " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5477 "trace/trace-migration.h"
         } else {
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_return_path_end_before " "" "\n");
 #line 5481 "trace/trace-migration.h"
         }
@@ -5499,14 +5499,14 @@ static inline void _nocheck__trace_migration_return_path_end_after(int rp_error)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_return_path_end_after " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rp_error);
 #line 5508 "trace/trace-migration.h"
         } else {
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_return_path_end_after " "%d" "\n", rp_error);
 #line 5512 "trace/trace-migration.h"
         }
@@ -5530,14 +5530,14 @@ static inline void _nocheck__trace_migration_thread_after_loop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_thread_after_loop " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5539 "trace/trace-migration.h"
         } else {
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_thread_after_loop " "" "\n");
 #line 5543 "trace/trace-migration.h"
         }
@@ -5561,14 +5561,14 @@ static inline void _nocheck__trace_migration_thread_file_err(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_thread_file_err " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5570 "trace/trace-migration.h"
         } else {
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_thread_file_err " "" "\n");
 #line 5574 "trace/trace-migration.h"
         }
@@ -5592,14 +5592,14 @@ static inline void _nocheck__trace_migration_thread_setup_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_thread_setup_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5601 "trace/trace-migration.h"
         } else {
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_thread_setup_complete " "" "\n");
 #line 5605 "trace/trace-migration.h"
         }
@@ -5623,14 +5623,14 @@ static inline void _nocheck__trace_open_return_path_on_source(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:open_return_path_on_source " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5632 "trace/trace-migration.h"
         } else {
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("open_return_path_on_source " "" "\n");
 #line 5636 "trace/trace-migration.h"
         }
@@ -5654,14 +5654,14 @@ static inline void _nocheck__trace_open_return_path_on_source_continue(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:open_return_path_on_source_continue " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5663 "trace/trace-migration.h"
         } else {
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("open_return_path_on_source_continue " "" "\n");
 #line 5667 "trace/trace-migration.h"
         }
@@ -5685,14 +5685,14 @@ static inline void _nocheck__trace_postcopy_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5694 "trace/trace-migration.h"
         } else {
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_start " "" "\n");
 #line 5698 "trace/trace-migration.h"
         }
@@ -5716,14 +5716,14 @@ static inline void _nocheck__trace_postcopy_pause_return_path(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_return_path " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5725 "trace/trace-migration.h"
         } else {
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_return_path " "" "\n");
 #line 5729 "trace/trace-migration.h"
         }
@@ -5747,14 +5747,14 @@ static inline void _nocheck__trace_postcopy_pause_return_path_continued(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_return_path_continued " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5756 "trace/trace-migration.h"
         } else {
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_return_path_continued " "" "\n");
 #line 5760 "trace/trace-migration.h"
         }
@@ -5778,14 +5778,14 @@ static inline void _nocheck__trace_postcopy_pause_continued(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_continued " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5787 "trace/trace-migration.h"
         } else {
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_continued " "" "\n");
 #line 5791 "trace/trace-migration.h"
         }
@@ -5809,14 +5809,14 @@ static inline void _nocheck__trace_postcopy_start_set_run(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_start_set_run " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5818 "trace/trace-migration.h"
         } else {
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_start_set_run " "" "\n");
 #line 5822 "trace/trace-migration.h"
         }
@@ -5840,14 +5840,14 @@ static inline void _nocheck__trace_postcopy_page_req_add(void * addr, int count)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_page_req_add " "new page req %p total %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, count);
 #line 5849 "trace/trace-migration.h"
         } else {
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_page_req_add " "new page req %p total %d" "\n", addr, count);
 #line 5853 "trace/trace-migration.h"
         }
@@ -5871,14 +5871,14 @@ static inline void _nocheck__trace_source_return_path_thread_bad_end(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_bad_end " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5880 "trace/trace-migration.h"
         } else {
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_bad_end " "" "\n");
 #line 5884 "trace/trace-migration.h"
         }
@@ -5902,14 +5902,14 @@ static inline void _nocheck__trace_source_return_path_thread_end(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_end " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5911 "trace/trace-migration.h"
         } else {
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_end " "" "\n");
 #line 5915 "trace/trace-migration.h"
         }
@@ -5933,14 +5933,14 @@ static inline void _nocheck__trace_source_return_path_thread_entry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_entry " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5942 "trace/trace-migration.h"
         } else {
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_entry " "" "\n");
 #line 5946 "trace/trace-migration.h"
         }
@@ -5964,14 +5964,14 @@ static inline void _nocheck__trace_source_return_path_thread_loop_top(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_loop_top " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5973 "trace/trace-migration.h"
         } else {
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_loop_top " "" "\n");
 #line 5977 "trace/trace-migration.h"
         }
@@ -5995,14 +5995,14 @@ static inline void _nocheck__trace_source_return_path_thread_pong(uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_pong " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , val);
 #line 6004 "trace/trace-migration.h"
         } else {
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_pong " "0x%x" "\n", val);
 #line 6008 "trace/trace-migration.h"
         }
@@ -6026,14 +6026,14 @@ static inline void _nocheck__trace_source_return_path_thread_shut(uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_shut " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , val);
 #line 6035 "trace/trace-migration.h"
         } else {
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_shut " "0x%x" "\n", val);
 #line 6039 "trace/trace-migration.h"
         }
@@ -6057,14 +6057,14 @@ static inline void _nocheck__trace_source_return_path_thread_resume_ack(uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:source_return_path_thread_resume_ack " "%"PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , v);
 #line 6066 "trace/trace-migration.h"
         } else {
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("source_return_path_thread_resume_ack " "%"PRIu32 "\n", v);
 #line 6070 "trace/trace-migration.h"
         }
@@ -6088,14 +6088,14 @@ static inline void _nocheck__trace_migration_thread_low_pending(uint64_t pending
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_thread_low_pending " "%" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pending);
 #line 6097 "trace/trace-migration.h"
         } else {
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_thread_low_pending " "%" PRIu64 "\n", pending);
 #line 6101 "trace/trace-migration.h"
         }
@@ -6119,14 +6119,14 @@ static inline void _nocheck__trace_migrate_transferred(uint64_t tranferred, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_transferred " "transferred %" PRIu64 " time_spent %" PRIu64 " bandwidth %" PRIu64 " max_size %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tranferred, time_spent, bandwidth, size);
 #line 6128 "trace/trace-migration.h"
         } else {
-#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_transferred " "transferred %" PRIu64 " time_spent %" PRIu64 " bandwidth %" PRIu64 " max_size %" PRId64 "\n", tranferred, time_spent, bandwidth, size);
 #line 6132 "trace/trace-migration.h"
         }
@@ -6150,14 +6150,14 @@ static inline void _nocheck__trace_process_incoming_migration_co_end(int ret, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:process_incoming_migration_co_end " "ret=%d postcopy-state=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret, ps);
 #line 6159 "trace/trace-migration.h"
         } else {
-#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("process_incoming_migration_co_end " "ret=%d postcopy-state=%d" "\n", ret, ps);
 #line 6163 "trace/trace-migration.h"
         }
@@ -6181,14 +6181,14 @@ static inline void _nocheck__trace_process_incoming_migration_co_postcopy_end_ma
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:process_incoming_migration_co_postcopy_end_main " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6190 "trace/trace-migration.h"
         } else {
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("process_incoming_migration_co_postcopy_end_main " "" "\n");
 #line 6194 "trace/trace-migration.h"
         }
@@ -6212,14 +6212,14 @@ static inline void _nocheck__trace_postcopy_preempt_enabled(bool value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_enabled " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , value);
 #line 6221 "trace/trace-migration.h"
         } else {
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_enabled " "%d" "\n", value);
 #line 6225 "trace/trace-migration.h"
         }
@@ -6243,14 +6243,14 @@ static inline void _nocheck__trace_migration_set_incoming_channel(void * ioc, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_set_incoming_channel " "ioc=%p ioctype=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc, ioctype);
 #line 6252 "trace/trace-migration.h"
         } else {
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_set_incoming_channel " "ioc=%p ioctype=%s" "\n", ioc, ioctype);
 #line 6256 "trace/trace-migration.h"
         }
@@ -6274,14 +6274,14 @@ static inline void _nocheck__trace_migration_set_outgoing_channel(void * ioc, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_set_outgoing_channel " "ioc=%p ioctype=%s hostname=%s err=%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioc, ioctype, hostname, err);
 #line 6283 "trace/trace-migration.h"
         } else {
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_set_outgoing_channel " "ioc=%p ioctype=%s hostname=%s err=%p" "\n", ioc, ioctype, hostname, err);
 #line 6287 "trace/trace-migration.h"
         }
@@ -6305,14 +6305,14 @@ static inline void _nocheck__trace_migrate_state_too_big(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_state_too_big " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6314 "trace/trace-migration.h"
         } else {
-#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_state_too_big " "" "\n");
 #line 6318 "trace/trace-migration.h"
         }
@@ -6336,14 +6336,14 @@ static inline void _nocheck__trace_migrate_global_state_post_load(const char * s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_global_state_post_load " "loaded state: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state);
 #line 6345 "trace/trace-migration.h"
         } else {
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_global_state_post_load " "loaded state: %s" "\n", state);
 #line 6349 "trace/trace-migration.h"
         }
@@ -6367,14 +6367,14 @@ static inline void _nocheck__trace_migrate_global_state_pre_save(const char * st
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migrate_global_state_pre_save " "saved state: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state);
 #line 6376 "trace/trace-migration.h"
         } else {
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migrate_global_state_pre_save " "saved state: %s" "\n", state);
 #line 6380 "trace/trace-migration.h"
         }
@@ -6398,14 +6398,14 @@ static inline void _nocheck__trace_qemu_rdma_accept_incoming_migration(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_accept_incoming_migration " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6407 "trace/trace-migration.h"
         } else {
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_accept_incoming_migration " "" "\n");
 #line 6411 "trace/trace-migration.h"
         }
@@ -6429,14 +6429,14 @@ static inline void _nocheck__trace_qemu_rdma_accept_incoming_migration_accepted(
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_accept_incoming_migration_accepted " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6438 "trace/trace-migration.h"
         } else {
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_accept_incoming_migration_accepted " "" "\n");
 #line 6442 "trace/trace-migration.h"
         }
@@ -6460,14 +6460,14 @@ static inline void _nocheck__trace_qemu_rdma_accept_pin_state(bool pin)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_accept_pin_state " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pin);
 #line 6469 "trace/trace-migration.h"
         } else {
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_accept_pin_state " "%d" "\n", pin);
 #line 6473 "trace/trace-migration.h"
         }
@@ -6491,14 +6491,14 @@ static inline void _nocheck__trace_qemu_rdma_accept_pin_verbsc(void * verbs)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_accept_pin_verbsc " "Verbs context after listen: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , verbs);
 #line 6500 "trace/trace-migration.h"
         } else {
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_accept_pin_verbsc " "Verbs context after listen: %p" "\n", verbs);
 #line 6504 "trace/trace-migration.h"
         }
@@ -6522,14 +6522,14 @@ static inline void _nocheck__trace_qemu_rdma_block_for_wrid_miss(const char * wc
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_block_for_wrid_miss " "A Wanted wrid %s (%d) but got %s (%" PRIu64 ")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , wcompstr, wcomp, gcompstr, req);
 #line 6531 "trace/trace-migration.h"
         } else {
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_block_for_wrid_miss " "A Wanted wrid %s (%d) but got %s (%" PRIu64 ")" "\n", wcompstr, wcomp, gcompstr, req);
 #line 6535 "trace/trace-migration.h"
         }
@@ -6553,14 +6553,14 @@ static inline void _nocheck__trace_qemu_rdma_cleanup_disconnect(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_cleanup_disconnect " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6562 "trace/trace-migration.h"
         } else {
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_cleanup_disconnect " "" "\n");
 #line 6566 "trace/trace-migration.h"
         }
@@ -6584,14 +6584,14 @@ static inline void _nocheck__trace_qemu_rdma_close(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_close " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6593 "trace/trace-migration.h"
         } else {
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_close " "" "\n");
 #line 6597 "trace/trace-migration.h"
         }
@@ -6615,14 +6615,14 @@ static inline void _nocheck__trace_qemu_rdma_connect_pin_all_requested(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_connect_pin_all_requested " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6624 "trace/trace-migration.h"
         } else {
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_connect_pin_all_requested " "" "\n");
 #line 6628 "trace/trace-migration.h"
         }
@@ -6646,14 +6646,14 @@ static inline void _nocheck__trace_qemu_rdma_connect_pin_all_outcome(bool pin)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_connect_pin_all_outcome " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pin);
 #line 6655 "trace/trace-migration.h"
         } else {
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_connect_pin_all_outcome " "%d" "\n", pin);
 #line 6659 "trace/trace-migration.h"
         }
@@ -6677,14 +6677,14 @@ static inline void _nocheck__trace_qemu_rdma_dest_init_trying(const char * host,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_dest_init_trying " "%s => %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host, ip);
 #line 6686 "trace/trace-migration.h"
         } else {
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_dest_init_trying " "%s => %s" "\n", host, ip);
 #line 6690 "trace/trace-migration.h"
         }
@@ -6708,14 +6708,14 @@ static inline void _nocheck__trace_qemu_rdma_dump_gid(const char * who, const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_dump_gid " "%s Source GID: %s, Dest GID: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , who, src, dst);
 #line 6717 "trace/trace-migration.h"
         } else {
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_dump_gid " "%s Source GID: %s, Dest GID: %s" "\n", who, src, dst);
 #line 6721 "trace/trace-migration.h"
         }
@@ -6739,14 +6739,14 @@ static inline void _nocheck__trace_qemu_rdma_exchange_get_response_start(const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_exchange_get_response_start " "CONTROL: %s receiving..." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc);
 #line 6748 "trace/trace-migration.h"
         } else {
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_exchange_get_response_start " "CONTROL: %s receiving..." "\n", desc);
 #line 6752 "trace/trace-migration.h"
         }
@@ -6770,14 +6770,14 @@ static inline void _nocheck__trace_qemu_rdma_exchange_get_response_none(const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_exchange_get_response_none " "Surprise: got %s (%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc, type);
 #line 6779 "trace/trace-migration.h"
         } else {
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_exchange_get_response_none " "Surprise: got %s (%d)" "\n", desc, type);
 #line 6783 "trace/trace-migration.h"
         }
@@ -6801,14 +6801,14 @@ static inline void _nocheck__trace_qemu_rdma_exchange_send_issue_callback(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_exchange_send_issue_callback " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6810 "trace/trace-migration.h"
         } else {
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_exchange_send_issue_callback " "" "\n");
 #line 6814 "trace/trace-migration.h"
         }
@@ -6832,14 +6832,14 @@ static inline void _nocheck__trace_qemu_rdma_exchange_send_waiting(const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_exchange_send_waiting " "Waiting for response %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc);
 #line 6841 "trace/trace-migration.h"
         } else {
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_exchange_send_waiting " "Waiting for response %s" "\n", desc);
 #line 6845 "trace/trace-migration.h"
         }
@@ -6863,14 +6863,14 @@ static inline void _nocheck__trace_qemu_rdma_exchange_send_received(const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_exchange_send_received " "Response %s received." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc);
 #line 6872 "trace/trace-migration.h"
         } else {
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_exchange_send_received " "Response %s received." "\n", desc);
 #line 6876 "trace/trace-migration.h"
         }
@@ -6894,14 +6894,14 @@ static inline void _nocheck__trace_qemu_rdma_fill(size_t control_len, size_t siz
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_fill " "RDMA %zd of %zd bytes already in buffer" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , control_len, size);
 #line 6903 "trace/trace-migration.h"
         } else {
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_fill " "RDMA %zd of %zd bytes already in buffer" "\n", control_len, size);
 #line 6907 "trace/trace-migration.h"
         }
@@ -6925,14 +6925,14 @@ static inline void _nocheck__trace_qemu_rdma_init_ram_blocks(int blocks)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_init_ram_blocks " "Allocated %d local ram block structures" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , blocks);
 #line 6934 "trace/trace-migration.h"
         } else {
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_init_ram_blocks " "Allocated %d local ram block structures" "\n", blocks);
 #line 6938 "trace/trace-migration.h"
         }
@@ -6956,14 +6956,14 @@ static inline void _nocheck__trace_qemu_rdma_poll_recv(const char * compstr, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_poll_recv " "completion %s #%" PRId64 " received (%" PRId64 ") left %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , compstr, comp, id, sent);
 #line 6965 "trace/trace-migration.h"
         } else {
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_poll_recv " "completion %s #%" PRId64 " received (%" PRId64 ") left %d" "\n", compstr, comp, id, sent);
 #line 6969 "trace/trace-migration.h"
         }
@@ -6987,14 +6987,14 @@ static inline void _nocheck__trace_qemu_rdma_poll_write(const char * compstr, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_poll_write " "completions %s (%" PRId64 ") left %d, block %" PRIu64 ", chunk: %" PRIu64 " %p %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , compstr, comp, left, block, chunk, local, remote);
 #line 6996 "trace/trace-migration.h"
         } else {
-#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_poll_write " "completions %s (%" PRId64 ") left %d, block %" PRIu64 ", chunk: %" PRIu64 " %p %p" "\n", compstr, comp, left, block, chunk, local, remote);
 #line 7000 "trace/trace-migration.h"
         }
@@ -7018,14 +7018,14 @@ static inline void _nocheck__trace_qemu_rdma_poll_other(const char * compstr, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_poll_other " "other completion %s (%" PRId64 ") received left %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , compstr, comp, left);
 #line 7027 "trace/trace-migration.h"
         } else {
-#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_poll_other " "other completion %s (%" PRId64 ") received left %d" "\n", compstr, comp, left);
 #line 7031 "trace/trace-migration.h"
         }
@@ -7049,14 +7049,14 @@ static inline void _nocheck__trace_qemu_rdma_post_send_control(const char * desc
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_post_send_control " "CONTROL: sending %s.." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc);
 #line 7058 "trace/trace-migration.h"
         } else {
-#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_post_send_control " "CONTROL: sending %s.." "\n", desc);
 #line 7062 "trace/trace-migration.h"
         }
@@ -7080,14 +7080,14 @@ static inline void _nocheck__trace_qemu_rdma_register_and_get_keys(uint64_t len,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_register_and_get_keys " "Registering %" PRIu64 " bytes @ %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, start);
 #line 7089 "trace/trace-migration.h"
         } else {
-#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_register_and_get_keys " "Registering %" PRIu64 " bytes @ %p" "\n", len, start);
 #line 7093 "trace/trace-migration.h"
         }
@@ -7111,14 +7111,14 @@ static inline void _nocheck__trace_qemu_rdma_register_odp_mr(const char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_register_odp_mr " "Try to register On-Demand Paging memory region: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 7120 "trace/trace-migration.h"
         } else {
-#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_register_odp_mr " "Try to register On-Demand Paging memory region: %s" "\n", name);
 #line 7124 "trace/trace-migration.h"
         }
@@ -7142,14 +7142,14 @@ static inline void _nocheck__trace_qemu_rdma_advise_mr(const char * name, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_advise_mr " "Try to advise block %s prefetch at %" PRIu32 "@0x%" PRIx64 ": %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, len, addr, res);
 #line 7151 "trace/trace-migration.h"
         } else {
-#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_advise_mr " "Try to advise block %s prefetch at %" PRIu32 "@0x%" PRIx64 ": %s" "\n", name, len, addr, res);
 #line 7155 "trace/trace-migration.h"
         }
@@ -7173,14 +7173,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_compress(int64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_compress " "Zapping zero chunk: %" PRId64 " bytes, index %d, offset %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , length, index, offset);
 #line 7182 "trace/trace-migration.h"
         } else {
-#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_compress " "Zapping zero chunk: %" PRId64 " bytes, index %d, offset %" PRId64 "\n", length, index, offset);
 #line 7186 "trace/trace-migration.h"
         }
@@ -7204,14 +7204,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_finished(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_finished " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7213 "trace/trace-migration.h"
         } else {
-#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_finished " "" "\n");
 #line 7217 "trace/trace-migration.h"
         }
@@ -7235,14 +7235,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_ram_blocks(void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_ram_blocks " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7244 "trace/trace-migration.h"
         } else {
-#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_ram_blocks " "" "\n");
 #line 7248 "trace/trace-migration.h"
         }
@@ -7266,14 +7266,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_ram_blocks_loop
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_ram_blocks_loop " "%s: @0x%" PRIx64 "/%" PRIu64 " host:@%p src_index: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, offset, length, local_host_addr, src_index);
 #line 7275 "trace/trace-migration.h"
         } else {
-#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_ram_blocks_loop " "%s: @0x%" PRIx64 "/%" PRIu64 " host:@%p src_index: %u" "\n", name, offset, length, local_host_addr, src_index);
 #line 7279 "trace/trace-migration.h"
         }
@@ -7297,14 +7297,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_register(int re
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_register " "%d requests" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , requests);
 #line 7306 "trace/trace-migration.h"
         } else {
-#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_register " "%d requests" "\n", requests);
 #line 7310 "trace/trace-migration.h"
         }
@@ -7328,14 +7328,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_register_loop(i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_register_loop " "Registration request (%d): index %d, current_addr %" PRIu64 " chunks: %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , req, index, addr, chunks);
 #line 7337 "trace/trace-migration.h"
         } else {
-#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_register_loop " "Registration request (%d): index %d, current_addr %" PRIu64 " chunks: %" PRIu64 "\n", req, index, addr, chunks);
 #line 7341 "trace/trace-migration.h"
         }
@@ -7359,14 +7359,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_register_rkey(i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_register_rkey " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rkey);
 #line 7368 "trace/trace-migration.h"
         } else {
-#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_register_rkey " "0x%x" "\n", rkey);
 #line 7372 "trace/trace-migration.h"
         }
@@ -7390,14 +7390,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_unregister(int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_unregister " "%d requests" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , requests);
 #line 7399 "trace/trace-migration.h"
         } else {
-#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_unregister " "%d requests" "\n", requests);
 #line 7403 "trace/trace-migration.h"
         }
@@ -7421,14 +7421,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_unregister_loop
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_unregister_loop " "Unregistration request (%d): index %d, chunk %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , count, index, chunk);
 #line 7430 "trace/trace-migration.h"
         } else {
-#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_unregister_loop " "Unregistration request (%d): index %d, chunk %" PRIu64 "\n", count, index, chunk);
 #line 7434 "trace/trace-migration.h"
         }
@@ -7452,14 +7452,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_unregister_succ
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_unregister_success " "%" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk);
 #line 7461 "trace/trace-migration.h"
         } else {
-#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_unregister_success " "%" PRIu64 "\n", chunk);
 #line 7465 "trace/trace-migration.h"
         }
@@ -7483,14 +7483,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_handle_wait(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 234 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 234 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_handle_wait " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7492 "trace/trace-migration.h"
         } else {
-#line 234 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 234 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_handle_wait " "" "\n");
 #line 7496 "trace/trace-migration.h"
         }
@@ -7514,14 +7514,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_start(uint64_t flags)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 235 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 235 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_start " "%" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flags);
 #line 7523 "trace/trace-migration.h"
         } else {
-#line 235 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 235 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_start " "%" PRIu64 "\n", flags);
 #line 7527 "trace/trace-migration.h"
         }
@@ -7545,14 +7545,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_stop(uint64_t flags)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_stop " "%" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flags);
 #line 7554 "trace/trace-migration.h"
         } else {
-#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_stop " "%" PRIu64 "\n", flags);
 #line 7558 "trace/trace-migration.h"
         }
@@ -7576,14 +7576,14 @@ static inline void _nocheck__trace_qemu_rdma_registration_stop_ram(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_registration_stop_ram " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7585 "trace/trace-migration.h"
         } else {
-#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_registration_stop_ram " "" "\n");
 #line 7589 "trace/trace-migration.h"
         }
@@ -7607,14 +7607,14 @@ static inline void _nocheck__trace_qemu_rdma_resolve_host_trying(const char * ho
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_resolve_host_trying " "Trying %s => %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host, ip);
 #line 7616 "trace/trace-migration.h"
         } else {
-#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_resolve_host_trying " "Trying %s => %s" "\n", host, ip);
 #line 7620 "trace/trace-migration.h"
         }
@@ -7638,14 +7638,14 @@ static inline void _nocheck__trace_qemu_rdma_signal_unregister_append(uint64_t c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_signal_unregister_append " "Appending unregister chunk %" PRIu64 " at position %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk, pos);
 #line 7647 "trace/trace-migration.h"
         } else {
-#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_signal_unregister_append " "Appending unregister chunk %" PRIu64 " at position %d" "\n", chunk, pos);
 #line 7651 "trace/trace-migration.h"
         }
@@ -7669,14 +7669,14 @@ static inline void _nocheck__trace_qemu_rdma_signal_unregister_already(uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_signal_unregister_already " "Unregister chunk %" PRIu64 " already in queue" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk);
 #line 7678 "trace/trace-migration.h"
         } else {
-#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_signal_unregister_already " "Unregister chunk %" PRIu64 " already in queue" "\n", chunk);
 #line 7682 "trace/trace-migration.h"
         }
@@ -7700,14 +7700,14 @@ static inline void _nocheck__trace_qemu_rdma_unregister_waiting_inflight(uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_unregister_waiting_inflight " "Cannot unregister inflight chunk: %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk);
 #line 7709 "trace/trace-migration.h"
         } else {
-#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_unregister_waiting_inflight " "Cannot unregister inflight chunk: %" PRIu64 "\n", chunk);
 #line 7713 "trace/trace-migration.h"
         }
@@ -7731,14 +7731,14 @@ static inline void _nocheck__trace_qemu_rdma_unregister_waiting_proc(uint64_t ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_unregister_waiting_proc " "Processing unregister for chunk: %" PRIu64 " at position %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk, pos);
 #line 7740 "trace/trace-migration.h"
         } else {
-#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_unregister_waiting_proc " "Processing unregister for chunk: %" PRIu64 " at position %d" "\n", chunk, pos);
 #line 7744 "trace/trace-migration.h"
         }
@@ -7762,14 +7762,14 @@ static inline void _nocheck__trace_qemu_rdma_unregister_waiting_send(uint64_t ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_unregister_waiting_send " "Sending unregister for chunk: %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk);
 #line 7771 "trace/trace-migration.h"
         } else {
-#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_unregister_waiting_send " "Sending unregister for chunk: %" PRIu64 "\n", chunk);
 #line 7775 "trace/trace-migration.h"
         }
@@ -7793,14 +7793,14 @@ static inline void _nocheck__trace_qemu_rdma_unregister_waiting_complete(uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_unregister_waiting_complete " "Unregister for chunk: %" PRIu64 " complete." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk);
 #line 7802 "trace/trace-migration.h"
         } else {
-#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_unregister_waiting_complete " "Unregister for chunk: %" PRIu64 " complete." "\n", chunk);
 #line 7806 "trace/trace-migration.h"
         }
@@ -7824,14 +7824,14 @@ static inline void _nocheck__trace_qemu_rdma_write_flush(int sent)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_flush " "sent total: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sent);
 #line 7833 "trace/trace-migration.h"
         } else {
-#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_flush " "sent total: %d" "\n", sent);
 #line 7837 "trace/trace-migration.h"
         }
@@ -7855,14 +7855,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_block(int count, int bloc
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_block " "(%d) Not clobbering: block: %d chunk %" PRIu64 " current %" PRIu64 " len %" PRIu64 " %d %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , count, block, chunk, current, len, nb_sent, nb_chunks);
 #line 7864 "trace/trace-migration.h"
         } else {
-#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_block " "(%d) Not clobbering: block: %d chunk %" PRIu64 " current %" PRIu64 " len %" PRIu64 " %d %d" "\n", count, block, chunk, current, len, nb_sent, nb_chunks);
 #line 7868 "trace/trace-migration.h"
         }
@@ -7886,14 +7886,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_post(uint64_t chunk, long
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_post " "Posting chunk: %" PRIu64 ", addr: 0x%lx remote: 0x%lx, bytes %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk, addr, remote, len);
 #line 7895 "trace/trace-migration.h"
         } else {
-#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_post " "Posting chunk: %" PRIu64 ", addr: 0x%lx remote: 0x%lx, bytes %" PRIu32 "\n", chunk, addr, remote, len);
 #line 7899 "trace/trace-migration.h"
         }
@@ -7917,14 +7917,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_queue_full(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 248 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 248 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_queue_full " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7926 "trace/trace-migration.h"
         } else {
-#line 248 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 248 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_queue_full " "" "\n");
 #line 7930 "trace/trace-migration.h"
         }
@@ -7948,14 +7948,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_recvregres(int mykey, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 249 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 249 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_recvregres " "Received registration result: my key: 0x%x their key 0x%x, chunk %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mykey, theirkey, chunk);
 #line 7957 "trace/trace-migration.h"
         } else {
-#line 249 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 249 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_recvregres " "Received registration result: my key: 0x%x their key 0x%x, chunk %" PRIu64 "\n", mykey, theirkey, chunk);
 #line 7961 "trace/trace-migration.h"
         }
@@ -7979,14 +7979,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_sendreg(uint64_t chunk, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_sendreg " "Sending registration request chunk %" PRIu64 " for %d bytes, index: %d, offset: %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk, len, index, offset);
 #line 7988 "trace/trace-migration.h"
         } else {
-#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_sendreg " "Sending registration request chunk %" PRIu64 " for %d bytes, index: %d, offset: %" PRId64 "\n", chunk, len, index, offset);
 #line 7992 "trace/trace-migration.h"
         }
@@ -8010,14 +8010,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_top(uint64_t chunks, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_top " "Writing %" PRIu64 " chunks, (%" PRIu64 " MB)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunks, size);
 #line 8019 "trace/trace-migration.h"
         } else {
-#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_top " "Writing %" PRIu64 " chunks, (%" PRIu64 " MB)" "\n", chunks, size);
 #line 8023 "trace/trace-migration.h"
         }
@@ -8041,14 +8041,14 @@ static inline void _nocheck__trace_qemu_rdma_write_one_zero(uint64_t chunk, int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_rdma_write_one_zero " "Entire chunk is zero, sending compress: %" PRIu64 " for %d bytes, index: %d, offset: %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chunk, len, index, offset);
 #line 8050 "trace/trace-migration.h"
         } else {
-#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("qemu_rdma_write_one_zero " "Entire chunk is zero, sending compress: %" PRIu64 " for %d bytes, index: %d, offset: %" PRId64 "\n", chunk, len, index, offset);
 #line 8054 "trace/trace-migration.h"
         }
@@ -8072,14 +8072,14 @@ static inline void _nocheck__trace_rdma_add_block(const char * block_name, int b
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_add_block " "Added Block: '%s':%d, addr: %" PRIu64 ", offset: %" PRIu64 " length: %" PRIu64 " end: %" PRIu64 " bits %" PRIu64 " chunks %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block_name, block, addr, offset, len, end, bits, chunks);
 #line 8081 "trace/trace-migration.h"
         } else {
-#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_add_block " "Added Block: '%s':%d, addr: %" PRIu64 ", offset: %" PRIu64 " length: %" PRIu64 " end: %" PRIu64 " bits %" PRIu64 " chunks %d" "\n", block_name, block, addr, offset, len, end, bits, chunks);
 #line 8085 "trace/trace-migration.h"
         }
@@ -8103,14 +8103,14 @@ static inline void _nocheck__trace_rdma_block_notification_handle(const char * n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_block_notification_handle " "%s at %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, index);
 #line 8112 "trace/trace-migration.h"
         } else {
-#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_block_notification_handle " "%s at %d" "\n", name, index);
 #line 8116 "trace/trace-migration.h"
         }
@@ -8134,14 +8134,14 @@ static inline void _nocheck__trace_rdma_delete_block(void * block, uint64_t addr
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_delete_block " "Deleted Block: %p, addr: %" PRIu64 ", offset: %" PRIu64 " length: %" PRIu64 " end: %" PRIu64 " bits %" PRIu64 " chunks %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , block, addr, offset, len, end, bits, chunks);
 #line 8143 "trace/trace-migration.h"
         } else {
-#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_delete_block " "Deleted Block: %p, addr: %" PRIu64 ", offset: %" PRIu64 " length: %" PRIu64 " end: %" PRIu64 " bits %" PRIu64 " chunks %d" "\n", block, addr, offset, len, end, bits, chunks);
 #line 8147 "trace/trace-migration.h"
         }
@@ -8165,14 +8165,14 @@ static inline void _nocheck__trace_rdma_start_incoming_migration(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_start_incoming_migration " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8174 "trace/trace-migration.h"
         } else {
-#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_start_incoming_migration " "" "\n");
 #line 8178 "trace/trace-migration.h"
         }
@@ -8196,14 +8196,14 @@ static inline void _nocheck__trace_rdma_start_incoming_migration_after_dest_init
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_start_incoming_migration_after_dest_init " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8205 "trace/trace-migration.h"
         } else {
-#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_start_incoming_migration_after_dest_init " "" "\n");
 #line 8209 "trace/trace-migration.h"
         }
@@ -8227,14 +8227,14 @@ static inline void _nocheck__trace_rdma_start_incoming_migration_after_rdma_list
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 258 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 258 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_start_incoming_migration_after_rdma_listen " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8236 "trace/trace-migration.h"
         } else {
-#line 258 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 258 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_start_incoming_migration_after_rdma_listen " "" "\n");
 #line 8240 "trace/trace-migration.h"
         }
@@ -8258,14 +8258,14 @@ static inline void _nocheck__trace_rdma_start_outgoing_migration_after_rdma_conn
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 259 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 259 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_start_outgoing_migration_after_rdma_connect " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8267 "trace/trace-migration.h"
         } else {
-#line 259 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 259 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_start_outgoing_migration_after_rdma_connect " "" "\n");
 #line 8271 "trace/trace-migration.h"
         }
@@ -8289,14 +8289,14 @@ static inline void _nocheck__trace_rdma_start_outgoing_migration_after_rdma_sour
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_start_outgoing_migration_after_rdma_source_init " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8298 "trace/trace-migration.h"
         } else {
-#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("rdma_start_outgoing_migration_after_rdma_source_init " "" "\n");
 #line 8302 "trace/trace-migration.h"
         }
@@ -8320,14 +8320,14 @@ static inline void _nocheck__trace_postcopy_discard_send_finish(const char * ram
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_discard_send_finish " "%s mask words sent=%d in %d commands" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramblock, nwords, ncmds);
 #line 8329 "trace/trace-migration.h"
         } else {
-#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_discard_send_finish " "%s mask words sent=%d in %d commands" "\n", ramblock, nwords, ncmds);
 #line 8333 "trace/trace-migration.h"
         }
@@ -8351,14 +8351,14 @@ static inline void _nocheck__trace_postcopy_discard_send_range(const char * ramb
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_discard_send_range " "%s:%lx/%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramblock, start, length);
 #line 8360 "trace/trace-migration.h"
         } else {
-#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_discard_send_range " "%s:%lx/%lx" "\n", ramblock, start, length);
 #line 8364 "trace/trace-migration.h"
         }
@@ -8382,14 +8382,14 @@ static inline void _nocheck__trace_postcopy_cleanup_range(const char * ramblock,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_cleanup_range " "%s: %p offset=0x%zx length=0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramblock, host_addr, offset, length);
 #line 8391 "trace/trace-migration.h"
         } else {
-#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_cleanup_range " "%s: %p offset=0x%zx length=0x%zx" "\n", ramblock, host_addr, offset, length);
 #line 8395 "trace/trace-migration.h"
         }
@@ -8413,14 +8413,14 @@ static inline void _nocheck__trace_postcopy_init_range(const char * ramblock, vo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_init_range " "%s: %p offset=0x%zx length=0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramblock, host_addr, offset, length);
 #line 8422 "trace/trace-migration.h"
         } else {
-#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_init_range " "%s: %p offset=0x%zx length=0x%zx" "\n", ramblock, host_addr, offset, length);
 #line 8426 "trace/trace-migration.h"
         }
@@ -8444,14 +8444,14 @@ static inline void _nocheck__trace_postcopy_nhp_range(const char * ramblock, voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_nhp_range " "%s: %p offset=0x%zx length=0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ramblock, host_addr, offset, length);
 #line 8453 "trace/trace-migration.h"
         } else {
-#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_nhp_range " "%s: %p offset=0x%zx length=0x%zx" "\n", ramblock, host_addr, offset, length);
 #line 8457 "trace/trace-migration.h"
         }
@@ -8475,14 +8475,14 @@ static inline void _nocheck__trace_postcopy_place_page(void * host_addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_place_page " "host=%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host_addr);
 #line 8484 "trace/trace-migration.h"
         } else {
-#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_place_page " "host=%p" "\n", host_addr);
 #line 8488 "trace/trace-migration.h"
         }
@@ -8506,14 +8506,14 @@ static inline void _nocheck__trace_postcopy_place_page_zero(void * host_addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_place_page_zero " "host=%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host_addr);
 #line 8515 "trace/trace-migration.h"
         } else {
-#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_place_page_zero " "host=%p" "\n", host_addr);
 #line 8519 "trace/trace-migration.h"
         }
@@ -8537,14 +8537,14 @@ static inline void _nocheck__trace_postcopy_ram_enable_notify(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_enable_notify " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8546 "trace/trace-migration.h"
         } else {
-#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_enable_notify " "" "\n");
 #line 8550 "trace/trace-migration.h"
         }
@@ -8568,14 +8568,14 @@ static inline void _nocheck__trace_mark_postcopy_blocktime_begin(uint64_t addr, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 271 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 271 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:mark_postcopy_blocktime_begin " "addr: 0x%" PRIx64 ", dd: %p, time: %u, cpu: %d, already_received: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, dd, time, cpu, received);
 #line 8577 "trace/trace-migration.h"
         } else {
-#line 271 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 271 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("mark_postcopy_blocktime_begin " "addr: 0x%" PRIx64 ", dd: %p, time: %u, cpu: %d, already_received: %d" "\n", addr, dd, time, cpu, received);
 #line 8581 "trace/trace-migration.h"
         }
@@ -8599,14 +8599,14 @@ static inline void _nocheck__trace_mark_postcopy_blocktime_end(uint64_t addr, vo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 272 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 272 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:mark_postcopy_blocktime_end " "addr: 0x%" PRIx64 ", dd: %p, time: %u, affected_cpu: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, dd, time, affected_cpu);
 #line 8608 "trace/trace-migration.h"
         } else {
-#line 272 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 272 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("mark_postcopy_blocktime_end " "addr: 0x%" PRIx64 ", dd: %p, time: %u, affected_cpu: %d" "\n", addr, dd, time, affected_cpu);
 #line 8612 "trace/trace-migration.h"
         }
@@ -8630,14 +8630,14 @@ static inline void _nocheck__trace_postcopy_pause_fault_thread(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_fault_thread " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8639 "trace/trace-migration.h"
         } else {
-#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_fault_thread " "" "\n");
 #line 8643 "trace/trace-migration.h"
         }
@@ -8661,14 +8661,14 @@ static inline void _nocheck__trace_postcopy_pause_fault_thread_continued(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_fault_thread_continued " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8670 "trace/trace-migration.h"
         } else {
-#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_fault_thread_continued " "" "\n");
 #line 8674 "trace/trace-migration.h"
         }
@@ -8692,14 +8692,14 @@ static inline void _nocheck__trace_postcopy_pause_fast_load(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_fast_load " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8701 "trace/trace-migration.h"
         } else {
-#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_fast_load " "" "\n");
 #line 8705 "trace/trace-migration.h"
         }
@@ -8723,14 +8723,14 @@ static inline void _nocheck__trace_postcopy_pause_fast_load_continued(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_pause_fast_load_continued " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8732 "trace/trace-migration.h"
         } else {
-#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_pause_fast_load_continued " "" "\n");
 #line 8736 "trace/trace-migration.h"
         }
@@ -8754,14 +8754,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_entry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_entry " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8763 "trace/trace-migration.h"
         } else {
-#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_entry " "" "\n");
 #line 8767 "trace/trace-migration.h"
         }
@@ -8785,14 +8785,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_exit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8794 "trace/trace-migration.h"
         } else {
-#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_exit " "" "\n");
 #line 8798 "trace/trace-migration.h"
         }
@@ -8816,14 +8816,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_fds_core(int baseuf
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_fds_core " "ufd: %d quitfd: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , baseufd, quitfd);
 #line 8825 "trace/trace-migration.h"
         } else {
-#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_fds_core " "ufd: %d quitfd: %d" "\n", baseufd, quitfd);
 #line 8829 "trace/trace-migration.h"
         }
@@ -8847,14 +8847,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_fds_extra(size_t in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_fds_extra " "%zd/%s: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index, name, fd);
 #line 8856 "trace/trace-migration.h"
         } else {
-#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_fds_extra " "%zd/%s: %d" "\n", index, name, fd);
 #line 8860 "trace/trace-migration.h"
         }
@@ -8878,14 +8878,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_quit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_quit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8887 "trace/trace-migration.h"
         } else {
-#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_quit " "" "\n");
 #line 8891 "trace/trace-migration.h"
         }
@@ -8909,14 +8909,14 @@ static inline void _nocheck__trace_postcopy_ram_fault_thread_request(uint64_t ho
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_fault_thread_request " "Request for HVA=0x%" PRIx64 " rb=%s offset=0x%zx pid=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hostaddr, ramblock, offset, pid);
 #line 8918 "trace/trace-migration.h"
         } else {
-#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_fault_thread_request " "Request for HVA=0x%" PRIx64 " rb=%s offset=0x%zx pid=%u" "\n", hostaddr, ramblock, offset, pid);
 #line 8922 "trace/trace-migration.h"
         }
@@ -8940,14 +8940,14 @@ static inline void _nocheck__trace_postcopy_ram_incoming_cleanup_closeuf(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_incoming_cleanup_closeuf " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8949 "trace/trace-migration.h"
         } else {
-#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_incoming_cleanup_closeuf " "" "\n");
 #line 8953 "trace/trace-migration.h"
         }
@@ -8971,14 +8971,14 @@ static inline void _nocheck__trace_postcopy_ram_incoming_cleanup_entry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_incoming_cleanup_entry " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8980 "trace/trace-migration.h"
         } else {
-#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_incoming_cleanup_entry " "" "\n");
 #line 8984 "trace/trace-migration.h"
         }
@@ -9002,14 +9002,14 @@ static inline void _nocheck__trace_postcopy_ram_incoming_cleanup_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 285 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 285 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_incoming_cleanup_exit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9011 "trace/trace-migration.h"
         } else {
-#line 285 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 285 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_incoming_cleanup_exit " "" "\n");
 #line 9015 "trace/trace-migration.h"
         }
@@ -9033,14 +9033,14 @@ static inline void _nocheck__trace_postcopy_ram_incoming_cleanup_join(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 286 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 286 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_incoming_cleanup_join " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9042 "trace/trace-migration.h"
         } else {
-#line 286 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 286 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_incoming_cleanup_join " "" "\n");
 #line 9046 "trace/trace-migration.h"
         }
@@ -9064,14 +9064,14 @@ static inline void _nocheck__trace_postcopy_ram_incoming_cleanup_blocktime(uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_ram_incoming_cleanup_blocktime " "total blocktime %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , total);
 #line 9073 "trace/trace-migration.h"
         } else {
-#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_ram_incoming_cleanup_blocktime " "total blocktime %" PRIu64 "\n", total);
 #line 9077 "trace/trace-migration.h"
         }
@@ -9095,14 +9095,14 @@ static inline void _nocheck__trace_postcopy_request_shared_page(const char * sha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_request_shared_page " "for %s in %s offset 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sharer, rb, rb_offset);
 #line 9104 "trace/trace-migration.h"
         } else {
-#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_request_shared_page " "for %s in %s offset 0x%"PRIx64 "\n", sharer, rb, rb_offset);
 #line 9108 "trace/trace-migration.h"
         }
@@ -9126,14 +9126,14 @@ static inline void _nocheck__trace_postcopy_request_shared_page_present(const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_request_shared_page_present " "%s already %s offset 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sharer, rb, rb_offset);
 #line 9135 "trace/trace-migration.h"
         } else {
-#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_request_shared_page_present " "%s already %s offset 0x%"PRIx64 "\n", sharer, rb, rb_offset);
 #line 9139 "trace/trace-migration.h"
         }
@@ -9157,14 +9157,14 @@ static inline void _nocheck__trace_postcopy_wake_shared(uint64_t client_addr, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_wake_shared " "at 0x%"PRIx64" in %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , client_addr, rb);
 #line 9166 "trace/trace-migration.h"
         } else {
-#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_wake_shared " "at 0x%"PRIx64" in %s" "\n", client_addr, rb);
 #line 9170 "trace/trace-migration.h"
         }
@@ -9188,14 +9188,14 @@ static inline void _nocheck__trace_postcopy_page_req_del(void * addr, int count)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_page_req_del " "resolved page req %p total %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, count);
 #line 9197 "trace/trace-migration.h"
         } else {
-#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_page_req_del " "resolved page req %p total %d" "\n", addr, count);
 #line 9201 "trace/trace-migration.h"
         }
@@ -9219,14 +9219,14 @@ static inline void _nocheck__trace_postcopy_preempt_tls_handshake(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_tls_handshake " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9228 "trace/trace-migration.h"
         } else {
-#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_tls_handshake " "" "\n");
 #line 9232 "trace/trace-migration.h"
         }
@@ -9250,14 +9250,14 @@ static inline void _nocheck__trace_postcopy_preempt_new_channel(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_new_channel " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9259 "trace/trace-migration.h"
         } else {
-#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_new_channel " "" "\n");
 #line 9263 "trace/trace-migration.h"
         }
@@ -9281,14 +9281,14 @@ static inline void _nocheck__trace_postcopy_preempt_thread_entry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_thread_entry " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9290 "trace/trace-migration.h"
         } else {
-#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_thread_entry " "" "\n");
 #line 9294 "trace/trace-migration.h"
         }
@@ -9312,14 +9312,14 @@ static inline void _nocheck__trace_postcopy_preempt_thread_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:postcopy_preempt_thread_exit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9321 "trace/trace-migration.h"
         } else {
-#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("postcopy_preempt_thread_exit " "" "\n");
 #line 9325 "trace/trace-migration.h"
         }
@@ -9343,14 +9343,14 @@ static inline void _nocheck__trace_get_mem_fault_cpu_index(int cpu, uint32_t pid
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_mem_fault_cpu_index " "cpu: %d, pid: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu, pid);
 #line 9352 "trace/trace-migration.h"
         } else {
-#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_mem_fault_cpu_index " "cpu: %d, pid: %u" "\n", cpu, pid);
 #line 9356 "trace/trace-migration.h"
         }
@@ -9374,14 +9374,14 @@ static inline void _nocheck__trace_migration_exec_outgoing(const char * cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_exec_outgoing " "cmd=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 9383 "trace/trace-migration.h"
         } else {
-#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_exec_outgoing " "cmd=%s" "\n", cmd);
 #line 9387 "trace/trace-migration.h"
         }
@@ -9405,14 +9405,14 @@ static inline void _nocheck__trace_migration_exec_incoming(const char * cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_exec_incoming " "cmd=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 9414 "trace/trace-migration.h"
         } else {
-#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_exec_incoming " "cmd=%s" "\n", cmd);
 #line 9418 "trace/trace-migration.h"
         }
@@ -9436,14 +9436,14 @@ static inline void _nocheck__trace_migration_fd_outgoing(int fd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_fd_outgoing " "fd=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd);
 #line 9445 "trace/trace-migration.h"
         } else {
-#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_fd_outgoing " "fd=%d" "\n", fd);
 #line 9449 "trace/trace-migration.h"
         }
@@ -9467,14 +9467,14 @@ static inline void _nocheck__trace_migration_fd_incoming(int fd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_fd_incoming " "fd=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd);
 #line 9476 "trace/trace-migration.h"
         } else {
-#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_fd_incoming " "fd=%d" "\n", fd);
 #line 9480 "trace/trace-migration.h"
         }
@@ -9498,14 +9498,14 @@ static inline void _nocheck__trace_migration_socket_incoming_accepted(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_socket_incoming_accepted " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9507 "trace/trace-migration.h"
         } else {
-#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_socket_incoming_accepted " "" "\n");
 #line 9511 "trace/trace-migration.h"
         }
@@ -9529,14 +9529,14 @@ static inline void _nocheck__trace_migration_socket_outgoing_connected(const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_socket_outgoing_connected " "hostname=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hostname);
 #line 9538 "trace/trace-migration.h"
         } else {
-#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_socket_outgoing_connected " "hostname=%s" "\n", hostname);
 #line 9542 "trace/trace-migration.h"
         }
@@ -9560,14 +9560,14 @@ static inline void _nocheck__trace_migration_socket_outgoing_error(const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 310 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 310 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_socket_outgoing_error " "error=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 9569 "trace/trace-migration.h"
         } else {
-#line 310 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 310 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_socket_outgoing_error " "error=%s" "\n", err);
 #line 9573 "trace/trace-migration.h"
         }
@@ -9591,14 +9591,14 @@ static inline void _nocheck__trace_migration_tls_outgoing_handshake_start(const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_outgoing_handshake_start " "hostname=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hostname);
 #line 9600 "trace/trace-migration.h"
         } else {
-#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_outgoing_handshake_start " "hostname=%s" "\n", hostname);
 #line 9604 "trace/trace-migration.h"
         }
@@ -9622,14 +9622,14 @@ static inline void _nocheck__trace_migration_tls_outgoing_handshake_error(const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_outgoing_handshake_error " "err=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 9631 "trace/trace-migration.h"
         } else {
-#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_outgoing_handshake_error " "err=%s" "\n", err);
 #line 9635 "trace/trace-migration.h"
         }
@@ -9653,14 +9653,14 @@ static inline void _nocheck__trace_migration_tls_outgoing_handshake_complete(voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_outgoing_handshake_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9662 "trace/trace-migration.h"
         } else {
-#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_outgoing_handshake_complete " "" "\n");
 #line 9666 "trace/trace-migration.h"
         }
@@ -9684,14 +9684,14 @@ static inline void _nocheck__trace_migration_tls_incoming_handshake_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_incoming_handshake_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9693 "trace/trace-migration.h"
         } else {
-#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_incoming_handshake_start " "" "\n");
 #line 9697 "trace/trace-migration.h"
         }
@@ -9715,14 +9715,14 @@ static inline void _nocheck__trace_migration_tls_incoming_handshake_error(const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_incoming_handshake_error " "err=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 9724 "trace/trace-migration.h"
         } else {
-#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_incoming_handshake_error " "err=%s" "\n", err);
 #line 9728 "trace/trace-migration.h"
         }
@@ -9746,14 +9746,14 @@ static inline void _nocheck__trace_migration_tls_incoming_handshake_complete(voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_tls_incoming_handshake_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9755 "trace/trace-migration.h"
         } else {
-#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_tls_incoming_handshake_complete " "" "\n");
 #line 9759 "trace/trace-migration.h"
         }
@@ -9777,14 +9777,14 @@ static inline void _nocheck__trace_colo_vm_state_change(const char * old, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_vm_state_change " "Change '%s' => '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , old, new);
 #line 9786 "trace/trace-migration.h"
         } else {
-#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_vm_state_change " "Change '%s' => '%s'" "\n", old, new);
 #line 9790 "trace/trace-migration.h"
         }
@@ -9808,14 +9808,14 @@ static inline void _nocheck__trace_colo_send_message(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_send_message " "Send '%s' message" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 9817 "trace/trace-migration.h"
         } else {
-#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_send_message " "Send '%s' message" "\n", msg);
 #line 9821 "trace/trace-migration.h"
         }
@@ -9839,14 +9839,14 @@ static inline void _nocheck__trace_colo_receive_message(const char * msg)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_receive_message " "Receive '%s' message" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 9848 "trace/trace-migration.h"
         } else {
-#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_receive_message " "Receive '%s' message" "\n", msg);
 #line 9852 "trace/trace-migration.h"
         }
@@ -9870,14 +9870,14 @@ static inline void _nocheck__trace_colo_failover_set_state(const char * new_stat
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:colo_failover_set_state " "new state %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_state);
 #line 9879 "trace/trace-migration.h"
         } else {
-#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("colo_failover_set_state " "new state %s" "\n", new_state);
 #line 9883 "trace/trace-migration.h"
         }
@@ -9901,14 +9901,14 @@ static inline void _nocheck__trace_send_bitmap_header_enter(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:send_bitmap_header_enter " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 9910 "trace/trace-migration.h"
         } else {
-#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("send_bitmap_header_enter " "" "\n");
 #line 9914 "trace/trace-migration.h"
         }
@@ -9932,14 +9932,14 @@ static inline void _nocheck__trace_send_bitmap_bits(uint32_t flags, uint64_t sta
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:send_bitmap_bits " "flags: 0x%x, start_sector: %" PRIu64 ", nr_sectors: %" PRIu32 ", data_size: %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flags, start_sector, nr_sectors, data_size);
 #line 9941 "trace/trace-migration.h"
         } else {
-#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("send_bitmap_bits " "flags: 0x%x, start_sector: %" PRIu64 ", nr_sectors: %" PRIu32 ", data_size: %" PRIu64 "\n", flags, start_sector, nr_sectors, data_size);
 #line 9945 "trace/trace-migration.h"
         }
@@ -9963,14 +9963,14 @@ static inline void _nocheck__trace_dirty_bitmap_save_iterate(int in_postcopy)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_save_iterate " "in postcopy: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , in_postcopy);
 #line 9972 "trace/trace-migration.h"
         } else {
-#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_save_iterate " "in postcopy: %d" "\n", in_postcopy);
 #line 9976 "trace/trace-migration.h"
         }
@@ -9994,14 +9994,14 @@ static inline void _nocheck__trace_dirty_bitmap_save_complete_enter(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_save_complete_enter " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10003 "trace/trace-migration.h"
         } else {
-#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_save_complete_enter " "" "\n");
 #line 10007 "trace/trace-migration.h"
         }
@@ -10025,14 +10025,14 @@ static inline void _nocheck__trace_dirty_bitmap_save_complete_finish(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_save_complete_finish " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10034 "trace/trace-migration.h"
         } else {
-#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_save_complete_finish " "" "\n");
 #line 10038 "trace/trace-migration.h"
         }
@@ -10056,14 +10056,14 @@ static inline void _nocheck__trace_dirty_bitmap_state_pending(uint64_t pending)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_state_pending " "pending %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pending);
 #line 10065 "trace/trace-migration.h"
         } else {
-#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_state_pending " "pending %" PRIu64 "\n", pending);
 #line 10069 "trace/trace-migration.h"
         }
@@ -10087,14 +10087,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10096 "trace/trace-migration.h"
         } else {
-#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_complete " "" "\n");
 #line 10100 "trace/trace-migration.h"
         }
@@ -10118,14 +10118,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_bits_enter(uint64_t first_s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_bits_enter " "chunk: %" PRIu64 " %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , first_sector, nr_sectors);
 #line 10127 "trace/trace-migration.h"
         } else {
-#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_bits_enter " "chunk: %" PRIu64 " %" PRIu32 "\n", first_sector, nr_sectors);
 #line 10131 "trace/trace-migration.h"
         }
@@ -10149,14 +10149,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_bits_zeroes(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_bits_zeroes " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10158 "trace/trace-migration.h"
         } else {
-#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_bits_zeroes " "" "\n");
 #line 10162 "trace/trace-migration.h"
         }
@@ -10180,14 +10180,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_header(uint32_t flags)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_header " "flags 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flags);
 #line 10189 "trace/trace-migration.h"
         } else {
-#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_header " "flags 0x%x" "\n", flags);
 #line 10193 "trace/trace-migration.h"
         }
@@ -10211,14 +10211,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_enter(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_enter " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10220 "trace/trace-migration.h"
         } else {
-#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_enter " "" "\n");
 #line 10224 "trace/trace-migration.h"
         }
@@ -10242,14 +10242,14 @@ static inline void _nocheck__trace_dirty_bitmap_load_success(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 340 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 340 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirty_bitmap_load_success " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10251 "trace/trace-migration.h"
         } else {
-#line 340 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 340 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirty_bitmap_load_success " "" "\n");
 #line 10255 "trace/trace-migration.h"
         }
@@ -10273,14 +10273,14 @@ static inline void _nocheck__trace_dirtyrate_set_state(const char * new_state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirtyrate_set_state " "new state %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_state);
 #line 10282 "trace/trace-migration.h"
         } else {
-#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirtyrate_set_state " "new state %s" "\n", new_state);
 #line 10286 "trace/trace-migration.h"
         }
@@ -10304,14 +10304,14 @@ static inline void _nocheck__trace_query_dirty_rate_info(const char * new_state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:query_dirty_rate_info " "current state %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_state);
 #line 10313 "trace/trace-migration.h"
         } else {
-#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("query_dirty_rate_info " "current state %s" "\n", new_state);
 #line 10317 "trace/trace-migration.h"
         }
@@ -10335,14 +10335,14 @@ static inline void _nocheck__trace_get_ramblock_vfn_hash(const char * idstr, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:get_ramblock_vfn_hash " "ramblock name: %s, vfn: %"PRIu64 ", crc: %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr, vfn, crc);
 #line 10344 "trace/trace-migration.h"
         } else {
-#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("get_ramblock_vfn_hash " "ramblock name: %s, vfn: %"PRIu64 ", crc: %" PRIu32 "\n", idstr, vfn, crc);
 #line 10348 "trace/trace-migration.h"
         }
@@ -10366,14 +10366,14 @@ static inline void _nocheck__trace_calc_page_dirty_rate(const char * idstr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:calc_page_dirty_rate " "ramblock name: %s, new crc: %" PRIu32 ", old crc: %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr, new_crc, old_crc);
 #line 10375 "trace/trace-migration.h"
         } else {
-#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("calc_page_dirty_rate " "ramblock name: %s, new crc: %" PRIu32 ", old crc: %" PRIu32 "\n", idstr, new_crc, old_crc);
 #line 10379 "trace/trace-migration.h"
         }
@@ -10397,14 +10397,14 @@ static inline void _nocheck__trace_skip_sample_ramblock(const char * idstr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:skip_sample_ramblock " "ramblock name: %s, ramblock size: %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr, ramblock_size);
 #line 10406 "trace/trace-migration.h"
         } else {
-#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("skip_sample_ramblock " "ramblock name: %s, ramblock size: %" PRIu64 "\n", idstr, ramblock_size);
 #line 10410 "trace/trace-migration.h"
         }
@@ -10428,14 +10428,14 @@ static inline void _nocheck__trace_find_page_matched(const char * idstr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:find_page_matched " "ramblock %s addr or size changed" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idstr);
 #line 10437 "trace/trace-migration.h"
         } else {
-#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("find_page_matched " "ramblock %s addr or size changed" "\n", idstr);
 #line 10441 "trace/trace-migration.h"
         }
@@ -10459,14 +10459,14 @@ static inline void _nocheck__trace_dirtyrate_calculate(int64_t dirtyrate)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirtyrate_calculate " "dirty rate: %" PRIi64 " MB/s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dirtyrate);
 #line 10468 "trace/trace-migration.h"
         } else {
-#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirtyrate_calculate " "dirty rate: %" PRIi64 " MB/s" "\n", dirtyrate);
 #line 10472 "trace/trace-migration.h"
         }
@@ -10490,14 +10490,14 @@ static inline void _nocheck__trace_dirtyrate_do_calculate_vcpu(int idx, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:dirtyrate_do_calculate_vcpu " "vcpu[%d]: %"PRIu64 " MB/s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idx, rate);
 #line 10499 "trace/trace-migration.h"
         } else {
-#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("dirtyrate_do_calculate_vcpu " "vcpu[%d]: %"PRIu64 " MB/s" "\n", idx, rate);
 #line 10503 "trace/trace-migration.h"
         }
@@ -10521,14 +10521,14 @@ static inline void _nocheck__trace_migration_block_init_shared(const char * blk_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 353 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 353 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_init_shared " "Start migration for %s with shared base image" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , blk_device_name);
 #line 10530 "trace/trace-migration.h"
         } else {
-#line 353 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 353 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_init_shared " "Start migration for %s with shared base image" "\n", blk_device_name);
 #line 10534 "trace/trace-migration.h"
         }
@@ -10552,14 +10552,14 @@ static inline void _nocheck__trace_migration_block_init_full(const char * blk_de
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 354 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 354 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_init_full " "Start full migration for %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , blk_device_name);
 #line 10561 "trace/trace-migration.h"
         } else {
-#line 354 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 354 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_init_full " "Start full migration for %s" "\n", blk_device_name);
 #line 10565 "trace/trace-migration.h"
         }
@@ -10583,14 +10583,14 @@ static inline void _nocheck__trace_migration_block_save_device_dirty(int64_t sec
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_save_device_dirty " "Error reading sector %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sector);
 #line 10592 "trace/trace-migration.h"
         } else {
-#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_save_device_dirty " "Error reading sector %" PRId64 "\n", sector);
 #line 10596 "trace/trace-migration.h"
         }
@@ -10614,14 +10614,14 @@ static inline void _nocheck__trace_migration_block_flush_blks(const char * actio
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_flush_blks " "%s submitted %d read_done %d transferred %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action, submitted, read_done, transferred);
 #line 10623 "trace/trace-migration.h"
         } else {
-#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_flush_blks " "%s submitted %d read_done %d transferred %d" "\n", action, submitted, read_done, transferred);
 #line 10627 "trace/trace-migration.h"
         }
@@ -10645,14 +10645,14 @@ static inline void _nocheck__trace_migration_block_save(const char * mig_stage, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_save " "Enter save live %s submitted %d transferred %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mig_stage, submitted, transferred);
 #line 10654 "trace/trace-migration.h"
         } else {
-#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_save " "Enter save live %s submitted %d transferred %d" "\n", mig_stage, submitted, transferred);
 #line 10658 "trace/trace-migration.h"
         }
@@ -10676,14 +10676,14 @@ static inline void _nocheck__trace_migration_block_save_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_save_complete " "Block migration completed" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10685 "trace/trace-migration.h"
         } else {
-#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_save_complete " "Block migration completed" "\n");
 #line 10689 "trace/trace-migration.h"
         }
@@ -10707,14 +10707,14 @@ static inline void _nocheck__trace_migration_block_state_pending(uint64_t pendin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_state_pending " "Enter save live pending  %" PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pending);
 #line 10716 "trace/trace-migration.h"
         } else {
-#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_state_pending " "Enter save live pending  %" PRIu64 "\n", pending);
 #line 10720 "trace/trace-migration.h"
         }
@@ -10738,14 +10738,14 @@ static inline void _nocheck__trace_migration_block_progression(unsigned percent)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_block_progression " "Completed %u%%" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , percent);
 #line 10747 "trace/trace-migration.h"
         } else {
-#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_block_progression " "Completed %u%%" "\n", percent);
 #line 10751 "trace/trace-migration.h"
         }
@@ -10769,14 +10769,14 @@ static inline void _nocheck__trace_migration_pagecache_init(int64_t max_num_item
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_pagecache_init " "Setting cache buckets to %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , max_num_items);
 #line 10778 "trace/trace-migration.h"
         } else {
-#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_pagecache_init " "Setting cache buckets to %" PRId64 "\n", max_num_items);
 #line 10782 "trace/trace-migration.h"
         }
@@ -10800,14 +10800,14 @@ static inline void _nocheck__trace_migration_pagecache_insert(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("%d@%zu.%06zu:migration_pagecache_insert " "Error allocating page" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10809 "trace/trace-migration.h"
         } else {
-#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/migration/trace-events"
+#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/trace-events"
             qemu_log("migration_pagecache_insert " "Error allocating page" "\n");
 #line 10813 "trace/trace-migration.h"
         }

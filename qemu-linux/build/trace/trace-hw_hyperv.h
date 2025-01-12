@@ -70,14 +70,14 @@ static inline void _nocheck__trace_vmbus_recv_message(uint32_t type, uint32_t si
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_recv_message " "type %d size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, size);
 #line 79 "trace/trace-hw_hyperv.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_recv_message " "type %d size %d" "\n", type, size);
 #line 83 "trace/trace-hw_hyperv.h"
         }
@@ -101,14 +101,14 @@ static inline void _nocheck__trace_vmbus_signal_event(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_signal_event " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 110 "trace/trace-hw_hyperv.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_signal_event " "" "\n");
 #line 114 "trace/trace-hw_hyperv.h"
         }
@@ -132,14 +132,14 @@ static inline void _nocheck__trace_vmbus_channel_notify_guest(uint32_t chan_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_channel_notify_guest " "channel #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan_id);
 #line 141 "trace/trace-hw_hyperv.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_channel_notify_guest " "channel #%d" "\n", chan_id);
 #line 145 "trace/trace-hw_hyperv.h"
         }
@@ -163,14 +163,14 @@ static inline void _nocheck__trace_vmbus_post_msg(uint32_t type, uint32_t size)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_post_msg " "type %d size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, size);
 #line 172 "trace/trace-hw_hyperv.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_post_msg " "type %d size %d" "\n", type, size);
 #line 176 "trace/trace-hw_hyperv.h"
         }
@@ -194,14 +194,14 @@ static inline void _nocheck__trace_vmbus_msg_cb(int status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_msg_cb " "message status %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 203 "trace/trace-hw_hyperv.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_msg_cb " "message status %d" "\n", status);
 #line 207 "trace/trace-hw_hyperv.h"
         }
@@ -225,14 +225,14 @@ static inline void _nocheck__trace_vmbus_process_incoming_message(uint32_t messa
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_process_incoming_message " "type %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , message_type);
 #line 234 "trace/trace-hw_hyperv.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_process_incoming_message " "type %d" "\n", message_type);
 #line 238 "trace/trace-hw_hyperv.h"
         }
@@ -256,14 +256,14 @@ static inline void _nocheck__trace_vmbus_initiate_contact(uint16_t major, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_initiate_contact " "version %d.%d target vp %d mon pages 0x%"PRIx64",0x%"PRIx64" int page 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , major, minor, vcpu, monitor_page1, monitor_page2, interrupt_page);
 #line 265 "trace/trace-hw_hyperv.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_initiate_contact " "version %d.%d target vp %d mon pages 0x%"PRIx64",0x%"PRIx64" int page 0x%"PRIx64 "\n", major, minor, vcpu, monitor_page1, monitor_page2, interrupt_page);
 #line 269 "trace/trace-hw_hyperv.h"
         }
@@ -287,14 +287,14 @@ static inline void _nocheck__trace_vmbus_send_offer(uint32_t chan_id, void * dev
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_send_offer " "channel #%d dev %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan_id, dev);
 #line 296 "trace/trace-hw_hyperv.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_send_offer " "channel #%d dev %p" "\n", chan_id, dev);
 #line 300 "trace/trace-hw_hyperv.h"
         }
@@ -318,14 +318,14 @@ static inline void _nocheck__trace_vmbus_terminate_offers(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_terminate_offers " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 327 "trace/trace-hw_hyperv.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_terminate_offers " "" "\n");
 #line 331 "trace/trace-hw_hyperv.h"
         }
@@ -349,14 +349,14 @@ static inline void _nocheck__trace_vmbus_gpadl_header(uint32_t gpadl_id, uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_gpadl_header " "gpadl #%d gfns %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpadl_id, num_gfns);
 #line 358 "trace/trace-hw_hyperv.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_gpadl_header " "gpadl #%d gfns %d" "\n", gpadl_id, num_gfns);
 #line 362 "trace/trace-hw_hyperv.h"
         }
@@ -380,14 +380,14 @@ static inline void _nocheck__trace_vmbus_gpadl_body(uint32_t gpadl_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_gpadl_body " "gpadl #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpadl_id);
 #line 389 "trace/trace-hw_hyperv.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_gpadl_body " "gpadl #%d" "\n", gpadl_id);
 #line 393 "trace/trace-hw_hyperv.h"
         }
@@ -411,14 +411,14 @@ static inline void _nocheck__trace_vmbus_gpadl_created(uint32_t gpadl_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_gpadl_created " "gpadl #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpadl_id);
 #line 420 "trace/trace-hw_hyperv.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_gpadl_created " "gpadl #%d" "\n", gpadl_id);
 #line 424 "trace/trace-hw_hyperv.h"
         }
@@ -442,14 +442,14 @@ static inline void _nocheck__trace_vmbus_gpadl_teardown(uint32_t gpadl_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_gpadl_teardown " "gpadl #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpadl_id);
 #line 451 "trace/trace-hw_hyperv.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_gpadl_teardown " "gpadl #%d" "\n", gpadl_id);
 #line 455 "trace/trace-hw_hyperv.h"
         }
@@ -473,14 +473,14 @@ static inline void _nocheck__trace_vmbus_gpadl_torndown(uint32_t gpadl_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_gpadl_torndown " "gpadl #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpadl_id);
 #line 482 "trace/trace-hw_hyperv.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_gpadl_torndown " "gpadl #%d" "\n", gpadl_id);
 #line 486 "trace/trace-hw_hyperv.h"
         }
@@ -504,14 +504,14 @@ static inline void _nocheck__trace_vmbus_open_channel(uint32_t chan_id, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_open_channel " "channel #%d gpadl #%d target vp %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan_id, gpadl_id, target_vp);
 #line 513 "trace/trace-hw_hyperv.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_open_channel " "channel #%d gpadl #%d target vp %d" "\n", chan_id, gpadl_id, target_vp);
 #line 517 "trace/trace-hw_hyperv.h"
         }
@@ -535,14 +535,14 @@ static inline void _nocheck__trace_vmbus_channel_open(uint32_t chan_id, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_channel_open " "channel #%d status %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan_id, status);
 #line 544 "trace/trace-hw_hyperv.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_channel_open " "channel #%d status %d" "\n", chan_id, status);
 #line 548 "trace/trace-hw_hyperv.h"
         }
@@ -566,14 +566,14 @@ static inline void _nocheck__trace_vmbus_close_channel(uint32_t chan_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("%d@%zu.%06zu:vmbus_close_channel " "channel #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan_id);
 #line 575 "trace/trace-hw_hyperv.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/hyperv/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/hyperv/trace-events"
             qemu_log("vmbus_close_channel " "channel #%d" "\n", chan_id);
 #line 579 "trace/trace-hw_hyperv.h"
         }

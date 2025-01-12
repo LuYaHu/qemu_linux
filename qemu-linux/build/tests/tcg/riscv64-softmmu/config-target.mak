@@ -12,4 +12,4 @@ OBJCOPY=riscv64-linux-gnu-objcopy
 RANLIB=riscv64-linux-gnu-ranlib
 STRIP=riscv64-linux-gnu-strip
 BUILD_STATIC=
-QEMU=/home/luyahu/qemu_linux/qemu-8.0.2/build/qemu-system-riscv64
+QEMU=/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/qemu-system-riscv64

@@ -1,7 +1,9 @@
 libio.fa.p/io_task.c.o: ../io/task.c /usr/include/stdc-predef.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/osdep.h config-host.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/poison.h config-poison.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/osdep.h \
+ config-host.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/poison.h \
+ config-poison.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -104,7 +106,7 @@ libio.fa.p/io_task.c.o: ../io/task.c /usr/include/stdc-predef.h \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/asm-generic/bitsperlong.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
@@ -140,7 +142,7 @@ libio.fa.p/io_task.c.o: ../io/task.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/glib-compat.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/glib-compat.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -219,7 +221,7 @@ libio.fa.p/io_task.c.o: ../io/task.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/os-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -241,23 +243,24 @@ libio.fa.p/io_task.c.o: ../io/task.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/typedefs.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/io/task.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/error.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/typedefs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/io/task.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/error.h \
  qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/util.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/thread.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/processor.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/atomic.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/clang-tsa.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/thread-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/util.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/thread.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/processor.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/atomic.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/clang-tsa.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/thread-posix.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/qsp.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qom/object.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/module.h ../io/trace.h \
- trace/trace-io.h /home/luyahu/qemu_linux/qemu-8.0.2/trace/control.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/event-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/log-for-trace.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/error-report.h
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/qsp.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qom/object.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/module.h \
+ ../io/trace.h trace/trace-io.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/event-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/log-for-trace.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/error-report.h

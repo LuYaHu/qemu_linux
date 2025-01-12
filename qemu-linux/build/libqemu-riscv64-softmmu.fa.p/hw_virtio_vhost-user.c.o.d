@@ -1,8 +1,8 @@
 libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  ../hw/virtio/vhost-user.c /usr/include/stdc-predef.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/osdep.h config-host.h \
- riscv64-softmmu-config-target.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/osdep.h \
+ config-host.h riscv64-softmmu-config-target.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,7 +105,7 @@ libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/asm-generic/bitsperlong.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
@@ -141,7 +141,7 @@ libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/glib-compat.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/glib-compat.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -220,7 +220,7 @@ libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/os-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -242,123 +242,123 @@ libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/typedefs.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/error.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/typedefs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/error.h \
  qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/util.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/virtio/vhost.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/virtio/vhost-backend.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memory.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/cpu-common.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/hwaddr.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memattrs.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memop.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/host-utils.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/bswap.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/int128.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/ramlist.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/queue.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/thread.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/processor.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/atomic.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/clang-tsa.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/thread-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/util.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/virtio/vhost.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/virtio/vhost-backend.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memory.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/cpu-common.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/hwaddr.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memattrs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memop.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/host-utils.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/bswap.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/int128.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/ramlist.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/thread.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/processor.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/atomic.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/clang-tsa.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/thread-posix.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/qsp.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/rcu.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/notify.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/sys_membarrier.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/coroutine-tls.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/rcu_queue.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qom/object.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/module.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memory_ldst.h.inc \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memory_ldst_phys.h.inc \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/memory_ldst_cached.h.inc \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/virtio/virtio.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/qdev-core.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/bitmap.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/bitops.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/host-utils.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/atomic.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/hotplug.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/resettable.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/net/net.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/qsp.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/rcu.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/notify.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/sys_membarrier.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/coroutine-tls.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/rcu_queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qom/object.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/module.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memory_ldst.h.inc \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memory_ldst_phys.h.inc \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/memory_ldst_cached.h.inc \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/virtio/virtio.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/qdev-core.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/bitmap.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/bitops.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/host-utils.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/atomic.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/hotplug.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/resettable.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/net/net.h \
  qapi/qapi-types-net.h qapi/qapi-types-common.h qapi/qapi-types-sockets.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/net/queue.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/qdev-properties-system.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/qdev-properties.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/migration/vmstate.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/vmstate-if.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/event_notifier.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_config.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_ring.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/virtio/vhost-user.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/chardev/char-fe.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/chardev/char.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/net/queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/qdev-properties-system.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/qdev-properties.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/migration/vmstate.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/vmstate-if.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/event_notifier.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_config.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_ring.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/virtio/vhost-user.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/chardev/char-fe.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/chardev/char.h \
  qapi/qapi-types-char.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/main-loop.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/block/aio.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/coroutine-core.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/timer.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/block/graph-lock.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/event-loop-base.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/virtio/virtio-net.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/units.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_net.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_ids.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/if_ether.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/net/announce.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/option_int.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/option.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/error-report.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/ebpf/ebpf_rss.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/io/channel-socket.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/io/channel.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/io/task.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/sockets.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/main-loop.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/block/aio.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/coroutine-core.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/timer.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/block/graph-lock.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/event-loop-base.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/virtio/virtio-net.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/units.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_net.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_ids.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/if_ether.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/net/announce.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/option_int.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/option.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/error-report.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/ebpf/ebpf_rss.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/io/channel-socket.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/io/channel.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/io/task.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/sockets.h \
  qapi/qapi-types-sockets.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/kvm.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/core/cpu.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/disas/dis-asm.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/kvm.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/core/cpu.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/disas/dis-asm.h \
  qapi/qapi-types-run-state.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/plugin-event.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/accel.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/plugin-event.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/accel.h \
  ../target/riscv/cpu.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/hw/registerfields.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/cpu-defs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/hw/registerfields.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/cpu-defs.h \
  ../target/riscv/cpu-param.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/target_long.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/cpu-float.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/fpu/softfloat-types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/target_long.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/cpu-float.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/fpu/softfloat-types.h \
  ../target/riscv/cpu_bits.h qapi/qapi-types-common.h \
  ../target/riscv/pmp.h ../target/riscv/cpu.h ../target/riscv/debug.h \
  ../target/riscv/cpu_user.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/cpu-all.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/runstate.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/cryptodev.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/throttle.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/cpu-all.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/runstate.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/cryptodev.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/throttle.h \
  qapi/qapi-types-block-core.h qapi/qapi-types-crypto.h \
  qapi/qapi-types-job.h qapi/qapi-types-cryptodev.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/migration/migration.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/migration.h \
  qapi/qapi-types-migration.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/qmp/json-writer.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/coroutine_int.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/coroutine.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/lockable.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/io/channel-buffer.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/migration/postcopy-ram.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/migration/postcopy-ram.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/qmp/json-writer.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/coroutine_int.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/coroutine.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/lockable.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/io/channel-buffer.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/postcopy-ram.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/migration/postcopy-ram.h \
  ../hw/virtio/trace.h trace/trace-hw_virtio.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/event-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/log-for-trace.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/ramblock.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/cpu-common.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/event-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/log-for-trace.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/ramblock.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/cpu-common.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
@@ -367,5 +367,5 @@ libqemu-riscv64-softmmu.fa.p/hw_virtio_vhost-user.c.o: \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/vhost_types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/linux/userfaultfd.h
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/vhost_types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/linux/userfaultfd.h

@@ -106,14 +106,14 @@ static inline void _nocheck__trace_bitbang_i2c_state(const char * old_state, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:bitbang_i2c_state " "state %s -> %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , old_state, new_state);
 #line 115 "trace/trace-hw_i2c.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("bitbang_i2c_state " "state %s -> %s" "\n", old_state, new_state);
 #line 119 "trace/trace-hw_i2c.h"
         }
@@ -137,14 +137,14 @@ static inline void _nocheck__trace_bitbang_i2c_addr(uint8_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:bitbang_i2c_addr " "Address 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 146 "trace/trace-hw_i2c.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("bitbang_i2c_addr " "Address 0x%02x" "\n", addr);
 #line 150 "trace/trace-hw_i2c.h"
         }
@@ -168,14 +168,14 @@ static inline void _nocheck__trace_bitbang_i2c_send(uint8_t byte)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:bitbang_i2c_send " "TX byte 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , byte);
 #line 177 "trace/trace-hw_i2c.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("bitbang_i2c_send " "TX byte 0x%02x" "\n", byte);
 #line 181 "trace/trace-hw_i2c.h"
         }
@@ -199,14 +199,14 @@ static inline void _nocheck__trace_bitbang_i2c_recv(uint8_t byte)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:bitbang_i2c_recv " "RX byte 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , byte);
 #line 208 "trace/trace-hw_i2c.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("bitbang_i2c_recv " "RX byte 0x%02x" "\n", byte);
 #line 212 "trace/trace-hw_i2c.h"
         }
@@ -230,14 +230,14 @@ static inline void _nocheck__trace_bitbang_i2c_data(unsigned dat, unsigned clk, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:bitbang_i2c_data " "dat %u clk %u out %u -> %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dat, clk, old_out, new_out);
 #line 239 "trace/trace-hw_i2c.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("bitbang_i2c_data " "dat %u clk %u out %u -> %u" "\n", dat, clk, old_out, new_out);
 #line 243 "trace/trace-hw_i2c.h"
         }
@@ -261,14 +261,14 @@ static inline void _nocheck__trace_i2c_event(const char * event, uint8_t address
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:i2c_event " "%s(addr:0x%02x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , event, address);
 #line 270 "trace/trace-hw_i2c.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("i2c_event " "%s(addr:0x%02x)" "\n", event, address);
 #line 274 "trace/trace-hw_i2c.h"
         }
@@ -292,14 +292,14 @@ static inline void _nocheck__trace_i2c_send(uint8_t address, uint8_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:i2c_send " "send(addr:0x%02x) data:0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, data);
 #line 301 "trace/trace-hw_i2c.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("i2c_send " "send(addr:0x%02x) data:0x%02x" "\n", address, data);
 #line 305 "trace/trace-hw_i2c.h"
         }
@@ -323,14 +323,14 @@ static inline void _nocheck__trace_i2c_send_async(uint8_t address, uint8_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:i2c_send_async " "send_async(addr:0x%02x) data:0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, data);
 #line 332 "trace/trace-hw_i2c.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("i2c_send_async " "send_async(addr:0x%02x) data:0x%02x" "\n", address, data);
 #line 336 "trace/trace-hw_i2c.h"
         }
@@ -354,14 +354,14 @@ static inline void _nocheck__trace_i2c_recv(uint8_t address, uint8_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:i2c_recv " "recv(addr:0x%02x) data:0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, data);
 #line 363 "trace/trace-hw_i2c.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("i2c_recv " "recv(addr:0x%02x) data:0x%02x" "\n", address, data);
 #line 367 "trace/trace-hw_i2c.h"
         }
@@ -385,14 +385,14 @@ static inline void _nocheck__trace_i2c_ack(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:i2c_ack " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 394 "trace/trace-hw_i2c.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("i2c_ack " "" "\n");
 #line 398 "trace/trace-hw_i2c.h"
         }
@@ -416,14 +416,14 @@ static inline void _nocheck__trace_allwinner_i2c_read(const char* reg_name, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:allwinner_i2c_read " "read %s [0x%" PRIx64 "]: -> 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reg_name, offset, value);
 #line 425 "trace/trace-hw_i2c.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("allwinner_i2c_read " "read %s [0x%" PRIx64 "]: -> 0x%" PRIx64 "\n", reg_name, offset, value);
 #line 429 "trace/trace-hw_i2c.h"
         }
@@ -447,14 +447,14 @@ static inline void _nocheck__trace_allwinner_i2c_write(const char* reg_name, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:allwinner_i2c_write " "write %s [0x%" PRIx64 "]: <- 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reg_name, offset, value);
 #line 456 "trace/trace-hw_i2c.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("allwinner_i2c_write " "write %s [0x%" PRIx64 "]: <- 0x%" PRIx64 "\n", reg_name, offset, value);
 #line 460 "trace/trace-hw_i2c.h"
         }
@@ -478,14 +478,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_cmd(uint32_t cmd, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_cmd " "handling cmd=0x%x %s count=%d intr=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, cmd_flags, count, intr_status);
 #line 487 "trace/trace-hw_i2c.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_cmd " "handling cmd=0x%x %s count=%d intr=0x%x" "\n", cmd, cmd_flags, count, intr_status);
 #line 491 "trace/trace-hw_i2c.h"
         }
@@ -509,14 +509,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_raise_interrupt(uint32_t intr_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_raise_interrupt " "handled intr=0x%x %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intr_status, s);
 #line 518 "trace/trace-hw_i2c.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_raise_interrupt " "handled intr=0x%x %s" "\n", intr_status, s);
 #line 522 "trace/trace-hw_i2c.h"
         }
@@ -540,14 +540,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_read(uint32_t busid, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_read " "bus[%d]: To 0x%" PRIx64 " of size %u: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , busid, offset, size, value);
 #line 549 "trace/trace-hw_i2c.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_read " "bus[%d]: To 0x%" PRIx64 " of size %u: 0x%" PRIx64 "\n", busid, offset, size, value);
 #line 553 "trace/trace-hw_i2c.h"
         }
@@ -571,14 +571,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_write(uint32_t busid, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_write " "bus[%d]: To 0x%" PRIx64 " of size %u: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , busid, offset, size, value);
 #line 580 "trace/trace-hw_i2c.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_write " "bus[%d]: To 0x%" PRIx64 " of size %u: 0x%" PRIx64 "\n", busid, offset, size, value);
 #line 584 "trace/trace-hw_i2c.h"
         }
@@ -602,14 +602,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_send(const char * mode, int i,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_send " "%s send %d/%d 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mode, i, count, byte);
 #line 611 "trace/trace-hw_i2c.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_send " "%s send %d/%d 0x%02x" "\n", mode, i, count, byte);
 #line 615 "trace/trace-hw_i2c.h"
         }
@@ -633,14 +633,14 @@ static inline void _nocheck__trace_aspeed_i2c_bus_recv(const char * mode, int i,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_i2c_bus_recv " "%s recv %d/%d 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mode, i, count, byte);
 #line 642 "trace/trace-hw_i2c.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("aspeed_i2c_bus_recv " "%s recv %d/%d 0x%02x" "\n", mode, i, count, byte);
 #line 646 "trace/trace-hw_i2c.h"
         }
@@ -664,14 +664,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_read(const char * id, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_read " "%s offset: 0x%04" PRIx64 " value: 0x%02" PRIx64 " size: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, offset, value, size);
 #line 673 "trace/trace-hw_i2c.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_read " "%s offset: 0x%04" PRIx64 " value: 0x%02" PRIx64 " size: %u" "\n", id, offset, value, size);
 #line 677 "trace/trace-hw_i2c.h"
         }
@@ -695,14 +695,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_write(const char * id, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_write " "%s offset: 0x%04" PRIx64 " value: 0x%02" PRIx64 " size: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, offset, value, size);
 #line 704 "trace/trace-hw_i2c.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_write " "%s offset: 0x%04" PRIx64 " value: 0x%02" PRIx64 " size: %u" "\n", id, offset, value, size);
 #line 708 "trace/trace-hw_i2c.h"
         }
@@ -726,14 +726,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_start(const char * id, int succ
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_start " "%s starting, success: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, success);
 #line 735 "trace/trace-hw_i2c.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_start " "%s starting, success: %d" "\n", id, success);
 #line 739 "trace/trace-hw_i2c.h"
         }
@@ -757,14 +757,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_send_address(const char * id, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_send_address " "%s sending address: 0x%02x, recv: %d, success: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, addr, recv, success);
 #line 766 "trace/trace-hw_i2c.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_send_address " "%s sending address: 0x%02x, recv: %d, success: %d" "\n", id, addr, recv, success);
 #line 770 "trace/trace-hw_i2c.h"
         }
@@ -788,14 +788,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_send_byte(const char * id, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_send_byte " "%s send byte: 0x%02x, success: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, value, success);
 #line 797 "trace/trace-hw_i2c.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_send_byte " "%s send byte: 0x%02x, success: %d" "\n", id, value, success);
 #line 801 "trace/trace-hw_i2c.h"
         }
@@ -819,14 +819,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_recv_byte(const char * id, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_recv_byte " "%s recv byte: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, value);
 #line 828 "trace/trace-hw_i2c.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_recv_byte " "%s recv byte: 0x%02x" "\n", id, value);
 #line 832 "trace/trace-hw_i2c.h"
         }
@@ -850,14 +850,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_stop(const char * id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_stop " "%s stopping" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 859 "trace/trace-hw_i2c.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_stop " "%s stopping" "\n", id);
 #line 863 "trace/trace-hw_i2c.h"
         }
@@ -881,14 +881,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_nack(const char * id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_nack " "%s nacking" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 890 "trace/trace-hw_i2c.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_nack " "%s nacking" "\n", id);
 #line 894 "trace/trace-hw_i2c.h"
         }
@@ -912,14 +912,14 @@ static inline void _nocheck__trace_npcm7xx_smbus_recv_fifo(const char * id, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:npcm7xx_smbus_recv_fifo " "%s recv fifo: received %u, expected %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, received, expected);
 #line 921 "trace/trace-hw_i2c.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("npcm7xx_smbus_recv_fifo " "%s recv fifo: received %u, expected %u" "\n", id, received, expected);
 #line 925 "trace/trace-hw_i2c.h"
         }
@@ -943,14 +943,14 @@ static inline void _nocheck__trace_pca954x_write_bytes(uint8_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:pca954x_write_bytes " "PCA954X write data: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , value);
 #line 952 "trace/trace-hw_i2c.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("pca954x_write_bytes " "PCA954X write data: 0x%02x" "\n", value);
 #line 956 "trace/trace-hw_i2c.h"
         }
@@ -974,14 +974,14 @@ static inline void _nocheck__trace_pca954x_read_data(uint8_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("%d@%zu.%06zu:pca954x_read_data " "PCA954X read data: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , value);
 #line 983 "trace/trace-hw_i2c.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i2c/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i2c/trace-events"
             qemu_log("pca954x_read_data " "PCA954X read data: 0x%02x" "\n", value);
 #line 987 "trace/trace-hw_i2c.h"
         }

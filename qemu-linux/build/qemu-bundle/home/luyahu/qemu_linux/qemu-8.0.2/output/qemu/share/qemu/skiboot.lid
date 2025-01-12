@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/pc-bios/skiboot.lid
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/pc-bios/skiboot.lid

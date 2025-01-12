@@ -64,14 +64,14 @@ static inline void _nocheck__trace_alsa_revents(int revents)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_revents " "revents = %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , revents);
 #line 73 "trace/trace-audio.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_revents " "revents = %d" "\n", revents);
 #line 77 "trace/trace-audio.h"
         }
@@ -95,14 +95,14 @@ static inline void _nocheck__trace_alsa_pollout(int i, int fd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_pollout " "i = %d fd = %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, fd);
 #line 104 "trace/trace-audio.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_pollout " "i = %d fd = %d" "\n", i, fd);
 #line 108 "trace/trace-audio.h"
         }
@@ -126,14 +126,14 @@ static inline void _nocheck__trace_alsa_set_handler(int events, int index, int f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_set_handler " "events=0x%x index=%d fd=%d err=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , events, index, fd, err);
 #line 135 "trace/trace-audio.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_set_handler " "events=0x%x index=%d fd=%d err=%d" "\n", events, index, fd, err);
 #line 139 "trace/trace-audio.h"
         }
@@ -157,14 +157,14 @@ static inline void _nocheck__trace_alsa_wrote_zero(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_wrote_zero " "Failed to write %d frames (wrote zero)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 166 "trace/trace-audio.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_wrote_zero " "Failed to write %d frames (wrote zero)" "\n", len);
 #line 170 "trace/trace-audio.h"
         }
@@ -188,14 +188,14 @@ static inline void _nocheck__trace_alsa_read_zero(long len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_read_zero " "Failed to read %ld frames (read zero)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 197 "trace/trace-audio.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_read_zero " "Failed to read %ld frames (read zero)" "\n", len);
 #line 201 "trace/trace-audio.h"
         }
@@ -219,14 +219,14 @@ static inline void _nocheck__trace_alsa_xrun_out(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_xrun_out " "Recovering from playback xrun" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 228 "trace/trace-audio.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_xrun_out " "Recovering from playback xrun" "\n");
 #line 232 "trace/trace-audio.h"
         }
@@ -250,14 +250,14 @@ static inline void _nocheck__trace_alsa_xrun_in(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_xrun_in " "Recovering from capture xrun" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 259 "trace/trace-audio.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_xrun_in " "Recovering from capture xrun" "\n");
 #line 263 "trace/trace-audio.h"
         }
@@ -281,14 +281,14 @@ static inline void _nocheck__trace_alsa_resume_out(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:alsa_resume_out " "Resuming suspended output stream" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 290 "trace/trace-audio.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("alsa_resume_out " "Resuming suspended output stream" "\n");
 #line 294 "trace/trace-audio.h"
         }
@@ -312,14 +312,14 @@ static inline void _nocheck__trace_oss_version(int version)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:oss_version " "OSS version = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , version);
 #line 321 "trace/trace-audio.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("oss_version " "OSS version = 0x%x" "\n", version);
 #line 325 "trace/trace-audio.h"
         }
@@ -343,14 +343,14 @@ static inline void _nocheck__trace_dbus_audio_register(const char * s, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_audio_register " "sender = %s, dir = %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, dir);
 #line 352 "trace/trace-audio.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("dbus_audio_register " "sender = %s, dir = %s" "\n", s, dir);
 #line 356 "trace/trace-audio.h"
         }
@@ -374,14 +374,14 @@ static inline void _nocheck__trace_dbus_audio_put_buffer_out(size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_audio_put_buffer_out " "len = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 383 "trace/trace-audio.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("dbus_audio_put_buffer_out " "len = %zu" "\n", len);
 #line 387 "trace/trace-audio.h"
         }
@@ -405,14 +405,14 @@ static inline void _nocheck__trace_dbus_audio_read(size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_audio_read " "len = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 414 "trace/trace-audio.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("dbus_audio_read " "len = %zu" "\n", len);
 #line 418 "trace/trace-audio.h"
         }
@@ -436,14 +436,14 @@ static inline void _nocheck__trace_audio_timer_start(int interval)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:audio_timer_start " "interval %d ms" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , interval);
 #line 445 "trace/trace-audio.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("audio_timer_start " "interval %d ms" "\n", interval);
 #line 449 "trace/trace-audio.h"
         }
@@ -467,14 +467,14 @@ static inline void _nocheck__trace_audio_timer_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:audio_timer_stop " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 476 "trace/trace-audio.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("audio_timer_stop " "" "\n");
 #line 480 "trace/trace-audio.h"
         }
@@ -498,14 +498,14 @@ static inline void _nocheck__trace_audio_timer_delayed(int interval)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("%d@%zu.%06zu:audio_timer_delayed " "interval %d ms" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , interval);
 #line 507 "trace/trace-audio.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/audio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/audio/trace-events"
             qemu_log("audio_timer_delayed " "interval %d ms" "\n", interval);
 #line 511 "trace/trace-audio.h"
         }

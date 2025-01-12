@@ -25,14 +25,14 @@ static inline void _nocheck__trace_sh7750_porta(uint16_t prev, uint16_t cur, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/sh4/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/sh4/trace-events"
             qemu_log("%d@%zu.%06zu:sh7750_porta " "porta changed from 0x%04x to 0x%04x\npdtra=0x%04x, pctra=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prev, cur, pdtr, pctr);
 #line 34 "trace/trace-hw_sh4.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/sh4/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/sh4/trace-events"
             qemu_log("sh7750_porta " "porta changed from 0x%04x to 0x%04x\npdtra=0x%04x, pctra=0x%08x" "\n", prev, cur, pdtr, pctr);
 #line 38 "trace/trace-hw_sh4.h"
         }
@@ -56,14 +56,14 @@ static inline void _nocheck__trace_sh7750_portb(uint16_t prev, uint16_t cur, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/sh4/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/sh4/trace-events"
             qemu_log("%d@%zu.%06zu:sh7750_portb " "portb changed from 0x%04x to 0x%04x\npdtrb=0x%04x, pctrb=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prev, cur, pdtr, pctr);
 #line 65 "trace/trace-hw_sh4.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/sh4/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/sh4/trace-events"
             qemu_log("sh7750_portb " "portb changed from 0x%04x to 0x%04x\npdtrb=0x%04x, pctrb=0x%08x" "\n", prev, cur, pdtr, pctr);
 #line 69 "trace/trace-hw_sh4.h"
         }

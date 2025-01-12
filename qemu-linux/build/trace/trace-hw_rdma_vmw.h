@@ -43,14 +43,14 @@ static inline void _nocheck__trace_pvrdma_regs_read(uint64_t addr, uint64_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_regs_read " "pvrdma.regs[0x%"PRIx64"]=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 52 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_regs_read " "pvrdma.regs[0x%"PRIx64"]=0x%"PRIx64 "\n", addr, val);
 #line 56 "trace/trace-hw_rdma_vmw.h"
         }
@@ -74,14 +74,14 @@ static inline void _nocheck__trace_pvrdma_regs_write(uint64_t addr, uint64_t val
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_regs_write " "pvrdma.regs[0x%"PRIx64"]=0x%"PRIx64" (%s %s)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, reg_name, val_name);
 #line 83 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_regs_write " "pvrdma.regs[0x%"PRIx64"]=0x%"PRIx64" (%s %s)" "\n", addr, val, reg_name, val_name);
 #line 87 "trace/trace-hw_rdma_vmw.h"
         }
@@ -105,14 +105,14 @@ static inline void _nocheck__trace_pvrdma_uar_write(uint64_t addr, uint64_t val,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_uar_write " "uar[0x%"PRIx64"]=0x%"PRIx64" (cls=%s, op=%s, obj=%d, val=%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, reg_name, val_name, val1, val2);
 #line 114 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_uar_write " "uar[0x%"PRIx64"]=0x%"PRIx64" (cls=%s, op=%s, obj=%d, val=%d)" "\n", addr, val, reg_name, val_name, val1, val2);
 #line 118 "trace/trace-hw_rdma_vmw.h"
         }
@@ -136,14 +136,14 @@ static inline void _nocheck__trace_pvrdma_map_to_pdir_host_virt(void * vfirst, v
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_map_to_pdir_host_virt " "mremap %p -> %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vfirst, vremaped);
 #line 145 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_map_to_pdir_host_virt " "mremap %p -> %p" "\n", vfirst, vremaped);
 #line 149 "trace/trace-hw_rdma_vmw.h"
         }
@@ -167,14 +167,14 @@ static inline void _nocheck__trace_pvrdma_map_to_pdir_next_page(int page_idx, vo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_map_to_pdir_next_page " "mremap [%d] %p -> %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , page_idx, vnext, vremaped);
 #line 176 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_map_to_pdir_next_page " "mremap [%d] %p -> %p" "\n", page_idx, vnext, vremaped);
 #line 180 "trace/trace-hw_rdma_vmw.h"
         }
@@ -198,14 +198,14 @@ static inline void _nocheck__trace_pvrdma_exec_cmd(int cmd, int err)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_exec_cmd " "cmd=%d, err=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, err);
 #line 207 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_exec_cmd " "cmd=%d, err=%d" "\n", cmd, err);
 #line 211 "trace/trace-hw_rdma_vmw.h"
         }
@@ -229,14 +229,14 @@ static inline void _nocheck__trace_pvrdma_ring_next_elem_read_no_data(char * rin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_ring_next_elem_read_no_data " "pvrdma_ring %s is empty" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ring_name);
 #line 238 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_ring_next_elem_read_no_data " "pvrdma_ring %s is empty" "\n", ring_name);
 #line 242 "trace/trace-hw_rdma_vmw.h"
         }
@@ -260,14 +260,14 @@ static inline void _nocheck__trace_pvrdma_post_cqe(uint32_t cq_handle, int notif
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("%d@%zu.%06zu:pvrdma_post_cqe " "cq_handle=%d, notify=%d, wr_id=0x%"PRIx64", qpn=0x%"PRIx64", opcode=%d, status=%d, byte_len=%d, src_qp=%d, wc_flags=%d, vendor_err=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cq_handle, notify, wr_id, qpn, op_code, status, byte_len, src_qp, wc_flags, vendor_err);
 #line 269 "trace/trace-hw_rdma_vmw.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/vmw/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/vmw/trace-events"
             qemu_log("pvrdma_post_cqe " "cq_handle=%d, notify=%d, wr_id=0x%"PRIx64", qpn=0x%"PRIx64", opcode=%d, status=%d, byte_len=%d, src_qp=%d, wc_flags=%d, vendor_err=%d" "\n", cq_handle, notify, wr_id, qpn, op_code, status, byte_len, src_qp, wc_flags, vendor_err);
 #line 273 "trace/trace-hw_rdma_vmw.h"
         }

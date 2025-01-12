@@ -43,14 +43,14 @@ static inline void _nocheck__trace_xlnx_can_update_irq(uint32_t isr, uint32_t ie
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_update_irq " "ISR: 0x%08x IER: 0x%08x IRQ: 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , isr, ier, irq);
 #line 52 "trace/trace-hw_net_can.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_update_irq " "ISR: 0x%08x IER: 0x%08x IRQ: 0x%08x" "\n", isr, ier, irq);
 #line 56 "trace/trace-hw_net_can.h"
         }
@@ -74,14 +74,14 @@ static inline void _nocheck__trace_xlnx_can_reset(uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_reset " "Resetting controller with value = 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , val);
 #line 83 "trace/trace-hw_net_can.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_reset " "Resetting controller with value = 0x%08x" "\n", val);
 #line 87 "trace/trace-hw_net_can.h"
         }
@@ -105,14 +105,14 @@ static inline void _nocheck__trace_xlnx_can_rx_fifo_filter_reject(uint32_t id, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_rx_fifo_filter_reject " "Frame: ID: 0x%08x DLC: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, dlc);
 #line 114 "trace/trace-hw_net_can.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_rx_fifo_filter_reject " "Frame: ID: 0x%08x DLC: 0x%02x" "\n", id, dlc);
 #line 118 "trace/trace-hw_net_can.h"
         }
@@ -136,14 +136,14 @@ static inline void _nocheck__trace_xlnx_can_filter_id_pre_write(uint8_t filter_n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_filter_id_pre_write " "Filter%d ID: 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , filter_num, value);
 #line 145 "trace/trace-hw_net_can.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_filter_id_pre_write " "Filter%d ID: 0x%08x" "\n", filter_num, value);
 #line 149 "trace/trace-hw_net_can.h"
         }
@@ -167,14 +167,14 @@ static inline void _nocheck__trace_xlnx_can_filter_mask_pre_write(uint8_t filter
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_filter_mask_pre_write " "Filter%d MASK: 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , filter_num, value);
 #line 176 "trace/trace-hw_net_can.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_filter_mask_pre_write " "Filter%d MASK: 0x%08x" "\n", filter_num, value);
 #line 180 "trace/trace-hw_net_can.h"
         }
@@ -198,14 +198,14 @@ static inline void _nocheck__trace_xlnx_can_tx_data(uint32_t id, uint8_t dlc, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_tx_data " "Frame: ID: 0x%08x DLC: 0x%02x DATA: 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, dlc, db0, db1, db2, db3, db4, db5, db6, db7);
 #line 207 "trace/trace-hw_net_can.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_tx_data " "Frame: ID: 0x%08x DLC: 0x%02x DATA: 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x" "\n", id, dlc, db0, db1, db2, db3, db4, db5, db6, db7);
 #line 211 "trace/trace-hw_net_can.h"
         }
@@ -229,14 +229,14 @@ static inline void _nocheck__trace_xlnx_can_rx_data(uint32_t id, uint32_t dlc, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_rx_data " "Frame: ID: 0x%08x DLC: 0x%02x DATA: 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, dlc, db0, db1, db2, db3, db4, db5, db6, db7);
 #line 238 "trace/trace-hw_net_can.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_rx_data " "Frame: ID: 0x%08x DLC: 0x%02x DATA: 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x 0x%02x" "\n", id, dlc, db0, db1, db2, db3, db4, db5, db6, db7);
 #line 242 "trace/trace-hw_net_can.h"
         }
@@ -260,14 +260,14 @@ static inline void _nocheck__trace_xlnx_can_rx_discard(uint32_t status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("%d@%zu.%06zu:xlnx_can_rx_discard " "Controller is not enabled for bus communication. Status Register: 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 269 "trace/trace-hw_net_can.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/net/can/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/net/can/trace-events"
             qemu_log("xlnx_can_rx_discard " "Controller is not enabled for bus communication. Status Register: 0x%08x" "\n", status);
 #line 273 "trace/trace-hw_net_can.h"
         }

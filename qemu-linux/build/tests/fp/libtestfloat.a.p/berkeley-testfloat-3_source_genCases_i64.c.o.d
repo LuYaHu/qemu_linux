@@ -17,7 +17,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_genCases_i64.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h ../tests/fp/platform.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/random.h \
  ../tests/fp/berkeley-testfloat-3/source/genCases.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \

@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/contrib/plugins/Makefile
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/contrib/plugins/Makefile

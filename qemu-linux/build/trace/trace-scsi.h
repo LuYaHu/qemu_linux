@@ -25,14 +25,14 @@ static inline void _nocheck__trace_pr_manager_execute(int fd, int cmd, int sa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/scsi/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scsi/trace-events"
             qemu_log("%d@%zu.%06zu:pr_manager_execute " "fd=%d cmd=0x%02x service action=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, cmd, sa);
 #line 34 "trace/trace-scsi.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/scsi/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scsi/trace-events"
             qemu_log("pr_manager_execute " "fd=%d cmd=0x%02x service action=0x%02x" "\n", fd, cmd, sa);
 #line 38 "trace/trace-scsi.h"
         }
@@ -56,14 +56,14 @@ static inline void _nocheck__trace_pr_manager_run(int fd, int cmd, int sa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/scsi/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scsi/trace-events"
             qemu_log("%d@%zu.%06zu:pr_manager_run " "fd=%d cmd=0x%02x service action=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, cmd, sa);
 #line 65 "trace/trace-scsi.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/scsi/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scsi/trace-events"
             qemu_log("pr_manager_run " "fd=%d cmd=0x%02x service action=0x%02x" "\n", fd, cmd, sa);
 #line 69 "trace/trace-scsi.h"
         }

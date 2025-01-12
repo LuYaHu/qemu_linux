@@ -97,14 +97,14 @@ static inline void _nocheck__trace_gdbstub_op_start(const char * device)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_start " "Starting gdbstub using device %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , device);
 #line 106 "trace/trace-gdbstub.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_start " "Starting gdbstub using device %s" "\n", device);
 #line 110 "trace/trace-gdbstub.h"
         }
@@ -128,14 +128,14 @@ static inline void _nocheck__trace_gdbstub_op_exiting(uint8_t code)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_exiting " "notifying exit with code=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , code);
 #line 137 "trace/trace-gdbstub.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_exiting " "notifying exit with code=0x%02x" "\n", code);
 #line 141 "trace/trace-gdbstub.h"
         }
@@ -159,14 +159,14 @@ static inline void _nocheck__trace_gdbstub_op_continue(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_continue " "Continuing all CPUs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 168 "trace/trace-gdbstub.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_continue " "Continuing all CPUs" "\n");
 #line 172 "trace/trace-gdbstub.h"
         }
@@ -190,14 +190,14 @@ static inline void _nocheck__trace_gdbstub_op_continue_cpu(int cpu_index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_continue_cpu " "Continuing CPU %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index);
 #line 199 "trace/trace-gdbstub.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_continue_cpu " "Continuing CPU %d" "\n", cpu_index);
 #line 203 "trace/trace-gdbstub.h"
         }
@@ -221,14 +221,14 @@ static inline void _nocheck__trace_gdbstub_op_stepping(int cpu_index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_stepping " "Stepping CPU %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index);
 #line 230 "trace/trace-gdbstub.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_stepping " "Stepping CPU %d" "\n", cpu_index);
 #line 234 "trace/trace-gdbstub.h"
         }
@@ -252,14 +252,14 @@ static inline void _nocheck__trace_gdbstub_op_extra_info(const char * info)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_op_extra_info " "Thread extra info: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , info);
 #line 261 "trace/trace-gdbstub.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_op_extra_info " "Thread extra info: %s" "\n", info);
 #line 265 "trace/trace-gdbstub.h"
         }
@@ -283,14 +283,14 @@ static inline void _nocheck__trace_gdbstub_hit_internal_error(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_internal_error " "RUN_STATE_INTERNAL_ERROR" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 292 "trace/trace-gdbstub.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_internal_error " "RUN_STATE_INTERNAL_ERROR" "\n");
 #line 296 "trace/trace-gdbstub.h"
         }
@@ -314,14 +314,14 @@ static inline void _nocheck__trace_gdbstub_hit_break(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_break " "RUN_STATE_DEBUG" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 323 "trace/trace-gdbstub.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_break " "RUN_STATE_DEBUG" "\n");
 #line 327 "trace/trace-gdbstub.h"
         }
@@ -345,14 +345,14 @@ static inline void _nocheck__trace_gdbstub_hit_paused(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_paused " "RUN_STATE_PAUSED" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 354 "trace/trace-gdbstub.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_paused " "RUN_STATE_PAUSED" "\n");
 #line 358 "trace/trace-gdbstub.h"
         }
@@ -376,14 +376,14 @@ static inline void _nocheck__trace_gdbstub_hit_shutdown(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_shutdown " "RUN_STATE_SHUTDOWN" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 385 "trace/trace-gdbstub.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_shutdown " "RUN_STATE_SHUTDOWN" "\n");
 #line 389 "trace/trace-gdbstub.h"
         }
@@ -407,14 +407,14 @@ static inline void _nocheck__trace_gdbstub_hit_io_error(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_io_error " "RUN_STATE_IO_ERROR" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 416 "trace/trace-gdbstub.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_io_error " "RUN_STATE_IO_ERROR" "\n");
 #line 420 "trace/trace-gdbstub.h"
         }
@@ -438,14 +438,14 @@ static inline void _nocheck__trace_gdbstub_hit_watchdog(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_watchdog " "RUN_STATE_WATCHDOG" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 447 "trace/trace-gdbstub.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_watchdog " "RUN_STATE_WATCHDOG" "\n");
 #line 451 "trace/trace-gdbstub.h"
         }
@@ -469,14 +469,14 @@ static inline void _nocheck__trace_gdbstub_hit_unknown(int state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_unknown " "Unknown run state=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state);
 #line 478 "trace/trace-gdbstub.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_unknown " "Unknown run state=0x%x" "\n", state);
 #line 482 "trace/trace-gdbstub.h"
         }
@@ -500,14 +500,14 @@ static inline void _nocheck__trace_gdbstub_io_reply(const char * message)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_io_reply " "Sent: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , message);
 #line 509 "trace/trace-gdbstub.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_io_reply " "Sent: %s" "\n", message);
 #line 513 "trace/trace-gdbstub.h"
         }
@@ -531,14 +531,14 @@ static inline void _nocheck__trace_gdbstub_io_binaryreply(size_t ofs, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_io_binaryreply " "0x%04zx: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ofs, line);
 #line 540 "trace/trace-gdbstub.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_io_binaryreply " "0x%04zx: %s" "\n", ofs, line);
 #line 544 "trace/trace-gdbstub.h"
         }
@@ -562,14 +562,14 @@ static inline void _nocheck__trace_gdbstub_io_command(const char * command)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_io_command " "Received: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , command);
 #line 571 "trace/trace-gdbstub.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_io_command " "Received: %s" "\n", command);
 #line 575 "trace/trace-gdbstub.h"
         }
@@ -593,14 +593,14 @@ static inline void _nocheck__trace_gdbstub_io_got_ack(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_io_got_ack " "Got ACK" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 602 "trace/trace-gdbstub.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_io_got_ack " "Got ACK" "\n");
 #line 606 "trace/trace-gdbstub.h"
         }
@@ -624,14 +624,14 @@ static inline void _nocheck__trace_gdbstub_io_got_unexpected(uint8_t ch)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_io_got_unexpected " "Got 0x%02x when expecting ACK/NACK" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ch);
 #line 633 "trace/trace-gdbstub.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_io_got_unexpected " "Got 0x%02x when expecting ACK/NACK" "\n", ch);
 #line 637 "trace/trace-gdbstub.h"
         }
@@ -655,14 +655,14 @@ static inline void _nocheck__trace_gdbstub_err_got_nack(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_got_nack " "Got NACK, retransmitting" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 664 "trace/trace-gdbstub.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_got_nack " "Got NACK, retransmitting" "\n");
 #line 668 "trace/trace-gdbstub.h"
         }
@@ -686,14 +686,14 @@ static inline void _nocheck__trace_gdbstub_err_garbage(uint8_t ch)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_garbage " "received garbage between packets: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ch);
 #line 695 "trace/trace-gdbstub.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_garbage " "received garbage between packets: 0x%02x" "\n", ch);
 #line 699 "trace/trace-gdbstub.h"
         }
@@ -717,14 +717,14 @@ static inline void _nocheck__trace_gdbstub_err_overrun(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_overrun " "command buffer overrun, dropping command" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 726 "trace/trace-gdbstub.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_overrun " "command buffer overrun, dropping command" "\n");
 #line 730 "trace/trace-gdbstub.h"
         }
@@ -748,14 +748,14 @@ static inline void _nocheck__trace_gdbstub_err_invalid_repeat(uint8_t ch)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_invalid_repeat " "got invalid RLE count: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ch);
 #line 757 "trace/trace-gdbstub.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_invalid_repeat " "got invalid RLE count: 0x%02x" "\n", ch);
 #line 761 "trace/trace-gdbstub.h"
         }
@@ -779,14 +779,14 @@ static inline void _nocheck__trace_gdbstub_err_invalid_rle(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_invalid_rle " "got invalid RLE sequence" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 788 "trace/trace-gdbstub.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_invalid_rle " "got invalid RLE sequence" "\n");
 #line 792 "trace/trace-gdbstub.h"
         }
@@ -810,14 +810,14 @@ static inline void _nocheck__trace_gdbstub_err_checksum_invalid(uint8_t ch)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_checksum_invalid " "got invalid command checksum digit: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ch);
 #line 819 "trace/trace-gdbstub.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_checksum_invalid " "got invalid command checksum digit: 0x%02x" "\n", ch);
 #line 823 "trace/trace-gdbstub.h"
         }
@@ -841,14 +841,14 @@ static inline void _nocheck__trace_gdbstub_err_checksum_incorrect(uint8_t expect
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_err_checksum_incorrect " "got command packet with incorrect checksum, expected=0x%02x, received=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , expected, got);
 #line 850 "trace/trace-gdbstub.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_err_checksum_incorrect " "got command packet with incorrect checksum, expected=0x%02x, received=0x%02x" "\n", expected, got);
 #line 854 "trace/trace-gdbstub.h"
         }
@@ -872,14 +872,14 @@ static inline void _nocheck__trace_gdbstub_hit_watchpoint(const char * type, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("%d@%zu.%06zu:gdbstub_hit_watchpoint " "Watchpoint hit, type=\"%s\" cpu=%d, vaddr=0x%" PRIx64 "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, cpu_gdb_index, vaddr);
 #line 881 "trace/trace-gdbstub.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/gdbstub/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/gdbstub/trace-events"
             qemu_log("gdbstub_hit_watchpoint " "Watchpoint hit, type=\"%s\" cpu=%d, vaddr=0x%" PRIx64 "" "\n", type, cpu_gdb_index, vaddr);
 #line 885 "trace/trace-gdbstub.h"
         }

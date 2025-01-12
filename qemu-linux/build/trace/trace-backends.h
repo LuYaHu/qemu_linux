@@ -31,14 +31,14 @@ static inline void _nocheck__trace_dbus_vmstate_pre_save(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_vmstate_pre_save "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 40 "trace/trace-backends.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("dbus_vmstate_pre_save "  "\n");
 #line 44 "trace/trace-backends.h"
         }
@@ -62,14 +62,14 @@ static inline void _nocheck__trace_dbus_vmstate_post_load(int version_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_vmstate_post_load " "version_id: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , version_id);
 #line 71 "trace/trace-backends.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("dbus_vmstate_post_load " "version_id: %d" "\n", version_id);
 #line 75 "trace/trace-backends.h"
         }
@@ -93,14 +93,14 @@ static inline void _nocheck__trace_dbus_vmstate_loading(const char * id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_vmstate_loading " "id: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 102 "trace/trace-backends.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("dbus_vmstate_loading " "id: %s" "\n", id);
 #line 106 "trace/trace-backends.h"
         }
@@ -124,14 +124,14 @@ static inline void _nocheck__trace_dbus_vmstate_saving(const char * id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("%d@%zu.%06zu:dbus_vmstate_saving " "id: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id);
 #line 133 "trace/trace-backends.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/trace-events"
             qemu_log("dbus_vmstate_saving " "id: %s" "\n", id);
 #line 137 "trace/trace-backends.h"
         }

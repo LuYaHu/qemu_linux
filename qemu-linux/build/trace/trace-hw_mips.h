@@ -25,14 +25,14 @@ static inline void _nocheck__trace_malta_fpga_leds(const char * text)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mips/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mips/trace-events"
             qemu_log("%d@%zu.%06zu:malta_fpga_leds " "LEDs %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , text);
 #line 34 "trace/trace-hw_mips.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mips/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mips/trace-events"
             qemu_log("malta_fpga_leds " "LEDs %s" "\n", text);
 #line 38 "trace/trace-hw_mips.h"
         }
@@ -56,14 +56,14 @@ static inline void _nocheck__trace_malta_fpga_display(const char * text)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mips/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mips/trace-events"
             qemu_log("%d@%zu.%06zu:malta_fpga_display " "ASCII '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , text);
 #line 65 "trace/trace-hw_mips.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mips/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mips/trace-events"
             qemu_log("malta_fpga_display " "ASCII '%s'" "\n", text);
 #line 69 "trace/trace-hw_mips.h"
         }

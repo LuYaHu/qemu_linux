@@ -55,14 +55,14 @@ static inline void _nocheck__trace_nvram_read(uint32_t addr, uint32_t ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:nvram_read " "read addr %d: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, ret);
 #line 64 "trace/trace-hw_nvram.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("nvram_read " "read addr %d: 0x%02x" "\n", addr, ret);
 #line 68 "trace/trace-hw_nvram.h"
         }
@@ -86,14 +86,14 @@ static inline void _nocheck__trace_nvram_write(uint32_t addr, uint32_t old, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:nvram_write " "write addr %d: 0x%02x -> 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, old, val);
 #line 95 "trace/trace-hw_nvram.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("nvram_write " "write addr %d: 0x%02x -> 0x%02x" "\n", addr, old, val);
 #line 99 "trace/trace-hw_nvram.h"
         }
@@ -117,14 +117,14 @@ static inline void _nocheck__trace_fw_cfg_select(void * s, uint16_t key_value, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_select " "%p key 0x%04" PRIx16 " '%s', ret: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, key_value, key_name, ret);
 #line 126 "trace/trace-hw_nvram.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_select " "%p key 0x%04" PRIx16 " '%s', ret: %d" "\n", s, key_value, key_name, ret);
 #line 130 "trace/trace-hw_nvram.h"
         }
@@ -148,14 +148,14 @@ static inline void _nocheck__trace_fw_cfg_read(void * s, uint64_t ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_read " "%p = 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, ret);
 #line 157 "trace/trace-hw_nvram.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_read " "%p = 0x%"PRIx64 "\n", s, ret);
 #line 161 "trace/trace-hw_nvram.h"
         }
@@ -179,14 +179,14 @@ static inline void _nocheck__trace_fw_cfg_add_bytes(uint16_t key_value, const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_bytes " "key 0x%04" PRIx16 " '%s', %zu bytes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , key_value, key_name, len);
 #line 188 "trace/trace-hw_nvram.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_bytes " "key 0x%04" PRIx16 " '%s', %zu bytes" "\n", key_value, key_name, len);
 #line 192 "trace/trace-hw_nvram.h"
         }
@@ -210,14 +210,14 @@ static inline void _nocheck__trace_fw_cfg_add_file(void * s, int index, char * n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_file " "%p #%d: %s (%zd bytes)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, index, name, len);
 #line 219 "trace/trace-hw_nvram.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_file " "%p #%d: %s (%zd bytes)" "\n", s, index, name, len);
 #line 223 "trace/trace-hw_nvram.h"
         }
@@ -241,14 +241,14 @@ static inline void _nocheck__trace_fw_cfg_add_string(uint16_t key_value, const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_string " "key 0x%04" PRIx16 " '%s', value '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , key_value, key_name, value);
 #line 250 "trace/trace-hw_nvram.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_string " "key 0x%04" PRIx16 " '%s', value '%s'" "\n", key_value, key_name, value);
 #line 254 "trace/trace-hw_nvram.h"
         }
@@ -272,14 +272,14 @@ static inline void _nocheck__trace_fw_cfg_add_i16(uint16_t key_value, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_i16 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , key_value, key_name, value);
 #line 281 "trace/trace-hw_nvram.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_i16 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx16 "\n", key_value, key_name, value);
 #line 285 "trace/trace-hw_nvram.h"
         }
@@ -303,14 +303,14 @@ static inline void _nocheck__trace_fw_cfg_add_i32(uint16_t key_value, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_i32 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , key_value, key_name, value);
 #line 312 "trace/trace-hw_nvram.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_i32 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx32 "\n", key_value, key_name, value);
 #line 316 "trace/trace-hw_nvram.h"
         }
@@ -334,14 +334,14 @@ static inline void _nocheck__trace_fw_cfg_add_i64(uint16_t key_value, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:fw_cfg_add_i64 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , key_value, key_name, value);
 #line 343 "trace/trace-hw_nvram.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("fw_cfg_add_i64 " "key 0x%04" PRIx16 " '%s', value 0x%" PRIx64 "\n", key_value, key_name, value);
 #line 347 "trace/trace-hw_nvram.h"
         }
@@ -365,14 +365,14 @@ static inline void _nocheck__trace_macio_nvram_read(uint32_t addr, uint8_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:macio_nvram_read " "read addr=0x%04"PRIx32" val=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 374 "trace/trace-hw_nvram.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("macio_nvram_read " "read addr=0x%04"PRIx32" val=0x%02x" "\n", addr, val);
 #line 378 "trace/trace-hw_nvram.h"
         }
@@ -396,14 +396,14 @@ static inline void _nocheck__trace_macio_nvram_write(uint32_t addr, uint8_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("%d@%zu.%06zu:macio_nvram_write " "write addr=0x%04"PRIx32" val=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 405 "trace/trace-hw_nvram.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvram/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvram/trace-events"
             qemu_log("macio_nvram_write " "write addr=0x%04"PRIx32" val=0x%02x" "\n", addr, val);
 #line 409 "trace/trace-hw_nvram.h"
         }

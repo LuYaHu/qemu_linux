@@ -22,14 +22,14 @@ static inline void _nocheck__trace_alpha_pci_iack_write(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/alpha/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/alpha/trace-events"
             qemu_log("%d@%zu.%06zu:alpha_pci_iack_write " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 31 "trace/trace-hw_alpha.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/alpha/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/alpha/trace-events"
             qemu_log("alpha_pci_iack_write " "" "\n");
 #line 35 "trace/trace-hw_alpha.h"
         }

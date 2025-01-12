@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/pc-bios/vof/Makefile
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/pc-bios/vof/Makefile

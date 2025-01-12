@@ -91,14 +91,14 @@ static inline void _nocheck__trace_rdma_check_dev_attr(const char * name, int ma
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_check_dev_attr " "%s: be=%d, fe=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, max_bk, max_fe);
 #line 100 "trace/trace-hw_rdma.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_check_dev_attr " "%s: be=%d, fe=%d" "\n", name, max_bk, max_fe);
 #line 104 "trace/trace-hw_rdma.h"
         }
@@ -122,14 +122,14 @@ static inline void _nocheck__trace_rdma_create_ah_cache_hit(uint64_t subnet, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_create_ah_cache_hit " "subnet=0x%"PRIx64",if_id=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , subnet, if_id);
 #line 131 "trace/trace-hw_rdma.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_create_ah_cache_hit " "subnet=0x%"PRIx64",if_id=0x%"PRIx64 "\n", subnet, if_id);
 #line 135 "trace/trace-hw_rdma.h"
         }
@@ -153,14 +153,14 @@ static inline void _nocheck__trace_rdma_create_ah_cache_miss(uint64_t subnet, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_create_ah_cache_miss " "subnet=0x%"PRIx64",if_id=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , subnet, if_id);
 #line 162 "trace/trace-hw_rdma.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_create_ah_cache_miss " "subnet=0x%"PRIx64",if_id=0x%"PRIx64 "\n", subnet, if_id);
 #line 166 "trace/trace-hw_rdma.h"
         }
@@ -184,14 +184,14 @@ static inline void _nocheck__trace_rdma_poll_cq(int ne, void * ibcq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_poll_cq " "Got %d completion(s) from cq %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ne, ibcq);
 #line 193 "trace/trace-hw_rdma.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_poll_cq " "Got %d completion(s) from cq %p" "\n", ne, ibcq);
 #line 197 "trace/trace-hw_rdma.h"
         }
@@ -215,14 +215,14 @@ static inline void _nocheck__trace_rdmacm_mux(const char * title, int msg_type, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdmacm_mux " "%s: msg_type=%d, op_code=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , title, msg_type, op_code);
 #line 224 "trace/trace-hw_rdma.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdmacm_mux " "%s: msg_type=%d, op_code=%d" "\n", title, msg_type, op_code);
 #line 228 "trace/trace-hw_rdma.h"
         }
@@ -246,14 +246,14 @@ static inline void _nocheck__trace_rdmacm_mux_check_op_status(int msg_type, int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdmacm_mux_check_op_status " "resp: msg_type=%d, op_code=%d, err_code=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg_type, op_code, err_code);
 #line 255 "trace/trace-hw_rdma.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdmacm_mux_check_op_status " "resp: msg_type=%d, op_code=%d, err_code=%d" "\n", msg_type, op_code, err_code);
 #line 259 "trace/trace-hw_rdma.h"
         }
@@ -277,14 +277,14 @@ static inline void _nocheck__trace_rdma_mad_message(const char * title, int len,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_mad_message " "mad %s (%d): %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , title, len, data);
 #line 286 "trace/trace-hw_rdma.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_mad_message " "mad %s (%d): %s" "\n", title, len, data);
 #line 290 "trace/trace-hw_rdma.h"
         }
@@ -308,14 +308,14 @@ static inline void _nocheck__trace_rdma_backend_rc_qp_state_init(uint32_t qpn)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_rc_qp_state_init " "RC QP 0x%x switch to INIT" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn);
 #line 317 "trace/trace-hw_rdma.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_rc_qp_state_init " "RC QP 0x%x switch to INIT" "\n", qpn);
 #line 321 "trace/trace-hw_rdma.h"
         }
@@ -339,14 +339,14 @@ static inline void _nocheck__trace_rdma_backend_ud_qp_state_init(uint32_t qpn, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_ud_qp_state_init " "UD QP 0x%x switch to INIT, qkey=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, qkey);
 #line 348 "trace/trace-hw_rdma.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_ud_qp_state_init " "UD QP 0x%x switch to INIT, qkey=0x%x" "\n", qpn, qkey);
 #line 352 "trace/trace-hw_rdma.h"
         }
@@ -370,14 +370,14 @@ static inline void _nocheck__trace_rdma_backend_rc_qp_state_rtr(uint32_t qpn, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_rc_qp_state_rtr " "RC QP 0x%x switch to RTR, subnet = 0x%"PRIx64", ifid = 0x%"PRIx64 ", sgid_idx=%d, dqpn=0x%x, rq_psn=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, subnet, ifid, sgid_idx, dqpn, rq_psn);
 #line 379 "trace/trace-hw_rdma.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_rc_qp_state_rtr " "RC QP 0x%x switch to RTR, subnet = 0x%"PRIx64", ifid = 0x%"PRIx64 ", sgid_idx=%d, dqpn=0x%x, rq_psn=0x%x" "\n", qpn, subnet, ifid, sgid_idx, dqpn, rq_psn);
 #line 383 "trace/trace-hw_rdma.h"
         }
@@ -401,14 +401,14 @@ static inline void _nocheck__trace_rdma_backend_ud_qp_state_rtr(uint32_t qpn, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_ud_qp_state_rtr " "UD QP 0x%x switch to RTR, qkey=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, qkey);
 #line 410 "trace/trace-hw_rdma.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_ud_qp_state_rtr " "UD QP 0x%x switch to RTR, qkey=0x%x" "\n", qpn, qkey);
 #line 414 "trace/trace-hw_rdma.h"
         }
@@ -432,14 +432,14 @@ static inline void _nocheck__trace_rdma_backend_rc_qp_state_rts(uint32_t qpn, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_rc_qp_state_rts " "RC QP 0x%x switch to RTS, sq_psn=0x%x, " "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, sq_psn);
 #line 441 "trace/trace-hw_rdma.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_rc_qp_state_rts " "RC QP 0x%x switch to RTS, sq_psn=0x%x, " "\n", qpn, sq_psn);
 #line 445 "trace/trace-hw_rdma.h"
         }
@@ -463,14 +463,14 @@ static inline void _nocheck__trace_rdma_backend_ud_qp_state_rts(uint32_t qpn, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_ud_qp_state_rts " "UD QP 0x%x switch to RTS, sq_psn=0x%x, qkey=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, sq_psn, qkey);
 #line 472 "trace/trace-hw_rdma.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_ud_qp_state_rts " "UD QP 0x%x switch to RTS, sq_psn=0x%x, qkey=0x%x" "\n", qpn, sq_psn, qkey);
 #line 476 "trace/trace-hw_rdma.h"
         }
@@ -494,14 +494,14 @@ static inline void _nocheck__trace_rdma_backend_get_gid_index(uint64_t subnet, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_get_gid_index " "subnet=0x%"PRIx64", ifid=0x%"PRIx64 ", gid_idx=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , subnet, ifid, gid_idx);
 #line 503 "trace/trace-hw_rdma.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_get_gid_index " "subnet=0x%"PRIx64", ifid=0x%"PRIx64 ", gid_idx=%d" "\n", subnet, ifid, gid_idx);
 #line 507 "trace/trace-hw_rdma.h"
         }
@@ -525,14 +525,14 @@ static inline void _nocheck__trace_rdma_backend_gid_change(const char * op, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_backend_gid_change " "%s subnet=0x%"PRIx64", ifid=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , op, subnet, ifid);
 #line 534 "trace/trace-hw_rdma.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_backend_gid_change " "%s subnet=0x%"PRIx64", ifid=0x%"PRIx64 "\n", op, subnet, ifid);
 #line 538 "trace/trace-hw_rdma.h"
         }
@@ -556,14 +556,14 @@ static inline void _nocheck__trace_rdma_res_tbl_get(char * name, uint32_t handle
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_res_tbl_get " "tbl %s, handle %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, handle);
 #line 565 "trace/trace-hw_rdma.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_res_tbl_get " "tbl %s, handle %d" "\n", name, handle);
 #line 569 "trace/trace-hw_rdma.h"
         }
@@ -587,14 +587,14 @@ static inline void _nocheck__trace_rdma_res_tbl_alloc(char * name, uint32_t hand
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_res_tbl_alloc " "tbl %s, handle %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, handle);
 #line 596 "trace/trace-hw_rdma.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_res_tbl_alloc " "tbl %s, handle %d" "\n", name, handle);
 #line 600 "trace/trace-hw_rdma.h"
         }
@@ -618,14 +618,14 @@ static inline void _nocheck__trace_rdma_res_tbl_dealloc(char * name, uint32_t ha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_res_tbl_dealloc " "tbl %s, handle %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, handle);
 #line 627 "trace/trace-hw_rdma.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_res_tbl_dealloc " "tbl %s, handle %d" "\n", name, handle);
 #line 631 "trace/trace-hw_rdma.h"
         }
@@ -649,14 +649,14 @@ static inline void _nocheck__trace_rdma_rm_alloc_mr(uint32_t mr_handle, void * h
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_rm_alloc_mr " "mr_handle=%d, host_virt=%p, guest_start=0x%"PRIx64", length=%" PRId64", access_flags=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mr_handle, host_virt, guest_start, guest_length, access_flags);
 #line 658 "trace/trace-hw_rdma.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_rm_alloc_mr " "mr_handle=%d, host_virt=%p, guest_start=0x%"PRIx64", length=%" PRId64", access_flags=0x%x" "\n", mr_handle, host_virt, guest_start, guest_length, access_flags);
 #line 662 "trace/trace-hw_rdma.h"
         }
@@ -680,14 +680,14 @@ static inline void _nocheck__trace_rdma_rm_dealloc_mr(uint32_t mr_handle, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_rm_dealloc_mr " "mr_handle=%d, guest_start=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mr_handle, guest_start);
 #line 689 "trace/trace-hw_rdma.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_rm_dealloc_mr " "mr_handle=%d, guest_start=0x%"PRIx64 "\n", mr_handle, guest_start);
 #line 693 "trace/trace-hw_rdma.h"
         }
@@ -711,14 +711,14 @@ static inline void _nocheck__trace_rdma_rm_alloc_qp(uint32_t rm_qpn, uint32_t ba
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_rm_alloc_qp " "rm_qpn=%d, backend_qpn=0x%x, qp_type=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rm_qpn, backend_qpn, qp_type);
 #line 720 "trace/trace-hw_rdma.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_rm_alloc_qp " "rm_qpn=%d, backend_qpn=0x%x, qp_type=%d" "\n", rm_qpn, backend_qpn, qp_type);
 #line 724 "trace/trace-hw_rdma.h"
         }
@@ -742,14 +742,14 @@ static inline void _nocheck__trace_rdma_rm_modify_qp(uint32_t qpn, uint32_t attr
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_rm_modify_qp " "qpn=0x%x, attr_mask=0x%x, qp_state=%d, sgid_idx=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qpn, attr_mask, qp_state, sgid_idx);
 #line 751 "trace/trace-hw_rdma.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_rm_modify_qp " "qpn=0x%x, attr_mask=0x%x, qp_state=%d, sgid_idx=%d" "\n", qpn, attr_mask, qp_state, sgid_idx);
 #line 755 "trace/trace-hw_rdma.h"
         }
@@ -773,14 +773,14 @@ static inline void _nocheck__trace_rdma_pci_dma_map(uint64_t addr, void * vaddr,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_pci_dma_map " "0x%"PRIx64" -> %p (len=%" PRIu64")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, vaddr, len);
 #line 782 "trace/trace-hw_rdma.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_pci_dma_map " "0x%"PRIx64" -> %p (len=%" PRIu64")" "\n", addr, vaddr, len);
 #line 786 "trace/trace-hw_rdma.h"
         }
@@ -804,14 +804,14 @@ static inline void _nocheck__trace_rdma_pci_dma_unmap(void * vaddr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("%d@%zu.%06zu:rdma_pci_dma_unmap " "%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vaddr);
 #line 813 "trace/trace-hw_rdma.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/rdma/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/rdma/trace-events"
             qemu_log("rdma_pci_dma_unmap " "%p" "\n", vaddr);
 #line 817 "trace/trace-hw_rdma.h"
         }

@@ -58,14 +58,14 @@ static inline void _nocheck__trace_cmsdk_apb_watchdog_read(uint64_t offset, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:cmsdk_apb_watchdog_read " "CMSDK APB watchdog read: offset 0x%" PRIx64 " data 0x%" PRIx64 " size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, data, size);
 #line 67 "trace/trace-hw_watchdog.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("cmsdk_apb_watchdog_read " "CMSDK APB watchdog read: offset 0x%" PRIx64 " data 0x%" PRIx64 " size %u" "\n", offset, data, size);
 #line 71 "trace/trace-hw_watchdog.h"
         }
@@ -89,14 +89,14 @@ static inline void _nocheck__trace_cmsdk_apb_watchdog_write(uint64_t offset, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:cmsdk_apb_watchdog_write " "CMSDK APB watchdog write: offset 0x%" PRIx64 " data 0x%" PRIx64 " size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, data, size);
 #line 98 "trace/trace-hw_watchdog.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("cmsdk_apb_watchdog_write " "CMSDK APB watchdog write: offset 0x%" PRIx64 " data 0x%" PRIx64 " size %u" "\n", offset, data, size);
 #line 102 "trace/trace-hw_watchdog.h"
         }
@@ -120,14 +120,14 @@ static inline void _nocheck__trace_cmsdk_apb_watchdog_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:cmsdk_apb_watchdog_reset " "CMSDK APB watchdog: reset" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 129 "trace/trace-hw_watchdog.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("cmsdk_apb_watchdog_reset " "CMSDK APB watchdog: reset" "\n");
 #line 133 "trace/trace-hw_watchdog.h"
         }
@@ -151,14 +151,14 @@ static inline void _nocheck__trace_cmsdk_apb_watchdog_lock(uint32_t lock)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:cmsdk_apb_watchdog_lock " "CMSDK APB watchdog: lock %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lock);
 #line 160 "trace/trace-hw_watchdog.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("cmsdk_apb_watchdog_lock " "CMSDK APB watchdog: lock %" PRIu32 "\n", lock);
 #line 164 "trace/trace-hw_watchdog.h"
         }
@@ -182,14 +182,14 @@ static inline void _nocheck__trace_aspeed_wdt_read(uint64_t addr, uint32_t size)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_wdt_read " "@0x%" PRIx64 " size=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size);
 #line 191 "trace/trace-hw_watchdog.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("aspeed_wdt_read " "@0x%" PRIx64 " size=%d" "\n", addr, size);
 #line 195 "trace/trace-hw_watchdog.h"
         }
@@ -213,14 +213,14 @@ static inline void _nocheck__trace_aspeed_wdt_write(uint64_t addr, uint32_t size
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:aspeed_wdt_write " "@0x%" PRIx64 " size=%d value=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size, data);
 #line 222 "trace/trace-hw_watchdog.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("aspeed_wdt_write " "@0x%" PRIx64 " size=%d value=0x%"PRIx64 "\n", addr, size, data);
 #line 226 "trace/trace-hw_watchdog.h"
         }
@@ -244,14 +244,14 @@ static inline void _nocheck__trace_spapr_watchdog_start(uint64_t flags, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:spapr_watchdog_start " "Flags 0x%" PRIx64 " num=%" PRId64 " %" PRIu64 "ms" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flags, num, timeout);
 #line 253 "trace/trace-hw_watchdog.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("spapr_watchdog_start " "Flags 0x%" PRIx64 " num=%" PRId64 " %" PRIu64 "ms" "\n", flags, num, timeout);
 #line 257 "trace/trace-hw_watchdog.h"
         }
@@ -275,14 +275,14 @@ static inline void _nocheck__trace_spapr_watchdog_stop(uint64_t num, uint64_t re
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:spapr_watchdog_stop " "num=%" PRIu64 " ret=%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num, ret);
 #line 284 "trace/trace-hw_watchdog.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("spapr_watchdog_stop " "num=%" PRIu64 " ret=%" PRId64 "\n", num, ret);
 #line 288 "trace/trace-hw_watchdog.h"
         }
@@ -306,14 +306,14 @@ static inline void _nocheck__trace_spapr_watchdog_query(uint64_t caps)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:spapr_watchdog_query " "caps=0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , caps);
 #line 315 "trace/trace-hw_watchdog.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("spapr_watchdog_query " "caps=0x%" PRIx64 "\n", caps);
 #line 319 "trace/trace-hw_watchdog.h"
         }
@@ -337,14 +337,14 @@ static inline void _nocheck__trace_spapr_watchdog_query_lpm(uint64_t caps)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:spapr_watchdog_query_lpm " "caps=0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , caps);
 #line 346 "trace/trace-hw_watchdog.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("spapr_watchdog_query_lpm " "caps=0x%" PRIx64 "\n", caps);
 #line 350 "trace/trace-hw_watchdog.h"
         }
@@ -368,14 +368,14 @@ static inline void _nocheck__trace_spapr_watchdog_expired(uint64_t num, unsigned
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:spapr_watchdog_expired " "num=%" PRIu64 " action=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num, action);
 #line 377 "trace/trace-hw_watchdog.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("spapr_watchdog_expired " "num=%" PRIu64 " action=%u" "\n", num, action);
 #line 381 "trace/trace-hw_watchdog.h"
         }
@@ -399,14 +399,14 @@ static inline void _nocheck__trace_watchdog_perform_action(unsigned int action)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:watchdog_perform_action " "action=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action);
 #line 408 "trace/trace-hw_watchdog.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("watchdog_perform_action " "action=%u" "\n", action);
 #line 412 "trace/trace-hw_watchdog.h"
         }
@@ -430,14 +430,14 @@ static inline void _nocheck__trace_watchdog_set_action(unsigned int action)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("%d@%zu.%06zu:watchdog_set_action " "action=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action);
 #line 439 "trace/trace-hw_watchdog.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/watchdog/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/watchdog/trace-events"
             qemu_log("watchdog_set_action " "action=%u" "\n", action);
 #line 443 "trace/trace-hw_watchdog.h"
         }

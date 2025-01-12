@@ -37,14 +37,14 @@ static inline void _nocheck__trace_exec_tb(void * tb, uintptr_t pc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:exec_tb " "tb:%p pc=0x%"PRIxPTR "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tb, pc);
 #line 46 "trace/trace-accel_tcg.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("exec_tb " "tb:%p pc=0x%"PRIxPTR "\n", tb, pc);
 #line 50 "trace/trace-accel_tcg.h"
         }
@@ -68,14 +68,14 @@ static inline void _nocheck__trace_exec_tb_nocache(void * tb, uintptr_t pc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:exec_tb_nocache " "tb:%p pc=0x%"PRIxPTR "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tb, pc);
 #line 77 "trace/trace-accel_tcg.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("exec_tb_nocache " "tb:%p pc=0x%"PRIxPTR "\n", tb, pc);
 #line 81 "trace/trace-accel_tcg.h"
         }
@@ -99,14 +99,14 @@ static inline void _nocheck__trace_exec_tb_exit(void * last_tb, unsigned int fla
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:exec_tb_exit " "tb:%p flags=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , last_tb, flags);
 #line 108 "trace/trace-accel_tcg.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("exec_tb_exit " "tb:%p flags=0x%x" "\n", last_tb, flags);
 #line 112 "trace/trace-accel_tcg.h"
         }
@@ -130,14 +130,14 @@ static inline void _nocheck__trace_memory_notdirty_write_access(uint64_t vaddr, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:memory_notdirty_write_access " "0x%" PRIx64 " ram_addr 0x%" PRIx64 " size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vaddr, ram_addr, size);
 #line 139 "trace/trace-accel_tcg.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("memory_notdirty_write_access " "0x%" PRIx64 " ram_addr 0x%" PRIx64 " size %u" "\n", vaddr, ram_addr, size);
 #line 143 "trace/trace-accel_tcg.h"
         }
@@ -161,14 +161,14 @@ static inline void _nocheck__trace_memory_notdirty_set_dirty(uint64_t vaddr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:memory_notdirty_set_dirty " "0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vaddr);
 #line 170 "trace/trace-accel_tcg.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("memory_notdirty_set_dirty " "0x%" PRIx64 "\n", vaddr);
 #line 174 "trace/trace-accel_tcg.h"
         }
@@ -192,14 +192,14 @@ static inline void _nocheck__trace_translate_block(void * tb, uintptr_t pc, cons
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:translate_block " "tb:%p, pc:0x%"PRIxPTR", tb_code:%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tb, pc, tb_code);
 #line 201 "trace/trace-accel_tcg.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/accel/tcg/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/accel/tcg/trace-events"
             qemu_log("translate_block " "tb:%p, pc:0x%"PRIxPTR", tb_code:%p" "\n", tb, pc, tb_code);
 #line 205 "trace/trace-accel_tcg.h"
         }

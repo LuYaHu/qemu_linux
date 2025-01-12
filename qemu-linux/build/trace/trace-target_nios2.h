@@ -40,14 +40,14 @@ static inline void _nocheck__trace_nios2_mmu_translate_miss(uint32_t vaddr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_translate_miss " "mmu_translate: MISS vaddr=0x%08x pid=%u TLB[%u] tag=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vaddr, pid, index, tag);
 #line 49 "trace/trace-target_nios2.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_translate_miss " "mmu_translate: MISS vaddr=0x%08x pid=%u TLB[%u] tag=0x%08x" "\n", vaddr, pid, index, tag);
 #line 53 "trace/trace-target_nios2.h"
         }
@@ -71,14 +71,14 @@ static inline void _nocheck__trace_nios2_mmu_translate_hit(uint32_t vaddr, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_translate_hit " "mmu_translate: HIT vaddr=0x%08x pid=%u TLB[%u] paddr=0x%08x prot=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vaddr, pid, index, paddr, prot);
 #line 80 "trace/trace-target_nios2.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_translate_hit " "mmu_translate: HIT vaddr=0x%08x pid=%u TLB[%u] paddr=0x%08x prot=0x%x" "\n", vaddr, pid, index, paddr, prot);
 #line 84 "trace/trace-target_nios2.h"
         }
@@ -102,14 +102,14 @@ static inline void _nocheck__trace_nios2_mmu_flush_pid_miss(uint32_t pid, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_flush_pid_miss " "mmu_flush: MISS pid=%u TLB[%u] tag=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pid, index, vaddr);
 #line 111 "trace/trace-target_nios2.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_flush_pid_miss " "mmu_flush: MISS pid=%u TLB[%u] tag=0x%08x" "\n", pid, index, vaddr);
 #line 115 "trace/trace-target_nios2.h"
         }
@@ -133,14 +133,14 @@ static inline void _nocheck__trace_nios2_mmu_flush_pid_hit(uint32_t pid, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_flush_pid_hit " "mmu_flush: HIT pid=%u TLB[%u] vaddr=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pid, index, vaddr);
 #line 142 "trace/trace-target_nios2.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_flush_pid_hit " "mmu_flush: HIT pid=%u TLB[%u] vaddr=0x%08x" "\n", pid, index, vaddr);
 #line 146 "trace/trace-target_nios2.h"
         }
@@ -164,14 +164,14 @@ static inline void _nocheck__trace_nios2_mmu_write_tlbacc(uint32_t ig, char c, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_write_tlbacc " "mmu_write_tlbacc: ig=0x%02x flags=%c%c%c%c%c pfn=0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ig, c, r, w, x, g, pfn);
 #line 173 "trace/trace-target_nios2.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_write_tlbacc " "mmu_write_tlbacc: ig=0x%02x flags=%c%c%c%c%c pfn=0x%08x" "\n", ig, c, r, w, x, g, pfn);
 #line 177 "trace/trace-target_nios2.h"
         }
@@ -195,14 +195,14 @@ static inline void _nocheck__trace_nios2_mmu_write_tlbmisc(uint32_t way, char r,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_write_tlbmisc " "mmu_write_tlbmisc: way=0x%x flags=%c%c%c%c%c%c pid=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , way, r, w, t, b, p, d, pid);
 #line 204 "trace/trace-target_nios2.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_write_tlbmisc " "mmu_write_tlbmisc: way=0x%x flags=%c%c%c%c%c%c pid=%u" "\n", way, r, w, t, b, p, d, pid);
 #line 208 "trace/trace-target_nios2.h"
         }
@@ -226,14 +226,14 @@ static inline void _nocheck__trace_nios2_mmu_write_pteaddr(uint32_t ptb, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("%d@%zu.%06zu:nios2_mmu_write_pteaddr " "mmu_write_pteaddr: ptbase=0x%03x vpn=0x%05x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ptb, vpn);
 #line 235 "trace/trace-target_nios2.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/nios2/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/nios2/trace-events"
             qemu_log("nios2_mmu_write_pteaddr " "mmu_write_pteaddr: ptbase=0x%03x vpn=0x%05x" "\n", ptb, vpn);
 #line 239 "trace/trace-target_nios2.h"
         }

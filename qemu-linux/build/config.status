@@ -31,4 +31,4 @@ unset STRIP
 unset WIDL
 unset WINDRES
 unset WINDMC
-exec '/home/luyahu/qemu_linux/qemu-8.0.2/configure' '--prefix=/home/luyahu/qemu_linux/qemu-8.0.2/output/qemu' '--target-list=riscv64-softmmu' '--enable-gtk' '--enable-virtfs' '--disable-gio' "$@"
+exec '/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/configure' '--prefix=/home/luyahu/qemu_linux/qemu-8.0.2/output/qemu' '--target-list=riscv64-softmmu' '--enable-gtk' '--enable-virtfs' '--disable-gio' "$@"

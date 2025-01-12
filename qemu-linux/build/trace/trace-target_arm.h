@@ -43,14 +43,14 @@ static inline void _nocheck__trace_arm_gt_recalc(int timer, int irqstate, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_recalc " "gt recalc: timer %d irqstate %d next tick 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer, irqstate, nexttick);
 #line 52 "trace/trace-target_arm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_recalc " "gt recalc: timer %d irqstate %d next tick 0x%" PRIx64 "\n", timer, irqstate, nexttick);
 #line 56 "trace/trace-target_arm.h"
         }
@@ -74,14 +74,14 @@ static inline void _nocheck__trace_arm_gt_recalc_disabled(int timer)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_recalc_disabled " "gt recalc: timer %d irqstate 0 timer disabled" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer);
 #line 83 "trace/trace-target_arm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_recalc_disabled " "gt recalc: timer %d irqstate 0 timer disabled" "\n", timer);
 #line 87 "trace/trace-target_arm.h"
         }
@@ -105,14 +105,14 @@ static inline void _nocheck__trace_arm_gt_cval_write(int timer, uint64_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_cval_write " "gt_cval_write: timer %d value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer, value);
 #line 114 "trace/trace-target_arm.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_cval_write " "gt_cval_write: timer %d value 0x%" PRIx64 "\n", timer, value);
 #line 118 "trace/trace-target_arm.h"
         }
@@ -136,14 +136,14 @@ static inline void _nocheck__trace_arm_gt_tval_write(int timer, uint64_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_tval_write " "gt_tval_write: timer %d value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer, value);
 #line 145 "trace/trace-target_arm.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_tval_write " "gt_tval_write: timer %d value 0x%" PRIx64 "\n", timer, value);
 #line 149 "trace/trace-target_arm.h"
         }
@@ -167,14 +167,14 @@ static inline void _nocheck__trace_arm_gt_ctl_write(int timer, uint64_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_ctl_write " "gt_ctl_write: timer %d value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer, value);
 #line 176 "trace/trace-target_arm.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_ctl_write " "gt_ctl_write: timer %d value 0x%" PRIx64 "\n", timer, value);
 #line 180 "trace/trace-target_arm.h"
         }
@@ -198,14 +198,14 @@ static inline void _nocheck__trace_arm_gt_imask_toggle(int timer, int irqstate)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_imask_toggle " "gt_ctl_write: timer %d IMASK toggle, new irqstate %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , timer, irqstate);
 #line 207 "trace/trace-target_arm.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_imask_toggle " "gt_ctl_write: timer %d IMASK toggle, new irqstate %d" "\n", timer, irqstate);
 #line 211 "trace/trace-target_arm.h"
         }
@@ -229,14 +229,14 @@ static inline void _nocheck__trace_arm_gt_cntvoff_write(uint64_t value)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:arm_gt_cntvoff_write " "gt_cntvoff_write: value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , value);
 #line 238 "trace/trace-target_arm.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("arm_gt_cntvoff_write " "gt_cntvoff_write: value 0x%" PRIx64 "\n", value);
 #line 242 "trace/trace-target_arm.h"
         }
@@ -260,14 +260,14 @@ static inline void _nocheck__trace_kvm_arm_fixup_msi_route(uint64_t iova, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_arm_fixup_msi_route " "MSI iova = 0x%"PRIx64" is translated into 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , iova, gpa);
 #line 269 "trace/trace-target_arm.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/trace-events"
             qemu_log("kvm_arm_fixup_msi_route " "MSI iova = 0x%"PRIx64" is translated into 0x%"PRIx64 "\n", iova, gpa);
 #line 273 "trace/trace-target_arm.h"
         }

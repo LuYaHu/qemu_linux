@@ -1,16 +1,36 @@
-Build started at 2025-01-11T21:29:23.010276
+Build started at 2025-01-12T13:59:21.078260
 Main binary: /usr/bin/python3
-Build Options: -Dgtk=enabled -Dvirtfs=enabled -Dgio=disabled -Dwerror=true -Dvfio_user_server=disabled -Dprefix=/home/luyahu/qemu_linux/qemu-8.0.2/output/qemu -Dbackend=ninja '--native-file /home/luyahu/qemu_linux/qemu-8.0.2/build/config-meson.cross'
+Build Options: -Dgtk=enabled -Dvirtfs=enabled -Dgio=disabled -Dvfio_user_server=disabled -Dprefix=/home/luyahu/qemu_linux/qemu-8.0.2/output/qemu '--native-file config-meson.cross'
 Python system: Linux
 The Meson build system
 Version: 0.61.5
-Source dir: /home/luyahu/qemu_linux/qemu-8.0.2
-Build dir: /home/luyahu/qemu_linux/qemu-8.0.2/build
+Source dir: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux
+Build dir: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build
 Build type: native build
 Project name: qemu
 Project version: 8.0.2
+Sanity testing C compiler: cc -m64 -mcx16
+Is cross compiler: False.
+Sanity check compiler command line: cc -m64 -mcx16 sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/sanitycheckc.exe
 C compiler for the host machine: cc -m64 -mcx16 (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
 C linker for the host machine: cc -m64 -mcx16 ld.bfd 2.38
+Sanity testing C compiler: cc -m64 -mcx16
+Is cross compiler: False.
+Sanity check compiler command line: cc -m64 -mcx16 sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/sanitycheckc.exe
 C compiler for the build machine: cc -m64 -mcx16 (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
 C linker for the build machine: cc -m64 -mcx16 ld.bfd 2.38
 Build machine cpu family: x86_64
@@ -19,37 +39,49 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
-Program scripts/symlink-install-tree.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/symlink-install-tree.py)
+Program scripts/symlink-install-tree.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/symlink-install-tree.py)
 Program sh found: YES (/usr/bin/sh)
+Sanity testing C++ compiler: c++ -m64 -mcx16
+Is cross compiler: False.
+Sanity check compiler command line: c++ -m64 -mcx16 sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ -m64 -mcx16 (gcc 11.4.0 "c++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
 C++ linker for the host machine: c++ -m64 -mcx16 ld.bfd 2.38
 Program python3 found: YES (/usr/bin/python3)
 Program iasl found: NO
-Using cached compile:
-Cached command line:   
-
-Code:
- int main(void) { return 0; }
-
-Cached compiler stdout:
- 
-Cached compiler stderr:
- 
-Compiler for C supports link arguments -Wl,-z,relro: YES (cached)
-Using cached compile:
-Cached command line:   
-
-Code:
- int main(void) { return 0; }
-
-Cached compiler stdout:
- 
-Cached compiler stderr:
- 
-Compiler for C supports link arguments -Wl,-z,now: YES (cached)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8aidizp6
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/main.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8aidizp6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwieae0um
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwieae0um/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwieae0um/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,relro 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp87jvj_8u
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp87jvj_8u/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp87jvj_8u/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,now 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9_yic8uf
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/main.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9_yic8uf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
 
 Code:
  int main(void) {}
@@ -59,8 +91,8 @@ Compiler stdout:
 Compiler stderr:
  
 Running compile:
-Working directory:  /tmp/tmp2meg9ncg
-Command line:  c++ -m64 -mcx16 /tmp/tmp2meg9ncg/testfile.cpp -o /tmp/tmp2meg9ncg/output.obj -D_FILE_OFFSET_BITS=64 -c -std=gnu++11 
+Working directory:  /tmp/tmpyqcd5_gh
+Command line:  c++ -m64 -mcx16 /tmp/tmpyqcd5_gh/testfile.cpp -o /tmp/tmpyqcd5_gh/output.obj -D_FILE_OFFSET_BITS=64 -c -std=gnu++11 
 
 Code:
  int i = static_cast<int>(0);
@@ -70,8 +102,8 @@ Compiler stderr:
  
 Compiler accepts -std=gnu++11: YES
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpaqja6lth
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8aidizp6/output.obj -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpaqja6lth/output.exe -O0 -fpermissive -std=gnu++11 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -Wundef -Wwrite-strings -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wmissing-format-attribute -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnq_qskg1
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9_yic8uf/output.obj -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnq_qskg1/output.exe -O0 -fpermissive -std=gnu++11 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -Wundef -Wwrite-strings -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wmissing-format-attribute -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong 
 
 Code:
  <binary>
@@ -79,21 +111,22 @@ Compiler stdout:
  
 Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxyrq4rfd
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxyrq4rfd/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxyrq4rfd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--fatal-warnings -Wl,--warn-common 
 
 Code:
  int main(void) { return 0; }
 
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Compiler for C++ supports link arguments -Wl,--warn-common: YES (cached)
+Compiler for C++ supports link arguments -Wl,--warn-common: YES 
 Program cgcc found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmps34odbwr
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmps34odbwr/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmps34odbwr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpptftshok
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpptftshok/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpptftshok/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -103,10 +136,10 @@ Compiler stdout:
 Compiler stderr:
  
 Library m found: YES
-Dependency threads found: YES unknown (cached)
+Run-time dependency threads found: YES
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpq2e4_x2h
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpq2e4_x2h/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpq2e4_x2h/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lutil -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp37kv0_pd
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp37kv0_pd/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp37kv0_pd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lutil -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -117,8 +150,8 @@ Compiler stderr:
  
 Library util found: YES
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpm6gfp8k6
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpm6gfp8k6/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpm6gfp8k6/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Hypervisor 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp90udylhr
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp90udylhr/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp90udylhr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Hypervisor 
 
 Code:
  int main(void) { return 0; }
@@ -129,10 +162,78 @@ Compiler stderr:
 
 Run-time dependency appleframeworks found: NO (tried framework)
 Dependency gio-2.0 skipped: feature gio disabled
-Dependency pixman-1 found: YES 0.40.0 (cached)
-Dependency zlib found: YES 1.2.11 (cached)
-Using cached compile:
-Cached command line:   
+Pkg-config binary for 1 is not cached.
+Pkg-config binary for 1 specified from cross file, native file, or env var as ['pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Determining dependency 'pixman-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion pixman-1` -> 0
+0.40.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags pixman-1` -> 0
+-I/usr/include/pixman-1
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs pixman-1` -> 0
+-L/usr/lib/x86_64-linux-gnu -lpixman-1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs pixman-1` -> 0
+-lpixman-1
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8f5xkpux
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8f5xkpux/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8f5xkpux/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf3hrk3s5
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf3hrk3s5/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf3hrk3s5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/11/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency pixman-1 found: YES 0.40.0
+Pkg-config binary for 1 is cached.
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.11
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-L/usr/lib/x86_64-linux-gnu -lz
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-lz
+Run-time dependency zlib found: YES 1.2.11
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbct9ipfm
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbct9ipfm/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -143,24 +244,23 @@ Code:
         #else
          #include <libaio.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpymijkb0a/testfile.c:4:12: error: #error "Header 'libaio.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbct9ipfm/testfile.c:4:12: error: #error "Header 'libaio.h' could not be found"
     4 |           #error "Header 'libaio.h' could not be found"
       |            ^~~~~
 
-Has header "libaio.h" : NO (cached)
-Pkg-config binary for 1 is not cached.
-Pkg-config binary for 1 specified from cross file, native file, or env var as ['pkg-config']
-Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Has header "libaio.h" : NO 
+Pkg-config binary for 1 is cached.
 Determining dependency 'liburing' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
 Called `/usr/bin/pkg-config --modversion liburing` -> 1
 
 Run-time dependency liburing found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphkm56e04
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphkm56e04/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphkm56e04/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -168,10 +268,10 @@ Code:
   #include <linux/errqueue.h>
 
   int main(void) { return 0; }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpzkayw976/testfile.c:2:12: fatal error: liburing.h: No such file or directory
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphkm56e04/testfile.c:2:12: fatal error: liburing.h: No such file or directory
     2 |   #include <liburing.h>
       |            ^~~~~~~~~~~~
 compilation terminated.
@@ -182,8 +282,9 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libnfs` -> 1
 
 Run-time dependency libnfs found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmph6tmeq76
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmph6tmeq76/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmph6tmeq76/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -195,13 +296,13 @@ Code:
   #include <sys/xattr.h>
   #endif
   int main(void) { getxattr(NULL, NULL, NULL, 0); setxattr(NULL, NULL, NULL, 0, 0); return 0; }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpy3zny8gw
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpy3zny8gw/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpy3zny8gw/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Cocoa 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwfjsg_ep
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwfjsg_ep/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwfjsg_ep/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Cocoa 
 
 Code:
  int main(void) { return 0; }
@@ -211,8 +312,8 @@ Compiler stderr:
  c++: error: unrecognized command-line option '-framework'
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyyit_1rh
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyyit_1rh/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyyit_1rh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework CoreVideo 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppswt68qv
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppswt68qv/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppswt68qv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework CoreVideo 
 
 Code:
  int main(void) { return 0; }
@@ -223,8 +324,8 @@ Compiler stderr:
 
 Run-time dependency appleframeworks found: NO (tried framework)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8m8ctkcj
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8m8ctkcj/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8m8ctkcj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework vmnet 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsqwrq8c_
+Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsqwrq8c_/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsqwrq8c_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework vmnet 
 
 Code:
  int main(void) { return 0; }
@@ -240,8 +341,9 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libseccomp` -> 1
 
 Run-time dependency libseccomp found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpt5n5zlke
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpt5n5zlke/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -252,14 +354,14 @@ Code:
         #else
          #include <cap-ng.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "cap-ng.h" : YES (cached)
+Has header "cap-ng.h" : YES 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmppxacno_i
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmppxacno_i/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmppxacno_i/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lcap-ng -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzm2rsdic
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzm2rsdic/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzm2rsdic/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lcap-ng -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -269,8 +371,9 @@ Compiler stdout:
 Compiler stderr:
  
 Library cap-ng found: YES
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk70v303l
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk70v303l/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk70v303l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lcap-ng -Wl,--end-group 
 
 Code:
  
@@ -280,14 +383,45 @@ Code:
      capng_capability_to_name(CAPNG_EFFECTIVE);
      return 0;
    }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Dependency xkbcommon found: YES 1.4.0 (cached)
-Dependency slirp found: YES 4.6.1 (cached)
-Using cached compile:
-Cached command line:   
+Pkg-config binary for 1 is cached.
+Determining dependency 'xkbcommon' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion xkbcommon` -> 0
+1.4.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags xkbcommon` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs xkbcommon` -> 0
+-L/usr/lib/x86_64-linux-gnu -lxkbcommon
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs xkbcommon` -> 0
+-lxkbcommon
+Run-time dependency xkbcommon found: YES 1.4.0
+Pkg-config binary for 1 is cached.
+Determining dependency 'slirp' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion slirp` -> 0
+4.6.1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags slirp` -> 0
+-I/usr/include/slirp -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs slirp` -> 0
+-L/usr/lib/x86_64-linux-gnu -lslirp -lglib-2.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs slirp` -> 0
+-lslirp -lglib-2.0
+Run-time dependency slirp found: YES 4.6.1
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwpr6iwxk
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwpr6iwxk/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -298,23 +432,68 @@ Code:
         #else
          #include <libvdeplug.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpg5f6bq0w/testfile.c:4:12: error: #error "Header 'libvdeplug.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwpr6iwxk/testfile.c:4:12: error: #error "Header 'libvdeplug.h' could not be found"
     4 |           #error "Header 'libvdeplug.h' could not be found"
       |            ^~~~~
 
-Has header "libvdeplug.h" : NO (cached)
-Dependency libpulse found: YES 15.99.1 (cached)
-Dependency alsa found: YES 1.2.6.1 (cached)
+Has header "libvdeplug.h" : NO 
+Pkg-config binary for 1 is cached.
+Determining dependency 'libpulse' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libpulse` -> 0
+15.99.1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libpulse` -> 0
+-D_REENTRANT
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libpulse` -> 0
+-L/usr/lib/x86_64-linux-gnu -lpulse -pthread
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libpulse` -> 0
+-lpulse -pthread
+Run-time dependency libpulse found: YES 15.99.1
+Pkg-config binary for 1 is cached.
+Determining dependency 'alsa' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion alsa` -> 0
+1.2.6.1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags alsa` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs alsa` -> 0
+-L/usr/lib/x86_64-linux-gnu -lasound
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs alsa` -> 0
+-lasound
+Run-time dependency alsa found: YES 1.2.6.1
 Pkg-config binary for 1 is cached.
 Determining dependency 'jack' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
 Called `/usr/bin/pkg-config --modversion jack` -> 1
 
 Run-time dependency jack found: NO (tried pkgconfig)
-Dependency sndio found: YES 1.8.0 (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'sndio' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion sndio` -> 0
+1.8.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags sndio` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs sndio` -> 0
+-L/usr/lib/x86_64-linux-gnu -lsndio
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs sndio` -> 0
+-lsndio
+Run-time dependency sndio found: YES 1.8.0
 Pkg-config binary for 1 is cached.
 Determining dependency 'spice-protocol' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -328,8 +507,8 @@ Called `/usr/bin/pkg-config --modversion spice-server` -> 1
 
 Run-time dependency spice-server found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2likld5z
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2likld5z/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2likld5z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpeke44_d0
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpeke44_d0/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpeke44_d0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -369,10 +548,25 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libcurl` -> 1
 
 Run-time dependency libcurl found: NO (tried pkgconfig)
-Dependency libudev found: YES 249 (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libudev' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libudev` -> 0
+249
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libudev` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libudev` -> 0
+-L/usr/lib/x86_64-linux-gnu -ludev
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libudev` -> 0
+-ludev
+Run-time dependency libudev found: YES 249
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpvd2ysj4l
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpvd2ysj4l/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpvd2ysj4l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmpathpersist -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbuec7ada
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbuec7ada/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbuec7ada/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmpathpersist -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -384,8 +578,8 @@ Compiler stderr:
 collect2: error: ld returned 1 exit status
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsbbgo690
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsbbgo690/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsbbgo690/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp1otjz1fr
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp1otjz1fr/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp1otjz1fr/output.exe -D_FILE_OFFSET_BITS=64 -O0 
 
 Code:
  #include<stdio.h>
@@ -406,8 +600,8 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmphoy83phj
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmphoy83phj/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmphoy83phj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps18i6634
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps18i6634/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps18i6634/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
 
 Code:
  
@@ -419,9 +613,25 @@ libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/.
 Compiler stderr:
  
 Library mpathpersist found: NO
-Dependency ncursesw found: YES 6.3.20211021 (cached)
-Using cached compile:
-Cached command line:   
+Pkg-config binary for 1 is cached.
+Determining dependency 'ncursesw' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion ncursesw` -> 0
+6.3.20211021
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags ncursesw` -> 0
+-D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs ncursesw` -> 0
+-L/usr/lib/x86_64-linux-gnu -lncursesw -ltinfo
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs ncursesw` -> 0
+-lncursesw -ltinfo
+Run-time dependency ncursesw found: YES 6.3.20211021
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptjz84la7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptjz84la7/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptjz84la7/output.exe -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DNCURSES_WIDECHAR=1 -Wl,--start-group /usr/lib/x86_64-linux-gnu/libncursesw.so /usr/lib/x86_64-linux-gnu/libtinfo.so -Wl,--end-group 
 
 Code:
  
@@ -440,12 +650,13 @@ Code:
       add_wch(WACS_DEGREE);
       return 0;
     }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp88r1pwgj
+Command line:  cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp88r1pwgj/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp88r1pwgj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -liconv -Wl,--end-group 
 
 Code:
  
@@ -454,14 +665,15 @@ Code:
           iconv_t conv = iconv_open("WCHAR_T", "UCS-2");
           return conv != (iconv_t) -1;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  /usr/bin/ld: cannot find -liconv: No such file or directory
 collect2: error: ld returned 1 exit status
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_dmnlvf8
+Command line:  cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_dmnlvf8/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_dmnlvf8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -Wl,--end-group 
 
 Code:
  
@@ -470,12 +682,13 @@ Code:
           iconv_t conv = iconv_open("WCHAR_T", "UCS-2");
           return conv != (iconv_t) -1;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplmnh0kpv
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplmnh0kpv/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -486,15 +699,30 @@ Code:
         #else
          #include <brlapi.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpvj4k8dhe/testfile.c:4:12: error: #error "Header 'brlapi.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplmnh0kpv/testfile.c:4:12: error: #error "Header 'brlapi.h' could not be found"
     4 |           #error "Header 'brlapi.h' could not be found"
       |            ^~~~~
 
-Has header "brlapi.h" : NO (cached)
-Dependency sdl2 found: YES 2.0.20 (cached)
+Has header "brlapi.h" : NO 
+Pkg-config binary for 1 is cached.
+Determining dependency 'sdl2' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion sdl2` -> 0
+2.0.20
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags sdl2` -> 0
+-D_REENTRANT -I/usr/include/SDL2
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs sdl2` -> 0
+-L/usr/lib/x86_64-linux-gnu -lSDL2
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs sdl2` -> 0
+-lSDL2
+Run-time dependency sdl2 found: YES 2.0.20
 Pkg-config binary for 1 is cached.
 Determining dependency 'SDL2_image' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -502,8 +730,8 @@ Called `/usr/bin/pkg-config --modversion SDL2_image` -> 1
 
 Run-time dependency sdl2_image found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp9snoa6uq
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp9snoa6uq/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp9snoa6uq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrados -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl7ldt0i7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl7ldt0i7/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl7ldt0i7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrados -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -515,8 +743,9 @@ Compiler stderr:
 collect2: error: ld returned 1 exit status
 
 Library rados found: NO
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn7rgfy37
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn7rgfy37/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -527,14 +756,14 @@ Code:
         #else
          #include <rbd/librbd.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpjded2d8y/testfile.c:4:12: error: #error "Header 'rbd/librbd.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn7rgfy37/testfile.c:4:12: error: #error "Header 'rbd/librbd.h' could not be found"
     4 |           #error "Header 'rbd/librbd.h' could not be found"
       |            ^~~~~
 
-Has header "rbd/librbd.h" : NO (cached)
+Has header "rbd/librbd.h" : NO 
 Pkg-config binary for 1 is cached.
 Determining dependency 'glusterfs-api' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -547,8 +776,9 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libssh` -> 1
 
 Run-time dependency libssh found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprzzm3ftp
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprzzm3ftp/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -559,16 +789,17 @@ Code:
         #else
          #include <bzlib.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp8stppg2h/testfile.c:4:12: error: #error "Header 'bzlib.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprzzm3ftp/testfile.c:4:12: error: #error "Header 'bzlib.h' could not be found"
     4 |           #error "Header 'bzlib.h' could not be found"
       |            ^~~~~
 
-Has header "bzlib.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "bzlib.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpiz1xvbhl
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpiz1xvbhl/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -579,16 +810,17 @@ Code:
         #else
          #include <lzfse.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpmt959efn/testfile.c:4:12: error: #error "Header 'lzfse.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpiz1xvbhl/testfile.c:4:12: error: #error "Header 'lzfse.h' could not be found"
     4 |           #error "Header 'lzfse.h' could not be found"
       |            ^~~~~
 
-Has header "lzfse.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "lzfse.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp94v98_qj
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp94v98_qj/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -599,14 +831,30 @@ Code:
         #else
          #include <sys/soundcard.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "sys/soundcard.h" : YES (cached)
-Dependency epoxy found: YES 1.5.10 (cached)
-Using cached compile:
-Cached command line:   
+Has header "sys/soundcard.h" : YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'epoxy' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion epoxy` -> 0
+1.5.10
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags epoxy` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs epoxy` -> 0
+-L/usr/lib/x86_64-linux-gnu -lepoxy
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs epoxy` -> 0
+-lepoxy
+Run-time dependency epoxy found: YES 1.5.10
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcgldbsie
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcgldbsie/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -617,12 +865,27 @@ Code:
         #else
          #include <epoxy/egl.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "epoxy/egl.h" with dependency epoxy: YES (cached)
-Dependency gbm found: YES 23.2.1-1ubuntu3.1~22.04.3 (cached)
+Has header "epoxy/egl.h" with dependency epoxy: YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'gbm' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion gbm` -> 0
+23.2.1-1ubuntu3.1~22.04.3
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags gbm` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gbm` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgbm
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gbm` -> 0
+-lgbm
+Run-time dependency gbm found: YES 23.2.1-1ubuntu3.1~22.04.3
 Pkg-config binary for 1 is cached.
 Determining dependency 'gnutls' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -649,19 +912,95 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion gmp` -> 1
 
 Run-time dependency gmp found: NO (tried pkgconfig)
-Dependency gtk+-3.0 found: YES 3.24.33 (cached)
-Dependency gtk+-x11-3.0 found: YES 3.24.33 (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion gtk+-3.0` -> 0
+3.24.33
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags gtk+-3.0` -> 0
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/x86_64-linux-gnu -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Run-time dependency gtk+-3.0 found: YES 3.24.33
+Pkg-config binary for 1 is cached.
+Determining dependency 'gtk+-x11-3.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion gtk+-x11-3.0` -> 0
+3.24.33
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags gtk+-x11-3.0` -> 0
+-pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/x86_64-linux-gnu -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gtk+-x11-3.0` -> 0
+-L/usr/lib/x86_64-linux-gnu -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs gtk+-x11-3.0` -> 0
+-lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Run-time dependency gtk+-x11-3.0 found: YES 3.24.33
 Pkg-config binary for 1 is cached.
 Determining dependency 'vte-2.91' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
 Called `/usr/bin/pkg-config --modversion vte-2.91` -> 1
 
 Run-time dependency vte-2.91 found: NO (tried pkgconfig)
-Dependency x11 found: YES 1.7.5 (cached)
-Dependency libpng found: YES 1.6.37 (cached)
-Dependency libjpeg found: YES 2.1.2 (cached)
-Using cached compile:
-Cached command line:   
+Pkg-config binary for 1 is cached.
+Determining dependency 'x11' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion x11` -> 0
+1.7.5
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags x11` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs x11` -> 0
+-L/usr/lib/x86_64-linux-gnu -lX11
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs x11` -> 0
+-lX11
+Run-time dependency x11 found: YES 1.7.5
+Pkg-config binary for 1 is cached.
+Determining dependency 'libpng' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libpng` -> 0
+1.6.37
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libpng` -> 0
+-I/usr/include/libpng16
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libpng` -> 0
+-L/usr/lib/x86_64-linux-gnu -lpng16 -lz
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libpng` -> 0
+-lpng16 -lz
+Run-time dependency libpng found: YES 1.6.37
+Pkg-config binary for 1 is cached.
+Determining dependency 'libjpeg' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libjpeg` -> 0
+2.1.2
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libjpeg` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libjpeg` -> 0
+-L/usr/lib/x86_64-linux-gnu -ljpeg
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libjpeg` -> 0
+-ljpeg
+Run-time dependency libjpeg found: YES 2.1.2
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg22bmg_r
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg22bmg_r/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -672,16 +1011,17 @@ Code:
         #else
          #include <sasl/sasl.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2alo_gx4/testfile.c:4:12: error: #error "Header 'sasl/sasl.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg22bmg_r/testfile.c:4:12: error: #error "Header 'sasl/sasl.h' could not be found"
     4 |           #error "Header 'sasl/sasl.h' could not be found"
       |            ^~~~~
 
-Has header "sasl/sasl.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "sasl/sasl.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkpdltyib
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkpdltyib/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -692,16 +1032,17 @@ Code:
         #else
          #include <security/pam_appl.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpfz2rz0_s/testfile.c:4:12: error: #error "Header 'security/pam_appl.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkpdltyib/testfile.c:4:12: error: #error "Header 'security/pam_appl.h' could not be found"
     4 |           #error "Header 'security/pam_appl.h' could not be found"
       |            ^~~~~
 
-Has header "security/pam_appl.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "security/pam_appl.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpb7szfwd2
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpb7szfwd2/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -712,16 +1053,17 @@ Code:
         #else
          #include <snappy-c.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmppt96xu3t/testfile.c:4:12: error: #error "Header 'snappy-c.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpb7szfwd2/testfile.c:4:12: error: #error "Header 'snappy-c.h' could not be found"
     4 |           #error "Header 'snappy-c.h' could not be found"
       |            ^~~~~
 
-Has header "snappy-c.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "snappy-c.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn55xsxkq
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn55xsxkq/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -732,16 +1074,17 @@ Code:
         #else
          #include <lzo/lzo1x.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpx8rqik0o/testfile.c:4:12: error: #error "Header 'lzo/lzo1x.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn55xsxkq/testfile.c:4:12: error: #error "Header 'lzo/lzo1x.h' could not be found"
     4 |           #error "Header 'lzo/lzo1x.h' could not be found"
       |            ^~~~~
 
-Has header "lzo/lzo1x.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "lzo/lzo1x.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk22d1mjt
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk22d1mjt/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -752,17 +1095,17 @@ Code:
         #else
          #include <numa.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyeily3km/testfile.c:4:12: error: #error "Header 'numa.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk22d1mjt/testfile.c:4:12: error: #error "Header 'numa.h' could not be found"
     4 |           #error "Header 'numa.h' could not be found"
       |            ^~~~~
 
-Has header "numa.h" : NO (cached)
+Has header "numa.h" : NO 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpxlwafcpg
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpxlwafcpg/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpxlwafcpg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libumad -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr81z2mf0
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr81z2mf0/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr81z2mf0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libumad -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -774,8 +1117,9 @@ Compiler stderr:
 collect2: error: ld returned 1 exit status
 
 Library ibumad found: NO
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl902m2n9
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl902m2n9/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -786,17 +1130,17 @@ Code:
         #else
          #include <rdma/rdma_cma.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpcnte_clr/testfile.c:4:12: error: #error "Header 'rdma/rdma_cma.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl902m2n9/testfile.c:4:12: error: #error "Header 'rdma/rdma_cma.h' could not be found"
     4 |           #error "Header 'rdma/rdma_cma.h' could not be found"
       |            ^~~~~
 
-Has header "rdma/rdma_cma.h" : NO (cached)
+Has header "rdma/rdma_cma.h" : NO 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp34lbo5hm
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp34lbo5hm/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp34lbo5hm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libverbs -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpazgkonmy
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpazgkonmy/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpazgkonmy/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libverbs -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -815,8 +1159,8 @@ Called `/usr/bin/pkg-config --modversion xencontrol` -> 1
 
 Run-time dependency xencontrol found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsp9f4qef
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsp9f4qef/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpsp9f4qef/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenstore -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoi_8j5_8
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoi_8j5_8/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoi_8j5_8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenstore -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -829,8 +1173,8 @@ collect2: error: ld returned 1 exit status
 
 Library xenstore found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7k5mjvdi
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7k5mjvdi/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7k5mjvdi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenctrl -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4tsx2_dc
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4tsx2_dc/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4tsx2_dc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenctrl -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -843,8 +1187,8 @@ collect2: error: ld returned 1 exit status
 
 Library xenctrl found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpc8h9i2y3
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpc8h9i2y3/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpc8h9i2y3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxendevicemodel -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsyvmdb6_
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsyvmdb6_/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsyvmdb6_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxendevicemodel -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -857,8 +1201,8 @@ collect2: error: ld returned 1 exit status
 
 Library xendevicemodel found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp_l8zqexs
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp_l8zqexs/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp_l8zqexs/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenforeignmemory -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprpj16d7r
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprpj16d7r/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprpj16d7r/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenforeignmemory -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -871,8 +1215,8 @@ collect2: error: ld returned 1 exit status
 
 Library xenforeignmemory found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2880m1il
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2880m1il/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp2880m1il/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxengnttab -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptpu7xikz
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptpu7xikz/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmptpu7xikz/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxengnttab -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -885,8 +1229,8 @@ collect2: error: ld returned 1 exit status
 
 Library xengnttab found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpziku2y7_
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpziku2y7_/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpziku2y7_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenevtchn -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpyhi44rgt
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpyhi44rgt/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpyhi44rgt/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenevtchn -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -899,8 +1243,8 @@ collect2: error: ld returned 1 exit status
 
 Library xenevtchn found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7zbvkno5
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7zbvkno5/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp7zbvkno5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxentoolcore -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5_bxlfhz
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5_bxlfhz/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5_bxlfhz/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxentoolcore -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -913,8 +1257,8 @@ collect2: error: ld returned 1 exit status
 
 Library xentoolcore found: NO
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmphgmxxr5n
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmphgmxxr5n/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41100 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprl_pwyce
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprl_pwyce/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41100 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -1124,14 +1468,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:7:12: fatal error: xendevicemodel.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:7:12: fatal error: xendevicemodel.h: No such file or directory
     7 |   #include <xendevicemodel.h>
       |            ^~~~~~~~~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpteh4ulai
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpteh4ulai/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41000 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsyunnchm
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsyunnchm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41000 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -1341,14 +1685,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:24:12: fatal error: xenforeignmemory.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:24:12: fatal error: xenforeignmemory.h: No such file or directory
    24 |   #include <xenforeignmemory.h>
       |            ^~~~~~~~~~~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp976h1sge
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp976h1sge/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40900 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpayqviup0
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpayqviup0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40900 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -1558,14 +1902,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:39:12: fatal error: xendevicemodel.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:39:12: fatal error: xendevicemodel.h: No such file or directory
    39 |   #include <xendevicemodel.h>
       |            ^~~~~~~~~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpv28q7q28
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpv28q7q28/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40800 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsw928eom
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsw928eom/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40800 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -1775,14 +2119,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:60:12: fatal error: xenctrl.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:60:12: fatal error: xenctrl.h: No such file or directory
    60 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpah9tob6l
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpah9tob6l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40701 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpgfb8dkqi
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpgfb8dkqi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40701 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -1992,14 +2336,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:105:12: fatal error: xenctrl.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:105:12: fatal error: xenctrl.h: No such file or directory
   105 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmps45qdd2j
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmps45qdd2j/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40600 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpo0repvju
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpo0repvju/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40600 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -2209,14 +2553,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:142:12: fatal error: xenctrl.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:142:12: fatal error: xenctrl.h: No such file or directory
   142 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpdfbe91ht
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpdfbe91ht/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40500 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5bwgrq05
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5bwgrq05/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40500 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -2426,14 +2770,14 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:163:12: fatal error: xenctrl.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:163:12: fatal error: xenctrl.h: No such file or directory
   163 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmprgkj6nrx
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmprgkj6nrx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40200 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps4hqo8np
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps4hqo8np/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40200 
 
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
@@ -2643,7 +2987,7 @@ Code:
 Compiler stdout:
  
 Compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/scripts/xen-detect.c:183:12: fatal error: xenctrl.h: No such file or directory
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/xen-detect.c:183:12: fatal error: xenctrl.h: No such file or directory
   183 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
@@ -2696,8 +3040,9 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libkeyutils` -> 1
 
 Run-time dependency libkeyutils found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0vw47s3z
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0vw47s3z/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0vw47s3z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -2718,24 +3063,41 @@ Code:
         int main(void) {
           return gettid ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "gettid" : YES (cached)
-Dependency libselinux found: YES 3.3 (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "gettid" : YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'libselinux' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libselinux` -> 0
+3.3
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --cflags libselinux` -> 0
+
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libselinux` -> 0
+-L/usr/lib -lselinux
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --libs libselinux` -> 0
+-lselinux
+Run-time dependency libselinux found: YES 3.3
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkh9lx85a
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkh9lx85a/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpkh9lx85a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <malloc.h>
                 int main(void) { malloc_trim(0); return 0; }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpou1812ks
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpou1812ks/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpou1812ks/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -2749,12 +3111,13 @@ Code:
     statx(0, "", 0, STATX_BASIC_STATS, &statxbuf);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7ebpbse3
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7ebpbse3/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7ebpbse3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -2768,9 +3131,9 @@ Code:
     statx(0, "", 0, STATX_BASIC_STATS | STATX_MNT_ID, &statxbuf);
     return statxbuf.stx_mnt_id;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
 Pkg-config binary for 1 is cached.
 Determining dependency 'fuse3' with pkg-config executable '/usr/bin/pkg-config'
@@ -2790,8 +3153,9 @@ env[PKG_CONFIG_PATH]:
 Called `/usr/bin/pkg-config --modversion libdw` -> 1
 
 Run-time dependency libdw found: NO (tried pkgconfig)
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfapicv_o
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfapicv_o/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2802,13 +3166,14 @@ Code:
         #else
          #include <sys/epoll.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "sys/epoll.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "sys/epoll.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp85mb_bft
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp85mb_bft/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2819,13 +3184,14 @@ Code:
         #else
          #include <linux/magic.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "linux/magic.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "linux/magic.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpa5y8_ha5
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpa5y8_ha5/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2836,16 +3202,17 @@ Code:
         #else
          #include <valgrind/valgrind.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpbi5ho2k3/testfile.c:4:12: error: #error "Header 'valgrind/valgrind.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpa5y8_ha5/testfile.c:4:12: error: #error "Header 'valgrind/valgrind.h' could not be found"
     4 |           #error "Header 'valgrind/valgrind.h' could not be found"
       |            ^~~~~
 
-Has header "valgrind/valgrind.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "valgrind/valgrind.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp85tzqinu
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp85tzqinu/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2856,13 +3223,14 @@ Code:
         #else
          #include <linux/btrfs.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "linux/btrfs.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "linux/btrfs.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5uh4wrbw
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp5uh4wrbw/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2873,13 +3241,14 @@ Code:
         #else
          #include <libdrm/drm.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "libdrm/drm.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "libdrm/drm.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwui_k2ol
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpwui_k2ol/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2890,13 +3259,14 @@ Code:
         #else
          #include <pty.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "pty.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "pty.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8dz8j0j
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8dz8j0j/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2907,16 +3277,17 @@ Code:
         #else
          #include <sys/disk.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpw_kt7ut_/testfile.c:4:12: error: #error "Header 'sys/disk.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8dz8j0j/testfile.c:4:12: error: #error "Header 'sys/disk.h' could not be found"
     4 |           #error "Header 'sys/disk.h' could not be found"
       |            ^~~~~
 
-Has header "sys/disk.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "sys/disk.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp2yg54nj7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp2yg54nj7/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2927,16 +3298,17 @@ Code:
         #else
          #include <sys/ioccom.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp57g2kzwp/testfile.c:4:12: error: #error "Header 'sys/ioccom.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp2yg54nj7/testfile.c:4:12: error: #error "Header 'sys/ioccom.h' could not be found"
     4 |           #error "Header 'sys/ioccom.h' could not be found"
       |            ^~~~~
 
-Has header "sys/ioccom.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "sys/ioccom.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_vcnewtf
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_vcnewtf/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -2947,16 +3319,17 @@ Code:
         #else
          #include <sys/kcov.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpfskuxyl2/testfile.c:4:12: error: #error "Header 'sys/kcov.h' could not be found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_vcnewtf/testfile.c:4:12: error: #error "Header 'sys/kcov.h' could not be found"
     4 |           #error "Header 'sys/kcov.h' could not be found"
       |            ^~~~~
 
-Has header "sys/kcov.h" : NO (cached)
-Using cached compile:
-Cached command line:   
+Has header "sys/kcov.h" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpja1gbw1g
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpja1gbw1g/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpja1gbw1g/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -2977,13 +3350,14 @@ Code:
         int main(void) {
           return close_range ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "close_range" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "close_range" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp16diy6xe
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp16diy6xe/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp16diy6xe/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3004,13 +3378,14 @@ Code:
         int main(void) {
           return accept4 ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "accept4" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "accept4" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8lkonux
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8lkonux/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_8lkonux/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3031,13 +3406,14 @@ Code:
         int main(void) {
           return clock_adjtime ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "clock_adjtime" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "clock_adjtime" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpez54e9wv
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpez54e9wv/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpez54e9wv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3058,13 +3434,14 @@ Code:
         int main(void) {
           return dup3 ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "dup3" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "dup3" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsrogxg0u
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsrogxg0u/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsrogxg0u/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3085,13 +3462,14 @@ Code:
         int main(void) {
           return fallocate ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "fallocate" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "fallocate" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphshptp2d
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphshptp2d/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphshptp2d/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3112,13 +3490,14 @@ Code:
         int main(void) {
           return posix_fallocate ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "posix_fallocate" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "posix_fallocate" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpds_wt7bz
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpds_wt7bz/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpds_wt7bz/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <stdlib.h>
@@ -3133,13 +3512,14 @@ int main(void) {
             long long b = (long long) a;
             return (int) b;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "posix_memalign" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "posix_memalign" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoirliyh7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoirliyh7/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpoirliyh7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3160,15 +3540,16 @@ Code:
         int main(void) {
           return _aligned_malloc ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /usr/bin/ld: /tmp/ccljRAt8.o: in function `main':
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccQl0nvW.o: in function `main':
 testfile.c:(.text+0x9): undefined reference to `_aligned_malloc'
 collect2: error: ld returned 1 exit status
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr3o4gbma
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr3o4gbma/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr3o4gbma/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3194,17 +3575,18 @@ Code:
         #endif
         return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpykkrnmvs/testfile.c: In function 'main':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpykkrnmvs/testfile.c:17:18: error: #error "__builtin__aligned_malloc not found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr3o4gbma/testfile.c: In function 'main':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpr3o4gbma/testfile.c:17:18: error: #error "__builtin__aligned_malloc not found"
    17 |                 #error "__builtin__aligned_malloc not found"
       |                  ^~~~~
 
-Checking for function "_aligned_malloc" : NO (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "_aligned_malloc" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppb8hosyq
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppb8hosyq/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppb8hosyq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3225,13 +3607,14 @@ Code:
         int main(void) {
           return valloc ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "valloc" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "valloc" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9hqp6p4x
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9hqp6p4x/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9hqp6p4x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3252,13 +3635,14 @@ Code:
         int main(void) {
           return memalign ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "memalign" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "memalign" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6qpuhbdn
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6qpuhbdn/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6qpuhbdn/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3279,13 +3663,14 @@ Code:
         int main(void) {
           return ppoll ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "ppoll" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "ppoll" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7bmcbhpw
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7bmcbhpw/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7bmcbhpw/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <sys/uio.h>
@@ -3300,13 +3685,14 @@ int main(void) {
             long long b = (long long) a;
             return (int) b;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "preadv" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "preadv" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvpgxxe8p
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvpgxxe8p/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvpgxxe8p/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3327,15 +3713,16 @@ Code:
         int main(void) {
           return pthread_fchdir_np ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /usr/bin/ld: /tmp/ccY8zt4d.o: in function `main':
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccZFo4LF.o: in function `main':
 testfile.c:(.text+0x9): undefined reference to `pthread_fchdir_np'
 collect2: error: ld returned 1 exit status
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphuprxnm1
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphuprxnm1/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphuprxnm1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3361,17 +3748,18 @@ Code:
         #endif
         return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyqe2vl9d/testfile.c: In function 'main':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpyqe2vl9d/testfile.c:17:18: error: #error "__builtin_pthread_fchdir_np not found"
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphuprxnm1/testfile.c: In function 'main':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphuprxnm1/testfile.c:17:18: error: #error "__builtin_pthread_fchdir_np not found"
    17 |                 #error "__builtin_pthread_fchdir_np not found"
       |                  ^~~~~
 
-Checking for function "pthread_fchdir_np" : NO (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "pthread_fchdir_np" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqr51lgwj
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqr51lgwj/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqr51lgwj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3392,13 +3780,14 @@ Code:
         int main(void) {
           return sendfile ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "sendfile" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "sendfile" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvj7xbu9p
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvj7xbu9p/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvj7xbu9p/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3419,13 +3808,14 @@ Code:
         int main(void) {
           return setns ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "setns" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "setns" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx162ci_v
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx162ci_v/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx162ci_v/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3446,13 +3836,14 @@ Code:
         int main(void) {
           return unshare ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "unshare" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "unshare" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnnt1iqxr
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnnt1iqxr/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnnt1iqxr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3473,13 +3864,14 @@ Code:
         int main(void) {
           return syncfs ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "syncfs" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "syncfs" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzntlrzp3
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzntlrzp3/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpzntlrzp3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3500,13 +3892,14 @@ Code:
         int main(void) {
           return sync_file_range ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "sync_file_range" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "sync_file_range" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpywu_3uq2
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpywu_3uq2/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpywu_3uq2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3527,13 +3920,14 @@ Code:
         int main(void) {
           return timerfd_create ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "timerfd_create" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "timerfd_create" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpolj84pb3
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpolj84pb3/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpolj84pb3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3554,13 +3948,14 @@ Code:
         int main(void) {
           return copy_file_range ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "copy_file_range" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "copy_file_range" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplf4ad1w2
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplf4ad1w2/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmplf4ad1w2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3581,13 +3976,14 @@ Code:
         int main(void) {
           return getifaddrs ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "getifaddrs" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "getifaddrs" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfe4oqzll
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfe4oqzll/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfe4oqzll/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lutil -Wl,--end-group 
 
 Code:
  
@@ -3608,13 +4004,14 @@ Code:
         int main(void) {
           return openpty ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "openpty" with dependency -lutil: YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "openpty" with dependency -lutil: YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppugiym_w
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppugiym_w/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppugiym_w/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3635,13 +4032,14 @@ Code:
         int main(void) {
           return strchrnul ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "strchrnul" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "strchrnul" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpne2j05y7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpne2j05y7/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpne2j05y7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <stdlib.h>
@@ -3656,13 +4054,14 @@ int main(void) {
             long long b = (long long) a;
             return (int) b;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "system" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "system" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsl674b7w
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsl674b7w/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpsl674b7w/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3674,13 +4073,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/epoll.h> has symbol "epoll_create1" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/epoll.h> has symbol "epoll_create1" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpdrlnfdun
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpdrlnfdun/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpdrlnfdun/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3692,13 +4092,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/falloc.h> has symbol "FALLOC_FL_PUNCH_HOLE" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <linux/falloc.h> has symbol "FALLOC_FL_PUNCH_HOLE" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6v1ml3bm
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6v1ml3bm/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp6v1ml3bm/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3710,13 +4111,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/falloc.h> has symbol "FALLOC_FL_KEEP_SIZE" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <linux/falloc.h> has symbol "FALLOC_FL_KEEP_SIZE" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpro_8bq7v
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpro_8bq7v/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpro_8bq7v/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3728,13 +4130,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/falloc.h> has symbol "FALLOC_FL_ZERO_RANGE" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <linux/falloc.h> has symbol "FALLOC_FL_ZERO_RANGE" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppjlk0e3i
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmppjlk0e3i/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
 
 Code:
  
@@ -3745,13 +4148,14 @@ Code:
         #else
          #include <linux/fiemap.h>
         #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Has header "linux/fiemap.h" : YES (cached)
-Using cached compile:
-Cached command line:   
+Has header "linux/fiemap.h" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx50hz97r
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx50hz97r/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpx50hz97r/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3763,13 +4167,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/fs.h> has symbol "FS_IOC_FIEMAP" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <linux/fs.h> has symbol "FS_IOC_FIEMAP" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpajo6w5pf
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpajo6w5pf/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpajo6w5pf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3790,13 +4195,14 @@ Code:
         int main(void) {
           return getrandom ();
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for function "getrandom" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for function "getrandom" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp71d8j0_1
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp71d8j0_1/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp71d8j0_1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3808,13 +4214,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/random.h> has symbol "GRND_NONBLOCK" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/random.h> has symbol "GRND_NONBLOCK" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4s6y4cz2
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4s6y4cz2/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp4s6y4cz2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3826,13 +4233,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/inotify.h> has symbol "inotify_init" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/inotify.h> has symbol "inotify_init" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkqmmkvt
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkqmmkvt/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkqmmkvt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3844,13 +4252,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/inotify.h> has symbol "inotify_init1" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/inotify.h> has symbol "inotify_init1" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpgqklixeb
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpgqklixeb/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpgqklixeb/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3862,13 +4271,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/prctl.h> has symbol "PR_SET_TIMERSLACK" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/prctl.h> has symbol "PR_SET_TIMERSLACK" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpp6wadrmn
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpp6wadrmn/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpp6wadrmn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3880,13 +4290,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/rtnetlink.h> has symbol "IFLA_PROTO_DOWN" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <linux/rtnetlink.h> has symbol "IFLA_PROTO_DOWN" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmply2yn_m7
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmply2yn_m7/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmply2yn_m7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3898,13 +4309,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <sys/sysmacros.h> has symbol "makedev" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <sys/sysmacros.h> has symbol "makedev" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3916,18 +4328,19 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpfvb7v8qg/testfile.c: In function 'main':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpfvb7v8qg/testfile.c:6:17: error: 'optreset' undeclared (first use in this function)
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c/testfile.c: In function 'main':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c/testfile.c:6:17: error: 'optreset' undeclared (first use in this function)
     6 |                 optreset;
       |                 ^~~~~~~~
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpfvb7v8qg/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpc04tz77c/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
 
-Header <getopt.h> has symbol "optreset" : NO (cached)
-Using cached compile:
-Cached command line:   
+Header <getopt.h> has symbol "optreset" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps4kr0q9u
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps4kr0q9u/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmps4kr0q9u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -3939,13 +4352,14 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <netinet/in.h> has symbol "IPPROTO_MPTCP" : YES (cached)
-Using cached compile:
-Cached command line:   
+Header <netinet/in.h> has symbol "IPPROTO_MPTCP" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7l5dc7nl
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7l5dc7nl/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7l5dc7nl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <signal.h>
@@ -3954,17 +4368,18 @@ Code:
             foo.sigev_notify_thread_id;
 
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp6d3xqwo2/testfile.c: In function 'bar':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp6d3xqwo2/testfile.c:4:16: error: 'struct sigevent' has no member named 'sigev_notify_thread_id'
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7l5dc7nl/testfile.c: In function 'bar':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7l5dc7nl/testfile.c:4:16: error: 'struct sigevent' has no member named 'sigev_notify_thread_id'
     4 |             foo.sigev_notify_thread_id;
       |                ^
 
-Checking whether type "struct sigevent" has member "sigev_notify_thread_id" : NO (cached)
-Using cached compile:
-Cached command line:   
+Checking whether type "struct sigevent" has member "sigev_notify_thread_id" : NO 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf40xkg0z
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf40xkg0z/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpf40xkg0z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <sys/stat.h>
@@ -3973,50 +4388,54 @@ Code:
             foo.st_atim;
 
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking whether type "struct stat" has member "st_atim" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking whether type "struct stat" has member "st_atim" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpe6wkfgi_
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpe6wkfgi_/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpe6wkfgi_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <sys/uio.h>
         void bar(void) {
             sizeof(struct iovec);
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for type "struct iovec" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for type "struct iovec" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpo9f4nko5
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpo9f4nko5/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpo9f4nko5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <utmpx.h>
         void bar(void) {
             sizeof(struct utmpx);
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for type "struct utmpx" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for type "struct utmpx" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpy4tptz_l
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpy4tptz_l/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpy4tptz_l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
   #include <sys/eventfd.h>
   int main(void) { return eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcswtnn5f
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcswtnn5f/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcswtnn5f/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4032,12 +4451,13 @@ Code:
   #error Not supported
   #endif
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpm6roj10w
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpm6roj10w/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpm6roj10w/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4049,12 +4469,13 @@ Code:
   #include <sys/mman.h>
   #include <stddef.h>
   int main(void) { return madvise(NULL, 0, MADV_DONTNEED); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnbsv_44v
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnbsv_44v/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnbsv_44v/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4067,19 +4488,20 @@ Code:
     #include <stddef.h>
     extern int madvise(int);
     int main(void) { return madvise(0); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp33eg4imk/testfile.c:9:16: error: conflicting types for 'madvise'; have 'int(int)'
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnbsv_44v/testfile.c:9:16: error: conflicting types for 'madvise'; have 'int(int)'
     9 |     extern int madvise(int);
       |                ^~~~~~~
-In file included from /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp33eg4imk/testfile.c:7:
+In file included from /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnbsv_44v/testfile.c:7:
 /usr/include/x86_64-linux-gnu/sys/mman.h:94:12: note: previous declaration of 'madvise' with type 'int(void *, size_t,  int)' {aka 'int(void *, long unsigned int,  int)'}
    94 | extern int madvise (void *__addr, size_t __len, int __advice) __THROW;
       |            ^~~~~~~
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprm_as36x
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprm_as36x/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmprm_as36x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4089,12 +4511,13 @@ Code:
 
   #include <sys/mman.h>
   int main(void) { return memfd_create("foo", MFD_ALLOW_SEALING); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp224tr02y
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp224tr02y/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp224tr02y/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4108,12 +4531,13 @@ Code:
   #else
   int main(void) { struct file_handle fh; return open_by_handle_at(0, &fh, 0); }
   #endif
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_q415o5e
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_q415o5e/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_q415o5e/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4124,12 +4548,13 @@ Code:
   #include <sys/mman.h>
   #include <stddef.h>
   int main(void) { return posix_madvise(NULL, 0, POSIX_MADV_DONTNEED); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_g70t420
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_g70t420/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp_g70t420/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4147,12 +4572,13 @@ Code:
     pthread_setname_np(thread, "QEMU");
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4169,29 +4595,30 @@ Code:
     pthread_create(&thread, 0, f, 0);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp5ublq88i/testfile.c: In function 'f':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp5ublq88i/testfile.c:8:48: warning: passing argument 1 of 'pthread_setname_np' makes integer from pointer without a cast [-Wint-conversion]
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c: In function 'f':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c:8:48: warning: passing argument 1 of 'pthread_setname_np' makes integer from pointer without a cast [-Wint-conversion]
     8 |   static void *f(void *p) { pthread_setname_np("QEMU"); return NULL; }
       |                                                ^~~~~~
       |                                                |
       |                                                char *
-In file included from /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp5ublq88i/testfile.c:6:
+In file included from /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c:6:
 /usr/include/pthread.h:463:42: note: expected 'pthread_t' {aka 'long unsigned int'} but argument is of type 'char *'
   463 | extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
       |                                ~~~~~~~~~~^~~~~~~~~~~~~~~
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp5ublq88i/testfile.c:8:29: error: too few arguments to function 'pthread_setname_np'
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c:8:29: error: too few arguments to function 'pthread_setname_np'
     8 |   static void *f(void *p) { pthread_setname_np("QEMU"); return NULL; }
       |                             ^~~~~~~~~~~~~~~~~~
-In file included from /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp5ublq88i/testfile.c:6:
+In file included from /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp50brtns2/testfile.c:6:
 /usr/include/pthread.h:463:12: note: declared here
   463 | extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
       |            ^~~~~~~~~~~~~~~~~~
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7o_6u71s
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7o_6u71s/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7o_6u71s/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4210,16 +4637,17 @@ Code:
     pthread_set_name_np(thread, "QEMU");
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpw9uym2gy/testfile.c:7:12: fatal error: pthread_np.h: No such file or directory
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp7o_6u71s/testfile.c:7:12: fatal error: pthread_np.h: No such file or directory
     7 |   #include <pthread_np.h>
       |            ^~~~~~~~~~~~~~
 compilation terminated.
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4237,20 +4665,21 @@ Code:
     pthread_condattr_setclock(&attr, CLOCK_MONOTONIC);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpf1nctq_l/testfile.c: In function 'main':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpf1nctq_l/testfile.c:12:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pthread_condattr_init'
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/testfile.c: In function 'main':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/testfile.c:12:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pthread_condattr_init'
    12 |     pthread_condattr_init(&attr);
       |     ^~~~~~~~~~~~~~~~~~~~~
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpf1nctq_l/testfile.c:12:28: error: 'attr' undeclared (first use in this function)
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/testfile.c:12:28: error: 'attr' undeclared (first use in this function)
    12 |     pthread_condattr_init(&attr);
       |                            ^~~~
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpf1nctq_l/testfile.c:12:28: note: each undeclared identifier is reported only once for each function it appears in
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjzbulyox/testfile.c:12:28: note: each undeclared identifier is reported only once for each function it appears in
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphsuramnb
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphsuramnb/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphsuramnb/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4274,12 +4703,13 @@ Code:
     CPU_FREE(cpuset);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4290,20 +4720,21 @@ Code:
   #include <sys/signalfd.h>
   #include <stddef.h>
   int main(void) { return signalfd(-1, NULL, SFD_CLOEXEC); }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmprskw8371/testfile.c: In function 'main':
-/home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmprskw8371/testfile.c:8:27: warning: argument 2 null where non-null expected [-Wnonnull]
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0/testfile.c: In function 'main':
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0/testfile.c:8:27: warning: argument 2 null where non-null expected [-Wnonnull]
     8 |   int main(void) { return signalfd(-1, NULL, SFD_CLOEXEC); }
       |                           ^~~~~~~~
-In file included from /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmprskw8371/testfile.c:6:
+In file included from /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpky2l5wi0/testfile.c:6:
 /usr/include/x86_64-linux-gnu/sys/signalfd.h:57:12: note: in a call to function 'signalfd' declared 'nonnull'
    57 | extern int signalfd (int __fd, const sigset_t *__mask, int __flags)
       |            ^~~~~~~~
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnhx956_k
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnhx956_k/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpnhx956_k/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4322,12 +4753,13 @@ Code:
     splice(STDIN_FILENO, NULL, fd, NULL, len, SPLICE_F_MOVE);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpygyyc_nu
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpygyyc_nu/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpygyyc_nu/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4339,12 +4771,13 @@ Code:
   int main(void) {
     return mlockall(MCL_FUTURE);
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn8tp9971
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn8tp9971/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpn8tp9971/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4357,13 +4790,14 @@ Code:
         void bar(void) {
             sizeof(struct mmsghdr);
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Checking for type "struct mmsghdr" : YES (cached)
-Using cached compile:
-Cached command line:   
+Checking for type "struct mmsghdr" : YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk0ccr5rx
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk0ccr5rx/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk0ccr5rx/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4375,16 +4809,17 @@ Code:
     #error
     #endif
     int main(void) { return 0; }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpf75irl2s/testfile.c:4:14: fatal error: net/netmap.h: No such file or directory
+Compiler stderr:
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpk0ccr5rx/testfile.c:4:14: fatal error: net/netmap.h: No such file or directory
     4 |     #include <net/netmap.h>
       |              ^~~~~~~~~~~~~~
 compilation terminated.
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl52vjz_8
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl52vjz_8/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpl52vjz_8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4393,12 +4828,13 @@ Code:
   int main(void) {
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcipmt7oo
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcipmt7oo/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpcipmt7oo/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror 
 
 Code:
  
@@ -4407,12 +4843,13 @@ Code:
     int main(void) {
         return printf("%zu", SIZE_MAX);
     }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpaj0kzrz0
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpaj0kzrz0/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpaj0kzrz0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4427,12 +4864,13 @@ Code:
     __atomic_fetch_add(&x, y, __ATOMIC_RELAXED);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbip11od1
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbip11od1/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpbip11od1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4444,12 +4882,13 @@ Code:
     a = a * a;
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg1ehnmwv
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg1ehnmwv/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpg1ehnmwv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4464,10 +4903,10 @@ Code:
     __atomic_fetch_add(&x, y, __ATOMIC_RELAXED);
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
- /usr/bin/ld: /tmp/ccYzlDW0.o: in function `main':
+Compiler stderr:
+ /usr/bin/ld: /tmp/ccz9rO7w.o: in function `main':
 testfile.c:(.text+0x49): undefined reference to `__atomic_load_16'
 /usr/bin/ld: testfile.c:(.text+0x73): undefined reference to `__atomic_store_16'
 /usr/bin/ld: testfile.c:(.text+0x9a): undefined reference to `__atomic_compare_exchange_16'
@@ -4475,8 +4914,9 @@ testfile.c:(.text+0x49): undefined reference to `__atomic_load_16'
 /usr/bin/ld: testfile.c:(.text+0xde): undefined reference to `__atomic_fetch_add_16'
 collect2: error: ld returned 1 exit status
 
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpv0hg6hg6
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpv0hg6hg6/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpv0hg6hg6/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4487,12 +4927,13 @@ Code:
         return 0;
       }
     
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpq6izqirj
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpq6izqirj/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpq6izqirj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4504,12 +4945,13 @@ Code:
   int main(void) {
     return getauxval(AT_HWCAP) == 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphcm0qx31
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphcm0qx31/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmphcm0qx31/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4521,12 +4963,13 @@ Code:
     int main(void) {
         return syscall(__NR_keyctl, KEYCTL_READ, 0, NULL, NULL, 0);
     }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxe1km7al
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxe1km7al/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpxe1km7al/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4545,12 +4988,13 @@ Code:
 
     return 0;
   }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkvkz8qx
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkvkz8qx/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpmkvkz8qx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4562,12 +5006,13 @@ Code:
     }
     int main(int argc, char *argv[]) { return bar(argv[argc - 1]); }
   
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfvmpzi8j
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfvmpzi8j/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpfvmpzi8j/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4579,12 +5024,13 @@ Code:
     }
     int main(int argc, char *argv[]) { return bar(argv[argc - 1]); }
   
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9fo4jnmb
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9fo4jnmb/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp9fo4jnmb/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4600,12 +5046,13 @@ Code:
     }
     int main(int argc, char *argv[]) { return bar(argv[0]); }
   
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0fj5g1zd
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0fj5g1zd/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp0fj5g1zd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4622,12 +5069,13 @@ Code:
 
       return 0;
     }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp283v8_4a
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp283v8_4a/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp283v8_4a/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  
@@ -4645,12 +5093,13 @@ Code:
       return sock;
     }
   
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqd2kgt_b
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqd2kgt_b/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpqd2kgt_b/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 
 
 Code:
  #include <sys/socket.h>
@@ -4662,15 +5111,15 @@ Code:
             #endif
             return 0;
         }
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Header <linux/vm_sockets.h> has symbol "AF_VSOCK" : YES (cached)
-Program scripts/minikconf.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/minikconf.py)
+Header <linux/vm_sockets.h> has symbol "AF_VSOCK" : YES 
+Program scripts/minikconf.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/minikconf.py)
 Configuring riscv64-softmmu-config-target.h using configuration
 Configuring riscv64-softmmu-config-devices.mak with command
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/minikconf.py --defconfig riscv64-softmmu-config-devices.mak /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/riscv64-softmmu-config-devices.mak.d /home/luyahu/qemu_linux/qemu-8.0.2/configs/devices/riscv64-softmmu/default.mak /home/luyahu/qemu_linux/qemu-8.0.2/Kconfig CONFIG_TPM=y CONFIG_IVSHMEM=y CONFIG_OPENGL=y CONFIG_X11=y CONFIG_VHOST_USER=y CONFIG_VHOST_VDPA=y CONFIG_VHOST_KERNEL=y CONFIG_VIRTFS=y CONFIG_LINUX=y CONFIG_MULTIPROCESS_ALLOWED=y CONFIG_TCG=y CONFIG_RISCV64=y
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/minikconf.py --defconfig riscv64-softmmu-config-devices.mak /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/riscv64-softmmu-config-devices.mak.d /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/configs/devices/riscv64-softmmu/default.mak /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/Kconfig CONFIG_TPM=y CONFIG_IVSHMEM=y CONFIG_OPENGL=y CONFIG_X11=y CONFIG_VHOST_USER=y CONFIG_VHOST_VDPA=y CONFIG_VHOST_KERNEL=y CONFIG_VIRTFS=y CONFIG_LINUX=y CONFIG_MULTIPROCESS_ALLOWED=y CONFIG_TCG=y CONFIG_RISCV64=y
 --- stdout ---
 CONFIG_AC97=y
 CONFIG_ACPI=y
@@ -4845,9 +5294,9 @@ CONFIG_XIO3130=y
 --- stderr ---
 
 
-Reading depfile: /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/riscv64-softmmu-config-devices.mak.d
+Reading depfile: /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/riscv64-softmmu-config-devices.mak.d
 Configuring riscv64-softmmu-config-devices.h using configuration
-Program scripts/make-config-poison.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/scripts/make-config-poison.sh)
+Program scripts/make-config-poison.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/make-config-poison.sh)
 Pkg-config binary for 1 is cached.
 Determining dependency 'capstone' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -4855,8 +5304,8 @@ Called `/usr/bin/pkg-config --modversion capstone` -> 1
 
 Run-time dependency capstone found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpe4s_bw5j
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpe4s_bw5j/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpe4s_bw5j/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lfdt -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpuebdwupw
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpuebdwupw/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpuebdwupw/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lfdt -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
@@ -4869,10 +5318,10 @@ collect2: error: ld returned 1 exit status
 
 Library fdt found: NO
 Configuring config-host.h using configuration
-Program scripts/hxtool found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/scripts/hxtool)
-Program scripts/shaderinclude.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/shaderinclude.py)
-Program scripts/qapi-gen.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/qapi-gen.py)
-Program scripts/qemu-version.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/scripts/qemu-version.sh)
+Program scripts/hxtool found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/hxtool)
+Program scripts/shaderinclude.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/shaderinclude.py)
+Program scripts/qapi-gen.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/qapi-gen.py)
+Program scripts/qemu-version.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/qemu-version.sh)
 
 Executing subproject libvhost-user 
 
@@ -4882,42 +5331,45 @@ C compiler for the host machine: cc -m64 -mcx16 (gcc 11.4.0 "cc (Ubuntu 11.4.0-1
 C linker for the host machine: cc -m64 -mcx16 ld.bfd 2.38
 C compiler for the build machine: cc -m64 -mcx16 (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
 C linker for the build machine: cc -m64 -mcx16 ld.bfd 2.38
-Using cached compile:
-Cached command line:   
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpovmv7_nr
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpovmv7_nr/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpovmv7_nr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
 
 Code:
  extern int i;
 int i;
 
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Compiler for C supports arguments -Wsign-compare: YES (cached)
-Using cached compile:
-Cached command line:   
+Compiler for C supports arguments -Wsign-compare: YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8k56hl0s
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8k56hl0s/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmp8k56hl0s/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
 
 Code:
  extern int i;
 int i;
 
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Compiler for C supports arguments -Wdeclaration-after-statement: YES (cached)
-Using cached compile:
-Cached command line:   
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvl24bshp
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvl24bshp/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpvl24bshp/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing 
 
 Code:
  extern int i;
 int i;
 
-Cached compiler stdout:
+Compiler stdout:
  
-Cached compiler stderr:
+Compiler stderr:
  
-Compiler for C supports arguments -Wstrict-aliasing: YES (cached)
+Compiler for C supports arguments -Wstrict-aliasing: YES 
 Dependency threads found: YES unknown (cached)
 Dependency glib-2.0 found: YES 2.72.4 (overridden)
 Build targets in project: 10
@@ -4971,14 +5423,14 @@ Compiler for C supports arguments -Wstrict-aliasing: YES (cached)
 Build targets in project: 11
 Subproject libvduse finished.
 
-Program scripts/decodetree.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/decodetree.py)
-Program ../scripts/modules/module_block.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/block/../scripts/modules/module_block.py)
-Program ../scripts/block-coroutine-wrapper.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/block/../scripts/block-coroutine-wrapper.py)
-Program scripts/modinfo-collect.py found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/scripts/modinfo-collect.py)
-Program scripts/modinfo-generate.py found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/scripts/modinfo-generate.py)
+Program scripts/decodetree.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/decodetree.py)
+Program ../scripts/modules/module_block.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/block/../scripts/modules/module_block.py)
+Program ../scripts/block-coroutine-wrapper.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/block/../scripts/block-coroutine-wrapper.py)
+Program scripts/modinfo-collect.py found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/modinfo-collect.py)
+Program scripts/modinfo-generate.py found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/modinfo-generate.py)
 Program nm found: YES
-Program scripts/undefsym.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/undefsym.py)
-Program scripts/feature_to_c.sh found: YES (/bin/sh /home/luyahu/qemu_linux/qemu-8.0.2/scripts/feature_to_c.sh)
+Program scripts/undefsym.py found: YES (/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/undefsym.py)
+Program scripts/feature_to_c.sh found: YES (/bin/sh /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/feature_to_c.sh)
 Program sphinx-build found: NO
 Adding benchmark "benchmark-crypto-hash"
 Adding benchmark "benchmark-crypto-hmac"
@@ -4997,7 +5449,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 
 Program bash found: YES 5.1.16 (/usr/bin/bash)
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/tests/qemu-iotests/check -tap -qcow2 -g auto -n
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/qemu-iotests/check -tap -qcow2 -g auto -n
 --- stdout ---
 001
 002
@@ -5259,7 +5711,7 @@ Adding test "io-qcow2-nbd-qemu-allocation"
 Adding test "io-qcow2-qemu-img-close-errors"
 Adding test "io-qcow2-qsd-jobs"
 Adding test "io-qcow2-regression-vhdx-log"
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/tests/qemu-iotests/check -tap -raw -n
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/qemu-iotests/check -tap -raw -n
 --- stdout ---
 001
 002
@@ -5897,7 +6349,7 @@ Adding test "io-raw-remove-bitmap-from-backing"
 Adding test "io-raw-reopen-file"
 Adding test "io-raw-stream-error-on-reset"
 Adding test "io-raw-stream-under-throttle"
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/tests/qemu-iotests/check -tap -qed -n
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/qemu-iotests/check -tap -qed -n
 --- stdout ---
 001
 002
@@ -6535,7 +6987,7 @@ Adding test "io-qed-remove-bitmap-from-backing"
 Adding test "io-qed-reopen-file"
 Adding test "io-qed-stream-error-on-reset"
 Adding test "io-qed-stream-under-throttle"
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/tests/qemu-iotests/check -tap -vmdk -n
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/qemu-iotests/check -tap -vmdk -n
 --- stdout ---
 001
 002
@@ -7173,7 +7625,7 @@ Adding test "io-vmdk-remove-bitmap-from-backing"
 Adding test "io-vmdk-reopen-file"
 Adding test "io-vmdk-stream-error-on-reset"
 Adding test "io-vmdk-stream-under-throttle"
-Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/tests/qemu-iotests/check -tap -vpc -n
+Running command: /usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/qemu-iotests/check -tap -vpc -n
 --- stdout ---
 001
 002
@@ -7959,7 +8411,7 @@ Called `/usr/bin/pkg-config --modversion sysprof-capture-4` -> 1
 CMake binary for 1 is cached as not found
 CMake binary for machine 1 not found. Giving up.
 Run-time dependency sysprof-capture-4 found: NO (tried pkgconfig and cmake)
-Program initrd-stress.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/tests/migration/initrd-stress.sh)
+Program initrd-stress.sh found: YES (/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/migration/initrd-stress.sh)
 Program xgettext found: YES (/usr/bin/xgettext)
 Build targets in project: 520
 
@@ -7978,9 +8430,9 @@ qemu 8.0.2
     local state directory        : /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/var
     Manual directory             : /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/share/man
     Doc directory                : /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/share/doc
-    Build directory              : /home/luyahu/qemu_linux/qemu-8.0.2/build
-    Source path                  : /home/luyahu/qemu_linux/qemu-8.0.2
-    GIT submodules               : ui/keycodemapdb meson tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc
+    Build directory              : /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build
+    Source path                  : /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux
+    GIT submodules               : ui/keycodemapdb tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc
 
   Host binaries
     git                          : git
@@ -8162,10 +8614,8 @@ qemu 8.0.2
     libvhost-user                : YES
 
   User defined options
-    Native files                 : /home/luyahu/qemu_linux/qemu-8.0.2/build/config-meson.cross
-    backend                      : ninja
+    Native files                 : config-meson.cross
     prefix                       : /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu
-    werror                       : true
     gio                          : disabled
     gtk                          : enabled
     vfio_user_server             : disabled
@@ -8173,21 +8623,8 @@ qemu 8.0.2
 
 Found ninja-1.10.1 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpamlxiope
-Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpamlxiope/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmpamlxiope/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
-
-Code:
- 
-Compiler stdout:
- install: /usr/lib/gcc/x86_64-linux-gnu/11/
-programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
-libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-
-Compiler stderr:
- 
-Running compile:
-Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp91kkz24o
-Command line:  c++ -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp91kkz24o/testfile.cpp -o /home/luyahu/qemu_linux/qemu-8.0.2/build/meson-private/tmp91kkz24o/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjko7s4e1
+Command line:  cc -m64 -mcx16 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjko7s4e1/testfile.c -o /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/meson-private/tmpjko7s4e1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
 
 Code:
  
@@ -8341,4 +8778,4 @@ Failed to guess install tag for /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/s
 Failed to guess install tag for /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/share/qemu/vof-nvram.bin
 Failed to guess install tag for /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/share/qemu/keymaps/sl
 Failed to guess install tag for /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu/share/qemu/keymaps/sv
-Running postconf script '/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/scripts/symlink-install-tree.py'
+Running postconf script '/usr/bin/python3 /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/scripts/symlink-install-tree.py'

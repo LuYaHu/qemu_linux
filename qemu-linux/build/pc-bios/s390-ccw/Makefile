@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/pc-bios/s390-ccw/Makefile
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/pc-bios/s390-ccw/Makefile

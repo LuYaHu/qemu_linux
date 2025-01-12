@@ -25,14 +25,14 @@ static inline void _nocheck__trace_mips_translate_c0(const char * instr, const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/mips/tcg/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/mips/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:mips_translate_c0 " "%s %s (reg %d sel %d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , instr, rn, reg, sel);
 #line 34 "trace/trace-target_mips_tcg.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/mips/tcg/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/mips/tcg/trace-events"
             qemu_log("mips_translate_c0 " "%s %s (reg %d sel %d)" "\n", instr, rn, reg, sel);
 #line 38 "trace/trace-target_mips_tcg.h"
         }
@@ -56,14 +56,14 @@ static inline void _nocheck__trace_mips_translate_tr(const char * instr, int rt,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/mips/tcg/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/mips/tcg/trace-events"
             qemu_log("%d@%zu.%06zu:mips_translate_tr " "%s (reg %d u %d sel %d h %d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , instr, rt, u, sel, h);
 #line 65 "trace/trace-target_mips_tcg.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/mips/tcg/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/mips/tcg/trace-events"
             qemu_log("mips_translate_tr " "%s (reg %d u %d sel %d h %d)" "\n", instr, rt, u, sel, h);
 #line 69 "trace/trace-target_mips_tcg.h"
         }

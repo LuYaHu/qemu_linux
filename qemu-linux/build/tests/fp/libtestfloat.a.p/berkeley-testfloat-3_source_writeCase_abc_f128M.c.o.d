@@ -30,7 +30,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_writeCase_abc_f128M.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h ../tests/fp/platform.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/writeHex.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \

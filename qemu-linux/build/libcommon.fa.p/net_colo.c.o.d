@@ -1,7 +1,9 @@
 libcommon.fa.p/net_colo.c.o: ../net/colo.c /usr/include/stdc-predef.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/osdep.h config-host.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/poison.h config-poison.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/osdep.h \
+ config-host.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/poison.h \
+ config-poison.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -104,7 +106,7 @@ libcommon.fa.p/net_colo.c.o: ../net/colo.c /usr/include/stdc-predef.h \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/asm-generic/bitsperlong.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
@@ -140,7 +142,7 @@ libcommon.fa.p/net_colo.c.o: ../net/colo.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/glib-compat.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/glib-compat.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -219,7 +221,7 @@ libcommon.fa.p/net_colo.c.o: ../net/colo.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/os-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -241,30 +243,31 @@ libcommon.fa.p/net_colo.c.o: ../net/colo.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/typedefs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/typedefs.h \
  ../net/trace.h trace/trace-net.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/event-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/log-for-trace.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/error-report.h \
- ../net/colo.h /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/jhash.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/bitops.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/host-utils.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/bswap.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/int128.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/atomic.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/timer.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/notify.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/queue.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/host-utils.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/net/eth.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/iov.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_net.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_ids.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_config.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/virtio_types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/standard-headers/linux/if_ether.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/event-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/log-for-trace.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/error-report.h \
+ ../net/colo.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/jhash.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/bitops.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/host-utils.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/bswap.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/int128.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/atomic.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/timer.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/notify.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/host-utils.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/net/eth.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/iov.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_net.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_ids.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_config.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/virtio_types.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/standard-headers/linux/if_ether.h \
  ../net/util.h

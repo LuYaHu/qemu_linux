@@ -1,8 +1,8 @@
 libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  qapi/qapi-events.c /usr/include/stdc-predef.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/osdep.h config-host.h \
- riscv64-softmmu-config-target.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/osdep.h \
+ config-host.h riscv64-softmmu-config-target.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,7 +105,7 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/asm-generic/bitsperlong.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
@@ -141,7 +141,7 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/glib-compat.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/glib-compat.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -220,7 +220,7 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/os-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -242,9 +242,9 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/typedefs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/typedefs.h \
  qapi/qapi-emit-events.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/util.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/util.h \
  qapi/qapi-events.h qapi/qapi-events-pragma.h qapi/qapi-types-pragma.h \
  qapi/qapi-builtin-types.h qapi/qapi-events-error.h \
  qapi/qapi-types-error.h qapi/qapi-events-common.h \
@@ -281,7 +281,7 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  qapi/qapi-types-virtio.h qapi/qapi-events-cryptodev.h \
  qapi/qapi-types-cryptodev.h qapi/qapi-events-cxl.h qapi/qapi-types-cxl.h \
  qapi/qapi-types.h qapi/qapi-visit.h qapi/qapi-builtin-visit.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/visitor.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/visitor.h \
  qapi/qapi-types-compat.h qapi/qapi-visit-pragma.h \
  qapi/qapi-visit-error.h qapi/qapi-visit-common.h \
  qapi/qapi-visit-sockets.h qapi/qapi-visit-run-state.h \
@@ -301,10 +301,10 @@ libqemu-riscv64-softmmu.fa.p/meson-generated_.._qapi_qapi-events.c.o: \
  qapi/qapi-visit-acpi.h qapi/qapi-visit-pci.h qapi/qapi-visit-stats.h \
  qapi/qapi-visit-virtio.h qapi/qapi-visit-cryptodev.h \
  qapi/qapi-visit-cxl.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/compat-policy.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/error.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/compat-policy.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/error.h \
  qapi/qapi-types-error.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/qmp/qdict.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/qmp/qobject.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/queue.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/qmp-event.h
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/qmp/qdict.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/qmp/qobject.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/qmp-event.h

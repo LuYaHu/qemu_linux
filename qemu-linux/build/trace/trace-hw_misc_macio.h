@@ -118,14 +118,14 @@ static inline void _nocheck__trace_cuda_delay_set_sr_int(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_delay_set_sr_int " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 127 "trace/trace-hw_misc_macio.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_delay_set_sr_int " "" "\n");
 #line 131 "trace/trace-hw_misc_macio.h"
         }
@@ -149,14 +149,14 @@ static inline void _nocheck__trace_cuda_data_send(uint8_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_data_send " "send: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 158 "trace/trace-hw_misc_macio.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_data_send " "send: 0x%02x" "\n", data);
 #line 162 "trace/trace-hw_misc_macio.h"
         }
@@ -180,14 +180,14 @@ static inline void _nocheck__trace_cuda_data_recv(uint8_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_data_recv " "recv: 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 189 "trace/trace-hw_misc_macio.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_data_recv " "recv: 0x%02x" "\n", data);
 #line 193 "trace/trace-hw_misc_macio.h"
         }
@@ -211,14 +211,14 @@ static inline void _nocheck__trace_cuda_receive_packet_cmd(const char * cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_receive_packet_cmd " "handling command %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 220 "trace/trace-hw_misc_macio.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_receive_packet_cmd " "handling command %s" "\n", cmd);
 #line 224 "trace/trace-hw_misc_macio.h"
         }
@@ -242,14 +242,14 @@ static inline void _nocheck__trace_cuda_packet_receive(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_packet_receive " "length %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 251 "trace/trace-hw_misc_macio.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_packet_receive " "length %d" "\n", len);
 #line 255 "trace/trace-hw_misc_macio.h"
         }
@@ -273,14 +273,14 @@ static inline void _nocheck__trace_cuda_packet_receive_data(int i, const uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_packet_receive_data " "[%d] 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, data);
 #line 282 "trace/trace-hw_misc_macio.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_packet_receive_data " "[%d] 0x%02x" "\n", i, data);
 #line 286 "trace/trace-hw_misc_macio.h"
         }
@@ -304,14 +304,14 @@ static inline void _nocheck__trace_cuda_packet_send(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_packet_send " "length %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 313 "trace/trace-hw_misc_macio.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_packet_send " "length %d" "\n", len);
 #line 317 "trace/trace-hw_misc_macio.h"
         }
@@ -335,14 +335,14 @@ static inline void _nocheck__trace_cuda_packet_send_data(int i, const uint8_t da
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:cuda_packet_send_data " "[%d] 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, data);
 #line 344 "trace/trace-hw_misc_macio.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("cuda_packet_send_data " "[%d] 0x%02x" "\n", i, data);
 #line 348 "trace/trace-hw_misc_macio.h"
         }
@@ -366,14 +366,14 @@ static inline void _nocheck__trace_macio_timer_write(uint64_t addr, unsigned len
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_timer_write " "write addr 0x%"PRIx64 " len %d val 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len, val);
 #line 375 "trace/trace-hw_misc_macio.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_timer_write " "write addr 0x%"PRIx64 " len %d val 0x%"PRIx64 "\n", addr, len, val);
 #line 379 "trace/trace-hw_misc_macio.h"
         }
@@ -397,14 +397,14 @@ static inline void _nocheck__trace_macio_timer_read(uint64_t addr, unsigned len,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_timer_read " "read addr 0x%"PRIx64 " len %d val 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len, val);
 #line 406 "trace/trace-hw_misc_macio.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_timer_read " "read addr 0x%"PRIx64 " len %d val 0x%"PRIx32 "\n", addr, len, val);
 #line 410 "trace/trace-hw_misc_macio.h"
         }
@@ -428,14 +428,14 @@ static inline void _nocheck__trace_macio_set_gpio(int gpio, bool state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_set_gpio " "setting GPIO %d to %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpio, state);
 #line 437 "trace/trace-hw_misc_macio.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_set_gpio " "setting GPIO %d to %d" "\n", gpio, state);
 #line 441 "trace/trace-hw_misc_macio.h"
         }
@@ -459,14 +459,14 @@ static inline void _nocheck__trace_macio_gpio_irq_assert(int gpio)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_gpio_irq_assert " "asserting GPIO %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpio);
 #line 468 "trace/trace-hw_misc_macio.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_gpio_irq_assert " "asserting GPIO %d" "\n", gpio);
 #line 472 "trace/trace-hw_misc_macio.h"
         }
@@ -490,14 +490,14 @@ static inline void _nocheck__trace_macio_gpio_irq_deassert(int gpio)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_gpio_irq_deassert " "deasserting GPIO %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpio);
 #line 499 "trace/trace-hw_misc_macio.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_gpio_irq_deassert " "deasserting GPIO %d" "\n", gpio);
 #line 503 "trace/trace-hw_misc_macio.h"
         }
@@ -521,14 +521,14 @@ static inline void _nocheck__trace_macio_gpio_write(uint64_t addr, uint64_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:macio_gpio_write " "addr: 0x%"PRIx64" value: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 530 "trace/trace-hw_misc_macio.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("macio_gpio_write " "addr: 0x%"PRIx64" value: 0x%"PRIx64 "\n", addr, val);
 #line 534 "trace/trace-hw_misc_macio.h"
         }
@@ -552,14 +552,14 @@ static inline void _nocheck__trace_pmu_adb_poll(int olen)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_adb_poll " "ADB autopoll, olen=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , olen);
 #line 561 "trace/trace-hw_misc_macio.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_adb_poll " "ADB autopoll, olen=%d" "\n", olen);
 #line 565 "trace/trace-hw_misc_macio.h"
         }
@@ -583,14 +583,14 @@ static inline void _nocheck__trace_pmu_one_sec_timer(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_one_sec_timer " "PMU one sec..." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 592 "trace/trace-hw_misc_macio.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_one_sec_timer " "PMU one sec..." "\n");
 #line 596 "trace/trace-hw_misc_macio.h"
         }
@@ -614,14 +614,14 @@ static inline void _nocheck__trace_pmu_cmd_set_int_mask(int intmask)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_cmd_set_int_mask " "Setting PMU int mask to 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intmask);
 #line 623 "trace/trace-hw_misc_macio.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_cmd_set_int_mask " "Setting PMU int mask to 0x%02x" "\n", intmask);
 #line 627 "trace/trace-hw_misc_macio.h"
         }
@@ -645,14 +645,14 @@ static inline void _nocheck__trace_pmu_cmd_set_adb_autopoll(int mask)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_cmd_set_adb_autopoll " "ADB set autopoll, mask=0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mask);
 #line 654 "trace/trace-hw_misc_macio.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_cmd_set_adb_autopoll " "ADB set autopoll, mask=0x%04x" "\n", mask);
 #line 658 "trace/trace-hw_misc_macio.h"
         }
@@ -676,14 +676,14 @@ static inline void _nocheck__trace_pmu_cmd_adb_nobus(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_cmd_adb_nobus " "ADB PACKET with no ADB bus!" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 685 "trace/trace-hw_misc_macio.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_cmd_adb_nobus " "ADB PACKET with no ADB bus!" "\n");
 #line 689 "trace/trace-hw_misc_macio.h"
         }
@@ -707,14 +707,14 @@ static inline void _nocheck__trace_pmu_cmd_adb_request(int inlen, int indata0, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_cmd_adb_request " "ADB request: len=%d, cmd=0x%02x, pflags=0x%02x, adblen=%d: 0x%02x 0x%02x..." "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , inlen, indata0, indata1, indata2, indata3, indata4);
 #line 716 "trace/trace-hw_misc_macio.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_cmd_adb_request " "ADB request: len=%d, cmd=0x%02x, pflags=0x%02x, adblen=%d: 0x%02x 0x%02x..." "\n", inlen, indata0, indata1, indata2, indata3, indata4);
 #line 720 "trace/trace-hw_misc_macio.h"
         }
@@ -738,14 +738,14 @@ static inline void _nocheck__trace_pmu_cmd_adb_reply(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_cmd_adb_reply " "ADB reply is %d bytes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 747 "trace/trace-hw_misc_macio.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_cmd_adb_reply " "ADB reply is %d bytes" "\n", len);
 #line 751 "trace/trace-hw_misc_macio.h"
         }
@@ -769,14 +769,14 @@ static inline void _nocheck__trace_pmu_dispatch_cmd(const char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_dispatch_cmd " "handling command %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 778 "trace/trace-hw_misc_macio.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_dispatch_cmd " "handling command %s" "\n", name);
 #line 782 "trace/trace-hw_misc_macio.h"
         }
@@ -800,14 +800,14 @@ static inline void _nocheck__trace_pmu_dispatch_unknown_cmd(int cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_dispatch_unknown_cmd " "Unknown PMU command 0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 809 "trace/trace-hw_misc_macio.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_dispatch_unknown_cmd " "Unknown PMU command 0x%02x" "\n", cmd);
 #line 813 "trace/trace-hw_misc_macio.h"
         }
@@ -831,14 +831,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_string(const char * str)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_string " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , str);
 #line 840 "trace/trace-hw_misc_macio.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_string " "%s" "\n", str);
 #line 844 "trace/trace-hw_misc_macio.h"
         }
@@ -862,14 +862,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_resp_size(int size)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_resp_size " "sending %d resp bytes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size);
 #line 871 "trace/trace-hw_misc_macio.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_resp_size " "sending %d resp bytes" "\n", size);
 #line 875 "trace/trace-hw_misc_macio.h"
         }
@@ -893,14 +893,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_error(int portB)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_error " "protocol error! portB=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , portB);
 #line 902 "trace/trace-hw_misc_macio.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_error " "protocol error! portB=0x%02x" "\n", portB);
 #line 906 "trace/trace-hw_misc_macio.h"
         }
@@ -924,14 +924,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_clear_treq(int state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_clear_treq " "TREQ cleared, clearing TACK, state: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state);
 #line 933 "trace/trace-hw_misc_macio.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_clear_treq " "TREQ cleared, clearing TACK, state: %d" "\n", state);
 #line 937 "trace/trace-hw_misc_macio.h"
         }
@@ -955,14 +955,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmd(int cmd, int cmdlen, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmd " "Got command byte 0x%02x, clen=%d, rlen=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, cmdlen, rsplen);
 #line 964 "trace/trace-hw_misc_macio.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmd " "Got command byte 0x%02x, clen=%d, rlen=%d" "\n", cmd, cmdlen, rsplen);
 #line 968 "trace/trace-hw_misc_macio.h"
         }
@@ -986,14 +986,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmdlen(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmdlen " "got cmd length byte: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 995 "trace/trace-hw_misc_macio.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmdlen " "got cmd length byte: %d" "\n", len);
 #line 999 "trace/trace-hw_misc_macio.h"
         }
@@ -1017,14 +1017,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmd_toobig(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmd_toobig " "command too big (%d bytes)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 1026 "trace/trace-hw_misc_macio.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmd_toobig " "command too big (%d bytes)" "\n", len);
 #line 1030 "trace/trace-hw_misc_macio.h"
         }
@@ -1048,14 +1048,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmd_send_resp_size(int len
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmd_send_resp_size " "sending length byte: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 1057 "trace/trace-hw_misc_macio.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmd_send_resp_size " "sending length byte: %d" "\n", len);
 #line 1061 "trace/trace-hw_misc_macio.h"
         }
@@ -1079,14 +1079,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmd_send_resp(int pos, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmd_send_resp " "sending byte: %d/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pos, len);
 #line 1088 "trace/trace-hw_misc_macio.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmd_send_resp " "sending byte: %d/%d" "\n", pos, len);
 #line 1092 "trace/trace-hw_misc_macio.h"
         }
@@ -1110,14 +1110,14 @@ static inline void _nocheck__trace_pmu_debug_protocol_cmd_resp_complete(int ier)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("%d@%zu.%06zu:pmu_debug_protocol_cmd_resp_complete " "Response send complete. IER=0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ier);
 #line 1119 "trace/trace-hw_misc_macio.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/misc/macio/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/misc/macio/trace-events"
             qemu_log("pmu_debug_protocol_cmd_resp_complete " "Response send complete. IER=0x%02x" "\n", ier);
 #line 1123 "trace/trace-hw_misc_macio.h"
         }

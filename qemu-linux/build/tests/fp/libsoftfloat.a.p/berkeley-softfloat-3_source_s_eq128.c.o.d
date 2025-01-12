@@ -17,4 +17,4 @@ tests/fp/libsoftfloat.a.p/berkeley-softfloat-3_source_s_eq128.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h ../tests/fp/platform.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h

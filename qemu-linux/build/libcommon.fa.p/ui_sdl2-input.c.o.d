@@ -1,8 +1,10 @@
 libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/stdc-predef.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/osdep.h config-host.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/exec/poison.h config-poison.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/osdep.h \
+ config-host.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/exec/poison.h \
+ config-poison.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,7 +107,7 @@ libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/linux-headers/asm-generic/bitsperlong.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
@@ -141,7 +143,7 @@ libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/glib-compat.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/glib-compat.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -220,7 +222,7 @@ libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/sysemu/os-posix.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -242,22 +244,22 @@ libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/typedefs.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/console.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/qemu-pixman.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/typedefs.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/console.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/qemu-pixman.h \
  /usr/include/pixman-1/pixman.h /usr/include/pixman-1/pixman-version.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qom/object.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qom/object.h \
  qapi/qapi-builtin-types.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qapi/util.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/module.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/notify.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/queue.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qapi/util.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/module.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/notify.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/queue.h \
  qapi/qapi-types-ui.h qapi/qapi-types-common.h qapi/qapi-types-sockets.h \
  /usr/include/epoxy/gl.h /usr/include/epoxy/common.h \
  /usr/include/epoxy/gl_generated.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/shader.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/input.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/sdl2.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/shader.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/input.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/sdl2.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -384,13 +386,13 @@ libcommon.fa.p/ui_sdl2-input.c.o: ../ui/sdl2-input.c \
  /usr/include/SDL2/SDL_syswm.h /usr/include/X11/Xlib.h \
  /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
  /usr/include/X11/Xosdefs.h /usr/include/X11/Xatom.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/kbd-state.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/ui/egl-helpers.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/kbd-state.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/ui/egl-helpers.h \
  /usr/include/epoxy/egl.h /usr/include/epoxy/egl_generated.h \
  /usr/include/EGL/eglplatform.h /usr/include/KHR/khrplatform.h \
  /usr/include/gbm.h ../ui/trace.h trace/trace-ui.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/event-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/trace/control-internal.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/log-for-trace.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/error-report.h
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/event-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/trace/control-internal.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/log-for-trace.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/error-report.h

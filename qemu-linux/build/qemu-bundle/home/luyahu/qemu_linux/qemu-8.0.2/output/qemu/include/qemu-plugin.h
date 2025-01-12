@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/qemu-plugin.h
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/qemu-plugin.h

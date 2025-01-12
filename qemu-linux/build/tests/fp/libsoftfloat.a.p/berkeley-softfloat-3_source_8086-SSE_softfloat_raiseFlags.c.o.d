@@ -1,7 +1,7 @@
 tests/fp/libsoftfloat.a.p/berkeley-softfloat-3_source_8086-SSE_softfloat_raiseFlags.c.o: \
  ../tests/fp/berkeley-softfloat-3/source/8086-SSE/softfloat_raiseFlags.c \
  /usr/include/stdc-predef.h ../tests/fp/platform.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \

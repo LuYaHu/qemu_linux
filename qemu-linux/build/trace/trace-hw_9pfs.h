@@ -172,14 +172,14 @@ static inline void _nocheck__trace_v9fs_rcancel(uint16_t tag, uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_rcancel " "tag %d id %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id);
 #line 181 "trace/trace-hw_9pfs.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_rcancel " "tag %d id %d" "\n", tag, id);
 #line 185 "trace/trace-hw_9pfs.h"
         }
@@ -203,14 +203,14 @@ static inline void _nocheck__trace_v9fs_rerror(uint16_t tag, uint8_t id, int err
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_rerror " "tag %d id %d err %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, err);
 #line 212 "trace/trace-hw_9pfs.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_rerror " "tag %d id %d err %d" "\n", tag, id, err);
 #line 216 "trace/trace-hw_9pfs.h"
         }
@@ -234,14 +234,14 @@ static inline void _nocheck__trace_v9fs_version(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_version " "tag %d id %d msize %d version %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, msize, version);
 #line 243 "trace/trace-hw_9pfs.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_version " "tag %d id %d msize %d version %s" "\n", tag, id, msize, version);
 #line 247 "trace/trace-hw_9pfs.h"
         }
@@ -265,14 +265,14 @@ static inline void _nocheck__trace_v9fs_version_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_version_return " "tag %d id %d msize %d version %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, msize, version);
 #line 274 "trace/trace-hw_9pfs.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_version_return " "tag %d id %d msize %d version %s" "\n", tag, id, msize, version);
 #line 278 "trace/trace-hw_9pfs.h"
         }
@@ -296,14 +296,14 @@ static inline void _nocheck__trace_v9fs_attach(uint16_t tag, uint8_t id, int32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_attach " "tag %u id %u fid %d afid %d uname %s aname %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, afid, uname, aname);
 #line 305 "trace/trace-hw_9pfs.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_attach " "tag %u id %u fid %d afid %d uname %s aname %s" "\n", tag, id, fid, afid, uname, aname);
 #line 309 "trace/trace-hw_9pfs.h"
         }
@@ -327,14 +327,14 @@ static inline void _nocheck__trace_v9fs_attach_return(uint16_t tag, uint8_t id, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_attach_return " "tag %u id %u type %u version %u path %"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path);
 #line 336 "trace/trace-hw_9pfs.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_attach_return " "tag %u id %u type %u version %u path %"PRIu64 "\n", tag, id, type, version, path);
 #line 340 "trace/trace-hw_9pfs.h"
         }
@@ -358,14 +358,14 @@ static inline void _nocheck__trace_v9fs_stat(uint16_t tag, uint8_t id, int32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_stat " "tag %d id %d fid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid);
 #line 367 "trace/trace-hw_9pfs.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_stat " "tag %d id %d fid %d" "\n", tag, id, fid);
 #line 371 "trace/trace-hw_9pfs.h"
         }
@@ -389,14 +389,14 @@ static inline void _nocheck__trace_v9fs_stat_return(uint16_t tag, uint8_t id, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_stat_return " "tag %d id %d stat={mode %d atime %d mtime %d length %"PRId64"}" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, mode, atime, mtime, length);
 #line 398 "trace/trace-hw_9pfs.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_stat_return " "tag %d id %d stat={mode %d atime %d mtime %d length %"PRId64"}" "\n", tag, id, mode, atime, mtime, length);
 #line 402 "trace/trace-hw_9pfs.h"
         }
@@ -420,14 +420,14 @@ static inline void _nocheck__trace_v9fs_getattr(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_getattr " "tag %d id %d fid %d request_mask %"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, request_mask);
 #line 429 "trace/trace-hw_9pfs.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_getattr " "tag %d id %d fid %d request_mask %"PRIu64 "\n", tag, id, fid, request_mask);
 #line 433 "trace/trace-hw_9pfs.h"
         }
@@ -451,14 +451,14 @@ static inline void _nocheck__trace_v9fs_getattr_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_getattr_return " "tag %d id %d getattr={result_mask %"PRId64" mode %u uid %u gid %u}" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, result_mask, mode, uid, gid);
 #line 460 "trace/trace-hw_9pfs.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_getattr_return " "tag %d id %d getattr={result_mask %"PRId64" mode %u uid %u gid %u}" "\n", tag, id, result_mask, mode, uid, gid);
 #line 464 "trace/trace-hw_9pfs.h"
         }
@@ -482,14 +482,14 @@ static inline void _nocheck__trace_v9fs_walk(uint16_t tag, uint8_t id, int32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_walk " "tag %d id %d fid %d newfid %d nwnames %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, newfid, nwnames);
 #line 491 "trace/trace-hw_9pfs.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_walk " "tag %d id %d fid %d newfid %d nwnames %d" "\n", tag, id, fid, newfid, nwnames);
 #line 495 "trace/trace-hw_9pfs.h"
         }
@@ -513,14 +513,14 @@ static inline void _nocheck__trace_v9fs_walk_return(uint16_t tag, uint8_t id, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_walk_return " "tag %d id %d nwnames %d qids %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, nwnames, qids);
 #line 522 "trace/trace-hw_9pfs.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_walk_return " "tag %d id %d nwnames %d qids %p" "\n", tag, id, nwnames, qids);
 #line 526 "trace/trace-hw_9pfs.h"
         }
@@ -544,14 +544,14 @@ static inline void _nocheck__trace_v9fs_open(uint16_t tag, uint8_t id, int32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_open " "tag %d id %d fid %d mode %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, mode);
 #line 553 "trace/trace-hw_9pfs.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_open " "tag %d id %d fid %d mode %d" "\n", tag, id, fid, mode);
 #line 557 "trace/trace-hw_9pfs.h"
         }
@@ -575,14 +575,14 @@ static inline void _nocheck__trace_v9fs_open_return(uint16_t tag, uint8_t id, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_open_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path, iounit);
 #line 584 "trace/trace-hw_9pfs.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_open_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n", tag, id, type, version, path, iounit);
 #line 588 "trace/trace-hw_9pfs.h"
         }
@@ -606,14 +606,14 @@ static inline void _nocheck__trace_v9fs_lcreate(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_lcreate " "tag %d id %d dfid %d flags %d mode %d gid %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, dfid, flags, mode, gid);
 #line 615 "trace/trace-hw_9pfs.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_lcreate " "tag %d id %d dfid %d flags %d mode %d gid %u" "\n", tag, id, dfid, flags, mode, gid);
 #line 619 "trace/trace-hw_9pfs.h"
         }
@@ -637,14 +637,14 @@ static inline void _nocheck__trace_v9fs_lcreate_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_lcreate_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path, iounit);
 #line 646 "trace/trace-hw_9pfs.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_lcreate_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n", tag, id, type, version, path, iounit);
 #line 650 "trace/trace-hw_9pfs.h"
         }
@@ -668,14 +668,14 @@ static inline void _nocheck__trace_v9fs_fsync(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_fsync " "tag %d id %d fid %d datasync %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, datasync);
 #line 677 "trace/trace-hw_9pfs.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_fsync " "tag %d id %d fid %d datasync %d" "\n", tag, id, fid, datasync);
 #line 681 "trace/trace-hw_9pfs.h"
         }
@@ -699,14 +699,14 @@ static inline void _nocheck__trace_v9fs_clunk(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_clunk " "tag %d id %d fid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid);
 #line 708 "trace/trace-hw_9pfs.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_clunk " "tag %d id %d fid %d" "\n", tag, id, fid);
 #line 712 "trace/trace-hw_9pfs.h"
         }
@@ -730,14 +730,14 @@ static inline void _nocheck__trace_v9fs_read(uint16_t tag, uint8_t id, int32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_read " "tag %d id %d fid %d off %"PRIu64" max_count %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, off, max_count);
 #line 739 "trace/trace-hw_9pfs.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_read " "tag %d id %d fid %d off %"PRIu64" max_count %u" "\n", tag, id, fid, off, max_count);
 #line 743 "trace/trace-hw_9pfs.h"
         }
@@ -761,14 +761,14 @@ static inline void _nocheck__trace_v9fs_read_return(uint16_t tag, uint8_t id, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_read_return " "tag %d id %d count %d err %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, count, err);
 #line 770 "trace/trace-hw_9pfs.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_read_return " "tag %d id %d count %d err %zd" "\n", tag, id, count, err);
 #line 774 "trace/trace-hw_9pfs.h"
         }
@@ -792,14 +792,14 @@ static inline void _nocheck__trace_v9fs_readdir(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_readdir " "tag %d id %d fid %d offset %"PRIu64" max_count %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, offset, max_count);
 #line 801 "trace/trace-hw_9pfs.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_readdir " "tag %d id %d fid %d offset %"PRIu64" max_count %u" "\n", tag, id, fid, offset, max_count);
 #line 805 "trace/trace-hw_9pfs.h"
         }
@@ -823,14 +823,14 @@ static inline void _nocheck__trace_v9fs_readdir_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_readdir_return " "tag %d id %d count %u retval %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, count, retval);
 #line 832 "trace/trace-hw_9pfs.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_readdir_return " "tag %d id %d count %u retval %zd" "\n", tag, id, count, retval);
 #line 836 "trace/trace-hw_9pfs.h"
         }
@@ -854,14 +854,14 @@ static inline void _nocheck__trace_v9fs_write(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_write " "tag %d id %d fid %d off %"PRIu64" count %u cnt %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, off, count, cnt);
 #line 863 "trace/trace-hw_9pfs.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_write " "tag %d id %d fid %d off %"PRIu64" count %u cnt %d" "\n", tag, id, fid, off, count, cnt);
 #line 867 "trace/trace-hw_9pfs.h"
         }
@@ -885,14 +885,14 @@ static inline void _nocheck__trace_v9fs_write_return(uint16_t tag, uint8_t id, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_write_return " "tag %d id %d total %d err %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, total, err);
 #line 894 "trace/trace-hw_9pfs.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_write_return " "tag %d id %d total %d err %zd" "\n", tag, id, total, err);
 #line 898 "trace/trace-hw_9pfs.h"
         }
@@ -916,14 +916,14 @@ static inline void _nocheck__trace_v9fs_create(uint16_t tag, uint8_t id, int32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_create " "tag %d id %d fid %d name %s perm %d mode %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, name, perm, mode);
 #line 925 "trace/trace-hw_9pfs.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_create " "tag %d id %d fid %d name %s perm %d mode %d" "\n", tag, id, fid, name, perm, mode);
 #line 929 "trace/trace-hw_9pfs.h"
         }
@@ -947,14 +947,14 @@ static inline void _nocheck__trace_v9fs_create_return(uint16_t tag, uint8_t id, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_create_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path, iounit);
 #line 956 "trace/trace-hw_9pfs.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_create_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} iounit %d" "\n", tag, id, type, version, path, iounit);
 #line 960 "trace/trace-hw_9pfs.h"
         }
@@ -978,14 +978,14 @@ static inline void _nocheck__trace_v9fs_symlink(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_symlink " "tag %d id %d fid %d name %s symname %s gid %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, name, symname, gid);
 #line 987 "trace/trace-hw_9pfs.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_symlink " "tag %d id %d fid %d name %s symname %s gid %u" "\n", tag, id, fid, name, symname, gid);
 #line 991 "trace/trace-hw_9pfs.h"
         }
@@ -1009,14 +1009,14 @@ static inline void _nocheck__trace_v9fs_symlink_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_symlink_return " "tag %u id %u qid={type %u version %u path %"PRIu64"}" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path);
 #line 1018 "trace/trace-hw_9pfs.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_symlink_return " "tag %u id %u qid={type %u version %u path %"PRIu64"}" "\n", tag, id, type, version, path);
 #line 1022 "trace/trace-hw_9pfs.h"
         }
@@ -1040,14 +1040,14 @@ static inline void _nocheck__trace_v9fs_flush(uint16_t tag, uint8_t id, int16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_flush " "tag %d id %d flush_tag %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, flush_tag);
 #line 1049 "trace/trace-hw_9pfs.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_flush " "tag %d id %d flush_tag %d" "\n", tag, id, flush_tag);
 #line 1053 "trace/trace-hw_9pfs.h"
         }
@@ -1071,14 +1071,14 @@ static inline void _nocheck__trace_v9fs_link(uint16_t tag, uint8_t id, int32_t d
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_link " "tag %d id %d dfid %d oldfid %d name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, dfid, oldfid, name);
 #line 1080 "trace/trace-hw_9pfs.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_link " "tag %d id %d dfid %d oldfid %d name %s" "\n", tag, id, dfid, oldfid, name);
 #line 1084 "trace/trace-hw_9pfs.h"
         }
@@ -1102,14 +1102,14 @@ static inline void _nocheck__trace_v9fs_remove(uint16_t tag, uint8_t id, int32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_remove " "tag %d id %d fid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid);
 #line 1111 "trace/trace-hw_9pfs.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_remove " "tag %d id %d fid %d" "\n", tag, id, fid);
 #line 1115 "trace/trace-hw_9pfs.h"
         }
@@ -1133,14 +1133,14 @@ static inline void _nocheck__trace_v9fs_wstat(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_wstat " "tag %u id %u fid %d stat={mode %d atime %d mtime %d}" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, mode, atime, mtime);
 #line 1142 "trace/trace-hw_9pfs.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_wstat " "tag %u id %u fid %d stat={mode %d atime %d mtime %d}" "\n", tag, id, fid, mode, atime, mtime);
 #line 1146 "trace/trace-hw_9pfs.h"
         }
@@ -1164,14 +1164,14 @@ static inline void _nocheck__trace_v9fs_mknod(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_mknod " "tag %d id %d fid %d mode %d major %d minor %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, mode, major, minor);
 #line 1173 "trace/trace-hw_9pfs.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_mknod " "tag %d id %d fid %d mode %d major %d minor %d" "\n", tag, id, fid, mode, major, minor);
 #line 1177 "trace/trace-hw_9pfs.h"
         }
@@ -1195,14 +1195,14 @@ static inline void _nocheck__trace_v9fs_mknod_return(uint16_t tag, uint8_t id, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_mknod_return " "tag %u id %u qid={type %u version %u path %"PRIu64"}" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path);
 #line 1204 "trace/trace-hw_9pfs.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_mknod_return " "tag %u id %u qid={type %u version %u path %"PRIu64"}" "\n", tag, id, type, version, path);
 #line 1208 "trace/trace-hw_9pfs.h"
         }
@@ -1226,14 +1226,14 @@ static inline void _nocheck__trace_v9fs_lock(uint16_t tag, uint8_t id, int32_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_lock " "tag %d id %d fid %d type %d start %"PRIu64" length %"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, type, start, length);
 #line 1235 "trace/trace-hw_9pfs.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_lock " "tag %d id %d fid %d type %d start %"PRIu64" length %"PRIu64 "\n", tag, id, fid, type, start, length);
 #line 1239 "trace/trace-hw_9pfs.h"
         }
@@ -1257,14 +1257,14 @@ static inline void _nocheck__trace_v9fs_lock_return(uint16_t tag, uint8_t id, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_lock_return " "tag %d id %d status %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, status);
 #line 1266 "trace/trace-hw_9pfs.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_lock_return " "tag %d id %d status %d" "\n", tag, id, status);
 #line 1270 "trace/trace-hw_9pfs.h"
         }
@@ -1288,14 +1288,14 @@ static inline void _nocheck__trace_v9fs_getlock(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_getlock " "tag %d id %d fid %d type %d start %"PRIu64" length %"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, type, start, length);
 #line 1297 "trace/trace-hw_9pfs.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_getlock " "tag %d id %d fid %d type %d start %"PRIu64" length %"PRIu64 "\n", tag, id, fid, type, start, length);
 #line 1301 "trace/trace-hw_9pfs.h"
         }
@@ -1319,14 +1319,14 @@ static inline void _nocheck__trace_v9fs_getlock_return(uint16_t tag, uint8_t id,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_getlock_return " "tag %d id %d type %d start %"PRIu64" length %"PRIu64" proc_id %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, start, length, proc_id);
 #line 1328 "trace/trace-hw_9pfs.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_getlock_return " "tag %d id %d type %d start %"PRIu64" length %"PRIu64" proc_id %u" "\n", tag, id, type, start, length, proc_id);
 #line 1332 "trace/trace-hw_9pfs.h"
         }
@@ -1350,14 +1350,14 @@ static inline void _nocheck__trace_v9fs_mkdir(uint16_t tag, uint8_t id, int32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_mkdir " "tag %u id %u fid %d name %s mode %d gid %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, name, mode, gid);
 #line 1359 "trace/trace-hw_9pfs.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_mkdir " "tag %u id %u fid %d name %s mode %d gid %u" "\n", tag, id, fid, name, mode, gid);
 #line 1363 "trace/trace-hw_9pfs.h"
         }
@@ -1381,14 +1381,14 @@ static inline void _nocheck__trace_v9fs_mkdir_return(uint16_t tag, uint8_t id, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_mkdir_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} err %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, type, version, path, err);
 #line 1390 "trace/trace-hw_9pfs.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_mkdir_return " "tag %u id %u qid={type %u version %u path %"PRIu64"} err %d" "\n", tag, id, type, version, path, err);
 #line 1394 "trace/trace-hw_9pfs.h"
         }
@@ -1412,14 +1412,14 @@ static inline void _nocheck__trace_v9fs_xattrwalk(uint16_t tag, uint8_t id, int3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_xattrwalk " "tag %d id %d fid %d newfid %d name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, newfid, name);
 #line 1421 "trace/trace-hw_9pfs.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_xattrwalk " "tag %d id %d fid %d newfid %d name %s" "\n", tag, id, fid, newfid, name);
 #line 1425 "trace/trace-hw_9pfs.h"
         }
@@ -1443,14 +1443,14 @@ static inline void _nocheck__trace_v9fs_xattrwalk_return(uint16_t tag, uint8_t i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_xattrwalk_return " "tag %d id %d size %"PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, size);
 #line 1452 "trace/trace-hw_9pfs.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_xattrwalk_return " "tag %d id %d size %"PRId64 "\n", tag, id, size);
 #line 1456 "trace/trace-hw_9pfs.h"
         }
@@ -1474,14 +1474,14 @@ static inline void _nocheck__trace_v9fs_xattrcreate(uint16_t tag, uint8_t id, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_xattrcreate " "tag %d id %d fid %d name %s size %"PRIu64" flags %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, name, size, flags);
 #line 1483 "trace/trace-hw_9pfs.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_xattrcreate " "tag %d id %d fid %d name %s size %"PRIu64" flags %d" "\n", tag, id, fid, name, size, flags);
 #line 1487 "trace/trace-hw_9pfs.h"
         }
@@ -1505,14 +1505,14 @@ static inline void _nocheck__trace_v9fs_readlink(uint16_t tag, uint8_t id, int32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_readlink " "tag %d id %d fid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid);
 #line 1514 "trace/trace-hw_9pfs.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_readlink " "tag %d id %d fid %d" "\n", tag, id, fid);
 #line 1518 "trace/trace-hw_9pfs.h"
         }
@@ -1536,14 +1536,14 @@ static inline void _nocheck__trace_v9fs_readlink_return(uint16_t tag, uint8_t id
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_readlink_return " "tag %d id %d name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, target);
 #line 1545 "trace/trace-hw_9pfs.h"
         } else {
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_readlink_return " "tag %d id %d name %s" "\n", tag, id, target);
 #line 1549 "trace/trace-hw_9pfs.h"
         }
@@ -1567,14 +1567,14 @@ static inline void _nocheck__trace_v9fs_setattr(uint16_t tag, uint8_t id, int32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_setattr " "tag %u id %u fid %d iattr={valid %d mode %d uid %d gid %d size %"PRId64" atime=%"PRId64" mtime=%"PRId64" }" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id, fid, valid, mode, uid, gid, size, atime_sec, mtime_sec);
 #line 1576 "trace/trace-hw_9pfs.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_setattr " "tag %u id %u fid %d iattr={valid %d mode %d uid %d gid %d size %"PRId64" atime=%"PRId64" mtime=%"PRId64" }" "\n", tag, id, fid, valid, mode, uid, gid, size, atime_sec, mtime_sec);
 #line 1580 "trace/trace-hw_9pfs.h"
         }
@@ -1598,14 +1598,14 @@ static inline void _nocheck__trace_v9fs_setattr_return(uint16_t tag, uint8_t id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:v9fs_setattr_return " "tag %u id %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag, id);
 #line 1607 "trace/trace-hw_9pfs.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("v9fs_setattr_return " "tag %u id %u" "\n", tag, id);
 #line 1611 "trace/trace-hw_9pfs.h"
         }
@@ -1629,14 +1629,14 @@ static inline void _nocheck__trace_xen_9pfs_alloc(char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:xen_9pfs_alloc " "name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 1638 "trace/trace-hw_9pfs.h"
         } else {
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("xen_9pfs_alloc " "name %s" "\n", name);
 #line 1642 "trace/trace-hw_9pfs.h"
         }
@@ -1660,14 +1660,14 @@ static inline void _nocheck__trace_xen_9pfs_connect(char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:xen_9pfs_connect " "name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 1669 "trace/trace-hw_9pfs.h"
         } else {
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("xen_9pfs_connect " "name %s" "\n", name);
 #line 1673 "trace/trace-hw_9pfs.h"
         }
@@ -1691,14 +1691,14 @@ static inline void _nocheck__trace_xen_9pfs_disconnect(char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:xen_9pfs_disconnect " "name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 1700 "trace/trace-hw_9pfs.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("xen_9pfs_disconnect " "name %s" "\n", name);
 #line 1704 "trace/trace-hw_9pfs.h"
         }
@@ -1722,14 +1722,14 @@ static inline void _nocheck__trace_xen_9pfs_free(char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("%d@%zu.%06zu:xen_9pfs_free " "name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 1731 "trace/trace-hw_9pfs.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/9pfs/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/9pfs/trace-events"
             qemu_log("xen_9pfs_free " "name %s" "\n", name);
 #line 1735 "trace/trace-hw_9pfs.h"
         }

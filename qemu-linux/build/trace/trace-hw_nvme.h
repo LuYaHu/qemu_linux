@@ -655,14 +655,14 @@ static inline void _nocheck__trace_pci_nvme_irq_msix(uint32_t vector)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_irq_msix " "raising MSI-X IRQ vector %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vector);
 #line 664 "trace/trace-hw_nvme.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_irq_msix " "raising MSI-X IRQ vector %u" "\n", vector);
 #line 668 "trace/trace-hw_nvme.h"
         }
@@ -686,14 +686,14 @@ static inline void _nocheck__trace_pci_nvme_irq_pin(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_irq_pin " "pulsing IRQ pin" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 695 "trace/trace-hw_nvme.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_irq_pin " "pulsing IRQ pin" "\n");
 #line 699 "trace/trace-hw_nvme.h"
         }
@@ -717,14 +717,14 @@ static inline void _nocheck__trace_pci_nvme_irq_masked(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_irq_masked " "IRQ is masked" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 726 "trace/trace-hw_nvme.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_irq_masked " "IRQ is masked" "\n");
 #line 730 "trace/trace-hw_nvme.h"
         }
@@ -748,14 +748,14 @@ static inline void _nocheck__trace_pci_nvme_dma_read(uint64_t prp1, uint64_t prp
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dma_read " "DMA read, prp1=0x%"PRIx64" prp2=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prp1, prp2);
 #line 757 "trace/trace-hw_nvme.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dma_read " "DMA read, prp1=0x%"PRIx64" prp2=0x%"PRIx64"" "\n", prp1, prp2);
 #line 761 "trace/trace-hw_nvme.h"
         }
@@ -779,14 +779,14 @@ static inline void _nocheck__trace_pci_nvme_dbbuf_config(uint64_t dbs_addr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dbbuf_config " "dbs_addr=0x%"PRIx64" eis_addr=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dbs_addr, eis_addr);
 #line 788 "trace/trace-hw_nvme.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dbbuf_config " "dbs_addr=0x%"PRIx64" eis_addr=0x%"PRIx64"" "\n", dbs_addr, eis_addr);
 #line 792 "trace/trace-hw_nvme.h"
         }
@@ -810,14 +810,14 @@ static inline void _nocheck__trace_pci_nvme_map_addr(uint64_t addr, uint64_t len
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_map_addr " "addr 0x%"PRIx64" len %"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len);
 #line 819 "trace/trace-hw_nvme.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_map_addr " "addr 0x%"PRIx64" len %"PRIu64"" "\n", addr, len);
 #line 823 "trace/trace-hw_nvme.h"
         }
@@ -841,14 +841,14 @@ static inline void _nocheck__trace_pci_nvme_map_addr_cmb(uint64_t addr, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_map_addr_cmb " "addr 0x%"PRIx64" len %"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len);
 #line 850 "trace/trace-hw_nvme.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_map_addr_cmb " "addr 0x%"PRIx64" len %"PRIu64"" "\n", addr, len);
 #line 854 "trace/trace-hw_nvme.h"
         }
@@ -872,14 +872,14 @@ static inline void _nocheck__trace_pci_nvme_map_prp(uint64_t trans_len, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_map_prp " "trans_len %"PRIu64" len %"PRIu32" prp1 0x%"PRIx64" prp2 0x%"PRIx64" num_prps %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , trans_len, len, prp1, prp2, num_prps);
 #line 881 "trace/trace-hw_nvme.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_map_prp " "trans_len %"PRIu64" len %"PRIu32" prp1 0x%"PRIx64" prp2 0x%"PRIx64" num_prps %d" "\n", trans_len, len, prp1, prp2, num_prps);
 #line 885 "trace/trace-hw_nvme.h"
         }
@@ -903,14 +903,14 @@ static inline void _nocheck__trace_pci_nvme_map_sgl(uint8_t typ, uint64_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_map_sgl " "type 0x%"PRIx8" len %"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , typ, len);
 #line 912 "trace/trace-hw_nvme.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_map_sgl " "type 0x%"PRIx8" len %"PRIu64"" "\n", typ, len);
 #line 916 "trace/trace-hw_nvme.h"
         }
@@ -934,14 +934,14 @@ static inline void _nocheck__trace_pci_nvme_io_cmd(uint16_t cid, uint32_t nsid, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_io_cmd " "cid %"PRIu16" nsid 0x%"PRIx32" sqid %"PRIu16" opc 0x%"PRIx8" opname '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, sqid, opcode, opname);
 #line 943 "trace/trace-hw_nvme.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_io_cmd " "cid %"PRIu16" nsid 0x%"PRIx32" sqid %"PRIu16" opc 0x%"PRIx8" opname '%s'" "\n", cid, nsid, sqid, opcode, opname);
 #line 947 "trace/trace-hw_nvme.h"
         }
@@ -965,14 +965,14 @@ static inline void _nocheck__trace_pci_nvme_admin_cmd(uint16_t cid, uint16_t sqi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_admin_cmd " "cid %"PRIu16" sqid %"PRIu16" opc 0x%"PRIx8" opname '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, sqid, opcode, opname);
 #line 974 "trace/trace-hw_nvme.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_admin_cmd " "cid %"PRIu16" sqid %"PRIu16" opc 0x%"PRIx8" opname '%s'" "\n", cid, sqid, opcode, opname);
 #line 978 "trace/trace-hw_nvme.h"
         }
@@ -996,14 +996,14 @@ static inline void _nocheck__trace_pci_nvme_flush_ns(uint32_t nsid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_flush_ns " "nsid 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nsid);
 #line 1005 "trace/trace-hw_nvme.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_flush_ns " "nsid 0x%"PRIx32"" "\n", nsid);
 #line 1009 "trace/trace-hw_nvme.h"
         }
@@ -1027,14 +1027,14 @@ static inline void _nocheck__trace_pci_nvme_format_set(uint32_t nsid, uint8_t lb
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_format_set " "nsid %"PRIu32" lbaf %"PRIu8" mset %"PRIu8" pi %"PRIu8" pil %"PRIu8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nsid, lbaf, mset, pi, pil);
 #line 1036 "trace/trace-hw_nvme.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_format_set " "nsid %"PRIu32" lbaf %"PRIu8" mset %"PRIu8" pi %"PRIu8" pil %"PRIu8"" "\n", nsid, lbaf, mset, pi, pil);
 #line 1040 "trace/trace-hw_nvme.h"
         }
@@ -1058,14 +1058,14 @@ static inline void _nocheck__trace_pci_nvme_read(uint16_t cid, uint32_t nsid, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_read " "cid %"PRIu16" nsid %"PRIu32" nlb %"PRIu32" count %"PRIu64" lba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, nlb, count, lba);
 #line 1067 "trace/trace-hw_nvme.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_read " "cid %"PRIu16" nsid %"PRIu32" nlb %"PRIu32" count %"PRIu64" lba 0x%"PRIx64"" "\n", cid, nsid, nlb, count, lba);
 #line 1071 "trace/trace-hw_nvme.h"
         }
@@ -1089,14 +1089,14 @@ static inline void _nocheck__trace_pci_nvme_write(uint16_t cid, const char * ver
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_write " "cid %"PRIu16" opname '%s' nsid %"PRIu32" nlb %"PRIu32" count %"PRIu64" lba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, verb, nsid, nlb, count, lba);
 #line 1098 "trace/trace-hw_nvme.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_write " "cid %"PRIu16" opname '%s' nsid %"PRIu32" nlb %"PRIu32" count %"PRIu64" lba 0x%"PRIx64"" "\n", cid, verb, nsid, nlb, count, lba);
 #line 1102 "trace/trace-hw_nvme.h"
         }
@@ -1120,14 +1120,14 @@ static inline void _nocheck__trace_pci_nvme_rw_cb(uint16_t cid, const char * blk
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_rw_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1129 "trace/trace-hw_nvme.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_rw_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1133 "trace/trace-hw_nvme.h"
         }
@@ -1151,14 +1151,14 @@ static inline void _nocheck__trace_pci_nvme_misc_cb(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_misc_cb " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 1160 "trace/trace-hw_nvme.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_misc_cb " "cid %"PRIu16"" "\n", cid);
 #line 1164 "trace/trace-hw_nvme.h"
         }
@@ -1182,14 +1182,14 @@ static inline void _nocheck__trace_pci_nvme_dif_rw(uint8_t pract, uint8_t prinfo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_rw " "pract 0x%"PRIx8" prinfo 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pract, prinfo);
 #line 1191 "trace/trace-hw_nvme.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_rw " "pract 0x%"PRIx8" prinfo 0x%"PRIx8"" "\n", pract, prinfo);
 #line 1195 "trace/trace-hw_nvme.h"
         }
@@ -1213,14 +1213,14 @@ static inline void _nocheck__trace_pci_nvme_dif_rw_cb(uint16_t cid, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_rw_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1222 "trace/trace-hw_nvme.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_rw_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1226 "trace/trace-hw_nvme.h"
         }
@@ -1244,14 +1244,14 @@ static inline void _nocheck__trace_pci_nvme_dif_rw_mdata_in_cb(uint16_t cid, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_rw_mdata_in_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1253 "trace/trace-hw_nvme.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_rw_mdata_in_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1257 "trace/trace-hw_nvme.h"
         }
@@ -1275,14 +1275,14 @@ static inline void _nocheck__trace_pci_nvme_dif_rw_mdata_out_cb(uint16_t cid, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_rw_mdata_out_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1284 "trace/trace-hw_nvme.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_rw_mdata_out_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1288 "trace/trace-hw_nvme.h"
         }
@@ -1306,14 +1306,14 @@ static inline void _nocheck__trace_pci_nvme_dif_rw_check_cb(uint16_t cid, uint8_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_rw_check_cb " "cid %"PRIu16" prinfo 0x%"PRIx8" apptag 0x%"PRIx16" appmask 0x%"PRIx16" reftag 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, prinfo, apptag, appmask, reftag);
 #line 1315 "trace/trace-hw_nvme.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_rw_check_cb " "cid %"PRIu16" prinfo 0x%"PRIx8" apptag 0x%"PRIx16" appmask 0x%"PRIx16" reftag 0x%"PRIx32"" "\n", cid, prinfo, apptag, appmask, reftag);
 #line 1319 "trace/trace-hw_nvme.h"
         }
@@ -1337,14 +1337,14 @@ static inline void _nocheck__trace_pci_nvme_dif_pract_generate_dif_crc16(size_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_pract_generate_dif_crc16 " "len %zu lba_size %zu chksum_len %zu apptag 0x%"PRIx16" reftag 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, lba_size, chksum_len, apptag, reftag);
 #line 1346 "trace/trace-hw_nvme.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_pract_generate_dif_crc16 " "len %zu lba_size %zu chksum_len %zu apptag 0x%"PRIx16" reftag 0x%"PRIx32"" "\n", len, lba_size, chksum_len, apptag, reftag);
 #line 1350 "trace/trace-hw_nvme.h"
         }
@@ -1368,14 +1368,14 @@ static inline void _nocheck__trace_pci_nvme_dif_pract_generate_dif_crc64(size_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_pract_generate_dif_crc64 " "len %zu lba_size %zu chksum_len %zu apptag 0x%"PRIx16" reftag 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, lba_size, chksum_len, apptag, reftag);
 #line 1377 "trace/trace-hw_nvme.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_pract_generate_dif_crc64 " "len %zu lba_size %zu chksum_len %zu apptag 0x%"PRIx16" reftag 0x%"PRIx64"" "\n", len, lba_size, chksum_len, apptag, reftag);
 #line 1381 "trace/trace-hw_nvme.h"
         }
@@ -1399,14 +1399,14 @@ static inline void _nocheck__trace_pci_nvme_dif_check(uint8_t prinfo, uint16_t c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_check " "prinfo 0x%"PRIx8" chksum_len %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prinfo, chksum_len);
 #line 1408 "trace/trace-hw_nvme.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_check " "prinfo 0x%"PRIx8" chksum_len %"PRIu16"" "\n", prinfo, chksum_len);
 #line 1412 "trace/trace-hw_nvme.h"
         }
@@ -1430,14 +1430,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_disabled_crc16(uint16_t ap
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_disabled_crc16 " "apptag 0x%"PRIx16" reftag 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , apptag, reftag);
 #line 1439 "trace/trace-hw_nvme.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_disabled_crc16 " "apptag 0x%"PRIx16" reftag 0x%"PRIx32"" "\n", apptag, reftag);
 #line 1443 "trace/trace-hw_nvme.h"
         }
@@ -1461,14 +1461,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_disabled_crc64(uint16_t ap
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_disabled_crc64 " "apptag 0x%"PRIx16" reftag 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , apptag, reftag);
 #line 1470 "trace/trace-hw_nvme.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_disabled_crc64 " "apptag 0x%"PRIx16" reftag 0x%"PRIx64"" "\n", apptag, reftag);
 #line 1474 "trace/trace-hw_nvme.h"
         }
@@ -1492,14 +1492,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_guard_crc16(uint16_t guard
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_guard_crc16 " "guard 0x%"PRIx16" crc 0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , guard, crc);
 #line 1501 "trace/trace-hw_nvme.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_guard_crc16 " "guard 0x%"PRIx16" crc 0x%"PRIx16"" "\n", guard, crc);
 #line 1505 "trace/trace-hw_nvme.h"
         }
@@ -1523,14 +1523,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_guard_crc64(uint64_t guard
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_guard_crc64 " "guard 0x%"PRIx64" crc 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , guard, crc);
 #line 1532 "trace/trace-hw_nvme.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_guard_crc64 " "guard 0x%"PRIx64" crc 0x%"PRIx64"" "\n", guard, crc);
 #line 1536 "trace/trace-hw_nvme.h"
         }
@@ -1554,14 +1554,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_apptag(uint16_t apptag, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_apptag " "apptag 0x%"PRIx16" elbat 0x%"PRIx16" elbatm 0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , apptag, elbat, elbatm);
 #line 1563 "trace/trace-hw_nvme.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_apptag " "apptag 0x%"PRIx16" elbat 0x%"PRIx16" elbatm 0x%"PRIx16"" "\n", apptag, elbat, elbatm);
 #line 1567 "trace/trace-hw_nvme.h"
         }
@@ -1585,14 +1585,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_reftag_crc16(uint32_t reft
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_reftag_crc16 " "reftag 0x%"PRIx32" elbrt 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reftag, elbrt);
 #line 1594 "trace/trace-hw_nvme.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_reftag_crc16 " "reftag 0x%"PRIx32" elbrt 0x%"PRIx32"" "\n", reftag, elbrt);
 #line 1598 "trace/trace-hw_nvme.h"
         }
@@ -1616,14 +1616,14 @@ static inline void _nocheck__trace_pci_nvme_dif_prchk_reftag_crc64(uint64_t reft
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dif_prchk_reftag_crc64 " "reftag 0x%"PRIx64" elbrt 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reftag, elbrt);
 #line 1625 "trace/trace-hw_nvme.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dif_prchk_reftag_crc64 " "reftag 0x%"PRIx64" elbrt 0x%"PRIx64"" "\n", reftag, elbrt);
 #line 1629 "trace/trace-hw_nvme.h"
         }
@@ -1647,14 +1647,14 @@ static inline void _nocheck__trace_pci_nvme_copy(uint16_t cid, uint32_t nsid, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_copy " "cid %"PRIu16" nsid %"PRIu32" nr %"PRIu16" format 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, nr, format);
 #line 1656 "trace/trace-hw_nvme.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_copy " "cid %"PRIu16" nsid %"PRIu32" nr %"PRIu16" format 0x%"PRIx8"" "\n", cid, nsid, nr, format);
 #line 1660 "trace/trace-hw_nvme.h"
         }
@@ -1678,14 +1678,14 @@ static inline void _nocheck__trace_pci_nvme_copy_source_range(uint64_t slba, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_copy_source_range " "slba 0x%"PRIx64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb);
 #line 1687 "trace/trace-hw_nvme.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_copy_source_range " "slba 0x%"PRIx64" nlb %"PRIu32"" "\n", slba, nlb);
 #line 1691 "trace/trace-hw_nvme.h"
         }
@@ -1709,14 +1709,14 @@ static inline void _nocheck__trace_pci_nvme_copy_out(uint64_t slba, uint32_t nlb
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_copy_out " "slba 0x%"PRIx64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb);
 #line 1718 "trace/trace-hw_nvme.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_copy_out " "slba 0x%"PRIx64" nlb %"PRIu32"" "\n", slba, nlb);
 #line 1722 "trace/trace-hw_nvme.h"
         }
@@ -1740,14 +1740,14 @@ static inline void _nocheck__trace_pci_nvme_verify(uint16_t cid, uint32_t nsid, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_verify " "cid %"PRIu16" nsid %"PRIu32" slba 0x%"PRIx64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, slba, nlb);
 #line 1749 "trace/trace-hw_nvme.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_verify " "cid %"PRIu16" nsid %"PRIu32" slba 0x%"PRIx64" nlb %"PRIu32"" "\n", cid, nsid, slba, nlb);
 #line 1753 "trace/trace-hw_nvme.h"
         }
@@ -1771,14 +1771,14 @@ static inline void _nocheck__trace_pci_nvme_verify_mdata_in_cb(uint16_t cid, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_verify_mdata_in_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1780 "trace/trace-hw_nvme.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_verify_mdata_in_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1784 "trace/trace-hw_nvme.h"
         }
@@ -1802,14 +1802,14 @@ static inline void _nocheck__trace_pci_nvme_verify_cb(uint16_t cid, uint8_t prin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_verify_cb " "cid %"PRIu16" prinfo 0x%"PRIx8" apptag 0x%"PRIx16" appmask 0x%"PRIx16" reftag 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, prinfo, apptag, appmask, reftag);
 #line 1811 "trace/trace-hw_nvme.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_verify_cb " "cid %"PRIu16" prinfo 0x%"PRIx8" apptag 0x%"PRIx16" appmask 0x%"PRIx16" reftag 0x%"PRIx32"" "\n", cid, prinfo, apptag, appmask, reftag);
 #line 1815 "trace/trace-hw_nvme.h"
         }
@@ -1833,14 +1833,14 @@ static inline void _nocheck__trace_pci_nvme_rw_complete_cb(uint16_t cid, const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_rw_complete_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 1842 "trace/trace-hw_nvme.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_rw_complete_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 1846 "trace/trace-hw_nvme.h"
         }
@@ -1864,14 +1864,14 @@ static inline void _nocheck__trace_pci_nvme_block_status(int64_t offset, int64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_block_status " "offset %"PRId64" bytes %"PRId64" pnum %"PRId64" ret 0x%x zeroed %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, bytes, pnum, ret, zeroed);
 #line 1873 "trace/trace-hw_nvme.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_block_status " "offset %"PRId64" bytes %"PRId64" pnum %"PRId64" ret 0x%x zeroed %d" "\n", offset, bytes, pnum, ret, zeroed);
 #line 1877 "trace/trace-hw_nvme.h"
         }
@@ -1895,14 +1895,14 @@ static inline void _nocheck__trace_pci_nvme_dsm(uint32_t nr, uint32_t attr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dsm " "nr %"PRIu32" attr 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nr, attr);
 #line 1904 "trace/trace-hw_nvme.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dsm " "nr %"PRIu32" attr 0x%"PRIx32"" "\n", nr, attr);
 #line 1908 "trace/trace-hw_nvme.h"
         }
@@ -1926,14 +1926,14 @@ static inline void _nocheck__trace_pci_nvme_dsm_deallocate(uint64_t slba, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dsm_deallocate " "slba %"PRIu64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb);
 #line 1935 "trace/trace-hw_nvme.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dsm_deallocate " "slba %"PRIu64" nlb %"PRIu32"" "\n", slba, nlb);
 #line 1939 "trace/trace-hw_nvme.h"
         }
@@ -1957,14 +1957,14 @@ static inline void _nocheck__trace_pci_nvme_dsm_single_range_limit_exceeded(uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_dsm_single_range_limit_exceeded " "nlb %"PRIu32" dmrsl %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nlb, dmrsl);
 #line 1966 "trace/trace-hw_nvme.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_dsm_single_range_limit_exceeded " "nlb %"PRIu32" dmrsl %"PRIu32"" "\n", nlb, dmrsl);
 #line 1970 "trace/trace-hw_nvme.h"
         }
@@ -1988,14 +1988,14 @@ static inline void _nocheck__trace_pci_nvme_compare(uint16_t cid, uint32_t nsid,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_compare " "cid %"PRIu16" nsid %"PRIu32" slba 0x%"PRIx64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, slba, nlb);
 #line 1997 "trace/trace-hw_nvme.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_compare " "cid %"PRIu16" nsid %"PRIu32" slba 0x%"PRIx64" nlb %"PRIu32"" "\n", cid, nsid, slba, nlb);
 #line 2001 "trace/trace-hw_nvme.h"
         }
@@ -2019,14 +2019,14 @@ static inline void _nocheck__trace_pci_nvme_compare_data_cb(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_compare_data_cb " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 2028 "trace/trace-hw_nvme.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_compare_data_cb " "cid %"PRIu16"" "\n", cid);
 #line 2032 "trace/trace-hw_nvme.h"
         }
@@ -2050,14 +2050,14 @@ static inline void _nocheck__trace_pci_nvme_compare_mdata_cb(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_compare_mdata_cb " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 2059 "trace/trace-hw_nvme.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_compare_mdata_cb " "cid %"PRIu16"" "\n", cid);
 #line 2063 "trace/trace-hw_nvme.h"
         }
@@ -2081,14 +2081,14 @@ static inline void _nocheck__trace_pci_nvme_aio_discard_cb(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aio_discard_cb " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 2090 "trace/trace-hw_nvme.h"
         } else {
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aio_discard_cb " "cid %"PRIu16"" "\n", cid);
 #line 2094 "trace/trace-hw_nvme.h"
         }
@@ -2112,14 +2112,14 @@ static inline void _nocheck__trace_pci_nvme_aio_copy_in_cb(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aio_copy_in_cb " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 2121 "trace/trace-hw_nvme.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aio_copy_in_cb " "cid %"PRIu16"" "\n", cid);
 #line 2125 "trace/trace-hw_nvme.h"
         }
@@ -2143,14 +2143,14 @@ static inline void _nocheck__trace_pci_nvme_aio_flush_cb(uint16_t cid, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aio_flush_cb " "cid %"PRIu16" blk '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, blkname);
 #line 2152 "trace/trace-hw_nvme.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aio_flush_cb " "cid %"PRIu16" blk '%s'" "\n", cid, blkname);
 #line 2156 "trace/trace-hw_nvme.h"
         }
@@ -2174,14 +2174,14 @@ static inline void _nocheck__trace_pci_nvme_create_sq(uint64_t addr, uint16_t sq
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_create_sq " "create submission queue, addr=0x%"PRIx64", sqid=%"PRIu16", cqid=%"PRIu16", qsize=%"PRIu16", qflags=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, sqid, cqid, qsize, qflags);
 #line 2183 "trace/trace-hw_nvme.h"
         } else {
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_create_sq " "create submission queue, addr=0x%"PRIx64", sqid=%"PRIu16", cqid=%"PRIu16", qsize=%"PRIu16", qflags=%"PRIu16"" "\n", addr, sqid, cqid, qsize, qflags);
 #line 2187 "trace/trace-hw_nvme.h"
         }
@@ -2205,14 +2205,14 @@ static inline void _nocheck__trace_pci_nvme_create_cq(uint64_t addr, uint16_t cq
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_create_cq " "create completion queue, addr=0x%"PRIx64", cqid=%"PRIu16", vector=%"PRIu16", qsize=%"PRIu16", qflags=%"PRIu16", ien=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, cqid, vector, size, qflags, ien);
 #line 2214 "trace/trace-hw_nvme.h"
         } else {
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_create_cq " "create completion queue, addr=0x%"PRIx64", cqid=%"PRIu16", vector=%"PRIu16", qsize=%"PRIu16", qflags=%"PRIu16", ien=%d" "\n", addr, cqid, vector, size, qflags, ien);
 #line 2218 "trace/trace-hw_nvme.h"
         }
@@ -2236,14 +2236,14 @@ static inline void _nocheck__trace_pci_nvme_del_sq(uint16_t qid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_del_sq " "deleting submission queue sqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid);
 #line 2245 "trace/trace-hw_nvme.h"
         } else {
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_del_sq " "deleting submission queue sqid=%"PRIu16"" "\n", qid);
 #line 2249 "trace/trace-hw_nvme.h"
         }
@@ -2267,14 +2267,14 @@ static inline void _nocheck__trace_pci_nvme_del_cq(uint16_t cqid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_del_cq " "deleted completion queue, cqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid);
 #line 2276 "trace/trace-hw_nvme.h"
         } else {
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_del_cq " "deleted completion queue, cqid=%"PRIu16"" "\n", cqid);
 #line 2280 "trace/trace-hw_nvme.h"
         }
@@ -2298,14 +2298,14 @@ static inline void _nocheck__trace_pci_nvme_identify(uint16_t cid, uint8_t cns, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify " "cid %"PRIu16" cns 0x%"PRIx8" ctrlid %"PRIu16" csi 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, cns, ctrlid, csi);
 #line 2307 "trace/trace-hw_nvme.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify " "cid %"PRIu16" cns 0x%"PRIx8" ctrlid %"PRIu16" csi 0x%"PRIx8"" "\n", cid, cns, ctrlid, csi);
 #line 2311 "trace/trace-hw_nvme.h"
         }
@@ -2329,14 +2329,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ctrl(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ctrl " "identify controller" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2338 "trace/trace-hw_nvme.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ctrl " "identify controller" "\n");
 #line 2342 "trace/trace-hw_nvme.h"
         }
@@ -2360,14 +2360,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ctrl_csi(uint8_t csi)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ctrl_csi " "identify controller, csi=0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , csi);
 #line 2369 "trace/trace-hw_nvme.h"
         } else {
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ctrl_csi " "identify controller, csi=0x%"PRIx8"" "\n", csi);
 #line 2373 "trace/trace-hw_nvme.h"
         }
@@ -2391,14 +2391,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ns(uint32_t ns)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ns " "nsid %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ns);
 #line 2400 "trace/trace-hw_nvme.h"
         } else {
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ns " "nsid %"PRIu32"" "\n", ns);
 #line 2404 "trace/trace-hw_nvme.h"
         }
@@ -2422,14 +2422,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ctrl_list(uint8_t cns, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ctrl_list " "cns 0x%"PRIx8" cntid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cns, cntid);
 #line 2431 "trace/trace-hw_nvme.h"
         } else {
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ctrl_list " "cns 0x%"PRIx8" cntid %"PRIu16"" "\n", cns, cntid);
 #line 2435 "trace/trace-hw_nvme.h"
         }
@@ -2453,14 +2453,14 @@ static inline void _nocheck__trace_pci_nvme_identify_pri_ctrl_cap(uint16_t cntli
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_pri_ctrl_cap " "identify primary controller capabilities cntlid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cntlid);
 #line 2462 "trace/trace-hw_nvme.h"
         } else {
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_pri_ctrl_cap " "identify primary controller capabilities cntlid=%"PRIu16"" "\n", cntlid);
 #line 2466 "trace/trace-hw_nvme.h"
         }
@@ -2484,14 +2484,14 @@ static inline void _nocheck__trace_pci_nvme_identify_sec_ctrl_list(uint16_t cntl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_sec_ctrl_list " "identify secondary controller list cntlid=%"PRIu16" numcntl=%"PRIu8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cntlid, numcntl);
 #line 2493 "trace/trace-hw_nvme.h"
         } else {
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_sec_ctrl_list " "identify secondary controller list cntlid=%"PRIu16" numcntl=%"PRIu8"" "\n", cntlid, numcntl);
 #line 2497 "trace/trace-hw_nvme.h"
         }
@@ -2515,14 +2515,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ns_csi(uint32_t ns, uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ns_csi " "nsid=%"PRIu32", csi=0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ns, csi);
 #line 2524 "trace/trace-hw_nvme.h"
         } else {
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ns_csi " "nsid=%"PRIu32", csi=0x%"PRIx8"" "\n", ns, csi);
 #line 2528 "trace/trace-hw_nvme.h"
         }
@@ -2546,14 +2546,14 @@ static inline void _nocheck__trace_pci_nvme_identify_nslist(uint32_t ns)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_nslist " "nsid %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ns);
 #line 2555 "trace/trace-hw_nvme.h"
         } else {
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_nslist " "nsid %"PRIu32"" "\n", ns);
 #line 2559 "trace/trace-hw_nvme.h"
         }
@@ -2577,14 +2577,14 @@ static inline void _nocheck__trace_pci_nvme_identify_nslist_csi(uint16_t ns, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_nslist_csi " "nsid=%"PRIu16", csi=0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ns, csi);
 #line 2586 "trace/trace-hw_nvme.h"
         } else {
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_nslist_csi " "nsid=%"PRIu16", csi=0x%"PRIx8"" "\n", ns, csi);
 #line 2590 "trace/trace-hw_nvme.h"
         }
@@ -2608,14 +2608,14 @@ static inline void _nocheck__trace_pci_nvme_identify_cmd_set(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_cmd_set " "identify i/o command set" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2617 "trace/trace-hw_nvme.h"
         } else {
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_cmd_set " "identify i/o command set" "\n");
 #line 2621 "trace/trace-hw_nvme.h"
         }
@@ -2639,14 +2639,14 @@ static inline void _nocheck__trace_pci_nvme_identify_ns_descr_list(uint32_t ns)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_identify_ns_descr_list " "nsid %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ns);
 #line 2648 "trace/trace-hw_nvme.h"
         } else {
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_identify_ns_descr_list " "nsid %"PRIu32"" "\n", ns);
 #line 2652 "trace/trace-hw_nvme.h"
         }
@@ -2670,14 +2670,14 @@ static inline void _nocheck__trace_pci_nvme_get_log(uint16_t cid, uint8_t lid, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_get_log " "cid %"PRIu16" lid 0x%"PRIx8" lsp 0x%"PRIx8" rae 0x%"PRIx8" len %"PRIu32" off %"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, lid, lsp, rae, len, off);
 #line 2679 "trace/trace-hw_nvme.h"
         } else {
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_get_log " "cid %"PRIu16" lid 0x%"PRIx8" lsp 0x%"PRIx8" rae 0x%"PRIx8" len %"PRIu32" off %"PRIu64"" "\n", cid, lid, lsp, rae, len, off);
 #line 2683 "trace/trace-hw_nvme.h"
         }
@@ -2701,14 +2701,14 @@ static inline void _nocheck__trace_pci_nvme_getfeat(uint16_t cid, uint32_t nsid,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_getfeat " "cid %"PRIu16" nsid 0x%"PRIx32" fid 0x%"PRIx8" sel 0x%"PRIx8" cdw11 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, fid, sel, cdw11);
 #line 2710 "trace/trace-hw_nvme.h"
         } else {
-#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_getfeat " "cid %"PRIu16" nsid 0x%"PRIx32" fid 0x%"PRIx8" sel 0x%"PRIx8" cdw11 0x%"PRIx32"" "\n", cid, nsid, fid, sel, cdw11);
 #line 2714 "trace/trace-hw_nvme.h"
         }
@@ -2732,14 +2732,14 @@ static inline void _nocheck__trace_pci_nvme_setfeat(uint16_t cid, uint32_t nsid,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_setfeat " "cid %"PRIu16" nsid 0x%"PRIx32" fid 0x%"PRIx8" save 0x%"PRIx8" cdw11 0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, fid, save, cdw11);
 #line 2741 "trace/trace-hw_nvme.h"
         } else {
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_setfeat " "cid %"PRIu16" nsid 0x%"PRIx32" fid 0x%"PRIx8" save 0x%"PRIx8" cdw11 0x%"PRIx32"" "\n", cid, nsid, fid, save, cdw11);
 #line 2745 "trace/trace-hw_nvme.h"
         }
@@ -2763,14 +2763,14 @@ static inline void _nocheck__trace_pci_nvme_getfeat_vwcache(const char* result)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_getfeat_vwcache " "get feature volatile write cache, result=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , result);
 #line 2772 "trace/trace-hw_nvme.h"
         } else {
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_getfeat_vwcache " "get feature volatile write cache, result=%s" "\n", result);
 #line 2776 "trace/trace-hw_nvme.h"
         }
@@ -2794,14 +2794,14 @@ static inline void _nocheck__trace_pci_nvme_getfeat_numq(int result)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_getfeat_numq " "get feature number of queues, result=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , result);
 #line 2803 "trace/trace-hw_nvme.h"
         } else {
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_getfeat_numq " "get feature number of queues, result=%d" "\n", result);
 #line 2807 "trace/trace-hw_nvme.h"
         }
@@ -2825,14 +2825,14 @@ static inline void _nocheck__trace_pci_nvme_setfeat_numq(int reqcq, int reqsq, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_setfeat_numq " "requested cq_count=%d sq_count=%d, responding with cq_count=%d sq_count=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reqcq, reqsq, gotcq, gotsq);
 #line 2834 "trace/trace-hw_nvme.h"
         } else {
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_setfeat_numq " "requested cq_count=%d sq_count=%d, responding with cq_count=%d sq_count=%d" "\n", reqcq, reqsq, gotcq, gotsq);
 #line 2838 "trace/trace-hw_nvme.h"
         }
@@ -2856,14 +2856,14 @@ static inline void _nocheck__trace_pci_nvme_setfeat_timestamp(uint64_t ts)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_setfeat_timestamp " "set feature timestamp = 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ts);
 #line 2865 "trace/trace-hw_nvme.h"
         } else {
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_setfeat_timestamp " "set feature timestamp = 0x%"PRIx64"" "\n", ts);
 #line 2869 "trace/trace-hw_nvme.h"
         }
@@ -2887,14 +2887,14 @@ static inline void _nocheck__trace_pci_nvme_getfeat_timestamp(uint64_t ts)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_getfeat_timestamp " "get feature timestamp = 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ts);
 #line 2896 "trace/trace-hw_nvme.h"
         } else {
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_getfeat_timestamp " "get feature timestamp = 0x%"PRIx64"" "\n", ts);
 #line 2900 "trace/trace-hw_nvme.h"
         }
@@ -2918,14 +2918,14 @@ static inline void _nocheck__trace_pci_nvme_process_aers(int queued)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_process_aers " "queued %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , queued);
 #line 2927 "trace/trace-hw_nvme.h"
         } else {
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_process_aers " "queued %d" "\n", queued);
 #line 2931 "trace/trace-hw_nvme.h"
         }
@@ -2949,14 +2949,14 @@ static inline void _nocheck__trace_pci_nvme_aer(uint16_t cid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aer " "cid %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid);
 #line 2958 "trace/trace-hw_nvme.h"
         } else {
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aer " "cid %"PRIu16"" "\n", cid);
 #line 2962 "trace/trace-hw_nvme.h"
         }
@@ -2980,14 +2980,14 @@ static inline void _nocheck__trace_pci_nvme_aer_aerl_exceeded(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aer_aerl_exceeded " "aerl exceeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2989 "trace/trace-hw_nvme.h"
         } else {
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aer_aerl_exceeded " "aerl exceeded" "\n");
 #line 2993 "trace/trace-hw_nvme.h"
         }
@@ -3011,14 +3011,14 @@ static inline void _nocheck__trace_pci_nvme_aer_masked(uint8_t type, uint8_t mas
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aer_masked " "type 0x%"PRIx8" mask 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, mask);
 #line 3020 "trace/trace-hw_nvme.h"
         } else {
-#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aer_masked " "type 0x%"PRIx8" mask 0x%"PRIx8"" "\n", type, mask);
 #line 3024 "trace/trace-hw_nvme.h"
         }
@@ -3042,14 +3042,14 @@ static inline void _nocheck__trace_pci_nvme_aer_post_cqe(uint8_t typ, uint8_t in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_aer_post_cqe " "type 0x%"PRIx8" info 0x%"PRIx8" lid 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , typ, info, log_page);
 #line 3051 "trace/trace-hw_nvme.h"
         } else {
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_aer_post_cqe " "type 0x%"PRIx8" info 0x%"PRIx8" lid 0x%"PRIx8"" "\n", typ, info, log_page);
 #line 3055 "trace/trace-hw_nvme.h"
         }
@@ -3073,14 +3073,14 @@ static inline void _nocheck__trace_pci_nvme_ns_attachment(uint16_t cid, uint8_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ns_attachment " "cid %"PRIu16", sel=0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, sel);
 #line 3082 "trace/trace-hw_nvme.h"
         } else {
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ns_attachment " "cid %"PRIu16", sel=0x%"PRIx8"" "\n", cid, sel);
 #line 3086 "trace/trace-hw_nvme.h"
         }
@@ -3104,14 +3104,14 @@ static inline void _nocheck__trace_pci_nvme_ns_attachment_attach(uint16_t cntlid
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ns_attachment_attach " "cntlid=0x%"PRIx16", nsid=0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cntlid, nsid);
 #line 3113 "trace/trace-hw_nvme.h"
         } else {
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ns_attachment_attach " "cntlid=0x%"PRIx16", nsid=0x%"PRIx32"" "\n", cntlid, nsid);
 #line 3117 "trace/trace-hw_nvme.h"
         }
@@ -3135,14 +3135,14 @@ static inline void _nocheck__trace_pci_nvme_enqueue_event(uint8_t typ, uint8_t i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_enqueue_event " "type 0x%"PRIx8" info 0x%"PRIx8" lid 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , typ, info, log_page);
 #line 3144 "trace/trace-hw_nvme.h"
         } else {
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_enqueue_event " "type 0x%"PRIx8" info 0x%"PRIx8" lid 0x%"PRIx8"" "\n", typ, info, log_page);
 #line 3148 "trace/trace-hw_nvme.h"
         }
@@ -3166,14 +3166,14 @@ static inline void _nocheck__trace_pci_nvme_enqueue_event_noqueue(int queued)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_enqueue_event_noqueue " "queued %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , queued);
 #line 3175 "trace/trace-hw_nvme.h"
         } else {
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_enqueue_event_noqueue " "queued %d" "\n", queued);
 #line 3179 "trace/trace-hw_nvme.h"
         }
@@ -3197,14 +3197,14 @@ static inline void _nocheck__trace_pci_nvme_enqueue_event_masked(uint8_t typ)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_enqueue_event_masked " "type 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , typ);
 #line 3206 "trace/trace-hw_nvme.h"
         } else {
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_enqueue_event_masked " "type 0x%"PRIx8"" "\n", typ);
 #line 3210 "trace/trace-hw_nvme.h"
         }
@@ -3228,14 +3228,14 @@ static inline void _nocheck__trace_pci_nvme_no_outstanding_aers(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_no_outstanding_aers " "ignoring event; no outstanding AERs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3237 "trace/trace-hw_nvme.h"
         } else {
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_no_outstanding_aers " "ignoring event; no outstanding AERs" "\n");
 #line 3241 "trace/trace-hw_nvme.h"
         }
@@ -3259,14 +3259,14 @@ static inline void _nocheck__trace_pci_nvme_enqueue_req_completion(uint16_t cid,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_enqueue_req_completion " "cid %"PRIu16" cqid %"PRIu16" dw0 0x%"PRIx32" dw1 0x%"PRIx32" status 0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, cqid, dw0, dw1, status);
 #line 3268 "trace/trace-hw_nvme.h"
         } else {
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_enqueue_req_completion " "cid %"PRIu16" cqid %"PRIu16" dw0 0x%"PRIx32" dw1 0x%"PRIx32" status 0x%"PRIx16"" "\n", cid, cqid, dw0, dw1, status);
 #line 3272 "trace/trace-hw_nvme.h"
         }
@@ -3290,14 +3290,14 @@ static inline void _nocheck__trace_pci_nvme_update_cq_eventidx(uint16_t cqid, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_update_cq_eventidx " "cqid %"PRIu16" new_eventidx %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid, new_eventidx);
 #line 3299 "trace/trace-hw_nvme.h"
         } else {
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_update_cq_eventidx " "cqid %"PRIu16" new_eventidx %"PRIu16"" "\n", cqid, new_eventidx);
 #line 3303 "trace/trace-hw_nvme.h"
         }
@@ -3321,14 +3321,14 @@ static inline void _nocheck__trace_pci_nvme_update_sq_eventidx(uint16_t sqid, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_update_sq_eventidx " "sqid %"PRIu16" new_eventidx %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sqid, new_eventidx);
 #line 3330 "trace/trace-hw_nvme.h"
         } else {
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_update_sq_eventidx " "sqid %"PRIu16" new_eventidx %"PRIu16"" "\n", sqid, new_eventidx);
 #line 3334 "trace/trace-hw_nvme.h"
         }
@@ -3352,14 +3352,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_read(uint64_t addr, unsigned si
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_read " "addr 0x%"PRIx64" size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size);
 #line 3361 "trace/trace-hw_nvme.h"
         } else {
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_read " "addr 0x%"PRIx64" size %d" "\n", addr, size);
 #line 3365 "trace/trace-hw_nvme.h"
         }
@@ -3383,14 +3383,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_write(uint64_t addr, uint64_t d
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_write " "addr 0x%"PRIx64" data 0x%"PRIx64" size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, data, size);
 #line 3392 "trace/trace-hw_nvme.h"
         } else {
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_write " "addr 0x%"PRIx64" data 0x%"PRIx64" size %d" "\n", addr, data, size);
 #line 3396 "trace/trace-hw_nvme.h"
         }
@@ -3414,14 +3414,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_doorbell_cq(uint16_t cqid, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_doorbell_cq " "cqid %"PRIu16" new_head %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid, new_head);
 #line 3423 "trace/trace-hw_nvme.h"
         } else {
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_doorbell_cq " "cqid %"PRIu16" new_head %"PRIu16"" "\n", cqid, new_head);
 #line 3427 "trace/trace-hw_nvme.h"
         }
@@ -3445,14 +3445,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_doorbell_sq(uint16_t sqid, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_doorbell_sq " "sqid %"PRIu16" new_tail %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sqid, new_tail);
 #line 3454 "trace/trace-hw_nvme.h"
         } else {
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_doorbell_sq " "sqid %"PRIu16" new_tail %"PRIu16"" "\n", sqid, new_tail);
 #line 3458 "trace/trace-hw_nvme.h"
         }
@@ -3476,14 +3476,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_intm_set(uint64_t data, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_intm_set " "wrote MMIO, interrupt mask set, data=0x%"PRIx64", new_mask=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data, new_mask);
 #line 3485 "trace/trace-hw_nvme.h"
         } else {
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_intm_set " "wrote MMIO, interrupt mask set, data=0x%"PRIx64", new_mask=0x%"PRIx64"" "\n", data, new_mask);
 #line 3489 "trace/trace-hw_nvme.h"
         }
@@ -3507,14 +3507,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_intm_clr(uint64_t data, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_intm_clr " "wrote MMIO, interrupt mask clr, data=0x%"PRIx64", new_mask=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data, new_mask);
 #line 3516 "trace/trace-hw_nvme.h"
         } else {
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_intm_clr " "wrote MMIO, interrupt mask clr, data=0x%"PRIx64", new_mask=0x%"PRIx64"" "\n", data, new_mask);
 #line 3520 "trace/trace-hw_nvme.h"
         }
@@ -3538,14 +3538,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_cfg(uint64_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_cfg " "wrote MMIO, config controller config=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 3547 "trace/trace-hw_nvme.h"
         } else {
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_cfg " "wrote MMIO, config controller config=0x%"PRIx64"" "\n", data);
 #line 3551 "trace/trace-hw_nvme.h"
         }
@@ -3569,14 +3569,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_aqattr(uint64_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_aqattr " "wrote MMIO, admin queue attributes=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 3578 "trace/trace-hw_nvme.h"
         } else {
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_aqattr " "wrote MMIO, admin queue attributes=0x%"PRIx64"" "\n", data);
 #line 3582 "trace/trace-hw_nvme.h"
         }
@@ -3600,14 +3600,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_asqaddr(uint64_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_asqaddr " "wrote MMIO, admin submission queue address=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 3609 "trace/trace-hw_nvme.h"
         } else {
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_asqaddr " "wrote MMIO, admin submission queue address=0x%"PRIx64"" "\n", data);
 #line 3613 "trace/trace-hw_nvme.h"
         }
@@ -3631,14 +3631,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_acqaddr(uint64_t data)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_acqaddr " "wrote MMIO, admin completion queue address=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data);
 #line 3640 "trace/trace-hw_nvme.h"
         } else {
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_acqaddr " "wrote MMIO, admin completion queue address=0x%"PRIx64"" "\n", data);
 #line 3644 "trace/trace-hw_nvme.h"
         }
@@ -3662,14 +3662,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_asqaddr_hi(uint64_t data, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_asqaddr_hi " "wrote MMIO, admin submission queue high half=0x%"PRIx64", new_address=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data, new_addr);
 #line 3671 "trace/trace-hw_nvme.h"
         } else {
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_asqaddr_hi " "wrote MMIO, admin submission queue high half=0x%"PRIx64", new_address=0x%"PRIx64"" "\n", data, new_addr);
 #line 3675 "trace/trace-hw_nvme.h"
         }
@@ -3693,14 +3693,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_acqaddr_hi(uint64_t data, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_acqaddr_hi " "wrote MMIO, admin completion queue high half=0x%"PRIx64", new_address=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , data, new_addr);
 #line 3702 "trace/trace-hw_nvme.h"
         } else {
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_acqaddr_hi " "wrote MMIO, admin completion queue high half=0x%"PRIx64", new_address=0x%"PRIx64"" "\n", data, new_addr);
 #line 3706 "trace/trace-hw_nvme.h"
         }
@@ -3724,14 +3724,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_start_success(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_start_success " "setting controller enable bit succeeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3733 "trace/trace-hw_nvme.h"
         } else {
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_start_success " "setting controller enable bit succeeded" "\n");
 #line 3737 "trace/trace-hw_nvme.h"
         }
@@ -3755,14 +3755,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_stopped(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_stopped " "cleared controller enable bit" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3764 "trace/trace-hw_nvme.h"
         } else {
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_stopped " "cleared controller enable bit" "\n");
 #line 3768 "trace/trace-hw_nvme.h"
         }
@@ -3786,14 +3786,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_shutdown_set(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_shutdown_set " "shutdown bit set" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3795 "trace/trace-hw_nvme.h"
         } else {
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_shutdown_set " "shutdown bit set" "\n");
 #line 3799 "trace/trace-hw_nvme.h"
         }
@@ -3817,14 +3817,14 @@ static inline void _nocheck__trace_pci_nvme_mmio_shutdown_cleared(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_mmio_shutdown_cleared " "shutdown bit cleared" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3826 "trace/trace-hw_nvme.h"
         } else {
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_mmio_shutdown_cleared " "shutdown bit cleared" "\n");
 #line 3830 "trace/trace-hw_nvme.h"
         }
@@ -3848,14 +3848,14 @@ static inline void _nocheck__trace_pci_nvme_update_cq_head(uint16_t cqid, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_update_cq_head " "cqid %"PRIu16" new_head %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid, new_head);
 #line 3857 "trace/trace-hw_nvme.h"
         } else {
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_update_cq_head " "cqid %"PRIu16" new_head %"PRIu16"" "\n", cqid, new_head);
 #line 3861 "trace/trace-hw_nvme.h"
         }
@@ -3879,14 +3879,14 @@ static inline void _nocheck__trace_pci_nvme_update_sq_tail(uint16_t sqid, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_update_sq_tail " "sqid %"PRIu16" new_tail %"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sqid, new_tail);
 #line 3888 "trace/trace-hw_nvme.h"
         } else {
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_update_sq_tail " "sqid %"PRIu16" new_tail %"PRIu16"" "\n", sqid, new_tail);
 #line 3892 "trace/trace-hw_nvme.h"
         }
@@ -3910,14 +3910,14 @@ static inline void _nocheck__trace_pci_nvme_open_zone(uint64_t slba, uint32_t zo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_open_zone " "open zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx, all);
 #line 3919 "trace/trace-hw_nvme.h"
         } else {
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_open_zone " "open zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n", slba, zone_idx, all);
 #line 3923 "trace/trace-hw_nvme.h"
         }
@@ -3941,14 +3941,14 @@ static inline void _nocheck__trace_pci_nvme_close_zone(uint64_t slba, uint32_t z
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_close_zone " "close zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx, all);
 #line 3950 "trace/trace-hw_nvme.h"
         } else {
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_close_zone " "close zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n", slba, zone_idx, all);
 #line 3954 "trace/trace-hw_nvme.h"
         }
@@ -3972,14 +3972,14 @@ static inline void _nocheck__trace_pci_nvme_finish_zone(uint64_t slba, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_finish_zone " "finish zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx, all);
 #line 3981 "trace/trace-hw_nvme.h"
         } else {
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_finish_zone " "finish zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n", slba, zone_idx, all);
 #line 3985 "trace/trace-hw_nvme.h"
         }
@@ -4003,14 +4003,14 @@ static inline void _nocheck__trace_pci_nvme_reset_zone(uint64_t slba, uint32_t z
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_reset_zone " "reset zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx, all);
 #line 4012 "trace/trace-hw_nvme.h"
         } else {
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_reset_zone " "reset zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n", slba, zone_idx, all);
 #line 4016 "trace/trace-hw_nvme.h"
         }
@@ -4034,14 +4034,14 @@ static inline void _nocheck__trace_pci_nvme_zns_zone_reset(uint64_t zslba)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_zns_zone_reset " "zslba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zslba);
 #line 4043 "trace/trace-hw_nvme.h"
         } else {
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_zns_zone_reset " "zslba 0x%"PRIx64"" "\n", zslba);
 #line 4047 "trace/trace-hw_nvme.h"
         }
@@ -4065,14 +4065,14 @@ static inline void _nocheck__trace_pci_nvme_offline_zone(uint64_t slba, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_offline_zone " "offline zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx, all);
 #line 4074 "trace/trace-hw_nvme.h"
         } else {
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_offline_zone " "offline zone, slba=%"PRIu64", idx=%"PRIu32", all=%"PRIi32"" "\n", slba, zone_idx, all);
 #line 4078 "trace/trace-hw_nvme.h"
         }
@@ -4096,14 +4096,14 @@ static inline void _nocheck__trace_pci_nvme_set_descriptor_extension(uint64_t sl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_set_descriptor_extension " "set zone descriptor extension, slba=%"PRIu64", idx=%"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone_idx);
 #line 4105 "trace/trace-hw_nvme.h"
         } else {
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_set_descriptor_extension " "set zone descriptor extension, slba=%"PRIu64", idx=%"PRIu32"" "\n", slba, zone_idx);
 #line 4109 "trace/trace-hw_nvme.h"
         }
@@ -4127,14 +4127,14 @@ static inline void _nocheck__trace_pci_nvme_zd_extension_set(uint32_t zone_idx)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_zd_extension_set " "set descriptor extension for zone_idx=%"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zone_idx);
 #line 4136 "trace/trace-hw_nvme.h"
         } else {
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_zd_extension_set " "set descriptor extension for zone_idx=%"PRIu32"" "\n", zone_idx);
 #line 4140 "trace/trace-hw_nvme.h"
         }
@@ -4158,14 +4158,14 @@ static inline void _nocheck__trace_pci_nvme_clear_ns_close(uint32_t state, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_clear_ns_close " "zone state=%"PRIu32", slba=%"PRIu64" transitioned to Closed state" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state, slba);
 #line 4167 "trace/trace-hw_nvme.h"
         } else {
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_clear_ns_close " "zone state=%"PRIu32", slba=%"PRIu64" transitioned to Closed state" "\n", state, slba);
 #line 4171 "trace/trace-hw_nvme.h"
         }
@@ -4189,14 +4189,14 @@ static inline void _nocheck__trace_pci_nvme_clear_ns_reset(uint32_t state, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_clear_ns_reset " "zone state=%"PRIu32", slba=%"PRIu64" transitioned to Empty state" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state, slba);
 #line 4198 "trace/trace-hw_nvme.h"
         } else {
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_clear_ns_reset " "zone state=%"PRIu32", slba=%"PRIu64" transitioned to Empty state" "\n", state, slba);
 #line 4202 "trace/trace-hw_nvme.h"
         }
@@ -4220,14 +4220,14 @@ static inline void _nocheck__trace_pci_nvme_zoned_zrwa_implicit_flush(uint64_t z
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_zoned_zrwa_implicit_flush " "zslba 0x%"PRIx64" nlb %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zslba, nlb);
 #line 4229 "trace/trace-hw_nvme.h"
         } else {
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_zoned_zrwa_implicit_flush " "zslba 0x%"PRIx64" nlb %"PRIu32"" "\n", zslba, nlb);
 #line 4233 "trace/trace-hw_nvme.h"
         }
@@ -4251,14 +4251,14 @@ static inline void _nocheck__trace_pci_nvme_pci_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_pci_reset " "PCI Function Level Reset" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4260 "trace/trace-hw_nvme.h"
         } else {
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_pci_reset " "PCI Function Level Reset" "\n");
 #line 4264 "trace/trace-hw_nvme.h"
         }
@@ -4282,14 +4282,14 @@ static inline void _nocheck__trace_pci_nvme_virt_mngmt(uint16_t cid, uint16_t ac
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_virt_mngmt " "cid %"PRIu16", act=0x%"PRIx16", ctrlid=%"PRIu16" %s nr=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, act, cntlid, rt, nr);
 #line 4291 "trace/trace-hw_nvme.h"
         } else {
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_virt_mngmt " "cid %"PRIu16", act=0x%"PRIx16", ctrlid=%"PRIu16" %s nr=%"PRIu16"" "\n", cid, act, cntlid, rt, nr);
 #line 4295 "trace/trace-hw_nvme.h"
         }
@@ -4313,14 +4313,14 @@ static inline void _nocheck__trace_pci_nvme_fdp_ruh_change(uint16_t rgid, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_fdp_ruh_change " "change RU on RUH rgid=%"PRIu16", ruhid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rgid, ruhid);
 #line 4322 "trace/trace-hw_nvme.h"
         } else {
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_fdp_ruh_change " "change RU on RUH rgid=%"PRIu16", ruhid=%"PRIu16"" "\n", rgid, ruhid);
 #line 4326 "trace/trace-hw_nvme.h"
         }
@@ -4344,14 +4344,14 @@ static inline void _nocheck__trace_pci_nvme_err_mdts(size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_mdts " "len %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 4353 "trace/trace-hw_nvme.h"
         } else {
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_mdts " "len %zu" "\n", len);
 #line 4357 "trace/trace-hw_nvme.h"
         }
@@ -4375,14 +4375,14 @@ static inline void _nocheck__trace_pci_nvme_err_zasl(size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zasl " "len %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 4384 "trace/trace-hw_nvme.h"
         } else {
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zasl " "len %zu" "\n", len);
 #line 4388 "trace/trace-hw_nvme.h"
         }
@@ -4406,14 +4406,14 @@ static inline void _nocheck__trace_pci_nvme_err_req_status(uint16_t cid, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_req_status " "cid %"PRIu16" nsid %"PRIu32" status 0x%"PRIx16" opc 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, nsid, status, opc);
 #line 4415 "trace/trace-hw_nvme.h"
         } else {
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_req_status " "cid %"PRIu16" nsid %"PRIu32" status 0x%"PRIx16" opc 0x%"PRIx8"" "\n", cid, nsid, status, opc);
 #line 4419 "trace/trace-hw_nvme.h"
         }
@@ -4437,14 +4437,14 @@ static inline void _nocheck__trace_pci_nvme_err_addr_read(uint64_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_addr_read " "addr 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 4446 "trace/trace-hw_nvme.h"
         } else {
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_addr_read " "addr 0x%"PRIx64"" "\n", addr);
 #line 4450 "trace/trace-hw_nvme.h"
         }
@@ -4468,14 +4468,14 @@ static inline void _nocheck__trace_pci_nvme_err_addr_write(uint64_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_addr_write " "addr 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 4477 "trace/trace-hw_nvme.h"
         } else {
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_addr_write " "addr 0x%"PRIx64"" "\n", addr);
 #line 4481 "trace/trace-hw_nvme.h"
         }
@@ -4499,14 +4499,14 @@ static inline void _nocheck__trace_pci_nvme_err_cfs(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_cfs " "controller fatal status" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4508 "trace/trace-hw_nvme.h"
         } else {
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_cfs " "controller fatal status" "\n");
 #line 4512 "trace/trace-hw_nvme.h"
         }
@@ -4530,14 +4530,14 @@ static inline void _nocheck__trace_pci_nvme_err_aio(uint16_t cid, const char * e
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_aio " "cid %"PRIu16" err '%s' status 0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, errname, status);
 #line 4539 "trace/trace-hw_nvme.h"
         } else {
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_aio " "cid %"PRIu16" err '%s' status 0x%"PRIx16"" "\n", cid, errname, status);
 #line 4543 "trace/trace-hw_nvme.h"
         }
@@ -4561,14 +4561,14 @@ static inline void _nocheck__trace_pci_nvme_err_copy_invalid_format(uint8_t form
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_copy_invalid_format " "format 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , format);
 #line 4570 "trace/trace-hw_nvme.h"
         } else {
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_copy_invalid_format " "format 0x%"PRIx8"" "\n", format);
 #line 4574 "trace/trace-hw_nvme.h"
         }
@@ -4592,14 +4592,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_sgld(uint16_t cid, uint8
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_sgld " "cid %"PRIu16" type 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, typ);
 #line 4601 "trace/trace-hw_nvme.h"
         } else {
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_sgld " "cid %"PRIu16" type 0x%"PRIx8"" "\n", cid, typ);
 #line 4605 "trace/trace-hw_nvme.h"
         }
@@ -4623,14 +4623,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_num_sgld(uint16_t cid, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_num_sgld " "cid %"PRIu16" type 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, typ);
 #line 4632 "trace/trace-hw_nvme.h"
         } else {
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_num_sgld " "cid %"PRIu16" type 0x%"PRIx8"" "\n", cid, typ);
 #line 4636 "trace/trace-hw_nvme.h"
         }
@@ -4654,14 +4654,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_sgl_excess_length(uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_sgl_excess_length " "residual %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , residual);
 #line 4663 "trace/trace-hw_nvme.h"
         } else {
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_sgl_excess_length " "residual %"PRIu32"" "\n", residual);
 #line 4667 "trace/trace-hw_nvme.h"
         }
@@ -4685,14 +4685,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_dma(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_dma " "PRP/SGL is too small for transfer size" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4694 "trace/trace-hw_nvme.h"
         } else {
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_dma " "PRP/SGL is too small for transfer size" "\n");
 #line 4698 "trace/trace-hw_nvme.h"
         }
@@ -4716,14 +4716,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_prplist_ent(uint64_t prp
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_prplist_ent " "PRP list entry is not page aligned: 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prplist);
 #line 4725 "trace/trace-hw_nvme.h"
         } else {
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_prplist_ent " "PRP list entry is not page aligned: 0x%"PRIx64"" "\n", prplist);
 #line 4729 "trace/trace-hw_nvme.h"
         }
@@ -4747,14 +4747,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_prp2_align(uint64_t prp2
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_prp2_align " "PRP2 is not page aligned: 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prp2);
 #line 4756 "trace/trace-hw_nvme.h"
         } else {
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_prp2_align " "PRP2 is not page aligned: 0x%"PRIx64"" "\n", prp2);
 #line 4760 "trace/trace-hw_nvme.h"
         }
@@ -4778,14 +4778,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_opc(uint8_t opc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_opc " "invalid opcode 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , opc);
 #line 4787 "trace/trace-hw_nvme.h"
         } else {
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_opc " "invalid opcode 0x%"PRIx8"" "\n", opc);
 #line 4791 "trace/trace-hw_nvme.h"
         }
@@ -4809,14 +4809,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_admin_opc(uint8_t opc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_admin_opc " "invalid admin opcode 0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , opc);
 #line 4818 "trace/trace-hw_nvme.h"
         } else {
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_admin_opc " "invalid admin opcode 0x%"PRIx8"" "\n", opc);
 #line 4822 "trace/trace-hw_nvme.h"
         }
@@ -4840,14 +4840,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_lba_range(uint64_t start
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_lba_range " "Invalid LBA start=%"PRIu64" len=%"PRIu64" limit=%"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , start, len, limit);
 #line 4849 "trace/trace-hw_nvme.h"
         } else {
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_lba_range " "Invalid LBA start=%"PRIu64" len=%"PRIu64" limit=%"PRIu64"" "\n", start, len, limit);
 #line 4853 "trace/trace-hw_nvme.h"
         }
@@ -4871,14 +4871,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_log_page_offset(uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_log_page_offset " "must be <= %"PRIu64", got %"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ofs, size);
 #line 4880 "trace/trace-hw_nvme.h"
         } else {
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_log_page_offset " "must be <= %"PRIu64", got %"PRIu64"" "\n", ofs, size);
 #line 4884 "trace/trace-hw_nvme.h"
         }
@@ -4902,14 +4902,14 @@ static inline void _nocheck__trace_pci_nvme_err_cmb_invalid_cba(uint64_t cmbmsc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_cmb_invalid_cba " "cmbmsc 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmbmsc);
 #line 4911 "trace/trace-hw_nvme.h"
         } else {
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_cmb_invalid_cba " "cmbmsc 0x%"PRIx64"" "\n", cmbmsc);
 #line 4915 "trace/trace-hw_nvme.h"
         }
@@ -4933,14 +4933,14 @@ static inline void _nocheck__trace_pci_nvme_err_cmb_not_enabled(uint64_t cmbmsc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_cmb_not_enabled " "cmbmsc 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmbmsc);
 #line 4942 "trace/trace-hw_nvme.h"
         } else {
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_cmb_not_enabled " "cmbmsc 0x%"PRIx64"" "\n", cmbmsc);
 #line 4946 "trace/trace-hw_nvme.h"
         }
@@ -4964,14 +4964,14 @@ static inline void _nocheck__trace_pci_nvme_err_unaligned_zone_cmd(uint8_t actio
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_unaligned_zone_cmd " "unaligned zone op 0x%"PRIx32", got slba=%"PRIu64", zslba=%"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action, slba, zslba);
 #line 4973 "trace/trace-hw_nvme.h"
         } else {
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_unaligned_zone_cmd " "unaligned zone op 0x%"PRIx32", got slba=%"PRIu64", zslba=%"PRIu64"" "\n", action, slba, zslba);
 #line 4977 "trace/trace-hw_nvme.h"
         }
@@ -4995,14 +4995,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_zone_state_transition(ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_zone_state_transition " "action=0x%"PRIx8", slba=%"PRIu64", attrs=0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action, slba, attrs);
 #line 5004 "trace/trace-hw_nvme.h"
         } else {
-#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_zone_state_transition " "action=0x%"PRIx8", slba=%"PRIu64", attrs=0x%"PRIx32"" "\n", action, slba, attrs);
 #line 5008 "trace/trace-hw_nvme.h"
         }
@@ -5026,14 +5026,14 @@ static inline void _nocheck__trace_pci_nvme_err_write_not_at_wp(uint64_t slba, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_write_not_at_wp " "writing at slba=%"PRIu64", zone=%"PRIu64", but wp=%"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone, wp);
 #line 5035 "trace/trace-hw_nvme.h"
         } else {
-#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_write_not_at_wp " "writing at slba=%"PRIu64", zone=%"PRIu64", but wp=%"PRIu64"" "\n", slba, zone, wp);
 #line 5039 "trace/trace-hw_nvme.h"
         }
@@ -5057,14 +5057,14 @@ static inline void _nocheck__trace_pci_nvme_err_append_not_at_start(uint64_t slb
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_append_not_at_start " "appending at slba=%"PRIu64", but zone=%"PRIu64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, zone);
 #line 5066 "trace/trace-hw_nvme.h"
         } else {
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_append_not_at_start " "appending at slba=%"PRIu64", but zone=%"PRIu64"" "\n", slba, zone);
 #line 5070 "trace/trace-hw_nvme.h"
         }
@@ -5088,14 +5088,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_is_full(uint64_t zslba)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_is_full " "zslba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zslba);
 #line 5097 "trace/trace-hw_nvme.h"
         } else {
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_is_full " "zslba 0x%"PRIx64"" "\n", zslba);
 #line 5101 "trace/trace-hw_nvme.h"
         }
@@ -5119,14 +5119,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_is_read_only(uint64_t zslba
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_is_read_only " "zslba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zslba);
 #line 5128 "trace/trace-hw_nvme.h"
         } else {
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_is_read_only " "zslba 0x%"PRIx64"" "\n", zslba);
 #line 5132 "trace/trace-hw_nvme.h"
         }
@@ -5150,14 +5150,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_is_offline(uint64_t zslba)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_is_offline " "zslba 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zslba);
 #line 5159 "trace/trace-hw_nvme.h"
         } else {
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_is_offline " "zslba 0x%"PRIx64"" "\n", zslba);
 #line 5163 "trace/trace-hw_nvme.h"
         }
@@ -5181,14 +5181,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_boundary(uint64_t slba, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_boundary " "lba 0x%"PRIx64" nlb %"PRIu32" zcap 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb, zcap);
 #line 5190 "trace/trace-hw_nvme.h"
         } else {
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_boundary " "lba 0x%"PRIx64" nlb %"PRIu32" zcap 0x%"PRIx64"" "\n", slba, nlb, zcap);
 #line 5194 "trace/trace-hw_nvme.h"
         }
@@ -5212,14 +5212,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_invalid_write(uint64_t slba
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_invalid_write " "lba 0x%"PRIx64" wp 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, wp);
 #line 5221 "trace/trace-hw_nvme.h"
         } else {
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_invalid_write " "lba 0x%"PRIx64" wp 0x%"PRIx64"" "\n", slba, wp);
 #line 5225 "trace/trace-hw_nvme.h"
         }
@@ -5243,14 +5243,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_write_not_ok(uint64_t slba,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_write_not_ok " "slba=%"PRIu64", nlb=%"PRIu32", status=0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb, status);
 #line 5252 "trace/trace-hw_nvme.h"
         } else {
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_write_not_ok " "slba=%"PRIu64", nlb=%"PRIu32", status=0x%"PRIx16"" "\n", slba, nlb, status);
 #line 5256 "trace/trace-hw_nvme.h"
         }
@@ -5274,14 +5274,14 @@ static inline void _nocheck__trace_pci_nvme_err_zone_read_not_ok(uint64_t slba, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zone_read_not_ok " "slba=%"PRIu64", nlb=%"PRIu32", status=0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slba, nlb, status);
 #line 5283 "trace/trace-hw_nvme.h"
         } else {
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zone_read_not_ok " "slba=%"PRIu64", nlb=%"PRIu32", status=0x%"PRIx16"" "\n", slba, nlb, status);
 #line 5287 "trace/trace-hw_nvme.h"
         }
@@ -5305,14 +5305,14 @@ static inline void _nocheck__trace_pci_nvme_err_insuff_active_res(uint32_t max_a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_insuff_active_res " "max_active=%"PRIu32" zone limit exceeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , max_active);
 #line 5314 "trace/trace-hw_nvme.h"
         } else {
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_insuff_active_res " "max_active=%"PRIu32" zone limit exceeded" "\n", max_active);
 #line 5318 "trace/trace-hw_nvme.h"
         }
@@ -5336,14 +5336,14 @@ static inline void _nocheck__trace_pci_nvme_err_insuff_open_res(uint32_t max_ope
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_insuff_open_res " "max_open=%"PRIu32" zone limit exceeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , max_open);
 #line 5345 "trace/trace-hw_nvme.h"
         } else {
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_insuff_open_res " "max_open=%"PRIu32" zone limit exceeded" "\n", max_open);
 #line 5349 "trace/trace-hw_nvme.h"
         }
@@ -5367,14 +5367,14 @@ static inline void _nocheck__trace_pci_nvme_err_zd_extension_map_error(uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_zd_extension_map_error " "can't map descriptor extension for zone_idx=%"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zone_idx);
 #line 5376 "trace/trace-hw_nvme.h"
         } else {
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_zd_extension_map_error " "can't map descriptor extension for zone_idx=%"PRIu32"" "\n", zone_idx);
 #line 5380 "trace/trace-hw_nvme.h"
         }
@@ -5398,14 +5398,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_iocsci(uint32_t idx)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_iocsci " "unsupported command set combination index %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idx);
 #line 5407 "trace/trace-hw_nvme.h"
         } else {
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_iocsci " "unsupported command set combination index %"PRIu32"" "\n", idx);
 #line 5411 "trace/trace-hw_nvme.h"
         }
@@ -5429,14 +5429,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_del_sq(uint16_t qid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_del_sq " "invalid submission queue deletion, sid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid);
 #line 5438 "trace/trace-hw_nvme.h"
         } else {
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_del_sq " "invalid submission queue deletion, sid=%"PRIu16"" "\n", qid);
 #line 5442 "trace/trace-hw_nvme.h"
         }
@@ -5460,14 +5460,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_sq_cqid(uint16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_sq_cqid " "failed creating submission queue, invalid cqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid);
 #line 5469 "trace/trace-hw_nvme.h"
         } else {
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_sq_cqid " "failed creating submission queue, invalid cqid=%"PRIu16"" "\n", cqid);
 #line 5473 "trace/trace-hw_nvme.h"
         }
@@ -5491,14 +5491,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_sq_sqid(uint16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_sq_sqid " "failed creating submission queue, invalid sqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sqid);
 #line 5500 "trace/trace-hw_nvme.h"
         } else {
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_sq_sqid " "failed creating submission queue, invalid sqid=%"PRIu16"" "\n", sqid);
 #line 5504 "trace/trace-hw_nvme.h"
         }
@@ -5522,14 +5522,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_sq_size(uint16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_sq_size " "failed creating submission queue, invalid qsize=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qsize);
 #line 5531 "trace/trace-hw_nvme.h"
         } else {
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_sq_size " "failed creating submission queue, invalid qsize=%"PRIu16"" "\n", qsize);
 #line 5535 "trace/trace-hw_nvme.h"
         }
@@ -5553,14 +5553,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_sq_addr(uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_sq_addr " "failed creating submission queue, addr=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 5562 "trace/trace-hw_nvme.h"
         } else {
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_sq_addr " "failed creating submission queue, addr=0x%"PRIx64"" "\n", addr);
 #line 5566 "trace/trace-hw_nvme.h"
         }
@@ -5584,14 +5584,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_sq_qflags(uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_sq_qflags " "failed creating submission queue, qflags=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qflags);
 #line 5593 "trace/trace-hw_nvme.h"
         } else {
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_sq_qflags " "failed creating submission queue, qflags=%"PRIu16"" "\n", qflags);
 #line 5597 "trace/trace-hw_nvme.h"
         }
@@ -5615,14 +5615,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_del_cq_cqid(uint16_t cqi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_del_cq_cqid " "failed deleting completion queue, cqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid);
 #line 5624 "trace/trace-hw_nvme.h"
         } else {
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_del_cq_cqid " "failed deleting completion queue, cqid=%"PRIu16"" "\n", cqid);
 #line 5628 "trace/trace-hw_nvme.h"
         }
@@ -5646,14 +5646,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_del_cq_notempty(uint16_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_del_cq_notempty " "failed deleting completion queue, it is not empty, cqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid);
 #line 5655 "trace/trace-hw_nvme.h"
         } else {
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_del_cq_notempty " "failed deleting completion queue, it is not empty, cqid=%"PRIu16"" "\n", cqid);
 #line 5659 "trace/trace-hw_nvme.h"
         }
@@ -5677,14 +5677,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_cq_cqid(uint16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_cq_cqid " "failed creating completion queue, cqid=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cqid);
 #line 5686 "trace/trace-hw_nvme.h"
         } else {
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_cq_cqid " "failed creating completion queue, cqid=%"PRIu16"" "\n", cqid);
 #line 5690 "trace/trace-hw_nvme.h"
         }
@@ -5708,14 +5708,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_cq_size(uint16_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_cq_size " "failed creating completion queue, size=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size);
 #line 5717 "trace/trace-hw_nvme.h"
         } else {
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_cq_size " "failed creating completion queue, size=%"PRIu16"" "\n", size);
 #line 5721 "trace/trace-hw_nvme.h"
         }
@@ -5739,14 +5739,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_cq_addr(uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_cq_addr " "failed creating completion queue, addr=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 5748 "trace/trace-hw_nvme.h"
         } else {
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_cq_addr " "failed creating completion queue, addr=0x%"PRIx64"" "\n", addr);
 #line 5752 "trace/trace-hw_nvme.h"
         }
@@ -5770,14 +5770,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_cq_vector(uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_cq_vector " "failed creating completion queue, vector=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vector);
 #line 5779 "trace/trace-hw_nvme.h"
         } else {
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_cq_vector " "failed creating completion queue, vector=%"PRIu16"" "\n", vector);
 #line 5783 "trace/trace-hw_nvme.h"
         }
@@ -5801,14 +5801,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_create_cq_qflags(uint16_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_create_cq_qflags " "failed creating completion queue, qflags=%"PRIu16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qflags);
 #line 5810 "trace/trace-hw_nvme.h"
         } else {
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_create_cq_qflags " "failed creating completion queue, qflags=%"PRIu16"" "\n", qflags);
 #line 5814 "trace/trace-hw_nvme.h"
         }
@@ -5832,14 +5832,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_identify_cns(uint16_t cn
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_identify_cns " "identify, invalid cns=0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cns);
 #line 5841 "trace/trace-hw_nvme.h"
         } else {
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_identify_cns " "identify, invalid cns=0x%"PRIx16"" "\n", cns);
 #line 5845 "trace/trace-hw_nvme.h"
         }
@@ -5863,14 +5863,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_getfeat(int dw10)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_getfeat " "invalid get features, dw10=0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dw10);
 #line 5872 "trace/trace-hw_nvme.h"
         } else {
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_getfeat " "invalid get features, dw10=0x%"PRIx32"" "\n", dw10);
 #line 5876 "trace/trace-hw_nvme.h"
         }
@@ -5894,14 +5894,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_setfeat(uint32_t dw10)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_setfeat " "invalid set features, dw10=0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dw10);
 #line 5903 "trace/trace-hw_nvme.h"
         } else {
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_setfeat " "invalid set features, dw10=0x%"PRIx32"" "\n", dw10);
 #line 5907 "trace/trace-hw_nvme.h"
         }
@@ -5925,14 +5925,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_log_page(uint16_t cid, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_log_page " "cid %"PRIu16" lid 0x%"PRIx16"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cid, lid);
 #line 5934 "trace/trace-hw_nvme.h"
         } else {
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_log_page " "cid %"PRIu16" lid 0x%"PRIx16"" "\n", cid, lid);
 #line 5938 "trace/trace-hw_nvme.h"
         }
@@ -5956,14 +5956,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_cq(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_cq " "nvme_start_ctrl failed because there are non-admin completion queues" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5965 "trace/trace-hw_nvme.h"
         } else {
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_cq " "nvme_start_ctrl failed because there are non-admin completion queues" "\n");
 #line 5969 "trace/trace-hw_nvme.h"
         }
@@ -5987,14 +5987,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_sq(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_sq " "nvme_start_ctrl failed because there are non-admin submission queues" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 5996 "trace/trace-hw_nvme.h"
         } else {
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_sq " "nvme_start_ctrl failed because there are non-admin submission queues" "\n");
 #line 6000 "trace/trace-hw_nvme.h"
         }
@@ -6018,14 +6018,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_asq_misaligned(uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_asq_misaligned " "nvme_start_ctrl failed because the admin submission queue address is misaligned: 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 6027 "trace/trace-hw_nvme.h"
         } else {
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_asq_misaligned " "nvme_start_ctrl failed because the admin submission queue address is misaligned: 0x%"PRIx64"" "\n", addr);
 #line 6031 "trace/trace-hw_nvme.h"
         }
@@ -6049,14 +6049,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_acq_misaligned(uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_acq_misaligned " "nvme_start_ctrl failed because the admin completion queue address is misaligned: 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 6058 "trace/trace-hw_nvme.h"
         } else {
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_acq_misaligned " "nvme_start_ctrl failed because the admin completion queue address is misaligned: 0x%"PRIx64"" "\n", addr);
 #line 6062 "trace/trace-hw_nvme.h"
         }
@@ -6080,14 +6080,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_page_too_small(uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_page_too_small " "nvme_start_ctrl failed because the page size is too small: log2size=%u, min=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6089 "trace/trace-hw_nvme.h"
         } else {
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_page_too_small " "nvme_start_ctrl failed because the page size is too small: log2size=%u, min=%u" "\n", log2ps, maxlog2ps);
 #line 6093 "trace/trace-hw_nvme.h"
         }
@@ -6111,14 +6111,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_page_too_large(uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_page_too_large " "nvme_start_ctrl failed because the page size is too large: log2size=%u, max=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6120 "trace/trace-hw_nvme.h"
         } else {
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_page_too_large " "nvme_start_ctrl failed because the page size is too large: log2size=%u, max=%u" "\n", log2ps, maxlog2ps);
 #line 6124 "trace/trace-hw_nvme.h"
         }
@@ -6142,14 +6142,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_cqent_too_small(uint8_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_cqent_too_small " "nvme_start_ctrl failed because the completion queue entry size is too small: log2size=%u, min=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6151 "trace/trace-hw_nvme.h"
         } else {
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_cqent_too_small " "nvme_start_ctrl failed because the completion queue entry size is too small: log2size=%u, min=%u" "\n", log2ps, maxlog2ps);
 #line 6155 "trace/trace-hw_nvme.h"
         }
@@ -6173,14 +6173,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_cqent_too_large(uint8_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_cqent_too_large " "nvme_start_ctrl failed because the completion queue entry size is too large: log2size=%u, max=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6182 "trace/trace-hw_nvme.h"
         } else {
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_cqent_too_large " "nvme_start_ctrl failed because the completion queue entry size is too large: log2size=%u, max=%u" "\n", log2ps, maxlog2ps);
 #line 6186 "trace/trace-hw_nvme.h"
         }
@@ -6204,14 +6204,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_sqent_too_small(uint8_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_sqent_too_small " "nvme_start_ctrl failed because the submission queue entry size is too small: log2size=%u, min=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6213 "trace/trace-hw_nvme.h"
         } else {
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_sqent_too_small " "nvme_start_ctrl failed because the submission queue entry size is too small: log2size=%u, min=%u" "\n", log2ps, maxlog2ps);
 #line 6217 "trace/trace-hw_nvme.h"
         }
@@ -6235,14 +6235,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_sqent_too_large(uint8_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_sqent_too_large " "nvme_start_ctrl failed because the submission queue entry size is too large: log2size=%u, max=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , log2ps, maxlog2ps);
 #line 6244 "trace/trace-hw_nvme.h"
         } else {
-#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 184 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_sqent_too_large " "nvme_start_ctrl failed because the submission queue entry size is too large: log2size=%u, max=%u" "\n", log2ps, maxlog2ps);
 #line 6248 "trace/trace-hw_nvme.h"
         }
@@ -6266,14 +6266,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_css(uint8_t css)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_css " "nvme_start_ctrl failed because invalid command set selected:%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , css);
 #line 6275 "trace/trace-hw_nvme.h"
         } else {
-#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 185 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_css " "nvme_start_ctrl failed because invalid command set selected:%u" "\n", css);
 #line 6279 "trace/trace-hw_nvme.h"
         }
@@ -6297,14 +6297,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_asqent_sz_zero(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_asqent_sz_zero " "nvme_start_ctrl failed because the admin submission queue size is zero" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6306 "trace/trace-hw_nvme.h"
         } else {
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_asqent_sz_zero " "nvme_start_ctrl failed because the admin submission queue size is zero" "\n");
 #line 6310 "trace/trace-hw_nvme.h"
         }
@@ -6328,14 +6328,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_acqent_sz_zero(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_acqent_sz_zero " "nvme_start_ctrl failed because the admin completion queue size is zero" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6337 "trace/trace-hw_nvme.h"
         } else {
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_acqent_sz_zero " "nvme_start_ctrl failed because the admin completion queue size is zero" "\n");
 #line 6341 "trace/trace-hw_nvme.h"
         }
@@ -6359,14 +6359,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_zasl_too_small(uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_zasl_too_small " "nvme_start_ctrl failed because zone append size limit %"PRIu32" is too small, needs to be >= %"PRIu32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , zasl, pagesz);
 #line 6368 "trace/trace-hw_nvme.h"
         } else {
-#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_zasl_too_small " "nvme_start_ctrl failed because zone append size limit %"PRIu32" is too small, needs to be >= %"PRIu32"" "\n", zasl, pagesz);
 #line 6372 "trace/trace-hw_nvme.h"
         }
@@ -6390,14 +6390,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail " "setting controller enable bit failed" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6399 "trace/trace-hw_nvme.h"
         } else {
-#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail " "setting controller enable bit failed" "\n");
 #line 6403 "trace/trace-hw_nvme.h"
         }
@@ -6421,14 +6421,14 @@ static inline void _nocheck__trace_pci_nvme_err_startfail_virt_state(uint16_t vq
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_startfail_virt_state " "nvme_start_ctrl failed due to ctrl state: vi=%u vq=%u %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vq, vi, state);
 #line 6430 "trace/trace-hw_nvme.h"
         } else {
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_startfail_virt_state " "nvme_start_ctrl failed due to ctrl state: vi=%u vq=%u %s" "\n", vq, vi, state);
 #line 6434 "trace/trace-hw_nvme.h"
         }
@@ -6452,14 +6452,14 @@ static inline void _nocheck__trace_pci_nvme_err_invalid_mgmt_action(uint8_t acti
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_invalid_mgmt_action " "action=0x%"PRIx8"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , action);
 #line 6461 "trace/trace-hw_nvme.h"
         } else {
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_invalid_mgmt_action " "action=0x%"PRIx8"" "\n", action);
 #line 6465 "trace/trace-hw_nvme.h"
         }
@@ -6483,14 +6483,14 @@ static inline void _nocheck__trace_pci_nvme_err_ignored_mmio_vf_offline(uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_err_ignored_mmio_vf_offline " "addr 0x%"PRIx64" size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size);
 #line 6492 "trace/trace-hw_nvme.h"
         } else {
-#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_err_ignored_mmio_vf_offline " "addr 0x%"PRIx64" size %d" "\n", addr, size);
 #line 6496 "trace/trace-hw_nvme.h"
         }
@@ -6514,14 +6514,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_misaligned32(uint64_t offs
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_misaligned32 " "MMIO write not 32-bit aligned, offset=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 6523 "trace/trace-hw_nvme.h"
         } else {
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_misaligned32 " "MMIO write not 32-bit aligned, offset=0x%"PRIx64"" "\n", offset);
 #line 6527 "trace/trace-hw_nvme.h"
         }
@@ -6545,14 +6545,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_toosmall(uint64_t offset, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_toosmall " "MMIO write smaller than 32 bits, offset=0x%"PRIx64", size=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, size);
 #line 6554 "trace/trace-hw_nvme.h"
         } else {
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_toosmall " "MMIO write smaller than 32 bits, offset=0x%"PRIx64", size=%u" "\n", offset, size);
 #line 6558 "trace/trace-hw_nvme.h"
         }
@@ -6576,14 +6576,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_intmask_with_msix(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_intmask_with_msix " "undefined access to interrupt mask set when MSI-X is enabled" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6585 "trace/trace-hw_nvme.h"
         } else {
-#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_intmask_with_msix " "undefined access to interrupt mask set when MSI-X is enabled" "\n");
 #line 6589 "trace/trace-hw_nvme.h"
         }
@@ -6607,14 +6607,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_ro_csts(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_ro_csts " "attempted to set a read only bit of controller status" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6616 "trace/trace-hw_nvme.h"
         } else {
-#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_ro_csts " "attempted to set a read only bit of controller status" "\n");
 #line 6620 "trace/trace-hw_nvme.h"
         }
@@ -6638,14 +6638,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_ssreset_w1c_unsupported(vo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_ssreset_w1c_unsupported " "attempted to W1C CSTS.NSSRO but CAP.NSSRS is zero (not supported)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6647 "trace/trace-hw_nvme.h"
         } else {
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_ssreset_w1c_unsupported " "attempted to W1C CSTS.NSSRO but CAP.NSSRS is zero (not supported)" "\n");
 #line 6651 "trace/trace-hw_nvme.h"
         }
@@ -6669,14 +6669,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_ssreset_unsupported(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_ssreset_unsupported " "attempted NVM subsystem reset but CAP.NSSRS is zero (not supported)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6678 "trace/trace-hw_nvme.h"
         } else {
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_ssreset_unsupported " "attempted NVM subsystem reset but CAP.NSSRS is zero (not supported)" "\n");
 #line 6682 "trace/trace-hw_nvme.h"
         }
@@ -6700,14 +6700,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_cmbloc_reserved(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_cmbloc_reserved " "invalid write to reserved CMBLOC when CMBSZ is zero, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6709 "trace/trace-hw_nvme.h"
         } else {
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_cmbloc_reserved " "invalid write to reserved CMBLOC when CMBSZ is zero, ignored" "\n");
 #line 6713 "trace/trace-hw_nvme.h"
         }
@@ -6731,14 +6731,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_cmbsz_readonly(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_cmbsz_readonly " "invalid write to read only CMBSZ, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6740 "trace/trace-hw_nvme.h"
         } else {
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_cmbsz_readonly " "invalid write to read only CMBSZ, ignored" "\n");
 #line 6744 "trace/trace-hw_nvme.h"
         }
@@ -6762,14 +6762,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_pmrcap_readonly(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_pmrcap_readonly " "invalid write to read only PMRCAP, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6771 "trace/trace-hw_nvme.h"
         } else {
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_pmrcap_readonly " "invalid write to read only PMRCAP, ignored" "\n");
 #line 6775 "trace/trace-hw_nvme.h"
         }
@@ -6793,14 +6793,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_pmrsts_readonly(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_pmrsts_readonly " "invalid write to read only PMRSTS, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6802 "trace/trace-hw_nvme.h"
         } else {
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_pmrsts_readonly " "invalid write to read only PMRSTS, ignored" "\n");
 #line 6806 "trace/trace-hw_nvme.h"
         }
@@ -6824,14 +6824,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_pmrebs_readonly(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_pmrebs_readonly " "invalid write to read only PMREBS, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6833 "trace/trace-hw_nvme.h"
         } else {
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_pmrebs_readonly " "invalid write to read only PMREBS, ignored" "\n");
 #line 6837 "trace/trace-hw_nvme.h"
         }
@@ -6855,14 +6855,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_pmrswtp_readonly(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_pmrswtp_readonly " "invalid write to read only PMRSWTP, ignored" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6864 "trace/trace-hw_nvme.h"
         } else {
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_pmrswtp_readonly " "invalid write to read only PMRSWTP, ignored" "\n");
 #line 6868 "trace/trace-hw_nvme.h"
         }
@@ -6886,14 +6886,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiowr_invalid(uint64_t offset, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiowr_invalid " "invalid MMIO write, offset=0x%"PRIx64", data=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, data);
 #line 6895 "trace/trace-hw_nvme.h"
         } else {
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiowr_invalid " "invalid MMIO write, offset=0x%"PRIx64", data=0x%"PRIx64"" "\n", offset, data);
 #line 6899 "trace/trace-hw_nvme.h"
         }
@@ -6917,14 +6917,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiord_misaligned32(uint64_t offs
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiord_misaligned32 " "MMIO read not 32-bit aligned, offset=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 6926 "trace/trace-hw_nvme.h"
         } else {
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiord_misaligned32 " "MMIO read not 32-bit aligned, offset=0x%"PRIx64"" "\n", offset);
 #line 6930 "trace/trace-hw_nvme.h"
         }
@@ -6948,14 +6948,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiord_toosmall(uint64_t offset)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiord_toosmall " "MMIO read smaller than 32-bits, offset=0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 6957 "trace/trace-hw_nvme.h"
         } else {
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiord_toosmall " "MMIO read smaller than 32-bits, offset=0x%"PRIx64"" "\n", offset);
 #line 6961 "trace/trace-hw_nvme.h"
         }
@@ -6979,14 +6979,14 @@ static inline void _nocheck__trace_pci_nvme_ub_mmiord_invalid_ofs(uint64_t offse
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_mmiord_invalid_ofs " "MMIO read beyond last register, offset=0x%"PRIx64", returning 0" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 6988 "trace/trace-hw_nvme.h"
         } else {
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_mmiord_invalid_ofs " "MMIO read beyond last register, offset=0x%"PRIx64", returning 0" "\n", offset);
 #line 6992 "trace/trace-hw_nvme.h"
         }
@@ -7010,14 +7010,14 @@ static inline void _nocheck__trace_pci_nvme_ub_db_wr_misaligned(uint64_t offset)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_db_wr_misaligned " "doorbell write not 32-bit aligned, offset=0x%"PRIx64", ignoring" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 7019 "trace/trace-hw_nvme.h"
         } else {
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_db_wr_misaligned " "doorbell write not 32-bit aligned, offset=0x%"PRIx64", ignoring" "\n", offset);
 #line 7023 "trace/trace-hw_nvme.h"
         }
@@ -7041,14 +7041,14 @@ static inline void _nocheck__trace_pci_nvme_ub_db_wr_invalid_cq(uint32_t qid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_db_wr_invalid_cq " "completion queue doorbell write for nonexistent queue, cqid=%"PRIu32", ignoring" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid);
 #line 7050 "trace/trace-hw_nvme.h"
         } else {
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_db_wr_invalid_cq " "completion queue doorbell write for nonexistent queue, cqid=%"PRIu32", ignoring" "\n", qid);
 #line 7054 "trace/trace-hw_nvme.h"
         }
@@ -7072,14 +7072,14 @@ static inline void _nocheck__trace_pci_nvme_ub_db_wr_invalid_cqhead(uint32_t qid
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_db_wr_invalid_cqhead " "completion queue doorbell write value beyond queue size, cqid=%"PRIu32", new_head=%"PRIu16", ignoring" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid, new_head);
 #line 7081 "trace/trace-hw_nvme.h"
         } else {
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_db_wr_invalid_cqhead " "completion queue doorbell write value beyond queue size, cqid=%"PRIu32", new_head=%"PRIu16", ignoring" "\n", qid, new_head);
 #line 7085 "trace/trace-hw_nvme.h"
         }
@@ -7103,14 +7103,14 @@ static inline void _nocheck__trace_pci_nvme_ub_db_wr_invalid_sq(uint32_t qid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_db_wr_invalid_sq " "submission queue doorbell write for nonexistent queue, sqid=%"PRIu32", ignoring" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid);
 #line 7112 "trace/trace-hw_nvme.h"
         } else {
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_db_wr_invalid_sq " "submission queue doorbell write for nonexistent queue, sqid=%"PRIu32", ignoring" "\n", qid);
 #line 7116 "trace/trace-hw_nvme.h"
         }
@@ -7134,14 +7134,14 @@ static inline void _nocheck__trace_pci_nvme_ub_db_wr_invalid_sqtail(uint32_t qid
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_db_wr_invalid_sqtail " "submission queue doorbell write value beyond queue size, sqid=%"PRIu32", new_head=%"PRIu16", ignoring" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qid, new_tail);
 #line 7143 "trace/trace-hw_nvme.h"
         } else {
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_db_wr_invalid_sqtail " "submission queue doorbell write value beyond queue size, sqid=%"PRIu32", new_head=%"PRIu16", ignoring" "\n", qid, new_tail);
 #line 7147 "trace/trace-hw_nvme.h"
         }
@@ -7165,14 +7165,14 @@ static inline void _nocheck__trace_pci_nvme_ub_unknown_css_value(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_unknown_css_value " "unknown value in cc.css field" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7174 "trace/trace-hw_nvme.h"
         } else {
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_unknown_css_value " "unknown value in cc.css field" "\n");
 #line 7178 "trace/trace-hw_nvme.h"
         }
@@ -7196,14 +7196,14 @@ static inline void _nocheck__trace_pci_nvme_ub_too_many_mappings(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("%d@%zu.%06zu:pci_nvme_ub_too_many_mappings " "too many prp/sgl mappings" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7205 "trace/trace-hw_nvme.h"
         } else {
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nvme/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nvme/trace-events"
             qemu_log("pci_nvme_ub_too_many_mappings " "too many prp/sgl mappings" "\n");
 #line 7209 "trace/trace-hw_nvme.h"
         }

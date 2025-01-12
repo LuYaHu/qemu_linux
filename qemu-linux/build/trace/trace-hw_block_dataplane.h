@@ -25,14 +25,14 @@ static inline void _nocheck__trace_virtio_blk_data_plane_start(void * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/block/dataplane/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/block/dataplane/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_blk_data_plane_start " "dataplane %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 34 "trace/trace-hw_block_dataplane.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/block/dataplane/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/block/dataplane/trace-events"
             qemu_log("virtio_blk_data_plane_start " "dataplane %p" "\n", s);
 #line 38 "trace/trace-hw_block_dataplane.h"
         }
@@ -56,14 +56,14 @@ static inline void _nocheck__trace_virtio_blk_data_plane_stop(void * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/block/dataplane/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/block/dataplane/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_blk_data_plane_stop " "dataplane %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 65 "trace/trace-hw_block_dataplane.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/block/dataplane/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/block/dataplane/trace-events"
             qemu_log("virtio_blk_data_plane_stop " "dataplane %p" "\n", s);
 #line 69 "trace/trace-hw_block_dataplane.h"
         }

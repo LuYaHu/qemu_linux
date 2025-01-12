@@ -46,14 +46,14 @@ static inline void _nocheck__trace_pci_update_mappings_del(const char * dev, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:pci_update_mappings_del " "%s %02x:%02x.%x %d,0x%"PRIx64"+0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, bus, slot, func, bar, addr, size);
 #line 55 "trace/trace-hw_pci.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("pci_update_mappings_del " "%s %02x:%02x.%x %d,0x%"PRIx64"+0x%"PRIx64 "\n", dev, bus, slot, func, bar, addr, size);
 #line 59 "trace/trace-hw_pci.h"
         }
@@ -77,14 +77,14 @@ static inline void _nocheck__trace_pci_update_mappings_add(const char * dev, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:pci_update_mappings_add " "%s %02x:%02x.%x %d,0x%"PRIx64"+0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, bus, slot, func, bar, addr, size);
 #line 86 "trace/trace-hw_pci.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("pci_update_mappings_add " "%s %02x:%02x.%x %d,0x%"PRIx64"+0x%"PRIx64 "\n", dev, bus, slot, func, bar, addr, size);
 #line 90 "trace/trace-hw_pci.h"
         }
@@ -108,14 +108,14 @@ static inline void _nocheck__trace_pci_route_irq(int dev_irq, const char * dev_p
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:pci_route_irq " "IRQ %d @%s -> IRQ %d @%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev_irq, dev_path, parent_irq, parent_path);
 #line 117 "trace/trace-hw_pci.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("pci_route_irq " "IRQ %d @%s -> IRQ %d @%s" "\n", dev_irq, dev_path, parent_irq, parent_path);
 #line 121 "trace/trace-hw_pci.h"
         }
@@ -139,14 +139,14 @@ static inline void _nocheck__trace_pci_cfg_read(const char * dev, uint32_t bus, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:pci_cfg_read " "%s %02x:%02x.%x @0x%x -> 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, bus, slot, func, offs, val);
 #line 148 "trace/trace-hw_pci.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("pci_cfg_read " "%s %02x:%02x.%x @0x%x -> 0x%x" "\n", dev, bus, slot, func, offs, val);
 #line 152 "trace/trace-hw_pci.h"
         }
@@ -170,14 +170,14 @@ static inline void _nocheck__trace_pci_cfg_write(const char * dev, uint32_t bus,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:pci_cfg_write " "%s %02x:%02x.%x @0x%x <- 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, bus, slot, func, offs, val);
 #line 179 "trace/trace-hw_pci.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("pci_cfg_write " "%s %02x:%02x.%x @0x%x <- 0x%x" "\n", dev, bus, slot, func, offs, val);
 #line 183 "trace/trace-hw_pci.h"
         }
@@ -201,14 +201,14 @@ static inline void _nocheck__trace_msix_write_config(char * name, bool enabled, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:msix_write_config " "dev %s enabled %d masked %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, enabled, masked);
 #line 210 "trace/trace-hw_pci.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("msix_write_config " "dev %s enabled %d masked %d" "\n", name, enabled, masked);
 #line 214 "trace/trace-hw_pci.h"
         }
@@ -232,14 +232,14 @@ static inline void _nocheck__trace_sriov_register_vfs(const char * name, int slo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:sriov_register_vfs " "%s %02x:%x: creating %d vf devs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, slot, function, num_vfs);
 #line 241 "trace/trace-hw_pci.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("sriov_register_vfs " "%s %02x:%x: creating %d vf devs" "\n", name, slot, function, num_vfs);
 #line 245 "trace/trace-hw_pci.h"
         }
@@ -263,14 +263,14 @@ static inline void _nocheck__trace_sriov_unregister_vfs(const char * name, int s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:sriov_unregister_vfs " "%s %02x:%x: Unregistering %d vf devs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, slot, function, num_vfs);
 #line 272 "trace/trace-hw_pci.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("sriov_unregister_vfs " "%s %02x:%x: Unregistering %d vf devs" "\n", name, slot, function, num_vfs);
 #line 276 "trace/trace-hw_pci.h"
         }
@@ -294,14 +294,14 @@ static inline void _nocheck__trace_sriov_config_write(const char * name, int slo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("%d@%zu.%06zu:sriov_config_write " "%s %02x:%x: sriov offset 0x%x val 0x%x len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, slot, fun, offset, val, len);
 #line 303 "trace/trace-hw_pci.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/pci/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/pci/trace-events"
             qemu_log("sriov_config_write " "%s %02x:%x: sriov offset 0x%x val 0x%x len %d" "\n", name, slot, fun, offset, val, len);
 #line 307 "trace/trace-hw_pci.h"
         }

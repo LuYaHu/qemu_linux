@@ -1024,14 +1024,14 @@ static inline void _nocheck__trace_usb_packet_state_change(int bus, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_packet_state_change " "bus %d, port %s, ep %d, packet %p, state %s -> %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port, ep, p, o, n);
 #line 1033 "trace/trace-hw_usb.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_packet_state_change " "bus %d, port %s, ep %d, packet %p, state %s -> %s" "\n", bus, port, ep, p, o, n);
 #line 1037 "trace/trace-hw_usb.h"
         }
@@ -1055,14 +1055,14 @@ static inline void _nocheck__trace_usb_packet_state_fault(int bus, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_packet_state_fault " "bus %d, port %s, ep %d, packet %p, state %s, expected %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port, ep, p, o, n);
 #line 1064 "trace/trace-hw_usb.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_packet_state_fault " "bus %d, port %s, ep %d, packet %p, state %s, expected %s" "\n", bus, port, ep, p, o, n);
 #line 1068 "trace/trace-hw_usb.h"
         }
@@ -1086,14 +1086,14 @@ static inline void _nocheck__trace_usb_port_claim(int bus, const char * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_port_claim " "bus %d, port %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port);
 #line 1095 "trace/trace-hw_usb.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_port_claim " "bus %d, port %s" "\n", bus, port);
 #line 1099 "trace/trace-hw_usb.h"
         }
@@ -1117,14 +1117,14 @@ static inline void _nocheck__trace_usb_port_attach(int bus, const char * port, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_port_attach " "bus %d, port %s, devspeed %s, portspeed %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port, devspeed, portspeed);
 #line 1126 "trace/trace-hw_usb.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_port_attach " "bus %d, port %s, devspeed %s, portspeed %s" "\n", bus, port, devspeed, portspeed);
 #line 1130 "trace/trace-hw_usb.h"
         }
@@ -1148,14 +1148,14 @@ static inline void _nocheck__trace_usb_port_detach(int bus, const char * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_port_detach " "bus %d, port %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port);
 #line 1157 "trace/trace-hw_usb.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_port_detach " "bus %d, port %s" "\n", bus, port);
 #line 1161 "trace/trace-hw_usb.h"
         }
@@ -1179,14 +1179,14 @@ static inline void _nocheck__trace_usb_port_release(int bus, const char * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_port_release " "bus %d, port %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, port);
 #line 1188 "trace/trace-hw_usb.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_port_release " "bus %d, port %s" "\n", bus, port);
 #line 1192 "trace/trace-hw_usb.h"
         }
@@ -1210,14 +1210,14 @@ static inline void _nocheck__trace_usb_ohci_exit(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_exit " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1219 "trace/trace-hw_usb.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_exit " "%s" "\n", s);
 #line 1223 "trace/trace-hw_usb.h"
         }
@@ -1241,14 +1241,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_read_failed(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_read_failed " "ISO_TD read error at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 1250 "trace/trace-hw_usb.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_read_failed " "ISO_TD read error at 0x%x" "\n", addr);
 #line 1254 "trace/trace-hw_usb.h"
         }
@@ -1272,14 +1272,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_head(uint32_t head, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_head " "ISO_TD ED head 0x%.8x tailp 0x%.8x\n0x%.8x 0x%.8x 0x%.8x 0x%.8x\nframe_number 0x%.8x starting_frame 0x%.8x\nframe_count  0x%.8x relative %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , head, tail, flags, bp, next, be, framenum, startframe, framecount, rel_frame_num);
 #line 1281 "trace/trace-hw_usb.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_head " "ISO_TD ED head 0x%.8x tailp 0x%.8x\n0x%.8x 0x%.8x 0x%.8x 0x%.8x\nframe_number 0x%.8x starting_frame 0x%.8x\nframe_count  0x%.8x relative %d" "\n", head, tail, flags, bp, next, be, framenum, startframe, framecount, rel_frame_num);
 #line 1285 "trace/trace-hw_usb.h"
         }
@@ -1303,14 +1303,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_head_offset(uint32_t o0, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_head_offset " "0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , o0, o1, o2, o3, o4, o5, o6, o7);
 #line 1312 "trace/trace-hw_usb.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_head_offset " "0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x 0x%.8x" "\n", o0, o1, o2, o3, o4, o5, o6, o7);
 #line 1316 "trace/trace-hw_usb.h"
         }
@@ -1334,14 +1334,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_relative_frame_number_neg(int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_relative_frame_number_neg " "ISO_TD R=%d < 0" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rel);
 #line 1343 "trace/trace-hw_usb.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_relative_frame_number_neg " "ISO_TD R=%d < 0" "\n", rel);
 #line 1347 "trace/trace-hw_usb.h"
         }
@@ -1365,14 +1365,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_relative_frame_number_big(int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_relative_frame_number_big " "ISO_TD R=%d > FC=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rel, count);
 #line 1374 "trace/trace-hw_usb.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_relative_frame_number_big " "ISO_TD R=%d > FC=%d" "\n", rel, count);
 #line 1378 "trace/trace-hw_usb.h"
         }
@@ -1396,14 +1396,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_bad_direction(int dir)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_bad_direction " "Bad direction %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dir);
 #line 1405 "trace/trace-hw_usb.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_bad_direction " "Bad direction %d" "\n", dir);
 #line 1409 "trace/trace-hw_usb.h"
         }
@@ -1427,14 +1427,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_bad_bp_be(uint32_t bp, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_bad_bp_be " "ISO_TD bp 0x%.8x be 0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bp, be);
 #line 1436 "trace/trace-hw_usb.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_bad_bp_be " "ISO_TD bp 0x%.8x be 0x%.8x" "\n", bp, be);
 #line 1440 "trace/trace-hw_usb.h"
         }
@@ -1458,14 +1458,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_bad_cc_not_accessed(uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_bad_cc_not_accessed " "ISO_TD cc != not accessed 0x%.8x 0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , start, next);
 #line 1467 "trace/trace-hw_usb.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_bad_cc_not_accessed " "ISO_TD cc != not accessed 0x%.8x 0x%.8x" "\n", start, next);
 #line 1471 "trace/trace-hw_usb.h"
         }
@@ -1489,14 +1489,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_bad_cc_overrun(uint32_t start
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_bad_cc_overrun " "ISO_TD start_offset=0x%.8x > next_offset=0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , start, next);
 #line 1498 "trace/trace-hw_usb.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_bad_cc_overrun " "ISO_TD start_offset=0x%.8x > next_offset=0x%.8x" "\n", start, next);
 #line 1502 "trace/trace-hw_usb.h"
         }
@@ -1520,14 +1520,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_so(uint32_t so, uint32_t eo, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_so " "0x%.8x eo 0x%.8x\nsa 0x%.8x ea 0x%.8x\ndir %s len %zu ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , so, eo, s, e, str, len, ret);
 #line 1529 "trace/trace-hw_usb.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_so " "0x%.8x eo 0x%.8x\nsa 0x%.8x ea 0x%.8x\ndir %s len %zu ret %d" "\n", so, eo, s, e, str, len, ret);
 #line 1533 "trace/trace-hw_usb.h"
         }
@@ -1551,14 +1551,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_data_overrun(int ret, ssize_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_data_overrun " "DataOverrun %d > %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret, len);
 #line 1560 "trace/trace-hw_usb.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_data_overrun " "DataOverrun %d > %zu" "\n", ret, len);
 #line 1564 "trace/trace-hw_usb.h"
         }
@@ -1582,14 +1582,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_data_underrun(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_data_underrun " "DataUnderrun %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1591 "trace/trace-hw_usb.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_data_underrun " "DataUnderrun %d" "\n", ret);
 #line 1595 "trace/trace-hw_usb.h"
         }
@@ -1613,14 +1613,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_nak(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_nak " "got NAK/STALL %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1622 "trace/trace-hw_usb.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_nak " "got NAK/STALL %d" "\n", ret);
 #line 1626 "trace/trace-hw_usb.h"
         }
@@ -1644,14 +1644,14 @@ static inline void _nocheck__trace_usb_ohci_iso_td_bad_response(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_iso_td_bad_response " "Bad device response %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 1653 "trace/trace-hw_usb.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_iso_td_bad_response " "Bad device response %d" "\n", ret);
 #line 1657 "trace/trace-hw_usb.h"
         }
@@ -1675,14 +1675,14 @@ static inline void _nocheck__trace_usb_ohci_port_attach(int index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_port_attach " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index);
 #line 1684 "trace/trace-hw_usb.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_port_attach " "port #%d" "\n", index);
 #line 1688 "trace/trace-hw_usb.h"
         }
@@ -1706,14 +1706,14 @@ static inline void _nocheck__trace_usb_ohci_port_detach(int index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_port_detach " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index);
 #line 1715 "trace/trace-hw_usb.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_port_detach " "port #%d" "\n", index);
 #line 1719 "trace/trace-hw_usb.h"
         }
@@ -1737,14 +1737,14 @@ static inline void _nocheck__trace_usb_ohci_port_wakeup(int index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_port_wakeup " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index);
 #line 1746 "trace/trace-hw_usb.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_port_wakeup " "port #%d" "\n", index);
 #line 1750 "trace/trace-hw_usb.h"
         }
@@ -1768,14 +1768,14 @@ static inline void _nocheck__trace_usb_ohci_port_suspend(int index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_port_suspend " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index);
 #line 1777 "trace/trace-hw_usb.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_port_suspend " "port #%d" "\n", index);
 #line 1781 "trace/trace-hw_usb.h"
         }
@@ -1799,14 +1799,14 @@ static inline void _nocheck__trace_usb_ohci_port_reset(int index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_port_reset " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index);
 #line 1808 "trace/trace-hw_usb.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_port_reset " "port #%d" "\n", index);
 #line 1812 "trace/trace-hw_usb.h"
         }
@@ -1830,14 +1830,14 @@ static inline void _nocheck__trace_usb_ohci_remote_wakeup(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_remote_wakeup " "%s: SUSPEND->RESUME" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1839 "trace/trace-hw_usb.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_remote_wakeup " "%s: SUSPEND->RESUME" "\n", s);
 #line 1843 "trace/trace-hw_usb.h"
         }
@@ -1861,14 +1861,14 @@ static inline void _nocheck__trace_usb_ohci_reset(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_reset " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1870 "trace/trace-hw_usb.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_reset " "%s" "\n", s);
 #line 1874 "trace/trace-hw_usb.h"
         }
@@ -1892,14 +1892,14 @@ static inline void _nocheck__trace_usb_ohci_start(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_start " "%s: USB Operational" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1901 "trace/trace-hw_usb.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_start " "%s: USB Operational" "\n", s);
 #line 1905 "trace/trace-hw_usb.h"
         }
@@ -1923,14 +1923,14 @@ static inline void _nocheck__trace_usb_ohci_resume(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_resume " "%s: USB Resume" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1932 "trace/trace-hw_usb.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_resume " "%s: USB Resume" "\n", s);
 #line 1936 "trace/trace-hw_usb.h"
         }
@@ -1954,14 +1954,14 @@ static inline void _nocheck__trace_usb_ohci_stop(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_stop " "%s: USB Suspended" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1963 "trace/trace-hw_usb.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_stop " "%s: USB Suspended" "\n", s);
 #line 1967 "trace/trace-hw_usb.h"
         }
@@ -1985,14 +1985,14 @@ static inline void _nocheck__trace_usb_ohci_set_ctl(const char * s, uint32_t new
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_set_ctl " "%s: new state 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, new_state);
 #line 1994 "trace/trace-hw_usb.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_set_ctl " "%s: new state 0x%x" "\n", s, new_state);
 #line 1998 "trace/trace-hw_usb.h"
         }
@@ -2016,14 +2016,14 @@ static inline void _nocheck__trace_usb_ohci_td_underrun(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_underrun " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2025 "trace/trace-hw_usb.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_underrun " "" "\n");
 #line 2029 "trace/trace-hw_usb.h"
         }
@@ -2047,14 +2047,14 @@ static inline void _nocheck__trace_usb_ohci_td_dev_error(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_dev_error " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2056 "trace/trace-hw_usb.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_dev_error " "" "\n");
 #line 2060 "trace/trace-hw_usb.h"
         }
@@ -2078,14 +2078,14 @@ static inline void _nocheck__trace_usb_ohci_td_nak(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_nak " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2087 "trace/trace-hw_usb.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_nak " "" "\n");
 #line 2091 "trace/trace-hw_usb.h"
         }
@@ -2109,14 +2109,14 @@ static inline void _nocheck__trace_usb_ohci_td_stall(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_stall " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2118 "trace/trace-hw_usb.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_stall " "" "\n");
 #line 2122 "trace/trace-hw_usb.h"
         }
@@ -2140,14 +2140,14 @@ static inline void _nocheck__trace_usb_ohci_td_babble(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_babble " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2149 "trace/trace-hw_usb.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_babble " "" "\n");
 #line 2153 "trace/trace-hw_usb.h"
         }
@@ -2171,14 +2171,14 @@ static inline void _nocheck__trace_usb_ohci_td_bad_device_response(int rc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_bad_device_response " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rc);
 #line 2180 "trace/trace-hw_usb.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_bad_device_response " "%d" "\n", rc);
 #line 2184 "trace/trace-hw_usb.h"
         }
@@ -2202,14 +2202,14 @@ static inline void _nocheck__trace_usb_ohci_td_read_error(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_read_error " "TD read error at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2211 "trace/trace-hw_usb.h"
         } else {
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_read_error " "TD read error at 0x%x" "\n", addr);
 #line 2215 "trace/trace-hw_usb.h"
         }
@@ -2233,14 +2233,14 @@ static inline void _nocheck__trace_usb_ohci_td_bad_direction(int dir)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_bad_direction " "Bad direction %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dir);
 #line 2242 "trace/trace-hw_usb.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_bad_direction " "Bad direction %d" "\n", dir);
 #line 2246 "trace/trace-hw_usb.h"
         }
@@ -2264,14 +2264,14 @@ static inline void _nocheck__trace_usb_ohci_td_skip_async(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_skip_async " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2273 "trace/trace-hw_usb.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_skip_async " "" "\n");
 #line 2277 "trace/trace-hw_usb.h"
         }
@@ -2295,14 +2295,14 @@ static inline void _nocheck__trace_usb_ohci_td_pkt_hdr(uint32_t addr, int64_t pk
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_pkt_hdr " " TD @ 0x%.8x %" PRId64 " of %" PRId64 " bytes %s r=%d cbp=0x%.8x be=0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, pktlen, len, s, flag_r, cbp, be);
 #line 2304 "trace/trace-hw_usb.h"
         } else {
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_pkt_hdr " " TD @ 0x%.8x %" PRId64 " of %" PRId64 " bytes %s r=%d cbp=0x%.8x be=0x%.8x" "\n", addr, pktlen, len, s, flag_r, cbp, be);
 #line 2308 "trace/trace-hw_usb.h"
         }
@@ -2326,14 +2326,14 @@ static inline void _nocheck__trace_usb_ohci_td_pkt_short(const char * dir, const
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_pkt_short " "%s data: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dir, buf);
 #line 2335 "trace/trace-hw_usb.h"
         } else {
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_pkt_short " "%s data: %s" "\n", dir, buf);
 #line 2339 "trace/trace-hw_usb.h"
         }
@@ -2357,14 +2357,14 @@ static inline void _nocheck__trace_usb_ohci_td_pkt_full(const char * dir, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_pkt_full " "%s data: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dir, buf);
 #line 2366 "trace/trace-hw_usb.h"
         } else {
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_pkt_full " "%s data: %s" "\n", dir, buf);
 #line 2370 "trace/trace-hw_usb.h"
         }
@@ -2388,14 +2388,14 @@ static inline void _nocheck__trace_usb_ohci_td_too_many_pending(int ep)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_too_many_pending " "ep=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep);
 #line 2397 "trace/trace-hw_usb.h"
         } else {
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_too_many_pending " "ep=%d" "\n", ep);
 #line 2401 "trace/trace-hw_usb.h"
         }
@@ -2419,14 +2419,14 @@ static inline void _nocheck__trace_usb_ohci_td_packet_status(int status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_td_packet_status " "status=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 2428 "trace/trace-hw_usb.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_td_packet_status " "status=%d" "\n", status);
 #line 2432 "trace/trace-hw_usb.h"
         }
@@ -2450,14 +2450,14 @@ static inline void _nocheck__trace_usb_ohci_ed_read_error(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_ed_read_error " "ED read error at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2459 "trace/trace-hw_usb.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_ed_read_error " "ED read error at 0x%x" "\n", addr);
 #line 2463 "trace/trace-hw_usb.h"
         }
@@ -2481,14 +2481,14 @@ static inline void _nocheck__trace_usb_ohci_ed_pkt(uint32_t cur, int h, int c, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_ed_pkt " "ED @ 0x%.8x h=%u c=%u\n  head=0x%.8x tailp=0x%.8x next=0x%.8x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cur, h, c, head, tail, next);
 #line 2490 "trace/trace-hw_usb.h"
         } else {
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_ed_pkt " "ED @ 0x%.8x h=%u c=%u\n  head=0x%.8x tailp=0x%.8x next=0x%.8x" "\n", cur, h, c, head, tail, next);
 #line 2494 "trace/trace-hw_usb.h"
         }
@@ -2512,14 +2512,14 @@ static inline void _nocheck__trace_usb_ohci_ed_pkt_flags(uint32_t fa, uint32_t e
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_ed_pkt_flags " "fa=%u en=%u d=%u s=%u k=%u f=%u mps=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fa, en, d, s, k, f, mps);
 #line 2521 "trace/trace-hw_usb.h"
         } else {
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_ed_pkt_flags " "fa=%u en=%u d=%u s=%u k=%u f=%u mps=%u" "\n", fa, en, d, s, k, f, mps);
 #line 2525 "trace/trace-hw_usb.h"
         }
@@ -2543,14 +2543,14 @@ static inline void _nocheck__trace_usb_ohci_hcca_read_error(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_hcca_read_error " "HCCA read error at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2552 "trace/trace-hw_usb.h"
         } else {
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_hcca_read_error " "HCCA read error at 0x%x" "\n", addr);
 #line 2556 "trace/trace-hw_usb.h"
         }
@@ -2574,14 +2574,14 @@ static inline void _nocheck__trace_usb_ohci_mem_read(uint32_t size, const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_read " "%d %s 0x%x %d -> 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, name, addr, offs, val);
 #line 2583 "trace/trace-hw_usb.h"
         } else {
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_read " "%d %s 0x%x %d -> 0x%x" "\n", size, name, addr, offs, val);
 #line 2587 "trace/trace-hw_usb.h"
         }
@@ -2605,14 +2605,14 @@ static inline void _nocheck__trace_usb_ohci_mem_port_read(uint32_t size, const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_port_read " "%d %s[%d] 0x%x %d -> 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, name, port, addr, offs, val);
 #line 2614 "trace/trace-hw_usb.h"
         } else {
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_port_read " "%d %s[%d] 0x%x %d -> 0x%x" "\n", size, name, port, addr, offs, val);
 #line 2618 "trace/trace-hw_usb.h"
         }
@@ -2636,14 +2636,14 @@ static inline void _nocheck__trace_usb_ohci_mem_read_unaligned(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_read_unaligned " "at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2645 "trace/trace-hw_usb.h"
         } else {
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_read_unaligned " "at 0x%x" "\n", addr);
 #line 2649 "trace/trace-hw_usb.h"
         }
@@ -2667,14 +2667,14 @@ static inline void _nocheck__trace_usb_ohci_mem_read_bad_offset(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_read_bad_offset " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2676 "trace/trace-hw_usb.h"
         } else {
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_read_bad_offset " "0x%x" "\n", addr);
 #line 2680 "trace/trace-hw_usb.h"
         }
@@ -2698,14 +2698,14 @@ static inline void _nocheck__trace_usb_ohci_mem_write(uint32_t size, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_write " "%d %s 0x%x %d <- 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, name, addr, offs, val);
 #line 2707 "trace/trace-hw_usb.h"
         } else {
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_write " "%d %s 0x%x %d <- 0x%x" "\n", size, name, addr, offs, val);
 #line 2711 "trace/trace-hw_usb.h"
         }
@@ -2729,14 +2729,14 @@ static inline void _nocheck__trace_usb_ohci_mem_port_write(uint32_t size, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_port_write " "%d %s[%d] 0x%x %d <- 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, name, port, addr, offs, val);
 #line 2738 "trace/trace-hw_usb.h"
         } else {
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_port_write " "%d %s[%d] 0x%x %d <- 0x%x" "\n", size, name, port, addr, offs, val);
 #line 2742 "trace/trace-hw_usb.h"
         }
@@ -2760,14 +2760,14 @@ static inline void _nocheck__trace_usb_ohci_mem_write_unaligned(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_write_unaligned " "at 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2769 "trace/trace-hw_usb.h"
         } else {
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_write_unaligned " "at 0x%x" "\n", addr);
 #line 2773 "trace/trace-hw_usb.h"
         }
@@ -2791,14 +2791,14 @@ static inline void _nocheck__trace_usb_ohci_mem_write_bad_offset(uint32_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_mem_write_bad_offset " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 2800 "trace/trace-hw_usb.h"
         } else {
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_mem_write_bad_offset " "0x%x" "\n", addr);
 #line 2804 "trace/trace-hw_usb.h"
         }
@@ -2822,14 +2822,14 @@ static inline void _nocheck__trace_usb_ohci_process_lists(uint32_t head, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_process_lists " "head 0x%x, cur 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , head, cur);
 #line 2831 "trace/trace-hw_usb.h"
         } else {
-#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 68 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_process_lists " "head 0x%x, cur 0x%x" "\n", head, cur);
 #line 2835 "trace/trace-hw_usb.h"
         }
@@ -2853,14 +2853,14 @@ static inline void _nocheck__trace_usb_ohci_set_frame_interval(const char * name
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_set_frame_interval " "%s: FrameInterval = 0x%x (%u)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, fi_x, fi_u);
 #line 2862 "trace/trace-hw_usb.h"
         } else {
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_set_frame_interval " "%s: FrameInterval = 0x%x (%u)" "\n", name, fi_x, fi_u);
 #line 2866 "trace/trace-hw_usb.h"
         }
@@ -2884,14 +2884,14 @@ static inline void _nocheck__trace_usb_ohci_hub_power_up(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_hub_power_up " "powered up all ports" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2893 "trace/trace-hw_usb.h"
         } else {
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_hub_power_up " "powered up all ports" "\n");
 #line 2897 "trace/trace-hw_usb.h"
         }
@@ -2915,14 +2915,14 @@ static inline void _nocheck__trace_usb_ohci_hub_power_down(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_hub_power_down " "powered down all ports" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2924 "trace/trace-hw_usb.h"
         } else {
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_hub_power_down " "powered down all ports" "\n");
 #line 2928 "trace/trace-hw_usb.h"
         }
@@ -2946,14 +2946,14 @@ static inline void _nocheck__trace_usb_ohci_init_time(int64_t frametime, int64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_init_time " "usb_bit_time=%" PRId64 " usb_frame_time=%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , frametime, bittime);
 #line 2955 "trace/trace-hw_usb.h"
         } else {
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_init_time " "usb_bit_time=%" PRId64 " usb_frame_time=%" PRId64 "\n", frametime, bittime);
 #line 2959 "trace/trace-hw_usb.h"
         }
@@ -2977,14 +2977,14 @@ static inline void _nocheck__trace_usb_ohci_die(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_die " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 2986 "trace/trace-hw_usb.h"
         } else {
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_die " "" "\n");
 #line 2990 "trace/trace-hw_usb.h"
         }
@@ -3008,14 +3008,14 @@ static inline void _nocheck__trace_usb_ohci_async_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ohci_async_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3017 "trace/trace-hw_usb.h"
         } else {
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ohci_async_complete " "" "\n");
 #line 3021 "trace/trace-hw_usb.h"
         }
@@ -3039,14 +3039,14 @@ static inline void _nocheck__trace_usb_ehci_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_reset " "=== RESET ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3048 "trace/trace-hw_usb.h"
         } else {
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_reset " "=== RESET ===" "\n");
 #line 3052 "trace/trace-hw_usb.h"
         }
@@ -3070,14 +3070,14 @@ static inline void _nocheck__trace_usb_ehci_unrealize(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_unrealize " "=== UNREALIZE ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3079 "trace/trace-hw_usb.h"
         } else {
-#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 78 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_unrealize " "=== UNREALIZE ===" "\n");
 #line 3083 "trace/trace-hw_usb.h"
         }
@@ -3101,14 +3101,14 @@ static inline void _nocheck__trace_usb_ehci_opreg_read(uint32_t addr, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_opreg_read " "rd mmio 0x%04x [%s] = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, str, val);
 #line 3110 "trace/trace-hw_usb.h"
         } else {
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_opreg_read " "rd mmio 0x%04x [%s] = 0x%x" "\n", addr, str, val);
 #line 3114 "trace/trace-hw_usb.h"
         }
@@ -3132,14 +3132,14 @@ static inline void _nocheck__trace_usb_ehci_opreg_write(uint32_t addr, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_opreg_write " "wr mmio 0x%04x [%s] = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, str, val);
 #line 3141 "trace/trace-hw_usb.h"
         } else {
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_opreg_write " "wr mmio 0x%04x [%s] = 0x%x" "\n", addr, str, val);
 #line 3145 "trace/trace-hw_usb.h"
         }
@@ -3163,14 +3163,14 @@ static inline void _nocheck__trace_usb_ehci_opreg_change(uint32_t addr, const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_opreg_change " "ch mmio 0x%04x [%s] = 0x%x (old: 0x%x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, str, new, old);
 #line 3172 "trace/trace-hw_usb.h"
         } else {
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_opreg_change " "ch mmio 0x%04x [%s] = 0x%x (old: 0x%x)" "\n", addr, str, new, old);
 #line 3176 "trace/trace-hw_usb.h"
         }
@@ -3194,14 +3194,14 @@ static inline void _nocheck__trace_usb_ehci_portsc_read(uint32_t addr, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_portsc_read " "rd mmio 0x%04x [port %d] = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, port, val);
 #line 3203 "trace/trace-hw_usb.h"
         } else {
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_portsc_read " "rd mmio 0x%04x [port %d] = 0x%x" "\n", addr, port, val);
 #line 3207 "trace/trace-hw_usb.h"
         }
@@ -3225,14 +3225,14 @@ static inline void _nocheck__trace_usb_ehci_portsc_write(uint32_t addr, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_portsc_write " "wr mmio 0x%04x [port %d] = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, port, val);
 #line 3234 "trace/trace-hw_usb.h"
         } else {
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_portsc_write " "wr mmio 0x%04x [port %d] = 0x%x" "\n", addr, port, val);
 #line 3238 "trace/trace-hw_usb.h"
         }
@@ -3256,14 +3256,14 @@ static inline void _nocheck__trace_usb_ehci_portsc_change(uint32_t addr, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_portsc_change " "ch mmio 0x%04x [port %d] = 0x%x (old: 0x%x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, port, new, old);
 #line 3265 "trace/trace-hw_usb.h"
         } else {
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_portsc_change " "ch mmio 0x%04x [port %d] = 0x%x (old: 0x%x)" "\n", addr, port, new, old);
 #line 3269 "trace/trace-hw_usb.h"
         }
@@ -3287,14 +3287,14 @@ static inline void _nocheck__trace_usb_ehci_usbsts(const char * sts, int state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_usbsts " "usbsts %s %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , sts, state);
 #line 3296 "trace/trace-hw_usb.h"
         } else {
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_usbsts " "usbsts %s %d" "\n", sts, state);
 #line 3300 "trace/trace-hw_usb.h"
         }
@@ -3318,14 +3318,14 @@ static inline void _nocheck__trace_usb_ehci_state(const char * schedule, const c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_state " "%s schedule %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , schedule, state);
 #line 3327 "trace/trace-hw_usb.h"
         } else {
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_state " "%s schedule %s" "\n", schedule, state);
 #line 3331 "trace/trace-hw_usb.h"
         }
@@ -3349,14 +3349,14 @@ static inline void _nocheck__trace_usb_ehci_qh_ptrs(void * q, uint32_t addr, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qh_ptrs " "q %p - QH @ 0x%08x: next 0x%08x qtds 0x%08x,0x%08x,0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , q, addr, nxt, c_qtd, n_qtd, a_qtd);
 #line 3358 "trace/trace-hw_usb.h"
         } else {
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qh_ptrs " "q %p - QH @ 0x%08x: next 0x%08x qtds 0x%08x,0x%08x,0x%08x" "\n", q, addr, nxt, c_qtd, n_qtd, a_qtd);
 #line 3362 "trace/trace-hw_usb.h"
         }
@@ -3380,14 +3380,14 @@ static inline void _nocheck__trace_usb_ehci_qh_fields(uint32_t addr, int rl, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qh_fields " "QH @ 0x%08x - rl %d, mplen %d, eps %d, ep %d, dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, rl, mplen, eps, ep, devaddr);
 #line 3389 "trace/trace-hw_usb.h"
         } else {
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qh_fields " "QH @ 0x%08x - rl %d, mplen %d, eps %d, ep %d, dev %d" "\n", addr, rl, mplen, eps, ep, devaddr);
 #line 3393 "trace/trace-hw_usb.h"
         }
@@ -3411,14 +3411,14 @@ static inline void _nocheck__trace_usb_ehci_qh_bits(uint32_t addr, int c, int h,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qh_bits " "QH @ 0x%08x - c %d, h %d, dtc %d, i %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, c, h, dtc, i);
 #line 3420 "trace/trace-hw_usb.h"
         } else {
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qh_bits " "QH @ 0x%08x - c %d, h %d, dtc %d, i %d" "\n", addr, c, h, dtc, i);
 #line 3424 "trace/trace-hw_usb.h"
         }
@@ -3442,14 +3442,14 @@ static inline void _nocheck__trace_usb_ehci_qtd_ptrs(void * q, uint32_t addr, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qtd_ptrs " "q %p - QTD @ 0x%08x: next 0x%08x altnext 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , q, addr, nxt, altnext);
 #line 3451 "trace/trace-hw_usb.h"
         } else {
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qtd_ptrs " "q %p - QTD @ 0x%08x: next 0x%08x altnext 0x%08x" "\n", q, addr, nxt, altnext);
 #line 3455 "trace/trace-hw_usb.h"
         }
@@ -3473,14 +3473,14 @@ static inline void _nocheck__trace_usb_ehci_qtd_fields(uint32_t addr, int tbytes
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qtd_fields " "QTD @ 0x%08x - tbytes %d, cpage %d, cerr %d, pid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tbytes, cpage, cerr, pid);
 #line 3482 "trace/trace-hw_usb.h"
         } else {
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qtd_fields " "QTD @ 0x%08x - tbytes %d, cpage %d, cerr %d, pid %d" "\n", addr, tbytes, cpage, cerr, pid);
 #line 3486 "trace/trace-hw_usb.h"
         }
@@ -3504,14 +3504,14 @@ static inline void _nocheck__trace_usb_ehci_qtd_bits(uint32_t addr, int ioc, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_qtd_bits " "QTD @ 0x%08x - ioc %d, active %d, halt %d, babble %d, xacterr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, ioc, active, halt, babble, xacterr);
 #line 3513 "trace/trace-hw_usb.h"
         } else {
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_qtd_bits " "QTD @ 0x%08x - ioc %d, active %d, halt %d, babble %d, xacterr %d" "\n", addr, ioc, active, halt, babble, xacterr);
 #line 3517 "trace/trace-hw_usb.h"
         }
@@ -3535,14 +3535,14 @@ static inline void _nocheck__trace_usb_ehci_itd(uint32_t addr, uint32_t nxt, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_itd " "ITD @ 0x%08x: next 0x%08x - mplen %d, mult %d, ep %d, dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nxt, mplen, mult, ep, devaddr);
 #line 3544 "trace/trace-hw_usb.h"
         } else {
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_itd " "ITD @ 0x%08x: next 0x%08x - mplen %d, mult %d, ep %d, dev %d" "\n", addr, nxt, mplen, mult, ep, devaddr);
 #line 3548 "trace/trace-hw_usb.h"
         }
@@ -3566,14 +3566,14 @@ static inline void _nocheck__trace_usb_ehci_sitd(uint32_t addr, uint32_t nxt, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_sitd " "ITD @ 0x%08x: next 0x%08x - active %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nxt, active);
 #line 3575 "trace/trace-hw_usb.h"
         } else {
-#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 94 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_sitd " "ITD @ 0x%08x: next 0x%08x - active %d" "\n", addr, nxt, active);
 #line 3579 "trace/trace-hw_usb.h"
         }
@@ -3597,14 +3597,14 @@ static inline void _nocheck__trace_usb_ehci_port_attach(uint32_t port, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_attach " "attach port #%d, owner %s, device %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, owner, device);
 #line 3606 "trace/trace-hw_usb.h"
         } else {
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_attach " "attach port #%d, owner %s, device %s" "\n", port, owner, device);
 #line 3610 "trace/trace-hw_usb.h"
         }
@@ -3628,14 +3628,14 @@ static inline void _nocheck__trace_usb_ehci_port_detach(uint32_t port, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_detach " "detach port #%d, owner %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, owner);
 #line 3637 "trace/trace-hw_usb.h"
         } else {
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_detach " "detach port #%d, owner %s" "\n", port, owner);
 #line 3641 "trace/trace-hw_usb.h"
         }
@@ -3659,14 +3659,14 @@ static inline void _nocheck__trace_usb_ehci_port_reset(uint32_t port, int enable
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_reset " "reset port #%d - %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, enable);
 #line 3668 "trace/trace-hw_usb.h"
         } else {
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_reset " "reset port #%d - %d" "\n", port, enable);
 #line 3672 "trace/trace-hw_usb.h"
         }
@@ -3690,14 +3690,14 @@ static inline void _nocheck__trace_usb_ehci_port_suspend(uint32_t port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_suspend " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 3699 "trace/trace-hw_usb.h"
         } else {
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_suspend " "port #%d" "\n", port);
 #line 3703 "trace/trace-hw_usb.h"
         }
@@ -3721,14 +3721,14 @@ static inline void _nocheck__trace_usb_ehci_port_wakeup(uint32_t port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_wakeup " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 3730 "trace/trace-hw_usb.h"
         } else {
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_wakeup " "port #%d" "\n", port);
 #line 3734 "trace/trace-hw_usb.h"
         }
@@ -3752,14 +3752,14 @@ static inline void _nocheck__trace_usb_ehci_port_resume(uint32_t port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_port_resume " "port #%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 3761 "trace/trace-hw_usb.h"
         } else {
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_port_resume " "port #%d" "\n", port);
 #line 3765 "trace/trace-hw_usb.h"
         }
@@ -3783,14 +3783,14 @@ static inline void _nocheck__trace_usb_ehci_queue_action(void * q, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_queue_action " "q %p: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , q, action);
 #line 3792 "trace/trace-hw_usb.h"
         } else {
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_queue_action " "q %p: %s" "\n", q, action);
 #line 3796 "trace/trace-hw_usb.h"
         }
@@ -3814,14 +3814,14 @@ static inline void _nocheck__trace_usb_ehci_packet_action(void * q, void * p, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_packet_action " "q %p p %p: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , q, p, action);
 #line 3823 "trace/trace-hw_usb.h"
         } else {
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_packet_action " "q %p p %p: %s" "\n", q, p, action);
 #line 3827 "trace/trace-hw_usb.h"
         }
@@ -3845,14 +3845,14 @@ static inline void _nocheck__trace_usb_ehci_irq(uint32_t level, uint32_t frindex
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_irq " "level %d, frindex 0x%04x, sts 0x%x, mask 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level, frindex, sts, mask);
 #line 3854 "trace/trace-hw_usb.h"
         } else {
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_irq " "level %d, frindex 0x%04x, sts 0x%x, mask 0x%x" "\n", level, frindex, sts, mask);
 #line 3858 "trace/trace-hw_usb.h"
         }
@@ -3876,14 +3876,14 @@ static inline void _nocheck__trace_usb_ehci_guest_bug(const char * reason)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_guest_bug " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reason);
 #line 3885 "trace/trace-hw_usb.h"
         } else {
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_guest_bug " "%s" "\n", reason);
 #line 3889 "trace/trace-hw_usb.h"
         }
@@ -3907,14 +3907,14 @@ static inline void _nocheck__trace_usb_ehci_doorbell_ring(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_doorbell_ring " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3916 "trace/trace-hw_usb.h"
         } else {
-#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 105 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_doorbell_ring " "" "\n");
 #line 3920 "trace/trace-hw_usb.h"
         }
@@ -3938,14 +3938,14 @@ static inline void _nocheck__trace_usb_ehci_doorbell_ack(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_doorbell_ack " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3947 "trace/trace-hw_usb.h"
         } else {
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_doorbell_ack " "" "\n");
 #line 3951 "trace/trace-hw_usb.h"
         }
@@ -3969,14 +3969,14 @@ static inline void _nocheck__trace_usb_ehci_dma_error(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_ehci_dma_error " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3978 "trace/trace-hw_usb.h"
         } else {
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_ehci_dma_error " "" "\n");
 #line 3982 "trace/trace-hw_usb.h"
         }
@@ -4000,14 +4000,14 @@ static inline void _nocheck__trace_usb_uhci_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_reset " "=== RESET ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4009 "trace/trace-hw_usb.h"
         } else {
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_reset " "=== RESET ===" "\n");
 #line 4013 "trace/trace-hw_usb.h"
         }
@@ -4031,14 +4031,14 @@ static inline void _nocheck__trace_usb_uhci_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_exit " "=== EXIT ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4040 "trace/trace-hw_usb.h"
         } else {
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_exit " "=== EXIT ===" "\n");
 #line 4044 "trace/trace-hw_usb.h"
         }
@@ -4062,14 +4062,14 @@ static inline void _nocheck__trace_usb_uhci_schedule_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_schedule_start " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4071 "trace/trace-hw_usb.h"
         } else {
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_schedule_start " "" "\n");
 #line 4075 "trace/trace-hw_usb.h"
         }
@@ -4093,14 +4093,14 @@ static inline void _nocheck__trace_usb_uhci_schedule_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_schedule_stop " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4102 "trace/trace-hw_usb.h"
         } else {
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_schedule_stop " "" "\n");
 #line 4106 "trace/trace-hw_usb.h"
         }
@@ -4124,14 +4124,14 @@ static inline void _nocheck__trace_usb_uhci_frame_start(uint32_t num)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_frame_start " "nr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num);
 #line 4133 "trace/trace-hw_usb.h"
         } else {
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_frame_start " "nr %d" "\n", num);
 #line 4137 "trace/trace-hw_usb.h"
         }
@@ -4155,14 +4155,14 @@ static inline void _nocheck__trace_usb_uhci_frame_stop_bandwidth(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_frame_stop_bandwidth " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4164 "trace/trace-hw_usb.h"
         } else {
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_frame_stop_bandwidth " "" "\n");
 #line 4168 "trace/trace-hw_usb.h"
         }
@@ -4186,14 +4186,14 @@ static inline void _nocheck__trace_usb_uhci_frame_loop_stop_idle(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_frame_loop_stop_idle " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4195 "trace/trace-hw_usb.h"
         } else {
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_frame_loop_stop_idle " "" "\n");
 #line 4199 "trace/trace-hw_usb.h"
         }
@@ -4217,14 +4217,14 @@ static inline void _nocheck__trace_usb_uhci_frame_loop_continue(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_frame_loop_continue " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4226 "trace/trace-hw_usb.h"
         } else {
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_frame_loop_continue " "" "\n");
 #line 4230 "trace/trace-hw_usb.h"
         }
@@ -4248,14 +4248,14 @@ static inline void _nocheck__trace_usb_uhci_mmio_readw(uint32_t addr, uint32_t v
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_mmio_readw " "addr 0x%04x, ret 0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 4257 "trace/trace-hw_usb.h"
         } else {
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_mmio_readw " "addr 0x%04x, ret 0x%04x" "\n", addr, val);
 #line 4261 "trace/trace-hw_usb.h"
         }
@@ -4279,14 +4279,14 @@ static inline void _nocheck__trace_usb_uhci_mmio_writew(uint32_t addr, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_mmio_writew " "addr 0x%04x, val 0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 4288 "trace/trace-hw_usb.h"
         } else {
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_mmio_writew " "addr 0x%04x, val 0x%04x" "\n", addr, val);
 #line 4292 "trace/trace-hw_usb.h"
         }
@@ -4310,14 +4310,14 @@ static inline void _nocheck__trace_usb_uhci_queue_add(uint32_t token)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_queue_add " "token 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token);
 #line 4319 "trace/trace-hw_usb.h"
         } else {
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_queue_add " "token 0x%x" "\n", token);
 #line 4323 "trace/trace-hw_usb.h"
         }
@@ -4341,14 +4341,14 @@ static inline void _nocheck__trace_usb_uhci_queue_del(uint32_t token, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_queue_del " "token 0x%x: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, reason);
 #line 4350 "trace/trace-hw_usb.h"
         } else {
-#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_queue_del " "token 0x%x: %s" "\n", token, reason);
 #line 4354 "trace/trace-hw_usb.h"
         }
@@ -4372,14 +4372,14 @@ static inline void _nocheck__trace_usb_uhci_packet_add(uint32_t token, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_add " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4381 "trace/trace-hw_usb.h"
         } else {
-#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_add " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4385 "trace/trace-hw_usb.h"
         }
@@ -4403,14 +4403,14 @@ static inline void _nocheck__trace_usb_uhci_packet_link_async(uint32_t token, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_link_async " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4412 "trace/trace-hw_usb.h"
         } else {
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_link_async " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4416 "trace/trace-hw_usb.h"
         }
@@ -4434,14 +4434,14 @@ static inline void _nocheck__trace_usb_uhci_packet_unlink_async(uint32_t token, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_unlink_async " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4443 "trace/trace-hw_usb.h"
         } else {
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_unlink_async " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4447 "trace/trace-hw_usb.h"
         }
@@ -4465,14 +4465,14 @@ static inline void _nocheck__trace_usb_uhci_packet_cancel(uint32_t token, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_cancel " "token 0x%x, td 0x%x, done %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr, done);
 #line 4474 "trace/trace-hw_usb.h"
         } else {
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_cancel " "token 0x%x, td 0x%x, done %d" "\n", token, addr, done);
 #line 4478 "trace/trace-hw_usb.h"
         }
@@ -4496,14 +4496,14 @@ static inline void _nocheck__trace_usb_uhci_packet_complete_success(uint32_t tok
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_complete_success " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4505 "trace/trace-hw_usb.h"
         } else {
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_complete_success " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4509 "trace/trace-hw_usb.h"
         }
@@ -4527,14 +4527,14 @@ static inline void _nocheck__trace_usb_uhci_packet_complete_shortxfer(uint32_t t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_complete_shortxfer " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4536 "trace/trace-hw_usb.h"
         } else {
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_complete_shortxfer " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4540 "trace/trace-hw_usb.h"
         }
@@ -4558,14 +4558,14 @@ static inline void _nocheck__trace_usb_uhci_packet_complete_stall(uint32_t token
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_complete_stall " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4567 "trace/trace-hw_usb.h"
         } else {
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_complete_stall " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4571 "trace/trace-hw_usb.h"
         }
@@ -4589,14 +4589,14 @@ static inline void _nocheck__trace_usb_uhci_packet_complete_babble(uint32_t toke
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_complete_babble " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4598 "trace/trace-hw_usb.h"
         } else {
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_complete_babble " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4602 "trace/trace-hw_usb.h"
         }
@@ -4620,14 +4620,14 @@ static inline void _nocheck__trace_usb_uhci_packet_complete_error(uint32_t token
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_complete_error " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4629 "trace/trace-hw_usb.h"
         } else {
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_complete_error " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4633 "trace/trace-hw_usb.h"
         }
@@ -4651,14 +4651,14 @@ static inline void _nocheck__trace_usb_uhci_packet_del(uint32_t token, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_packet_del " "token 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , token, addr);
 #line 4660 "trace/trace-hw_usb.h"
         } else {
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_packet_del " "token 0x%x, td 0x%x" "\n", token, addr);
 #line 4664 "trace/trace-hw_usb.h"
         }
@@ -4682,14 +4682,14 @@ static inline void _nocheck__trace_usb_uhci_qh_load(uint32_t qh)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_qh_load " "qh 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qh);
 #line 4691 "trace/trace-hw_usb.h"
         } else {
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_qh_load " "qh 0x%x" "\n", qh);
 #line 4695 "trace/trace-hw_usb.h"
         }
@@ -4713,14 +4713,14 @@ static inline void _nocheck__trace_usb_uhci_td_load(uint32_t qh, uint32_t td, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_td_load " "qh 0x%x, td 0x%x, ctrl 0x%x, token 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qh, td, ctrl, token);
 #line 4722 "trace/trace-hw_usb.h"
         } else {
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_td_load " "qh 0x%x, td 0x%x, ctrl 0x%x, token 0x%x" "\n", qh, td, ctrl, token);
 #line 4726 "trace/trace-hw_usb.h"
         }
@@ -4744,14 +4744,14 @@ static inline void _nocheck__trace_usb_uhci_td_queue(uint32_t td, uint32_t ctrl,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_td_queue " "td 0x%x, ctrl 0x%x, token 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , td, ctrl, token);
 #line 4753 "trace/trace-hw_usb.h"
         } else {
-#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 134 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_td_queue " "td 0x%x, ctrl 0x%x, token 0x%x" "\n", td, ctrl, token);
 #line 4757 "trace/trace-hw_usb.h"
         }
@@ -4775,14 +4775,14 @@ static inline void _nocheck__trace_usb_uhci_td_nextqh(uint32_t qh, uint32_t td)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_td_nextqh " "qh 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qh, td);
 #line 4784 "trace/trace-hw_usb.h"
         } else {
-#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 135 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_td_nextqh " "qh 0x%x, td 0x%x" "\n", qh, td);
 #line 4788 "trace/trace-hw_usb.h"
         }
@@ -4806,14 +4806,14 @@ static inline void _nocheck__trace_usb_uhci_td_async(uint32_t qh, uint32_t td)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_td_async " "qh 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qh, td);
 #line 4815 "trace/trace-hw_usb.h"
         } else {
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_td_async " "qh 0x%x, td 0x%x" "\n", qh, td);
 #line 4819 "trace/trace-hw_usb.h"
         }
@@ -4837,14 +4837,14 @@ static inline void _nocheck__trace_usb_uhci_td_complete(uint32_t qh, uint32_t td
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uhci_td_complete " "qh 0x%x, td 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , qh, td);
 #line 4846 "trace/trace-hw_usb.h"
         } else {
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uhci_td_complete " "qh 0x%x, td 0x%x" "\n", qh, td);
 #line 4850 "trace/trace-hw_usb.h"
         }
@@ -4868,14 +4868,14 @@ static inline void _nocheck__trace_usb_xhci_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_reset " "=== RESET ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4877 "trace/trace-hw_usb.h"
         } else {
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_reset " "=== RESET ===" "\n");
 #line 4881 "trace/trace-hw_usb.h"
         }
@@ -4899,14 +4899,14 @@ static inline void _nocheck__trace_usb_xhci_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_exit " "=== EXIT ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4908 "trace/trace-hw_usb.h"
         } else {
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_exit " "=== EXIT ===" "\n");
 #line 4912 "trace/trace-hw_usb.h"
         }
@@ -4930,14 +4930,14 @@ static inline void _nocheck__trace_usb_xhci_run(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_run " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4939 "trace/trace-hw_usb.h"
         } else {
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_run " "" "\n");
 #line 4943 "trace/trace-hw_usb.h"
         }
@@ -4961,14 +4961,14 @@ static inline void _nocheck__trace_usb_xhci_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_stop " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4970 "trace/trace-hw_usb.h"
         } else {
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_stop " "" "\n");
 #line 4974 "trace/trace-hw_usb.h"
         }
@@ -4992,14 +4992,14 @@ static inline void _nocheck__trace_usb_xhci_cap_read(uint32_t off, uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_cap_read " "off 0x%04x, ret 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5001 "trace/trace-hw_usb.h"
         } else {
-#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 144 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_cap_read " "off 0x%04x, ret 0x%08x" "\n", off, val);
 #line 5005 "trace/trace-hw_usb.h"
         }
@@ -5023,14 +5023,14 @@ static inline void _nocheck__trace_usb_xhci_oper_read(uint32_t off, uint32_t val
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_oper_read " "off 0x%04x, ret 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5032 "trace/trace-hw_usb.h"
         } else {
-#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 145 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_oper_read " "off 0x%04x, ret 0x%08x" "\n", off, val);
 #line 5036 "trace/trace-hw_usb.h"
         }
@@ -5054,14 +5054,14 @@ static inline void _nocheck__trace_usb_xhci_port_read(uint32_t port, uint32_t of
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_port_read " "port %d, off 0x%04x, ret 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, off, val);
 #line 5063 "trace/trace-hw_usb.h"
         } else {
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_port_read " "port %d, off 0x%04x, ret 0x%08x" "\n", port, off, val);
 #line 5067 "trace/trace-hw_usb.h"
         }
@@ -5085,14 +5085,14 @@ static inline void _nocheck__trace_usb_xhci_runtime_read(uint32_t off, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_runtime_read " "off 0x%04x, ret 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5094 "trace/trace-hw_usb.h"
         } else {
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_runtime_read " "off 0x%04x, ret 0x%08x" "\n", off, val);
 #line 5098 "trace/trace-hw_usb.h"
         }
@@ -5116,14 +5116,14 @@ static inline void _nocheck__trace_usb_xhci_doorbell_read(uint32_t off, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_doorbell_read " "off 0x%04x, ret 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5125 "trace/trace-hw_usb.h"
         } else {
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_doorbell_read " "off 0x%04x, ret 0x%08x" "\n", off, val);
 #line 5129 "trace/trace-hw_usb.h"
         }
@@ -5147,14 +5147,14 @@ static inline void _nocheck__trace_usb_xhci_oper_write(uint32_t off, uint32_t va
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_oper_write " "off 0x%04x, val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5156 "trace/trace-hw_usb.h"
         } else {
-#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 149 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_oper_write " "off 0x%04x, val 0x%08x" "\n", off, val);
 #line 5160 "trace/trace-hw_usb.h"
         }
@@ -5178,14 +5178,14 @@ static inline void _nocheck__trace_usb_xhci_port_write(uint32_t port, uint32_t o
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_port_write " "port %d, off 0x%04x, val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, off, val);
 #line 5187 "trace/trace-hw_usb.h"
         } else {
-#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 150 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_port_write " "port %d, off 0x%04x, val 0x%08x" "\n", port, off, val);
 #line 5191 "trace/trace-hw_usb.h"
         }
@@ -5209,14 +5209,14 @@ static inline void _nocheck__trace_usb_xhci_runtime_write(uint32_t off, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_runtime_write " "off 0x%04x, val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5218 "trace/trace-hw_usb.h"
         } else {
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_runtime_write " "off 0x%04x, val 0x%08x" "\n", off, val);
 #line 5222 "trace/trace-hw_usb.h"
         }
@@ -5240,14 +5240,14 @@ static inline void _nocheck__trace_usb_xhci_doorbell_write(uint32_t off, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_doorbell_write " "off 0x%04x, val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , off, val);
 #line 5249 "trace/trace-hw_usb.h"
         } else {
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_doorbell_write " "off 0x%04x, val 0x%08x" "\n", off, val);
 #line 5253 "trace/trace-hw_usb.h"
         }
@@ -5271,14 +5271,14 @@ static inline void _nocheck__trace_usb_xhci_irq_intx(uint32_t level)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_irq_intx " "level %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level);
 #line 5280 "trace/trace-hw_usb.h"
         } else {
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_irq_intx " "level %d" "\n", level);
 #line 5284 "trace/trace-hw_usb.h"
         }
@@ -5302,14 +5302,14 @@ static inline void _nocheck__trace_usb_xhci_irq_msi(uint32_t nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_irq_msi " "nr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nr);
 #line 5311 "trace/trace-hw_usb.h"
         } else {
-#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 154 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_irq_msi " "nr %d" "\n", nr);
 #line 5315 "trace/trace-hw_usb.h"
         }
@@ -5333,14 +5333,14 @@ static inline void _nocheck__trace_usb_xhci_irq_msix(uint32_t nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_irq_msix " "nr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nr);
 #line 5342 "trace/trace-hw_usb.h"
         } else {
-#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 155 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_irq_msix " "nr %d" "\n", nr);
 #line 5346 "trace/trace-hw_usb.h"
         }
@@ -5364,14 +5364,14 @@ static inline void _nocheck__trace_usb_xhci_irq_msix_use(uint32_t nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_irq_msix_use " "nr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nr);
 #line 5373 "trace/trace-hw_usb.h"
         } else {
-#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 156 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_irq_msix_use " "nr %d" "\n", nr);
 #line 5377 "trace/trace-hw_usb.h"
         }
@@ -5395,14 +5395,14 @@ static inline void _nocheck__trace_usb_xhci_irq_msix_unuse(uint32_t nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_irq_msix_unuse " "nr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , nr);
 #line 5404 "trace/trace-hw_usb.h"
         } else {
-#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 157 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_irq_msix_unuse " "nr %d" "\n", nr);
 #line 5408 "trace/trace-hw_usb.h"
         }
@@ -5426,14 +5426,14 @@ static inline void _nocheck__trace_usb_xhci_queue_event(uint32_t vector, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_queue_event " "v %d, idx %d, %s, %s, p 0x%016" PRIx64 ", s 0x%08x, c 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vector, idx, trb, evt, param, status, control);
 #line 5435 "trace/trace-hw_usb.h"
         } else {
-#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 158 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_queue_event " "v %d, idx %d, %s, %s, p 0x%016" PRIx64 ", s 0x%08x, c 0x%08x" "\n", vector, idx, trb, evt, param, status, control);
 #line 5439 "trace/trace-hw_usb.h"
         }
@@ -5457,14 +5457,14 @@ static inline void _nocheck__trace_usb_xhci_fetch_trb(uint64_t addr, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_fetch_trb " "addr 0x%016" PRIx64 ", %s, p 0x%016" PRIx64 ", s 0x%08x, c 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, name, param, status, control);
 #line 5466 "trace/trace-hw_usb.h"
         } else {
-#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 159 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_fetch_trb " "addr 0x%016" PRIx64 ", %s, p 0x%016" PRIx64 ", s 0x%08x, c 0x%08x" "\n", addr, name, param, status, control);
 #line 5470 "trace/trace-hw_usb.h"
         }
@@ -5488,14 +5488,14 @@ static inline void _nocheck__trace_usb_xhci_port_reset(uint32_t port, bool warm)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_port_reset " "port %d, warm %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, warm);
 #line 5497 "trace/trace-hw_usb.h"
         } else {
-#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 160 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_port_reset " "port %d, warm %d" "\n", port, warm);
 #line 5501 "trace/trace-hw_usb.h"
         }
@@ -5519,14 +5519,14 @@ static inline void _nocheck__trace_usb_xhci_port_link(uint32_t port, uint32_t pl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_port_link " "port %d, pls %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, pls);
 #line 5528 "trace/trace-hw_usb.h"
         } else {
-#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 161 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_port_link " "port %d, pls %d" "\n", port, pls);
 #line 5532 "trace/trace-hw_usb.h"
         }
@@ -5550,14 +5550,14 @@ static inline void _nocheck__trace_usb_xhci_port_notify(uint32_t port, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_port_notify " "port %d, bits 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, pls);
 #line 5559 "trace/trace-hw_usb.h"
         } else {
-#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 162 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_port_notify " "port %d, bits 0x%x" "\n", port, pls);
 #line 5563 "trace/trace-hw_usb.h"
         }
@@ -5581,14 +5581,14 @@ static inline void _nocheck__trace_usb_xhci_slot_enable(uint32_t slotid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_enable " "slotid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid);
 #line 5590 "trace/trace-hw_usb.h"
         } else {
-#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 163 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_enable " "slotid %d" "\n", slotid);
 #line 5594 "trace/trace-hw_usb.h"
         }
@@ -5612,14 +5612,14 @@ static inline void _nocheck__trace_usb_xhci_slot_disable(uint32_t slotid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_disable " "slotid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid);
 #line 5621 "trace/trace-hw_usb.h"
         } else {
-#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 164 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_disable " "slotid %d" "\n", slotid);
 #line 5625 "trace/trace-hw_usb.h"
         }
@@ -5643,14 +5643,14 @@ static inline void _nocheck__trace_usb_xhci_slot_address(uint32_t slotid, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_address " "slotid %d, port %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, port);
 #line 5652 "trace/trace-hw_usb.h"
         } else {
-#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 165 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_address " "slotid %d, port %s" "\n", slotid, port);
 #line 5656 "trace/trace-hw_usb.h"
         }
@@ -5674,14 +5674,14 @@ static inline void _nocheck__trace_usb_xhci_slot_configure(uint32_t slotid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_configure " "slotid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid);
 #line 5683 "trace/trace-hw_usb.h"
         } else {
-#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 166 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_configure " "slotid %d" "\n", slotid);
 #line 5687 "trace/trace-hw_usb.h"
         }
@@ -5705,14 +5705,14 @@ static inline void _nocheck__trace_usb_xhci_slot_evaluate(uint32_t slotid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_evaluate " "slotid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid);
 #line 5714 "trace/trace-hw_usb.h"
         } else {
-#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 167 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_evaluate " "slotid %d" "\n", slotid);
 #line 5718 "trace/trace-hw_usb.h"
         }
@@ -5736,14 +5736,14 @@ static inline void _nocheck__trace_usb_xhci_slot_reset(uint32_t slotid)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_slot_reset " "slotid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid);
 #line 5745 "trace/trace-hw_usb.h"
         } else {
-#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 168 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_slot_reset " "slotid %d" "\n", slotid);
 #line 5749 "trace/trace-hw_usb.h"
         }
@@ -5767,14 +5767,14 @@ static inline void _nocheck__trace_usb_xhci_ep_enable(uint32_t slotid, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_enable " "slotid %d, epid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid);
 #line 5776 "trace/trace-hw_usb.h"
         } else {
-#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 169 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_enable " "slotid %d, epid %d" "\n", slotid, epid);
 #line 5780 "trace/trace-hw_usb.h"
         }
@@ -5798,14 +5798,14 @@ static inline void _nocheck__trace_usb_xhci_ep_disable(uint32_t slotid, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_disable " "slotid %d, epid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid);
 #line 5807 "trace/trace-hw_usb.h"
         } else {
-#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 170 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_disable " "slotid %d, epid %d" "\n", slotid, epid);
 #line 5811 "trace/trace-hw_usb.h"
         }
@@ -5829,14 +5829,14 @@ static inline void _nocheck__trace_usb_xhci_ep_set_dequeue(uint32_t slotid, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_set_dequeue " "slotid %d, epid %d, streamid %d, ptr 0x%016" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid, streamid, param);
 #line 5838 "trace/trace-hw_usb.h"
         } else {
-#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 171 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_set_dequeue " "slotid %d, epid %d, streamid %d, ptr 0x%016" PRIx64 "\n", slotid, epid, streamid, param);
 #line 5842 "trace/trace-hw_usb.h"
         }
@@ -5860,14 +5860,14 @@ static inline void _nocheck__trace_usb_xhci_ep_kick(uint32_t slotid, uint32_t ep
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_kick " "slotid %d, epid %d, streamid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid, streamid);
 #line 5869 "trace/trace-hw_usb.h"
         } else {
-#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 172 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_kick " "slotid %d, epid %d, streamid %d" "\n", slotid, epid, streamid);
 #line 5873 "trace/trace-hw_usb.h"
         }
@@ -5891,14 +5891,14 @@ static inline void _nocheck__trace_usb_xhci_ep_stop(uint32_t slotid, uint32_t ep
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_stop " "slotid %d, epid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid);
 #line 5900 "trace/trace-hw_usb.h"
         } else {
-#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 173 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_stop " "slotid %d, epid %d" "\n", slotid, epid);
 #line 5904 "trace/trace-hw_usb.h"
         }
@@ -5922,14 +5922,14 @@ static inline void _nocheck__trace_usb_xhci_ep_reset(uint32_t slotid, uint32_t e
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_reset " "slotid %d, epid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid);
 #line 5931 "trace/trace-hw_usb.h"
         } else {
-#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 174 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_reset " "slotid %d, epid %d" "\n", slotid, epid);
 #line 5935 "trace/trace-hw_usb.h"
         }
@@ -5953,14 +5953,14 @@ static inline void _nocheck__trace_usb_xhci_ep_state(uint32_t slotid, uint32_t e
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_ep_state " "slotid %d, epid %d, %s -> %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slotid, epid, os, ns);
 #line 5962 "trace/trace-hw_usb.h"
         } else {
-#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 175 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_ep_state " "slotid %d, epid %d, %s -> %s" "\n", slotid, epid, os, ns);
 #line 5966 "trace/trace-hw_usb.h"
         }
@@ -5984,14 +5984,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_start(void * xfer, uint32_t slo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_start " "%p: slotid %d, epid %d, streamid %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer, slotid, epid, streamid);
 #line 5993 "trace/trace-hw_usb.h"
         } else {
-#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 176 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_start " "%p: slotid %d, epid %d, streamid %d" "\n", xfer, slotid, epid, streamid);
 #line 5997 "trace/trace-hw_usb.h"
         }
@@ -6015,14 +6015,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_async(void * xfer)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_async " "%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer);
 #line 6024 "trace/trace-hw_usb.h"
         } else {
-#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 177 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_async " "%p" "\n", xfer);
 #line 6028 "trace/trace-hw_usb.h"
         }
@@ -6046,14 +6046,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_nak(void * xfer)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_nak " "%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer);
 #line 6055 "trace/trace-hw_usb.h"
         } else {
-#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 178 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_nak " "%p" "\n", xfer);
 #line 6059 "trace/trace-hw_usb.h"
         }
@@ -6077,14 +6077,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_retry(void * xfer)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_retry " "%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer);
 #line 6086 "trace/trace-hw_usb.h"
         } else {
-#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 179 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_retry " "%p" "\n", xfer);
 #line 6090 "trace/trace-hw_usb.h"
         }
@@ -6108,14 +6108,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_success(void * xfer, uint32_t b
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_success " "%p: len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer, bytes);
 #line 6117 "trace/trace-hw_usb.h"
         } else {
-#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 180 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_success " "%p: len %d" "\n", xfer, bytes);
 #line 6121 "trace/trace-hw_usb.h"
         }
@@ -6139,14 +6139,14 @@ static inline void _nocheck__trace_usb_xhci_xfer_error(void * xfer, uint32_t ret
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_xfer_error " "%p: ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , xfer, ret);
 #line 6148 "trace/trace-hw_usb.h"
         } else {
-#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 181 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_xfer_error " "%p: ret %d" "\n", xfer, ret);
 #line 6152 "trace/trace-hw_usb.h"
         }
@@ -6170,14 +6170,14 @@ static inline void _nocheck__trace_usb_xhci_unimplemented(const char * item, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_unimplemented " "%s (0x%x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , item, nr);
 #line 6179 "trace/trace-hw_usb.h"
         } else {
-#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 182 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_unimplemented " "%s (0x%x)" "\n", item, nr);
 #line 6183 "trace/trace-hw_usb.h"
         }
@@ -6201,14 +6201,14 @@ static inline void _nocheck__trace_usb_xhci_enforced_limit(const char * item)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_xhci_enforced_limit " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , item);
 #line 6210 "trace/trace-hw_usb.h"
         } else {
-#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 183 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_xhci_enforced_limit " "%s" "\n", item);
 #line 6214 "trace/trace-hw_usb.h"
         }
@@ -6232,14 +6232,14 @@ static inline void _nocheck__trace_usb_dwc2_update_irq(uint32_t level)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_update_irq " "level=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level);
 #line 6241 "trace/trace-hw_usb.h"
         } else {
-#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 186 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_update_irq " "level=%d" "\n", level);
 #line 6245 "trace/trace-hw_usb.h"
         }
@@ -6263,14 +6263,14 @@ static inline void _nocheck__trace_usb_dwc2_raise_global_irq(uint32_t intr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_raise_global_irq " "0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intr);
 #line 6272 "trace/trace-hw_usb.h"
         } else {
-#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 187 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_raise_global_irq " "0x%08x" "\n", intr);
 #line 6276 "trace/trace-hw_usb.h"
         }
@@ -6294,14 +6294,14 @@ static inline void _nocheck__trace_usb_dwc2_lower_global_irq(uint32_t intr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_lower_global_irq " "0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intr);
 #line 6303 "trace/trace-hw_usb.h"
         } else {
-#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 188 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_lower_global_irq " "0x%08x" "\n", intr);
 #line 6307 "trace/trace-hw_usb.h"
         }
@@ -6325,14 +6325,14 @@ static inline void _nocheck__trace_usb_dwc2_raise_host_irq(uint32_t intr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_raise_host_irq " "0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intr);
 #line 6334 "trace/trace-hw_usb.h"
         } else {
-#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 189 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_raise_host_irq " "0x%04x" "\n", intr);
 #line 6338 "trace/trace-hw_usb.h"
         }
@@ -6356,14 +6356,14 @@ static inline void _nocheck__trace_usb_dwc2_lower_host_irq(uint32_t intr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_lower_host_irq " "0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intr);
 #line 6365 "trace/trace-hw_usb.h"
         } else {
-#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 190 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_lower_host_irq " "0x%04x" "\n", intr);
 #line 6369 "trace/trace-hw_usb.h"
         }
@@ -6387,14 +6387,14 @@ static inline void _nocheck__trace_usb_dwc2_sof(int64_t next)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_sof " "next SOF %" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , next);
 #line 6396 "trace/trace-hw_usb.h"
         } else {
-#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 191 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_sof " "next SOF %" PRId64 "\n", next);
 #line 6400 "trace/trace-hw_usb.h"
         }
@@ -6418,14 +6418,14 @@ static inline void _nocheck__trace_usb_dwc2_bus_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_bus_start " "start SOFs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6427 "trace/trace-hw_usb.h"
         } else {
-#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 192 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_bus_start " "start SOFs" "\n");
 #line 6431 "trace/trace-hw_usb.h"
         }
@@ -6449,14 +6449,14 @@ static inline void _nocheck__trace_usb_dwc2_bus_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 193 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 193 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_bus_stop " "stop SOFs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6458 "trace/trace-hw_usb.h"
         } else {
-#line 193 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 193 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_bus_stop " "stop SOFs" "\n");
 #line 6462 "trace/trace-hw_usb.h"
         }
@@ -6480,14 +6480,14 @@ static inline void _nocheck__trace_usb_dwc2_find_device(uint8_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_find_device " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 6489 "trace/trace-hw_usb.h"
         } else {
-#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 194 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_find_device " "%d" "\n", addr);
 #line 6493 "trace/trace-hw_usb.h"
         }
@@ -6511,14 +6511,14 @@ static inline void _nocheck__trace_usb_dwc2_port_disabled(uint32_t pnum)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_port_disabled " "port %d disabled" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pnum);
 #line 6520 "trace/trace-hw_usb.h"
         } else {
-#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 195 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_port_disabled " "port %d disabled" "\n", pnum);
 #line 6524 "trace/trace-hw_usb.h"
         }
@@ -6542,14 +6542,14 @@ static inline void _nocheck__trace_usb_dwc2_device_found(uint32_t pnum)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_device_found " "device found on port %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pnum);
 #line 6551 "trace/trace-hw_usb.h"
         } else {
-#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 196 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_device_found " "device found on port %d" "\n", pnum);
 #line 6555 "trace/trace-hw_usb.h"
         }
@@ -6573,14 +6573,14 @@ static inline void _nocheck__trace_usb_dwc2_device_not_found(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_device_not_found " "device not found" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 6582 "trace/trace-hw_usb.h"
         } else {
-#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 197 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_device_not_found " "device not found" "\n");
 #line 6586 "trace/trace-hw_usb.h"
         }
@@ -6604,14 +6604,14 @@ static inline void _nocheck__trace_usb_dwc2_handle_packet(uint32_t chan, void * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_handle_packet " "ch %d dev %p pkt %p ep %d type %s dir %s mps %d len %d pcnt %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan, dev, pkt, ep, type, dir, mps, len, pcnt);
 #line 6613 "trace/trace-hw_usb.h"
         } else {
-#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 198 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_handle_packet " "ch %d dev %p pkt %p ep %d type %s dir %s mps %d len %d pcnt %d" "\n", chan, dev, pkt, ep, type, dir, mps, len, pcnt);
 #line 6617 "trace/trace-hw_usb.h"
         }
@@ -6635,14 +6635,14 @@ static inline void _nocheck__trace_usb_dwc2_memory_read(uint32_t addr, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_memory_read " "addr %d len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len);
 #line 6644 "trace/trace-hw_usb.h"
         } else {
-#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 199 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_memory_read " "addr %d len %d" "\n", addr, len);
 #line 6648 "trace/trace-hw_usb.h"
         }
@@ -6666,14 +6666,14 @@ static inline void _nocheck__trace_usb_dwc2_packet_status(const char * status, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_packet_status " "status %s len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status, len);
 #line 6675 "trace/trace-hw_usb.h"
         } else {
-#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 200 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_packet_status " "status %s len %d" "\n", status, len);
 #line 6679 "trace/trace-hw_usb.h"
         }
@@ -6697,14 +6697,14 @@ static inline void _nocheck__trace_usb_dwc2_packet_error(const char * status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_packet_error " "ERROR %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 6706 "trace/trace-hw_usb.h"
         } else {
-#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 201 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_packet_error " "ERROR %s" "\n", status);
 #line 6710 "trace/trace-hw_usb.h"
         }
@@ -6728,14 +6728,14 @@ static inline void _nocheck__trace_usb_dwc2_async_packet(void * pkt, uint32_t ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_async_packet " "pkt %p ch %d dev %p ep %d %s len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pkt, chan, dev, ep, dir, len);
 #line 6737 "trace/trace-hw_usb.h"
         } else {
-#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 202 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_async_packet " "pkt %p ch %d dev %p ep %d %s len %d" "\n", pkt, chan, dev, ep, dir, len);
 #line 6741 "trace/trace-hw_usb.h"
         }
@@ -6759,14 +6759,14 @@ static inline void _nocheck__trace_usb_dwc2_memory_write(uint32_t addr, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_memory_write " "addr %d len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len);
 #line 6768 "trace/trace-hw_usb.h"
         } else {
-#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 203 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_memory_write " "addr %d len %d" "\n", addr, len);
 #line 6772 "trace/trace-hw_usb.h"
         }
@@ -6790,14 +6790,14 @@ static inline void _nocheck__trace_usb_dwc2_packet_done(const char * status, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_packet_done " "status %s actual %d len %d pcnt %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status, actual, len, pcnt);
 #line 6799 "trace/trace-hw_usb.h"
         } else {
-#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 204 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_packet_done " "status %s actual %d len %d pcnt %d" "\n", status, actual, len, pcnt);
 #line 6803 "trace/trace-hw_usb.h"
         }
@@ -6821,14 +6821,14 @@ static inline void _nocheck__trace_usb_dwc2_packet_next(const char * status, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_packet_next " "status %s len %d pcnt %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status, len, pcnt);
 #line 6830 "trace/trace-hw_usb.h"
         } else {
-#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 205 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_packet_next " "status %s len %d pcnt %d" "\n", status, len, pcnt);
 #line 6834 "trace/trace-hw_usb.h"
         }
@@ -6852,14 +6852,14 @@ static inline void _nocheck__trace_usb_dwc2_attach(void * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_attach " "port %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 6861 "trace/trace-hw_usb.h"
         } else {
-#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 206 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_attach " "port %p" "\n", port);
 #line 6865 "trace/trace-hw_usb.h"
         }
@@ -6883,14 +6883,14 @@ static inline void _nocheck__trace_usb_dwc2_attach_speed(const char * speed)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_attach_speed " "%s-speed device attached" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , speed);
 #line 6892 "trace/trace-hw_usb.h"
         } else {
-#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 207 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_attach_speed " "%s-speed device attached" "\n", speed);
 #line 6896 "trace/trace-hw_usb.h"
         }
@@ -6914,14 +6914,14 @@ static inline void _nocheck__trace_usb_dwc2_detach(void * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_detach " "port %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 6923 "trace/trace-hw_usb.h"
         } else {
-#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 208 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_detach " "port %p" "\n", port);
 #line 6927 "trace/trace-hw_usb.h"
         }
@@ -6945,14 +6945,14 @@ static inline void _nocheck__trace_usb_dwc2_child_detach(void * port, void * chi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_child_detach " "port %p child %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, child);
 #line 6954 "trace/trace-hw_usb.h"
         } else {
-#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 209 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_child_detach " "port %p child %p" "\n", port, child);
 #line 6958 "trace/trace-hw_usb.h"
         }
@@ -6976,14 +6976,14 @@ static inline void _nocheck__trace_usb_dwc2_wakeup(void * port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_wakeup " "port %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port);
 #line 6985 "trace/trace-hw_usb.h"
         } else {
-#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 210 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_wakeup " "port %p" "\n", port);
 #line 6989 "trace/trace-hw_usb.h"
         }
@@ -7007,14 +7007,14 @@ static inline void _nocheck__trace_usb_dwc2_async_packet_complete(void * port, v
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_async_packet_complete " "port %p packet %p ch %d dev %p ep %d %s len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , port, pkt, chan, dev, ep, dir, len);
 #line 7016 "trace/trace-hw_usb.h"
         } else {
-#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 211 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_async_packet_complete " "port %p packet %p ch %d dev %p ep %d %s len %d" "\n", port, pkt, chan, dev, ep, dir, len);
 #line 7020 "trace/trace-hw_usb.h"
         }
@@ -7038,14 +7038,14 @@ static inline void _nocheck__trace_usb_dwc2_work_bh(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_work_bh " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7047 "trace/trace-hw_usb.h"
         } else {
-#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 212 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_work_bh " "" "\n");
 #line 7051 "trace/trace-hw_usb.h"
         }
@@ -7069,14 +7069,14 @@ static inline void _nocheck__trace_usb_dwc2_work_bh_service(uint32_t first, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_work_bh_service " "first %d servicing %d dev %p ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , first, current, dev, ep);
 #line 7078 "trace/trace-hw_usb.h"
         } else {
-#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 213 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_work_bh_service " "first %d servicing %d dev %p ep %d" "\n", first, current, dev, ep);
 #line 7082 "trace/trace-hw_usb.h"
         }
@@ -7100,14 +7100,14 @@ static inline void _nocheck__trace_usb_dwc2_work_bh_next(uint32_t chan)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_work_bh_next " "next %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan);
 #line 7109 "trace/trace-hw_usb.h"
         } else {
-#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 214 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_work_bh_next " "next %d" "\n", chan);
 #line 7113 "trace/trace-hw_usb.h"
         }
@@ -7131,14 +7131,14 @@ static inline void _nocheck__trace_usb_dwc2_enable_chan(uint32_t chan, void * de
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_enable_chan " "ch %d dev %p pkt %p ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , chan, dev, pkt, ep);
 #line 7140 "trace/trace-hw_usb.h"
         } else {
-#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 215 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_enable_chan " "ch %d dev %p pkt %p ep %d" "\n", chan, dev, pkt, ep);
 #line 7144 "trace/trace-hw_usb.h"
         }
@@ -7162,14 +7162,14 @@ static inline void _nocheck__trace_usb_dwc2_glbreg_read(uint64_t addr, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_glbreg_read " " 0x%04" PRIx64 " %s val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val);
 #line 7171 "trace/trace-hw_usb.h"
         } else {
-#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 216 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_glbreg_read " " 0x%04" PRIx64 " %s val 0x%08x" "\n", addr, reg, val);
 #line 7175 "trace/trace-hw_usb.h"
         }
@@ -7193,14 +7193,14 @@ static inline void _nocheck__trace_usb_dwc2_glbreg_write(uint64_t addr, const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_glbreg_write " "0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val, old, result);
 #line 7202 "trace/trace-hw_usb.h"
         } else {
-#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 217 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_glbreg_write " "0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, reg, val, old, result);
 #line 7206 "trace/trace-hw_usb.h"
         }
@@ -7224,14 +7224,14 @@ static inline void _nocheck__trace_usb_dwc2_fszreg_read(uint64_t addr, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_fszreg_read " " 0x%04" PRIx64 " HPTXFSIZ  val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val);
 #line 7233 "trace/trace-hw_usb.h"
         } else {
-#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 218 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_fszreg_read " " 0x%04" PRIx64 " HPTXFSIZ  val 0x%08x" "\n", addr, val);
 #line 7237 "trace/trace-hw_usb.h"
         }
@@ -7255,14 +7255,14 @@ static inline void _nocheck__trace_usb_dwc2_fszreg_write(uint64_t addr, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_fszreg_write " "0x%04" PRIx64 " HPTXFSIZ  val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, old, result);
 #line 7264 "trace/trace-hw_usb.h"
         } else {
-#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 219 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_fszreg_write " "0x%04" PRIx64 " HPTXFSIZ  val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, val, old, result);
 #line 7268 "trace/trace-hw_usb.h"
         }
@@ -7286,14 +7286,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg0_read(uint64_t addr, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg0_read " "  0x%04" PRIx64 " %s val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val);
 #line 7295 "trace/trace-hw_usb.h"
         } else {
-#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 220 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg0_read " "  0x%04" PRIx64 " %s val 0x%08x" "\n", addr, reg, val);
 #line 7299 "trace/trace-hw_usb.h"
         }
@@ -7317,14 +7317,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg0_write(uint64_t addr, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg0_write " " 0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val, old, result);
 #line 7326 "trace/trace-hw_usb.h"
         } else {
-#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 221 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg0_write " " 0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, reg, val, old, result);
 #line 7330 "trace/trace-hw_usb.h"
         }
@@ -7348,14 +7348,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg1_read(uint64_t addr, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg1_read " "  0x%04" PRIx64 " %s%" PRId64 " val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, chan, val);
 #line 7357 "trace/trace-hw_usb.h"
         } else {
-#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 222 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg1_read " "  0x%04" PRIx64 " %s%" PRId64 " val 0x%08x" "\n", addr, reg, chan, val);
 #line 7361 "trace/trace-hw_usb.h"
         }
@@ -7379,14 +7379,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg1_write(uint64_t addr, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg1_write " " 0x%04" PRIx64 " %s%" PRId64 " val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, chan, val, old, result);
 #line 7388 "trace/trace-hw_usb.h"
         } else {
-#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 223 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg1_write " " 0x%04" PRIx64 " %s%" PRId64 " val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, reg, chan, val, old, result);
 #line 7392 "trace/trace-hw_usb.h"
         }
@@ -7410,14 +7410,14 @@ static inline void _nocheck__trace_usb_dwc2_pcgreg_read(uint64_t addr, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_pcgreg_read " " 0x%04" PRIx64 " %s val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val);
 #line 7419 "trace/trace-hw_usb.h"
         } else {
-#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 224 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_pcgreg_read " " 0x%04" PRIx64 " %s val 0x%08x" "\n", addr, reg, val);
 #line 7423 "trace/trace-hw_usb.h"
         }
@@ -7441,14 +7441,14 @@ static inline void _nocheck__trace_usb_dwc2_pcgreg_write(uint64_t addr, const ch
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_pcgreg_write " "0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, reg, val, old, result);
 #line 7450 "trace/trace-hw_usb.h"
         } else {
-#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 225 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_pcgreg_write " "0x%04" PRIx64 " %s val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, reg, val, old, result);
 #line 7454 "trace/trace-hw_usb.h"
         }
@@ -7472,14 +7472,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg2_read(uint64_t addr, uint64_t f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg2_read " "  0x%04" PRIx64 " FIFO%" PRId64 "     val 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, fifo, val);
 #line 7481 "trace/trace-hw_usb.h"
         } else {
-#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 226 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg2_read " "  0x%04" PRIx64 " FIFO%" PRId64 "     val 0x%08x" "\n", addr, fifo, val);
 #line 7485 "trace/trace-hw_usb.h"
         }
@@ -7503,14 +7503,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg2_write(uint64_t addr, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg2_write " " 0x%04" PRIx64 " FIFO%" PRId64 "     val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, fifo, val, old, result);
 #line 7512 "trace/trace-hw_usb.h"
         } else {
-#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 227 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg2_write " " 0x%04" PRIx64 " FIFO%" PRId64 "     val 0x%08" PRIx64 " old 0x%08x result 0x%08" PRIx64 "\n", addr, fifo, val, old, result);
 #line 7516 "trace/trace-hw_usb.h"
         }
@@ -7534,14 +7534,14 @@ static inline void _nocheck__trace_usb_dwc2_hreg0_action(const char * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_hreg0_action " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 7543 "trace/trace-hw_usb.h"
         } else {
-#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 228 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_hreg0_action " "%s" "\n", s);
 #line 7547 "trace/trace-hw_usb.h"
         }
@@ -7565,14 +7565,14 @@ static inline void _nocheck__trace_usb_dwc2_wakeup_endpoint(void * ep, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_wakeup_endpoint " "endp %p stream %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep, stream);
 #line 7574 "trace/trace-hw_usb.h"
         } else {
-#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 229 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_wakeup_endpoint " "endp %p stream %d" "\n", ep, stream);
 #line 7578 "trace/trace-hw_usb.h"
         }
@@ -7596,14 +7596,14 @@ static inline void _nocheck__trace_usb_dwc2_work_timer(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_work_timer " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7605 "trace/trace-hw_usb.h"
         } else {
-#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 230 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_work_timer " "" "\n");
 #line 7609 "trace/trace-hw_usb.h"
         }
@@ -7627,14 +7627,14 @@ static inline void _nocheck__trace_usb_dwc2_reset_enter(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_reset_enter " "=== RESET enter ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7636 "trace/trace-hw_usb.h"
         } else {
-#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 231 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_reset_enter " "=== RESET enter ===" "\n");
 #line 7640 "trace/trace-hw_usb.h"
         }
@@ -7658,14 +7658,14 @@ static inline void _nocheck__trace_usb_dwc2_reset_hold(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_reset_hold " "=== RESET hold ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7667 "trace/trace-hw_usb.h"
         } else {
-#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 232 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_reset_hold " "=== RESET hold ===" "\n");
 #line 7671 "trace/trace-hw_usb.h"
         }
@@ -7689,14 +7689,14 @@ static inline void _nocheck__trace_usb_dwc2_reset_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_dwc2_reset_exit " "=== RESET exit ===" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 7698 "trace/trace-hw_usb.h"
         } else {
-#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 233 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_dwc2_reset_exit " "=== RESET exit ===" "\n");
 #line 7702 "trace/trace-hw_usb.h"
         }
@@ -7720,14 +7720,14 @@ static inline void _nocheck__trace_usb_desc_device(int addr, int len, int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_device " "dev %d query device, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len, ret);
 #line 7729 "trace/trace-hw_usb.h"
         } else {
-#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 236 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_device " "dev %d query device, len %d, ret %d" "\n", addr, len, ret);
 #line 7733 "trace/trace-hw_usb.h"
         }
@@ -7751,14 +7751,14 @@ static inline void _nocheck__trace_usb_desc_device_qualifier(int addr, int len, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_device_qualifier " "dev %d query device qualifier, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len, ret);
 #line 7760 "trace/trace-hw_usb.h"
         } else {
-#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 237 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_device_qualifier " "dev %d query device qualifier, len %d, ret %d" "\n", addr, len, ret);
 #line 7764 "trace/trace-hw_usb.h"
         }
@@ -7782,14 +7782,14 @@ static inline void _nocheck__trace_usb_desc_config(int addr, int index, int len,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_config " "dev %d query config %d, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, index, len, ret);
 #line 7791 "trace/trace-hw_usb.h"
         } else {
-#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 238 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_config " "dev %d query config %d, len %d, ret %d" "\n", addr, index, len, ret);
 #line 7795 "trace/trace-hw_usb.h"
         }
@@ -7813,14 +7813,14 @@ static inline void _nocheck__trace_usb_desc_other_speed_config(int addr, int ind
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_other_speed_config " "dev %d query config %d, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, index, len, ret);
 #line 7822 "trace/trace-hw_usb.h"
         } else {
-#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 239 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_other_speed_config " "dev %d query config %d, len %d, ret %d" "\n", addr, index, len, ret);
 #line 7826 "trace/trace-hw_usb.h"
         }
@@ -7844,14 +7844,14 @@ static inline void _nocheck__trace_usb_desc_string(int addr, int index, int len,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_string " "dev %d query string %d, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, index, len, ret);
 #line 7853 "trace/trace-hw_usb.h"
         } else {
-#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 240 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_string " "dev %d query string %d, len %d, ret %d" "\n", addr, index, len, ret);
 #line 7857 "trace/trace-hw_usb.h"
         }
@@ -7875,14 +7875,14 @@ static inline void _nocheck__trace_usb_desc_bos(int addr, int len, int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_bos " "dev %d bos, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, len, ret);
 #line 7884 "trace/trace-hw_usb.h"
         } else {
-#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 241 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_bos " "dev %d bos, len %d, ret %d" "\n", addr, len, ret);
 #line 7888 "trace/trace-hw_usb.h"
         }
@@ -7906,14 +7906,14 @@ static inline void _nocheck__trace_usb_desc_msos(int addr, int index, int len, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_desc_msos " "dev %d msos, index 0x%x, len %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, index, len, ret);
 #line 7915 "trace/trace-hw_usb.h"
         } else {
-#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 242 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_desc_msos " "dev %d msos, index 0x%x, len %d, ret %d" "\n", addr, index, len, ret);
 #line 7919 "trace/trace-hw_usb.h"
         }
@@ -7937,14 +7937,14 @@ static inline void _nocheck__trace_usb_set_addr(int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_set_addr " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 7946 "trace/trace-hw_usb.h"
         } else {
-#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 243 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_set_addr " "dev %d" "\n", addr);
 #line 7950 "trace/trace-hw_usb.h"
         }
@@ -7968,14 +7968,14 @@ static inline void _nocheck__trace_usb_set_config(int addr, int config, int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_set_config " "dev %d, config %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, config, ret);
 #line 7977 "trace/trace-hw_usb.h"
         } else {
-#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 244 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_set_config " "dev %d, config %d, ret %d" "\n", addr, config, ret);
 #line 7981 "trace/trace-hw_usb.h"
         }
@@ -7999,14 +7999,14 @@ static inline void _nocheck__trace_usb_set_interface(int addr, int iface, int al
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_set_interface " "dev %d, interface %d, altsetting %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, iface, alt, ret);
 #line 8008 "trace/trace-hw_usb.h"
         } else {
-#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 245 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_set_interface " "dev %d, interface %d, altsetting %d, ret %d" "\n", addr, iface, alt, ret);
 #line 8012 "trace/trace-hw_usb.h"
         }
@@ -8030,14 +8030,14 @@ static inline void _nocheck__trace_usb_clear_device_feature(int addr, int featur
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_clear_device_feature " "dev %d, feature %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, feature, ret);
 #line 8039 "trace/trace-hw_usb.h"
         } else {
-#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 246 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_clear_device_feature " "dev %d, feature %d, ret %d" "\n", addr, feature, ret);
 #line 8043 "trace/trace-hw_usb.h"
         }
@@ -8061,14 +8061,14 @@ static inline void _nocheck__trace_usb_set_device_feature(int addr, int feature,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_set_device_feature " "dev %d, feature %d, ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, feature, ret);
 #line 8070 "trace/trace-hw_usb.h"
         } else {
-#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 247 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_set_device_feature " "dev %d, feature %d, ret %d" "\n", addr, feature, ret);
 #line 8074 "trace/trace-hw_usb.h"
         }
@@ -8092,14 +8092,14 @@ static inline void _nocheck__trace_usb_hub_reset(int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_reset " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 8101 "trace/trace-hw_usb.h"
         } else {
-#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 250 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_reset " "dev %d" "\n", addr);
 #line 8105 "trace/trace-hw_usb.h"
         }
@@ -8123,14 +8123,14 @@ static inline void _nocheck__trace_usb_hub_control(int addr, int request, int va
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_control " "dev %d, req 0x%x, value %d, index %d, langth %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, request, value, index, length);
 #line 8132 "trace/trace-hw_usb.h"
         } else {
-#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 251 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_control " "dev %d, req 0x%x, value %d, index %d, langth %d" "\n", addr, request, value, index, length);
 #line 8136 "trace/trace-hw_usb.h"
         }
@@ -8154,14 +8154,14 @@ static inline void _nocheck__trace_usb_hub_get_port_status(int addr, int nr, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_get_port_status " "dev %d, port %d, status 0x%x, changed 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nr, status, changed);
 #line 8163 "trace/trace-hw_usb.h"
         } else {
-#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 252 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_get_port_status " "dev %d, port %d, status 0x%x, changed 0x%x" "\n", addr, nr, status, changed);
 #line 8167 "trace/trace-hw_usb.h"
         }
@@ -8185,14 +8185,14 @@ static inline void _nocheck__trace_usb_hub_set_port_feature(int addr, int nr, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_set_port_feature " "dev %d, port %d, feature %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nr, f);
 #line 8194 "trace/trace-hw_usb.h"
         } else {
-#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 253 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_set_port_feature " "dev %d, port %d, feature %s" "\n", addr, nr, f);
 #line 8198 "trace/trace-hw_usb.h"
         }
@@ -8216,14 +8216,14 @@ static inline void _nocheck__trace_usb_hub_clear_port_feature(int addr, int nr, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_clear_port_feature " "dev %d, port %d, feature %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nr, f);
 #line 8225 "trace/trace-hw_usb.h"
         } else {
-#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 254 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_clear_port_feature " "dev %d, port %d, feature %s" "\n", addr, nr, f);
 #line 8229 "trace/trace-hw_usb.h"
         }
@@ -8247,14 +8247,14 @@ static inline void _nocheck__trace_usb_hub_attach(int addr, int nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_attach " "dev %d, port %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nr);
 #line 8256 "trace/trace-hw_usb.h"
         } else {
-#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 255 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_attach " "dev %d, port %d" "\n", addr, nr);
 #line 8260 "trace/trace-hw_usb.h"
         }
@@ -8278,14 +8278,14 @@ static inline void _nocheck__trace_usb_hub_detach(int addr, int nr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_detach " "dev %d, port %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nr);
 #line 8287 "trace/trace-hw_usb.h"
         } else {
-#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 256 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_detach " "dev %d, port %d" "\n", addr, nr);
 #line 8291 "trace/trace-hw_usb.h"
         }
@@ -8309,14 +8309,14 @@ static inline void _nocheck__trace_usb_hub_status_report(int addr, int status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_hub_status_report " "dev %d, status 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, status);
 #line 8318 "trace/trace-hw_usb.h"
         } else {
-#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 257 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_hub_status_report " "dev %d, status 0x%x" "\n", addr, status);
 #line 8322 "trace/trace-hw_usb.h"
         }
@@ -8340,14 +8340,14 @@ static inline void _nocheck__trace_usb_msd_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_reset " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8349 "trace/trace-hw_usb.h"
         } else {
-#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 260 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_reset " "" "\n");
 #line 8353 "trace/trace-hw_usb.h"
         }
@@ -8371,14 +8371,14 @@ static inline void _nocheck__trace_usb_msd_maxlun(unsigned maxlun)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 261 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 261 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_maxlun " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , maxlun);
 #line 8380 "trace/trace-hw_usb.h"
         } else {
-#line 261 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 261 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_maxlun " "%d" "\n", maxlun);
 #line 8384 "trace/trace-hw_usb.h"
         }
@@ -8402,14 +8402,14 @@ static inline void _nocheck__trace_usb_msd_send_status(unsigned status, unsigned
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 262 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 262 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_send_status " "status %d, tag 0x%x, len %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status, tag, size);
 #line 8411 "trace/trace-hw_usb.h"
         } else {
-#line 262 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 262 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_send_status " "status %d, tag 0x%x, len %zd" "\n", status, tag, size);
 #line 8415 "trace/trace-hw_usb.h"
         }
@@ -8433,14 +8433,14 @@ static inline void _nocheck__trace_usb_msd_data_in(unsigned packet, unsigned rem
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_data_in " "%d/%d (scsi %d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , packet, remaining, total);
 #line 8442 "trace/trace-hw_usb.h"
         } else {
-#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 263 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_data_in " "%d/%d (scsi %d)" "\n", packet, remaining, total);
 #line 8446 "trace/trace-hw_usb.h"
         }
@@ -8464,14 +8464,14 @@ static inline void _nocheck__trace_usb_msd_data_out(unsigned packet, unsigned re
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_data_out " "%d/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , packet, remaining);
 #line 8473 "trace/trace-hw_usb.h"
         } else {
-#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 264 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_data_out " "%d/%d" "\n", packet, remaining);
 #line 8477 "trace/trace-hw_usb.h"
         }
@@ -8495,14 +8495,14 @@ static inline void _nocheck__trace_usb_msd_packet_async(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_packet_async " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8504 "trace/trace-hw_usb.h"
         } else {
-#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 265 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_packet_async " "" "\n");
 #line 8508 "trace/trace-hw_usb.h"
         }
@@ -8526,14 +8526,14 @@ static inline void _nocheck__trace_usb_msd_packet_complete(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_packet_complete " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8535 "trace/trace-hw_usb.h"
         } else {
-#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 266 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_packet_complete " "" "\n");
 #line 8539 "trace/trace-hw_usb.h"
         }
@@ -8557,14 +8557,14 @@ static inline void _nocheck__trace_usb_msd_cmd_submit(unsigned lun, unsigned tag
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_cmd_submit " "lun %u, tag 0x%x, flags 0x%08x, len %d, data-len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lun, tag, flags, len, data_len);
 #line 8566 "trace/trace-hw_usb.h"
         } else {
-#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 267 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_cmd_submit " "lun %u, tag 0x%x, flags 0x%08x, len %d, data-len %d" "\n", lun, tag, flags, len, data_len);
 #line 8570 "trace/trace-hw_usb.h"
         }
@@ -8588,14 +8588,14 @@ static inline void _nocheck__trace_usb_msd_cmd_complete(unsigned status, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_cmd_complete " "status %d, tag 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status, tag);
 #line 8597 "trace/trace-hw_usb.h"
         } else {
-#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 268 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_cmd_complete " "status %d, tag 0x%x" "\n", status, tag);
 #line 8601 "trace/trace-hw_usb.h"
         }
@@ -8619,14 +8619,14 @@ static inline void _nocheck__trace_usb_msd_cmd_cancel(unsigned tag)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_cmd_cancel " "tag 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tag);
 #line 8628 "trace/trace-hw_usb.h"
         } else {
-#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 269 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_cmd_cancel " "tag 0x%x" "\n", tag);
 #line 8632 "trace/trace-hw_usb.h"
         }
@@ -8650,14 +8650,14 @@ static inline void _nocheck__trace_usb_msd_fatal_error(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_msd_fatal_error " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 8659 "trace/trace-hw_usb.h"
         } else {
-#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 270 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_msd_fatal_error " "" "\n");
 #line 8663 "trace/trace-hw_usb.h"
         }
@@ -8681,14 +8681,14 @@ static inline void _nocheck__trace_usb_uas_reset(int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_reset " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 8690 "trace/trace-hw_usb.h"
         } else {
-#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 273 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_reset " "dev %d" "\n", addr);
 #line 8694 "trace/trace-hw_usb.h"
         }
@@ -8712,14 +8712,14 @@ static inline void _nocheck__trace_usb_uas_command(int addr, uint16_t tag, int l
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_command " "dev %d, tag 0x%x, lun %d, lun64 0x%08x-0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, lun, lun64_1, lun64_2);
 #line 8721 "trace/trace-hw_usb.h"
         } else {
-#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 274 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_command " "dev %d, tag 0x%x, lun %d, lun64 0x%08x-0x%08x" "\n", addr, tag, lun, lun64_1, lun64_2);
 #line 8725 "trace/trace-hw_usb.h"
         }
@@ -8743,14 +8743,14 @@ static inline void _nocheck__trace_usb_uas_response(int addr, uint16_t tag, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_response " "dev %d, tag 0x%x, code 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, code);
 #line 8752 "trace/trace-hw_usb.h"
         } else {
-#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 275 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_response " "dev %d, tag 0x%x, code 0x%x" "\n", addr, tag, code);
 #line 8756 "trace/trace-hw_usb.h"
         }
@@ -8774,14 +8774,14 @@ static inline void _nocheck__trace_usb_uas_sense(int addr, uint16_t tag, uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_sense " "dev %d, tag 0x%x, status 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, status);
 #line 8783 "trace/trace-hw_usb.h"
         } else {
-#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 276 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_sense " "dev %d, tag 0x%x, status 0x%x" "\n", addr, tag, status);
 #line 8787 "trace/trace-hw_usb.h"
         }
@@ -8805,14 +8805,14 @@ static inline void _nocheck__trace_usb_uas_read_ready(int addr, uint16_t tag)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_read_ready " "dev %d, tag 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag);
 #line 8814 "trace/trace-hw_usb.h"
         } else {
-#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 277 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_read_ready " "dev %d, tag 0x%x" "\n", addr, tag);
 #line 8818 "trace/trace-hw_usb.h"
         }
@@ -8836,14 +8836,14 @@ static inline void _nocheck__trace_usb_uas_write_ready(int addr, uint16_t tag)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_write_ready " "dev %d, tag 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag);
 #line 8845 "trace/trace-hw_usb.h"
         } else {
-#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 278 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_write_ready " "dev %d, tag 0x%x" "\n", addr, tag);
 #line 8849 "trace/trace-hw_usb.h"
         }
@@ -8867,14 +8867,14 @@ static inline void _nocheck__trace_usb_uas_xfer_data(int addr, uint16_t tag, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_xfer_data " "dev %d, tag 0x%x, copy %d, usb-pkt %d/%d, scsi-buf %d/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, copy, uoff, usize, soff, ssize);
 #line 8876 "trace/trace-hw_usb.h"
         } else {
-#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 279 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_xfer_data " "dev %d, tag 0x%x, copy %d, usb-pkt %d/%d, scsi-buf %d/%d" "\n", addr, tag, copy, uoff, usize, soff, ssize);
 #line 8880 "trace/trace-hw_usb.h"
         }
@@ -8898,14 +8898,14 @@ static inline void _nocheck__trace_usb_uas_scsi_data(int addr, uint16_t tag, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_scsi_data " "dev %d, tag 0x%x, bytes %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, bytes);
 #line 8907 "trace/trace-hw_usb.h"
         } else {
-#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 280 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_scsi_data " "dev %d, tag 0x%x, bytes %d" "\n", addr, tag, bytes);
 #line 8911 "trace/trace-hw_usb.h"
         }
@@ -8929,14 +8929,14 @@ static inline void _nocheck__trace_usb_uas_scsi_complete(int addr, uint16_t tag,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_scsi_complete " "dev %d, tag 0x%x, status 0x%x, residue %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, status, resid);
 #line 8938 "trace/trace-hw_usb.h"
         } else {
-#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 281 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_scsi_complete " "dev %d, tag 0x%x, status 0x%x, residue %d" "\n", addr, tag, status, resid);
 #line 8942 "trace/trace-hw_usb.h"
         }
@@ -8960,14 +8960,14 @@ static inline void _nocheck__trace_usb_uas_tmf_abort_task(int addr, uint16_t tag
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_tmf_abort_task " "dev %d, tag 0x%x, task-tag 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, task_tag);
 #line 8969 "trace/trace-hw_usb.h"
         } else {
-#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 282 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_tmf_abort_task " "dev %d, tag 0x%x, task-tag 0x%x" "\n", addr, tag, task_tag);
 #line 8973 "trace/trace-hw_usb.h"
         }
@@ -8991,14 +8991,14 @@ static inline void _nocheck__trace_usb_uas_tmf_logical_unit_reset(int addr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_tmf_logical_unit_reset " "dev %d, tag 0x%x, lun %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, lun);
 #line 9000 "trace/trace-hw_usb.h"
         } else {
-#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 283 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_tmf_logical_unit_reset " "dev %d, tag 0x%x, lun %d" "\n", addr, tag, lun);
 #line 9004 "trace/trace-hw_usb.h"
         }
@@ -9022,14 +9022,14 @@ static inline void _nocheck__trace_usb_uas_tmf_unsupported(int addr, uint16_t ta
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_uas_tmf_unsupported " "dev %d, tag 0x%x, function 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, tag, function);
 #line 9031 "trace/trace-hw_usb.h"
         } else {
-#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 284 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_uas_tmf_unsupported " "dev %d, tag 0x%x, function 0x%x" "\n", addr, tag, function);
 #line 9035 "trace/trace-hw_usb.h"
         }
@@ -9053,14 +9053,14 @@ static inline void _nocheck__trace_usb_mtp_reset(int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_reset " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 9062 "trace/trace-hw_usb.h"
         } else {
-#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 287 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_reset " "dev %d" "\n", addr);
 #line 9066 "trace/trace-hw_usb.h"
         }
@@ -9084,14 +9084,14 @@ static inline void _nocheck__trace_usb_mtp_command(int dev, uint16_t code, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_command " "dev %d, code 0x%x, trans 0x%x, args 0x%x, 0x%x, 0x%x, 0x%x, 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, code, trans, arg0, arg1, arg2, arg3, arg4);
 #line 9093 "trace/trace-hw_usb.h"
         } else {
-#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 288 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_command " "dev %d, code 0x%x, trans 0x%x, args 0x%x, 0x%x, 0x%x, 0x%x, 0x%x" "\n", dev, code, trans, arg0, arg1, arg2, arg3, arg4);
 #line 9097 "trace/trace-hw_usb.h"
         }
@@ -9115,14 +9115,14 @@ static inline void _nocheck__trace_usb_mtp_success(int dev, uint32_t trans, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_success " "dev %d, trans 0x%x, args 0x%x, 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, trans, arg0, arg1);
 #line 9124 "trace/trace-hw_usb.h"
         } else {
-#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 289 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_success " "dev %d, trans 0x%x, args 0x%x, 0x%x" "\n", dev, trans, arg0, arg1);
 #line 9128 "trace/trace-hw_usb.h"
         }
@@ -9146,14 +9146,14 @@ static inline void _nocheck__trace_usb_mtp_error(int dev, uint16_t code, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_error " "dev %d, code 0x%x, trans 0x%x, args 0x%x, 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, code, trans, arg0, arg1);
 #line 9155 "trace/trace-hw_usb.h"
         } else {
-#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 290 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_error " "dev %d, code 0x%x, trans 0x%x, args 0x%x, 0x%x" "\n", dev, code, trans, arg0, arg1);
 #line 9159 "trace/trace-hw_usb.h"
         }
@@ -9177,14 +9177,14 @@ static inline void _nocheck__trace_usb_mtp_data_in(int dev, uint32_t trans, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_data_in " "dev %d, trans 0x%x, len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, trans, len);
 #line 9186 "trace/trace-hw_usb.h"
         } else {
-#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 291 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_data_in " "dev %d, trans 0x%x, len %d" "\n", dev, trans, len);
 #line 9190 "trace/trace-hw_usb.h"
         }
@@ -9208,14 +9208,14 @@ static inline void _nocheck__trace_usb_mtp_xfer(int dev, uint32_t ep, uint32_t d
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_xfer " "dev %d, ep %d, %d/%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, ep, dlen, plen);
 #line 9217 "trace/trace-hw_usb.h"
         } else {
-#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 292 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_xfer " "dev %d, ep %d, %d/%d" "\n", dev, ep, dlen, plen);
 #line 9221 "trace/trace-hw_usb.h"
         }
@@ -9239,14 +9239,14 @@ static inline void _nocheck__trace_usb_mtp_nak(int dev, uint32_t ep)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_nak " "dev %d, ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, ep);
 #line 9248 "trace/trace-hw_usb.h"
         } else {
-#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 293 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_nak " "dev %d, ep %d" "\n", dev, ep);
 #line 9252 "trace/trace-hw_usb.h"
         }
@@ -9270,14 +9270,14 @@ static inline void _nocheck__trace_usb_mtp_stall(int dev, const char * reason)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_stall " "dev %d, reason: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, reason);
 #line 9279 "trace/trace-hw_usb.h"
         } else {
-#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 294 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_stall " "dev %d, reason: %s" "\n", dev, reason);
 #line 9283 "trace/trace-hw_usb.h"
         }
@@ -9301,14 +9301,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_device_info(int dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_device_info " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 9310 "trace/trace-hw_usb.h"
         } else {
-#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 295 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_device_info " "dev %d" "\n", dev);
 #line 9314 "trace/trace-hw_usb.h"
         }
@@ -9332,14 +9332,14 @@ static inline void _nocheck__trace_usb_mtp_op_open_session(int dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 296 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 296 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_open_session " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 9341 "trace/trace-hw_usb.h"
         } else {
-#line 296 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 296 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_open_session " "dev %d" "\n", dev);
 #line 9345 "trace/trace-hw_usb.h"
         }
@@ -9363,14 +9363,14 @@ static inline void _nocheck__trace_usb_mtp_op_close_session(int dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_close_session " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 9372 "trace/trace-hw_usb.h"
         } else {
-#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 297 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_close_session " "dev %d" "\n", dev);
 #line 9376 "trace/trace-hw_usb.h"
         }
@@ -9394,14 +9394,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_storage_ids(int dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 298 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 298 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_storage_ids " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 9403 "trace/trace-hw_usb.h"
         } else {
-#line 298 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 298 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_storage_ids " "dev %d" "\n", dev);
 #line 9407 "trace/trace-hw_usb.h"
         }
@@ -9425,14 +9425,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_storage_info(int dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 299 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 299 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_storage_info " "dev %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 9434 "trace/trace-hw_usb.h"
         } else {
-#line 299 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 299 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_storage_info " "dev %d" "\n", dev);
 #line 9438 "trace/trace-hw_usb.h"
         }
@@ -9456,14 +9456,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_num_objects(int dev, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_num_objects " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9465 "trace/trace-hw_usb.h"
         } else {
-#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 300 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_num_objects " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9469 "trace/trace-hw_usb.h"
         }
@@ -9487,14 +9487,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_object_handles(int dev, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_object_handles " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9496 "trace/trace-hw_usb.h"
         } else {
-#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 301 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_object_handles " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9500 "trace/trace-hw_usb.h"
         }
@@ -9518,14 +9518,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_object_info(int dev, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 302 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 302 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_object_info " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9527 "trace/trace-hw_usb.h"
         } else {
-#line 302 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 302 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_object_info " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9531 "trace/trace-hw_usb.h"
         }
@@ -9549,14 +9549,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_object(int dev, uint32_t handl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 303 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 303 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_object " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9558 "trace/trace-hw_usb.h"
         } else {
-#line 303 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 303 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_object " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9562 "trace/trace-hw_usb.h"
         }
@@ -9580,14 +9580,14 @@ static inline void _nocheck__trace_usb_mtp_op_get_partial_object(int dev, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_get_partial_object " "dev %d, handle 0x%x, path %s, off %d, len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path, offset, length);
 #line 9589 "trace/trace-hw_usb.h"
         } else {
-#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 304 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_get_partial_object " "dev %d, handle 0x%x, path %s, off %d, len %d" "\n", dev, handle, path, offset, length);
 #line 9593 "trace/trace-hw_usb.h"
         }
@@ -9611,14 +9611,14 @@ static inline void _nocheck__trace_usb_mtp_op_unknown(int dev, uint32_t code)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_op_unknown " "dev %d, command code 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, code);
 #line 9620 "trace/trace-hw_usb.h"
         } else {
-#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 305 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_op_unknown " "dev %d, command code 0x%x" "\n", dev, code);
 #line 9624 "trace/trace-hw_usb.h"
         }
@@ -9642,14 +9642,14 @@ static inline void _nocheck__trace_usb_mtp_object_alloc(int dev, uint32_t handle
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 306 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 306 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_object_alloc " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9651 "trace/trace-hw_usb.h"
         } else {
-#line 306 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 306 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_object_alloc " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9655 "trace/trace-hw_usb.h"
         }
@@ -9673,14 +9673,14 @@ static inline void _nocheck__trace_usb_mtp_object_free(int dev, uint32_t handle,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 307 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 307 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_object_free " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9682 "trace/trace-hw_usb.h"
         } else {
-#line 307 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 307 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_object_free " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9686 "trace/trace-hw_usb.h"
         }
@@ -9704,14 +9704,14 @@ static inline void _nocheck__trace_usb_mtp_add_child(int dev, uint32_t handle, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_add_child " "dev %d, handle 0x%x, path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, handle, path);
 #line 9713 "trace/trace-hw_usb.h"
         } else {
-#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 308 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_add_child " "dev %d, handle 0x%x, path %s" "\n", dev, handle, path);
 #line 9717 "trace/trace-hw_usb.h"
         }
@@ -9735,14 +9735,14 @@ static inline void _nocheck__trace_usb_mtp_file_monitor_event(int dev, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_mtp_file_monitor_event " "dev %d, path %s event %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, path, s);
 #line 9744 "trace/trace-hw_usb.h"
         } else {
-#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 309 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_mtp_file_monitor_event " "dev %d, path %s event %s" "\n", dev, path, s);
 #line 9748 "trace/trace-hw_usb.h"
         }
@@ -9766,14 +9766,14 @@ static inline void _nocheck__trace_usb_host_open_started(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 312 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 312 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_open_started " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 9775 "trace/trace-hw_usb.h"
         } else {
-#line 312 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 312 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_open_started " "dev %d:%d" "\n", bus, addr);
 #line 9779 "trace/trace-hw_usb.h"
         }
@@ -9797,14 +9797,14 @@ static inline void _nocheck__trace_usb_host_open_hostfd(int hostfd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_open_hostfd " "hostfd %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hostfd);
 #line 9806 "trace/trace-hw_usb.h"
         } else {
-#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 313 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_open_hostfd " "hostfd %d" "\n", hostfd);
 #line 9810 "trace/trace-hw_usb.h"
         }
@@ -9828,14 +9828,14 @@ static inline void _nocheck__trace_usb_host_open_success(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_open_success " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 9837 "trace/trace-hw_usb.h"
         } else {
-#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 314 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_open_success " "dev %d:%d" "\n", bus, addr);
 #line 9841 "trace/trace-hw_usb.h"
         }
@@ -9859,14 +9859,14 @@ static inline void _nocheck__trace_usb_host_open_failure(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_open_failure " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 9868 "trace/trace-hw_usb.h"
         } else {
-#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 315 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_open_failure " "dev %d:%d" "\n", bus, addr);
 #line 9872 "trace/trace-hw_usb.h"
         }
@@ -9890,14 +9890,14 @@ static inline void _nocheck__trace_usb_host_close(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_close " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 9899 "trace/trace-hw_usb.h"
         } else {
-#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 316 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_close " "dev %d:%d" "\n", bus, addr);
 #line 9903 "trace/trace-hw_usb.h"
         }
@@ -9921,14 +9921,14 @@ static inline void _nocheck__trace_usb_host_attach_kernel(int bus, int addr, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_attach_kernel " "dev %d:%d, if %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, interface);
 #line 9930 "trace/trace-hw_usb.h"
         } else {
-#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 317 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_attach_kernel " "dev %d:%d, if %d" "\n", bus, addr, interface);
 #line 9934 "trace/trace-hw_usb.h"
         }
@@ -9952,14 +9952,14 @@ static inline void _nocheck__trace_usb_host_detach_kernel(int bus, int addr, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_detach_kernel " "dev %d:%d, if %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, interface);
 #line 9961 "trace/trace-hw_usb.h"
         } else {
-#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 318 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_detach_kernel " "dev %d:%d, if %d" "\n", bus, addr, interface);
 #line 9965 "trace/trace-hw_usb.h"
         }
@@ -9983,14 +9983,14 @@ static inline void _nocheck__trace_usb_host_set_address(int bus, int addr, int c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 319 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 319 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_set_address " "dev %d:%d, address %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, config);
 #line 9992 "trace/trace-hw_usb.h"
         } else {
-#line 319 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 319 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_set_address " "dev %d:%d, address %d" "\n", bus, addr, config);
 #line 9996 "trace/trace-hw_usb.h"
         }
@@ -10014,14 +10014,14 @@ static inline void _nocheck__trace_usb_host_set_config(int bus, int addr, int co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 320 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 320 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_set_config " "dev %d:%d, config %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, config);
 #line 10023 "trace/trace-hw_usb.h"
         } else {
-#line 320 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 320 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_set_config " "dev %d:%d, config %d" "\n", bus, addr, config);
 #line 10027 "trace/trace-hw_usb.h"
         }
@@ -10045,14 +10045,14 @@ static inline void _nocheck__trace_usb_host_set_interface(int bus, int addr, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_set_interface " "dev %d:%d, interface %d, alt %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, interface, alt);
 #line 10054 "trace/trace-hw_usb.h"
         } else {
-#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 321 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_set_interface " "dev %d:%d, interface %d, alt %d" "\n", bus, addr, interface, alt);
 #line 10058 "trace/trace-hw_usb.h"
         }
@@ -10076,14 +10076,14 @@ static inline void _nocheck__trace_usb_host_claim_interface(int bus, int addr, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_claim_interface " "dev %d:%d, config %d, if %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, config, interface);
 #line 10085 "trace/trace-hw_usb.h"
         } else {
-#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 322 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_claim_interface " "dev %d:%d, config %d, if %d" "\n", bus, addr, config, interface);
 #line 10089 "trace/trace-hw_usb.h"
         }
@@ -10107,14 +10107,14 @@ static inline void _nocheck__trace_usb_host_release_interface(int bus, int addr,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_release_interface " "dev %d:%d, if %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, interface);
 #line 10116 "trace/trace-hw_usb.h"
         } else {
-#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 323 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_release_interface " "dev %d:%d, if %d" "\n", bus, addr, interface);
 #line 10120 "trace/trace-hw_usb.h"
         }
@@ -10138,14 +10138,14 @@ static inline void _nocheck__trace_usb_host_req_control(int bus, int addr, void 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 324 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 324 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_req_control " "dev %d:%d, packet %p, req 0x%x, value %d, index %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, p, req, value, index);
 #line 10147 "trace/trace-hw_usb.h"
         } else {
-#line 324 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 324 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_req_control " "dev %d:%d, packet %p, req 0x%x, value %d, index %d" "\n", bus, addr, p, req, value, index);
 #line 10151 "trace/trace-hw_usb.h"
         }
@@ -10169,14 +10169,14 @@ static inline void _nocheck__trace_usb_host_req_data(int bus, int addr, void * p
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 325 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 325 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_req_data " "dev %d:%d, packet %p, in %d, ep %d, size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, p, in, ep, size);
 #line 10178 "trace/trace-hw_usb.h"
         } else {
-#line 325 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 325 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_req_data " "dev %d:%d, packet %p, in %d, ep %d, size %d" "\n", bus, addr, p, in, ep, size);
 #line 10182 "trace/trace-hw_usb.h"
         }
@@ -10200,14 +10200,14 @@ static inline void _nocheck__trace_usb_host_req_complete(int bus, int addr, void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_req_complete " "dev %d:%d, packet %p, status %d, length %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, p, status, length);
 #line 10209 "trace/trace-hw_usb.h"
         } else {
-#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 326 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_req_complete " "dev %d:%d, packet %p, status %d, length %d" "\n", bus, addr, p, status, length);
 #line 10213 "trace/trace-hw_usb.h"
         }
@@ -10231,14 +10231,14 @@ static inline void _nocheck__trace_usb_host_req_emulated(int bus, int addr, void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 327 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 327 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_req_emulated " "dev %d:%d, packet %p, status %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, p, status);
 #line 10240 "trace/trace-hw_usb.h"
         } else {
-#line 327 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 327 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_req_emulated " "dev %d:%d, packet %p, status %d" "\n", bus, addr, p, status);
 #line 10244 "trace/trace-hw_usb.h"
         }
@@ -10262,14 +10262,14 @@ static inline void _nocheck__trace_usb_host_req_canceled(int bus, int addr, void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 328 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 328 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_req_canceled " "dev %d:%d, packet %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, p);
 #line 10271 "trace/trace-hw_usb.h"
         } else {
-#line 328 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 328 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_req_canceled " "dev %d:%d, packet %p" "\n", bus, addr, p);
 #line 10275 "trace/trace-hw_usb.h"
         }
@@ -10293,14 +10293,14 @@ static inline void _nocheck__trace_usb_host_iso_start(int bus, int addr, int ep)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_iso_start " "dev %d:%d, ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, ep);
 #line 10302 "trace/trace-hw_usb.h"
         } else {
-#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 329 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_iso_start " "dev %d:%d, ep %d" "\n", bus, addr, ep);
 #line 10306 "trace/trace-hw_usb.h"
         }
@@ -10324,14 +10324,14 @@ static inline void _nocheck__trace_usb_host_iso_stop(int bus, int addr, int ep)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_iso_stop " "dev %d:%d, ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, ep);
 #line 10333 "trace/trace-hw_usb.h"
         } else {
-#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 330 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_iso_stop " "dev %d:%d, ep %d" "\n", bus, addr, ep);
 #line 10337 "trace/trace-hw_usb.h"
         }
@@ -10355,14 +10355,14 @@ static inline void _nocheck__trace_usb_host_iso_out_of_bufs(int bus, int addr, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_iso_out_of_bufs " "dev %d:%d, ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, ep);
 #line 10364 "trace/trace-hw_usb.h"
         } else {
-#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 331 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_iso_out_of_bufs " "dev %d:%d, ep %d" "\n", bus, addr, ep);
 #line 10368 "trace/trace-hw_usb.h"
         }
@@ -10386,14 +10386,14 @@ static inline void _nocheck__trace_usb_host_reset(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_reset " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 10395 "trace/trace-hw_usb.h"
         } else {
-#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 332 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_reset " "dev %d:%d" "\n", bus, addr);
 #line 10399 "trace/trace-hw_usb.h"
         }
@@ -10417,14 +10417,14 @@ static inline void _nocheck__trace_usb_host_auto_scan_enabled(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_auto_scan_enabled "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10426 "trace/trace-hw_usb.h"
         } else {
-#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 333 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_auto_scan_enabled "  "\n");
 #line 10430 "trace/trace-hw_usb.h"
         }
@@ -10448,14 +10448,14 @@ static inline void _nocheck__trace_usb_host_auto_scan_disabled(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_auto_scan_disabled "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 10457 "trace/trace-hw_usb.h"
         } else {
-#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 334 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_auto_scan_disabled "  "\n");
 #line 10461 "trace/trace-hw_usb.h"
         }
@@ -10479,14 +10479,14 @@ static inline void _nocheck__trace_usb_host_parse_config(int bus, int addr, int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_parse_config " "dev %d:%d, value %d, active %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, value, active);
 #line 10488 "trace/trace-hw_usb.h"
         } else {
-#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 335 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_parse_config " "dev %d:%d, value %d, active %d" "\n", bus, addr, value, active);
 #line 10492 "trace/trace-hw_usb.h"
         }
@@ -10510,14 +10510,14 @@ static inline void _nocheck__trace_usb_host_parse_interface(int bus, int addr, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_parse_interface " "dev %d:%d, num %d, alt %d, active %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, num, alt, active);
 #line 10519 "trace/trace-hw_usb.h"
         } else {
-#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 336 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_parse_interface " "dev %d:%d, num %d, alt %d, active %d" "\n", bus, addr, num, alt, active);
 #line 10523 "trace/trace-hw_usb.h"
         }
@@ -10541,14 +10541,14 @@ static inline void _nocheck__trace_usb_host_parse_endpoint(int bus, int addr, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_parse_endpoint " "dev %d:%d, ep %d, %s, %s, active %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, ep, dir, type, active);
 #line 10550 "trace/trace-hw_usb.h"
         } else {
-#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 337 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_parse_endpoint " "dev %d:%d, ep %d, %s, %s, active %d" "\n", bus, addr, ep, dir, type, active);
 #line 10554 "trace/trace-hw_usb.h"
         }
@@ -10572,14 +10572,14 @@ static inline void _nocheck__trace_usb_host_parse_error(int bus, int addr, const
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_parse_error " "dev %d:%d, msg %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, errmsg);
 #line 10581 "trace/trace-hw_usb.h"
         } else {
-#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 338 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_parse_error " "dev %d:%d, msg %s" "\n", bus, addr, errmsg);
 #line 10585 "trace/trace-hw_usb.h"
         }
@@ -10603,14 +10603,14 @@ static inline void _nocheck__trace_usb_host_remote_wakeup_removed(int bus, int a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_host_remote_wakeup_removed " "dev %d:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 10612 "trace/trace-hw_usb.h"
         } else {
-#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 339 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_host_remote_wakeup_removed " "dev %d:%d" "\n", bus, addr);
 #line 10616 "trace/trace-hw_usb.h"
         }
@@ -10634,14 +10634,14 @@ static inline void _nocheck__trace_usb_serial_reset(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 342 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 342 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_reset " "dev %d:%u reset" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 10643 "trace/trace-hw_usb.h"
         } else {
-#line 342 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 342 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_reset " "dev %d:%u reset" "\n", bus, addr);
 #line 10647 "trace/trace-hw_usb.h"
         }
@@ -10665,14 +10665,14 @@ static inline void _nocheck__trace_usb_serial_handle_control(int bus, int addr, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_handle_control " "dev %d:%u got control 0x%x, value 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, request, value);
 #line 10674 "trace/trace-hw_usb.h"
         } else {
-#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 343 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_handle_control " "dev %d:%u got control 0x%x, value 0x%x" "\n", bus, addr, request, value);
 #line 10678 "trace/trace-hw_usb.h"
         }
@@ -10696,14 +10696,14 @@ static inline void _nocheck__trace_usb_serial_unsupported_parity(int bus, int ad
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_unsupported_parity " "dev %d:%u unsupported parity %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, value);
 #line 10705 "trace/trace-hw_usb.h"
         } else {
-#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 344 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_unsupported_parity " "dev %d:%u unsupported parity %d" "\n", bus, addr, value);
 #line 10709 "trace/trace-hw_usb.h"
         }
@@ -10727,14 +10727,14 @@ static inline void _nocheck__trace_usb_serial_unsupported_stopbits(int bus, int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_unsupported_stopbits " "dev %d:%u unsupported stop bits %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, value);
 #line 10736 "trace/trace-hw_usb.h"
         } else {
-#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 345 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_unsupported_stopbits " "dev %d:%u unsupported stop bits %d" "\n", bus, addr, value);
 #line 10740 "trace/trace-hw_usb.h"
         }
@@ -10758,14 +10758,14 @@ static inline void _nocheck__trace_usb_serial_unsupported_control(int bus, int a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_unsupported_control " "dev %d:%u got unsupported/bogus control 0x%x, value 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, request, value);
 #line 10767 "trace/trace-hw_usb.h"
         } else {
-#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 346 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_unsupported_control " "dev %d:%u got unsupported/bogus control 0x%x, value 0x%x" "\n", bus, addr, request, value);
 #line 10771 "trace/trace-hw_usb.h"
         }
@@ -10789,14 +10789,14 @@ static inline void _nocheck__trace_usb_serial_unsupported_data_bits(int bus, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_unsupported_data_bits " "dev %d:%u unsupported data bits %d, falling back to 8" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, value);
 #line 10798 "trace/trace-hw_usb.h"
         } else {
-#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 347 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_unsupported_data_bits " "dev %d:%u unsupported data bits %d, falling back to 8" "\n", bus, addr, value);
 #line 10802 "trace/trace-hw_usb.h"
         }
@@ -10820,14 +10820,14 @@ static inline void _nocheck__trace_usb_serial_bad_token(int bus, int addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_bad_token " "dev %d:%u bad token" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr);
 #line 10829 "trace/trace-hw_usb.h"
         } else {
-#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 348 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_bad_token " "dev %d:%u bad token" "\n", bus, addr);
 #line 10833 "trace/trace-hw_usb.h"
         }
@@ -10851,14 +10851,14 @@ static inline void _nocheck__trace_usb_serial_set_baud(int bus, int addr, int ba
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_set_baud " "dev %d:%u baud rate %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, baud);
 #line 10860 "trace/trace-hw_usb.h"
         } else {
-#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 349 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_set_baud " "dev %d:%u baud rate %d" "\n", bus, addr, baud);
 #line 10864 "trace/trace-hw_usb.h"
         }
@@ -10882,14 +10882,14 @@ static inline void _nocheck__trace_usb_serial_set_data(int bus, int addr, int pa
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_set_data " "dev %d:%u parity %c, data bits %d, stop bits %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, parity, data, stop);
 #line 10891 "trace/trace-hw_usb.h"
         } else {
-#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 350 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_set_data " "dev %d:%u parity %c, data bits %d, stop bits %d" "\n", bus, addr, parity, data, stop);
 #line 10895 "trace/trace-hw_usb.h"
         }
@@ -10913,14 +10913,14 @@ static inline void _nocheck__trace_usb_serial_set_flow_control(int bus, int addr
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 351 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 351 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_set_flow_control " "dev %d:%u flow control %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, index);
 #line 10922 "trace/trace-hw_usb.h"
         } else {
-#line 351 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 351 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_set_flow_control " "dev %d:%u flow control %d" "\n", bus, addr, index);
 #line 10926 "trace/trace-hw_usb.h"
         }
@@ -10944,14 +10944,14 @@ static inline void _nocheck__trace_usb_serial_set_xonxoff(int bus, int addr, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 352 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 352 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:usb_serial_set_xonxoff " "dev %d:%u xon 0x%x xoff 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, addr, xon, xoff);
 #line 10953 "trace/trace-hw_usb.h"
         } else {
-#line 352 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 352 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("usb_serial_set_xonxoff " "dev %d:%u xon 0x%x xoff 0x%x" "\n", bus, addr, xon, xoff);
 #line 10957 "trace/trace-hw_usb.h"
         }
@@ -10975,14 +10975,14 @@ static inline void _nocheck__trace_canokey_emu_stall_ep(uint8_t ep)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_emu_stall_ep " "ep %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep);
 #line 10984 "trace/trace-hw_usb.h"
         } else {
-#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 355 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_emu_stall_ep " "ep %d" "\n", ep);
 #line 10988 "trace/trace-hw_usb.h"
         }
@@ -11006,14 +11006,14 @@ static inline void _nocheck__trace_canokey_emu_set_address(uint8_t addr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_emu_set_address " "addr %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr);
 #line 11015 "trace/trace-hw_usb.h"
         } else {
-#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 356 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_emu_set_address " "addr %d" "\n", addr);
 #line 11019 "trace/trace-hw_usb.h"
         }
@@ -11037,14 +11037,14 @@ static inline void _nocheck__trace_canokey_emu_prepare_receive(uint8_t ep, uint1
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_emu_prepare_receive " "ep %d size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep, size);
 #line 11046 "trace/trace-hw_usb.h"
         } else {
-#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 357 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_emu_prepare_receive " "ep %d size %d" "\n", ep, size);
 #line 11050 "trace/trace-hw_usb.h"
         }
@@ -11068,14 +11068,14 @@ static inline void _nocheck__trace_canokey_emu_transmit(uint8_t ep, uint16_t siz
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_emu_transmit " "ep %d size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep, size);
 #line 11077 "trace/trace-hw_usb.h"
         } else {
-#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 358 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_emu_transmit " "ep %d size %d" "\n", ep, size);
 #line 11081 "trace/trace-hw_usb.h"
         }
@@ -11099,14 +11099,14 @@ static inline void _nocheck__trace_canokey_thread_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_thread_start "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11108 "trace/trace-hw_usb.h"
         } else {
-#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 359 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_thread_start "  "\n");
 #line 11112 "trace/trace-hw_usb.h"
         }
@@ -11130,14 +11130,14 @@ static inline void _nocheck__trace_canokey_thread_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_thread_stop "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11139 "trace/trace-hw_usb.h"
         } else {
-#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 360 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_thread_stop "  "\n");
 #line 11143 "trace/trace-hw_usb.h"
         }
@@ -11161,14 +11161,14 @@ static inline void _nocheck__trace_canokey_handle_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 361 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 361 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_reset "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11170 "trace/trace-hw_usb.h"
         } else {
-#line 361 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 361 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_reset "  "\n");
 #line 11174 "trace/trace-hw_usb.h"
         }
@@ -11192,14 +11192,14 @@ static inline void _nocheck__trace_canokey_handle_control_setup(int request, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 362 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 362 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_control_setup " "request 0x%04X value 0x%04X index 0x%04X length 0x%04X" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , request, value, index, length);
 #line 11201 "trace/trace-hw_usb.h"
         } else {
-#line 362 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 362 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_control_setup " "request 0x%04X value 0x%04X index 0x%04X length 0x%04X" "\n", request, value, index, length);
 #line 11205 "trace/trace-hw_usb.h"
         }
@@ -11223,14 +11223,14 @@ static inline void _nocheck__trace_canokey_handle_control_out(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_control_out "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11232 "trace/trace-hw_usb.h"
         } else {
-#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 363 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_control_out "  "\n");
 #line 11236 "trace/trace-hw_usb.h"
         }
@@ -11254,14 +11254,14 @@ static inline void _nocheck__trace_canokey_handle_control_in(int actual_len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_control_in " "len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , actual_len);
 #line 11263 "trace/trace-hw_usb.h"
         } else {
-#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 364 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_control_in " "len %d" "\n", actual_len);
 #line 11267 "trace/trace-hw_usb.h"
         }
@@ -11285,14 +11285,14 @@ static inline void _nocheck__trace_canokey_handle_data_out(uint8_t ep_out, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 365 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 365 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_data_out " "ep %d len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep_out, out_len);
 #line 11294 "trace/trace-hw_usb.h"
         } else {
-#line 365 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 365 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_data_out " "ep %d len %d" "\n", ep_out, out_len);
 #line 11298 "trace/trace-hw_usb.h"
         }
@@ -11316,14 +11316,14 @@ static inline void _nocheck__trace_canokey_handle_data_in(uint8_t ep_in, uint32_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 366 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 366 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_handle_data_in " "ep %d len %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep_in, in_len);
 #line 11325 "trace/trace-hw_usb.h"
         } else {
-#line 366 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 366 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_handle_data_in " "ep %d len %d" "\n", ep_in, in_len);
 #line 11329 "trace/trace-hw_usb.h"
         }
@@ -11347,14 +11347,14 @@ static inline void _nocheck__trace_canokey_realize(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 367 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 367 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_realize "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11356 "trace/trace-hw_usb.h"
         } else {
-#line 367 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 367 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_realize "  "\n");
 #line 11360 "trace/trace-hw_usb.h"
         }
@@ -11378,14 +11378,14 @@ static inline void _nocheck__trace_canokey_unrealize(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 368 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 368 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("%d@%zu.%06zu:canokey_unrealize "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 11387 "trace/trace-hw_usb.h"
         } else {
-#line 368 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/usb/trace-events"
+#line 368 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/usb/trace-events"
             qemu_log("canokey_unrealize "  "\n");
 #line 11391 "trace/trace-hw_usb.h"
         }

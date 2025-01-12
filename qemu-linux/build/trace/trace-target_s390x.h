@@ -49,14 +49,14 @@ static inline void _nocheck__trace_get_skeys_nonzero(int rc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:get_skeys_nonzero " "SKEY: Call to get_skeys unexpectedly returned %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rc);
 #line 58 "trace/trace-target_s390x.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("get_skeys_nonzero " "SKEY: Call to get_skeys unexpectedly returned %d" "\n", rc);
 #line 62 "trace/trace-target_s390x.h"
         }
@@ -80,14 +80,14 @@ static inline void _nocheck__trace_set_skeys_nonzero(int rc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:set_skeys_nonzero " "SKEY: Call to set_skeys unexpectedly returned %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rc);
 #line 89 "trace/trace-target_s390x.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("set_skeys_nonzero " "SKEY: Call to set_skeys unexpectedly returned %d" "\n", rc);
 #line 93 "trace/trace-target_s390x.h"
         }
@@ -111,14 +111,14 @@ static inline void _nocheck__trace_ioinst(const char * insn)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:ioinst " "IOINST: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , insn);
 #line 120 "trace/trace-target_s390x.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("ioinst " "IOINST: %s" "\n", insn);
 #line 124 "trace/trace-target_s390x.h"
         }
@@ -142,14 +142,14 @@ static inline void _nocheck__trace_ioinst_sch_id(const char * insn, int cssid, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:ioinst_sch_id " "IOINST: %s (%x.%x.%04x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , insn, cssid, ssid, schid);
 #line 151 "trace/trace-target_s390x.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("ioinst_sch_id " "IOINST: %s (%x.%x.%04x)" "\n", insn, cssid, ssid, schid);
 #line 155 "trace/trace-target_s390x.h"
         }
@@ -173,14 +173,14 @@ static inline void _nocheck__trace_ioinst_chp_id(const char * insn, int cssid, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:ioinst_chp_id " "IOINST: %s (%x.%02x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , insn, cssid, chpid);
 #line 182 "trace/trace-target_s390x.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("ioinst_chp_id " "IOINST: %s (%x.%02x)" "\n", insn, cssid, chpid);
 #line 186 "trace/trace-target_s390x.h"
         }
@@ -204,14 +204,14 @@ static inline void _nocheck__trace_ioinst_chsc_cmd(uint16_t cmd, uint16_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:ioinst_chsc_cmd " "IOINST: chsc command 0x%04x, len 0x%04x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, len);
 #line 213 "trace/trace-target_s390x.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("ioinst_chsc_cmd " "IOINST: chsc command 0x%04x, len 0x%04x" "\n", cmd, len);
 #line 217 "trace/trace-target_s390x.h"
         }
@@ -235,14 +235,14 @@ static inline void _nocheck__trace_cpu_set_state(int cpu_index, uint8_t state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:cpu_set_state " "setting cpu %d state to %" PRIu8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, state);
 #line 244 "trace/trace-target_s390x.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("cpu_set_state " "setting cpu %d state to %" PRIu8 "\n", cpu_index, state);
 #line 248 "trace/trace-target_s390x.h"
         }
@@ -266,14 +266,14 @@ static inline void _nocheck__trace_cpu_halt(int cpu_index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:cpu_halt " "halting cpu %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index);
 #line 275 "trace/trace-target_s390x.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("cpu_halt " "halting cpu %d" "\n", cpu_index);
 #line 279 "trace/trace-target_s390x.h"
         }
@@ -297,14 +297,14 @@ static inline void _nocheck__trace_cpu_unhalt(int cpu_index)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:cpu_unhalt " "unhalting cpu %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index);
 #line 306 "trace/trace-target_s390x.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("cpu_unhalt " "unhalting cpu %d" "\n", cpu_index);
 #line 310 "trace/trace-target_s390x.h"
         }
@@ -328,14 +328,14 @@ static inline void _nocheck__trace_sigp_finished(uint8_t order, int cpu_index, i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("%d@%zu.%06zu:sigp_finished " "SIGP: Finished order %u on cpu %d -> cpu %d with cc=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , order, cpu_index, dst_index, cc);
 #line 337 "trace/trace-target_s390x.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/trace-events"
             qemu_log("sigp_finished " "SIGP: Finished order %u on cpu %d -> cpu %d with cc=%d" "\n", order, cpu_index, dst_index, cc);
 #line 341 "trace/trace-target_s390x.h"
         }

@@ -31,14 +31,14 @@ static inline void _nocheck__trace_nubus_slot_read(uint64_t addr, int size)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("%d@%zu.%06zu:nubus_slot_read " "reading unassigned addr 0x%"PRIx64 " size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size);
 #line 40 "trace/trace-hw_nubus.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("nubus_slot_read " "reading unassigned addr 0x%"PRIx64 " size %d" "\n", addr, size);
 #line 44 "trace/trace-hw_nubus.h"
         }
@@ -62,14 +62,14 @@ static inline void _nocheck__trace_nubus_slot_write(uint64_t addr, uint64_t val,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("%d@%zu.%06zu:nubus_slot_write " "writing unassigned addr 0x%"PRIx64 " value 0x%"PRIx64 " size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, size);
 #line 71 "trace/trace-hw_nubus.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("nubus_slot_write " "writing unassigned addr 0x%"PRIx64 " value 0x%"PRIx64 " size %d" "\n", addr, val, size);
 #line 75 "trace/trace-hw_nubus.h"
         }
@@ -93,14 +93,14 @@ static inline void _nocheck__trace_nubus_super_slot_read(uint64_t addr, int size
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("%d@%zu.%06zu:nubus_super_slot_read " "reading unassigned addr 0x%"PRIx64 " size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size);
 #line 102 "trace/trace-hw_nubus.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("nubus_super_slot_read " "reading unassigned addr 0x%"PRIx64 " size %d" "\n", addr, size);
 #line 106 "trace/trace-hw_nubus.h"
         }
@@ -124,14 +124,14 @@ static inline void _nocheck__trace_nubus_super_slot_write(uint64_t addr, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("%d@%zu.%06zu:nubus_super_slot_write " "writing unassigned addr 0x%"PRIx64 " value 0x%"PRIx64 " size %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, size);
 #line 133 "trace/trace-hw_nubus.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/nubus/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/nubus/trace-events"
             qemu_log("nubus_super_slot_write " "writing unassigned addr 0x%"PRIx64 " value 0x%"PRIx64 " size %d" "\n", addr, val, size);
 #line 137 "trace/trace-hw_nubus.h"
         }

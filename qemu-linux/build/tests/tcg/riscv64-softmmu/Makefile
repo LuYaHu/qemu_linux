@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/tests/tcg/Makefile.target
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/tests/tcg/Makefile.target

@@ -238,14 +238,14 @@ static inline void _nocheck__trace_run_poll_handlers_begin(void * ctx, int64_t m
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:run_poll_handlers_begin " "ctx %p max_ns %"PRId64 " timeout %"PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, max_ns, timeout);
 #line 247 "trace/trace-util.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("run_poll_handlers_begin " "ctx %p max_ns %"PRId64 " timeout %"PRId64 "\n", ctx, max_ns, timeout);
 #line 251 "trace/trace-util.h"
         }
@@ -269,14 +269,14 @@ static inline void _nocheck__trace_run_poll_handlers_end(void * ctx, bool progre
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:run_poll_handlers_end " "ctx %p progress %d new timeout %"PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, progress, timeout);
 #line 278 "trace/trace-util.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("run_poll_handlers_end " "ctx %p progress %d new timeout %"PRId64 "\n", ctx, progress, timeout);
 #line 282 "trace/trace-util.h"
         }
@@ -300,14 +300,14 @@ static inline void _nocheck__trace_poll_shrink(void * ctx, int64_t old, int64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:poll_shrink " "ctx %p old %"PRId64" new %"PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, old, new);
 #line 309 "trace/trace-util.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("poll_shrink " "ctx %p old %"PRId64" new %"PRId64 "\n", ctx, old, new);
 #line 313 "trace/trace-util.h"
         }
@@ -331,14 +331,14 @@ static inline void _nocheck__trace_poll_grow(void * ctx, int64_t old, int64_t ne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:poll_grow " "ctx %p old %"PRId64" new %"PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, old, new);
 #line 340 "trace/trace-util.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("poll_grow " "ctx %p old %"PRId64" new %"PRId64 "\n", ctx, old, new);
 #line 344 "trace/trace-util.h"
         }
@@ -362,14 +362,14 @@ static inline void _nocheck__trace_poll_add(void * ctx, void * node, int fd, uns
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:poll_add " "ctx %p node %p fd %d revents 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, node, fd, revents);
 #line 371 "trace/trace-util.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("poll_add " "ctx %p node %p fd %d revents 0x%x" "\n", ctx, node, fd, revents);
 #line 375 "trace/trace-util.h"
         }
@@ -393,14 +393,14 @@ static inline void _nocheck__trace_poll_remove(void * ctx, void * node, int fd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:poll_remove " "ctx %p node %p fd %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, node, fd);
 #line 402 "trace/trace-util.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("poll_remove " "ctx %p node %p fd %d" "\n", ctx, node, fd);
 #line 406 "trace/trace-util.h"
         }
@@ -424,14 +424,14 @@ static inline void _nocheck__trace_aio_co_schedule(void * ctx, void * co)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:aio_co_schedule " "ctx %p co %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, co);
 #line 433 "trace/trace-util.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("aio_co_schedule " "ctx %p co %p" "\n", ctx, co);
 #line 437 "trace/trace-util.h"
         }
@@ -455,14 +455,14 @@ static inline void _nocheck__trace_aio_co_schedule_bh_cb(void * ctx, void * co)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:aio_co_schedule_bh_cb " "ctx %p co %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, co);
 #line 464 "trace/trace-util.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("aio_co_schedule_bh_cb " "ctx %p co %p" "\n", ctx, co);
 #line 468 "trace/trace-util.h"
         }
@@ -486,14 +486,14 @@ static inline void _nocheck__trace_thread_pool_submit(void * pool, void * req, v
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:thread_pool_submit " "pool %p req %p opaque %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pool, req, opaque);
 #line 495 "trace/trace-util.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("thread_pool_submit " "pool %p req %p opaque %p" "\n", pool, req, opaque);
 #line 499 "trace/trace-util.h"
         }
@@ -517,14 +517,14 @@ static inline void _nocheck__trace_thread_pool_complete(void * pool, void * req,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:thread_pool_complete " "pool %p req %p opaque %p ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pool, req, opaque, ret);
 #line 526 "trace/trace-util.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("thread_pool_complete " "pool %p req %p opaque %p ret %d" "\n", pool, req, opaque, ret);
 #line 530 "trace/trace-util.h"
         }
@@ -548,14 +548,14 @@ static inline void _nocheck__trace_thread_pool_cancel(void * req, void * opaque)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:thread_pool_cancel " "req %p opaque %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , req, opaque);
 #line 557 "trace/trace-util.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("thread_pool_cancel " "req %p opaque %p" "\n", req, opaque);
 #line 561 "trace/trace-util.h"
         }
@@ -579,14 +579,14 @@ static inline void _nocheck__trace_buffer_resize(const char * buf, size_t olen, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:buffer_resize " "%s: old %zd, new %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, olen, len);
 #line 588 "trace/trace-util.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("buffer_resize " "%s: old %zd, new %zd" "\n", buf, olen, len);
 #line 592 "trace/trace-util.h"
         }
@@ -610,14 +610,14 @@ static inline void _nocheck__trace_buffer_move_empty(const char * buf, size_t le
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:buffer_move_empty " "%s: %zd bytes from %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, len, from);
 #line 619 "trace/trace-util.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("buffer_move_empty " "%s: %zd bytes from %s" "\n", buf, len, from);
 #line 623 "trace/trace-util.h"
         }
@@ -641,14 +641,14 @@ static inline void _nocheck__trace_buffer_move(const char * buf, size_t len, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:buffer_move " "%s: %zd bytes from %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, len, from);
 #line 650 "trace/trace-util.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("buffer_move " "%s: %zd bytes from %s" "\n", buf, len, from);
 #line 654 "trace/trace-util.h"
         }
@@ -672,14 +672,14 @@ static inline void _nocheck__trace_buffer_free(const char * buf, size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:buffer_free " "%s: capacity %zd" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, len);
 #line 681 "trace/trace-util.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("buffer_free " "%s: capacity %zd" "\n", buf, len);
 #line 685 "trace/trace-util.h"
         }
@@ -703,14 +703,14 @@ static inline void _nocheck__trace_qemu_file_monitor_add_watch(void * mon, const
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_add_watch " "File monitor %p add watch dir='%s' file='%s' cb=%p opaque=%p id=%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, filename, cb, opaque, id);
 #line 712 "trace/trace-util.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_add_watch " "File monitor %p add watch dir='%s' file='%s' cb=%p opaque=%p id=%" PRId64 "\n", mon, dirpath, filename, cb, opaque, id);
 #line 716 "trace/trace-util.h"
         }
@@ -734,14 +734,14 @@ static inline void _nocheck__trace_qemu_file_monitor_remove_watch(void * mon, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_remove_watch " "File monitor %p remove watch dir='%s' id=%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, id);
 #line 743 "trace/trace-util.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_remove_watch " "File monitor %p remove watch dir='%s' id=%" PRId64 "\n", mon, dirpath, id);
 #line 747 "trace/trace-util.h"
         }
@@ -765,14 +765,14 @@ static inline void _nocheck__trace_qemu_file_monitor_new(void * mon, int fd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_new " "File monitor %p created fd=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, fd);
 #line 774 "trace/trace-util.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_new " "File monitor %p created fd=%d" "\n", mon, fd);
 #line 778 "trace/trace-util.h"
         }
@@ -796,14 +796,14 @@ static inline void _nocheck__trace_qemu_file_monitor_enable_watch(void * mon, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_enable_watch " "File monitor %p enable watch dir='%s' id=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, id);
 #line 805 "trace/trace-util.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_enable_watch " "File monitor %p enable watch dir='%s' id=%u" "\n", mon, dirpath, id);
 #line 809 "trace/trace-util.h"
         }
@@ -827,14 +827,14 @@ static inline void _nocheck__trace_qemu_file_monitor_disable_watch(void * mon, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_disable_watch " "File monitor %p disable watch dir='%s' id=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, id);
 #line 836 "trace/trace-util.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_disable_watch " "File monitor %p disable watch dir='%s' id=%u" "\n", mon, dirpath, id);
 #line 840 "trace/trace-util.h"
         }
@@ -858,14 +858,14 @@ static inline void _nocheck__trace_qemu_file_monitor_event(void * mon, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_event " "File monitor %p event dir='%s' file='%s' mask=0x%x id=%u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, filename, mask, id);
 #line 867 "trace/trace-util.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_event " "File monitor %p event dir='%s' file='%s' mask=0x%x id=%u" "\n", mon, dirpath, filename, mask, id);
 #line 871 "trace/trace-util.h"
         }
@@ -889,14 +889,14 @@ static inline void _nocheck__trace_qemu_file_monitor_dispatch(void * mon, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_file_monitor_dispatch " "File monitor %p dispatch dir='%s' file='%s' ev=%d cb=%p opaque=%p id=%" PRId64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mon, dirpath, filename, ev, cb, opaque, id);
 #line 898 "trace/trace-util.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_file_monitor_dispatch " "File monitor %p dispatch dir='%s' file='%s' ev=%d cb=%p opaque=%p id=%" PRId64 "\n", mon, dirpath, filename, ev, cb, opaque, id);
 #line 902 "trace/trace-util.h"
         }
@@ -920,14 +920,14 @@ static inline void _nocheck__trace_qemu_aio_coroutine_enter(void * ctx, void * f
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_aio_coroutine_enter " "ctx %p from %p to %p opaque %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ctx, from, to, opaque);
 #line 929 "trace/trace-util.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_aio_coroutine_enter " "ctx %p from %p to %p opaque %p" "\n", ctx, from, to, opaque);
 #line 933 "trace/trace-util.h"
         }
@@ -951,14 +951,14 @@ static inline void _nocheck__trace_qemu_coroutine_yield(void * from, void * to)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_coroutine_yield " "from %p to %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , from, to);
 #line 960 "trace/trace-util.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_coroutine_yield " "from %p to %p" "\n", from, to);
 #line 964 "trace/trace-util.h"
         }
@@ -982,14 +982,14 @@ static inline void _nocheck__trace_qemu_coroutine_terminate(void * co)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_coroutine_terminate " "self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , co);
 #line 991 "trace/trace-util.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_coroutine_terminate " "self %p" "\n", co);
 #line 995 "trace/trace-util.h"
         }
@@ -1013,14 +1013,14 @@ static inline void _nocheck__trace_qemu_co_mutex_lock_uncontended(void * mutex, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_co_mutex_lock_uncontended " "mutex %p self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, self);
 #line 1022 "trace/trace-util.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_co_mutex_lock_uncontended " "mutex %p self %p" "\n", mutex, self);
 #line 1026 "trace/trace-util.h"
         }
@@ -1044,14 +1044,14 @@ static inline void _nocheck__trace_qemu_co_mutex_lock_entry(void * mutex, void *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_co_mutex_lock_entry " "mutex %p self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, self);
 #line 1053 "trace/trace-util.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_co_mutex_lock_entry " "mutex %p self %p" "\n", mutex, self);
 #line 1057 "trace/trace-util.h"
         }
@@ -1075,14 +1075,14 @@ static inline void _nocheck__trace_qemu_co_mutex_lock_return(void * mutex, void 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_co_mutex_lock_return " "mutex %p self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, self);
 #line 1084 "trace/trace-util.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_co_mutex_lock_return " "mutex %p self %p" "\n", mutex, self);
 #line 1088 "trace/trace-util.h"
         }
@@ -1106,14 +1106,14 @@ static inline void _nocheck__trace_qemu_co_mutex_unlock_entry(void * mutex, void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_co_mutex_unlock_entry " "mutex %p self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, self);
 #line 1115 "trace/trace-util.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_co_mutex_unlock_entry " "mutex %p self %p" "\n", mutex, self);
 #line 1119 "trace/trace-util.h"
         }
@@ -1137,14 +1137,14 @@ static inline void _nocheck__trace_qemu_co_mutex_unlock_return(void * mutex, voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_co_mutex_unlock_return " "mutex %p self %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, self);
 #line 1146 "trace/trace-util.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_co_mutex_unlock_return " "mutex %p self %p" "\n", mutex, self);
 #line 1150 "trace/trace-util.h"
         }
@@ -1168,14 +1168,14 @@ static inline void _nocheck__trace_qemu_memalign(size_t alignment, size_t size, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_memalign " "alignment %zu size %zu ptr %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , alignment, size, ptr);
 #line 1177 "trace/trace-util.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_memalign " "alignment %zu size %zu ptr %p" "\n", alignment, size, ptr);
 #line 1181 "trace/trace-util.h"
         }
@@ -1199,14 +1199,14 @@ static inline void _nocheck__trace_qemu_anon_ram_alloc(size_t size, void * ptr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_anon_ram_alloc " "size %zu ptr %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, ptr);
 #line 1208 "trace/trace-util.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_anon_ram_alloc " "size %zu ptr %p" "\n", size, ptr);
 #line 1212 "trace/trace-util.h"
         }
@@ -1230,14 +1230,14 @@ static inline void _nocheck__trace_qemu_vfree(void * ptr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfree " "ptr %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ptr);
 #line 1239 "trace/trace-util.h"
         } else {
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfree " "ptr %p" "\n", ptr);
 #line 1243 "trace/trace-util.h"
         }
@@ -1261,14 +1261,14 @@ static inline void _nocheck__trace_qemu_anon_ram_free(void * ptr, size_t size)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_anon_ram_free " "ptr %p size %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ptr, size);
 #line 1270 "trace/trace-util.h"
         } else {
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_anon_ram_free " "ptr %p size %zu" "\n", ptr, size);
 #line 1274 "trace/trace-util.h"
         }
@@ -1292,14 +1292,14 @@ static inline void _nocheck__trace_hbitmap_iter_skip_words(const void * hb, void
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:hbitmap_iter_skip_words " "hb %p hbi %p pos %"PRId64" cur 0x%lx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hb, hbi, pos, cur);
 #line 1301 "trace/trace-util.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("hbitmap_iter_skip_words " "hb %p hbi %p pos %"PRId64" cur 0x%lx" "\n", hb, hbi, pos, cur);
 #line 1305 "trace/trace-util.h"
         }
@@ -1323,14 +1323,14 @@ static inline void _nocheck__trace_hbitmap_reset(void * hb, uint64_t start, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:hbitmap_reset " "hb %p items %"PRIu64",%"PRIu64" bits %"PRIu64"..%"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hb, start, count, sbit, ebit);
 #line 1332 "trace/trace-util.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("hbitmap_reset " "hb %p items %"PRIu64",%"PRIu64" bits %"PRIu64"..%"PRIu64 "\n", hb, start, count, sbit, ebit);
 #line 1336 "trace/trace-util.h"
         }
@@ -1354,14 +1354,14 @@ static inline void _nocheck__trace_hbitmap_set(void * hb, uint64_t start, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:hbitmap_set " "hb %p items %"PRIu64",%"PRIu64" bits %"PRIu64"..%"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hb, start, count, sbit, ebit);
 #line 1363 "trace/trace-util.h"
         } else {
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("hbitmap_set " "hb %p items %"PRIu64",%"PRIu64" bits %"PRIu64"..%"PRIu64 "\n", hb, start, count, sbit, ebit);
 #line 1367 "trace/trace-util.h"
         }
@@ -1385,14 +1385,14 @@ static inline void _nocheck__trace_lockcnt_fast_path_attempt(const void * lockcn
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_fast_path_attempt " "lockcnt %p fast path %d->%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, expected, new);
 #line 1394 "trace/trace-util.h"
         } else {
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_fast_path_attempt " "lockcnt %p fast path %d->%d" "\n", lockcnt, expected, new);
 #line 1398 "trace/trace-util.h"
         }
@@ -1416,14 +1416,14 @@ static inline void _nocheck__trace_lockcnt_fast_path_success(const void * lockcn
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_fast_path_success " "lockcnt %p fast path %d->%d succeeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, expected, new);
 #line 1425 "trace/trace-util.h"
         } else {
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_fast_path_success " "lockcnt %p fast path %d->%d succeeded" "\n", lockcnt, expected, new);
 #line 1429 "trace/trace-util.h"
         }
@@ -1447,14 +1447,14 @@ static inline void _nocheck__trace_lockcnt_unlock_attempt(const void * lockcnt, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_unlock_attempt " "lockcnt %p unlock %d->%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, expected, new);
 #line 1456 "trace/trace-util.h"
         } else {
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_unlock_attempt " "lockcnt %p unlock %d->%d" "\n", lockcnt, expected, new);
 #line 1460 "trace/trace-util.h"
         }
@@ -1478,14 +1478,14 @@ static inline void _nocheck__trace_lockcnt_unlock_success(const void * lockcnt, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_unlock_success " "lockcnt %p unlock %d->%d succeeded" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, expected, new);
 #line 1487 "trace/trace-util.h"
         } else {
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_unlock_success " "lockcnt %p unlock %d->%d succeeded" "\n", lockcnt, expected, new);
 #line 1491 "trace/trace-util.h"
         }
@@ -1509,14 +1509,14 @@ static inline void _nocheck__trace_lockcnt_futex_wait_prepare(const void * lockc
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_futex_wait_prepare " "lockcnt %p preparing slow path %d->%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, expected, new);
 #line 1518 "trace/trace-util.h"
         } else {
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_futex_wait_prepare " "lockcnt %p preparing slow path %d->%d" "\n", lockcnt, expected, new);
 #line 1522 "trace/trace-util.h"
         }
@@ -1540,14 +1540,14 @@ static inline void _nocheck__trace_lockcnt_futex_wait(const void * lockcnt, int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_futex_wait " "lockcnt %p waiting on %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, val);
 #line 1549 "trace/trace-util.h"
         } else {
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_futex_wait " "lockcnt %p waiting on %d" "\n", lockcnt, val);
 #line 1553 "trace/trace-util.h"
         }
@@ -1571,14 +1571,14 @@ static inline void _nocheck__trace_lockcnt_futex_wait_resume(const void * lockcn
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_futex_wait_resume " "lockcnt %p after wait: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt, new);
 #line 1580 "trace/trace-util.h"
         } else {
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_futex_wait_resume " "lockcnt %p after wait: %d" "\n", lockcnt, new);
 #line 1584 "trace/trace-util.h"
         }
@@ -1602,14 +1602,14 @@ static inline void _nocheck__trace_lockcnt_futex_wake(const void * lockcnt)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:lockcnt_futex_wake " "lockcnt %p waking up one waiter" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , lockcnt);
 #line 1611 "trace/trace-util.h"
         } else {
-#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 67 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("lockcnt_futex_wake " "lockcnt %p waking up one waiter" "\n", lockcnt);
 #line 1615 "trace/trace-util.h"
         }
@@ -1633,14 +1633,14 @@ static inline void _nocheck__trace_socket_listen(int num)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:socket_listen " "backlog: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num);
 #line 1642 "trace/trace-util.h"
         } else {
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("socket_listen " "backlog: %d" "\n", num);
 #line 1646 "trace/trace-util.h"
         }
@@ -1664,14 +1664,14 @@ static inline void _nocheck__trace_qemu_mutex_lock(void * mutex, const char * fi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_mutex_lock " "waiting on mutex %p (%s:%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, file, line);
 #line 1673 "trace/trace-util.h"
         } else {
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_mutex_lock " "waiting on mutex %p (%s:%d)" "\n", mutex, file, line);
 #line 1677 "trace/trace-util.h"
         }
@@ -1695,14 +1695,14 @@ static inline void _nocheck__trace_qemu_mutex_locked(void * mutex, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_mutex_locked " "taken mutex %p (%s:%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, file, line);
 #line 1704 "trace/trace-util.h"
         } else {
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_mutex_locked " "taken mutex %p (%s:%d)" "\n", mutex, file, line);
 #line 1708 "trace/trace-util.h"
         }
@@ -1726,14 +1726,14 @@ static inline void _nocheck__trace_qemu_mutex_unlock(void * mutex, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_mutex_unlock " "released mutex %p (%s:%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mutex, file, line);
 #line 1735 "trace/trace-util.h"
         } else {
-#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 77 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_mutex_unlock " "released mutex %p (%s:%d)" "\n", mutex, file, line);
 #line 1739 "trace/trace-util.h"
         }
@@ -1757,14 +1757,14 @@ static inline void _nocheck__trace_qemu_vfio_dma_reset_temporary(void * s)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_dma_reset_temporary " "s %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s);
 #line 1766 "trace/trace-util.h"
         } else {
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_dma_reset_temporary " "s %p" "\n", s);
 #line 1770 "trace/trace-util.h"
         }
@@ -1788,14 +1788,14 @@ static inline void _nocheck__trace_qemu_vfio_ram_block_added(void * s, void * p,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_ram_block_added " "s %p host %p size 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, p, size);
 #line 1797 "trace/trace-util.h"
         } else {
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_ram_block_added " "s %p host %p size 0x%zx" "\n", s, p, size);
 #line 1801 "trace/trace-util.h"
         }
@@ -1819,14 +1819,14 @@ static inline void _nocheck__trace_qemu_vfio_ram_block_removed(void * s, void * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_ram_block_removed " "s %p host %p size 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, p, size);
 #line 1828 "trace/trace-util.h"
         } else {
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_ram_block_removed " "s %p host %p size 0x%zx" "\n", s, p, size);
 #line 1832 "trace/trace-util.h"
         }
@@ -1850,14 +1850,14 @@ static inline void _nocheck__trace_qemu_vfio_dump_mapping(void * host, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_dump_mapping " "vfio mapping %p to iova 0x%08" PRIx64 " size 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , host, iova, size);
 #line 1859 "trace/trace-util.h"
         } else {
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_dump_mapping " "vfio mapping %p to iova 0x%08" PRIx64 " size 0x%zx" "\n", host, iova, size);
 #line 1863 "trace/trace-util.h"
         }
@@ -1881,14 +1881,14 @@ static inline void _nocheck__trace_qemu_vfio_find_mapping(void * s, void * p)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_find_mapping " "s %p host %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, p);
 #line 1890 "trace/trace-util.h"
         } else {
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_find_mapping " "s %p host %p" "\n", s, p);
 #line 1894 "trace/trace-util.h"
         }
@@ -1912,14 +1912,14 @@ static inline void _nocheck__trace_qemu_vfio_new_mapping(void * s, void * host, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_new_mapping " "s %p host %p size 0x%zx index %d iova 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, host, size, index, iova);
 #line 1921 "trace/trace-util.h"
         } else {
-#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 85 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_new_mapping " "s %p host %p size 0x%zx index %d iova 0x%"PRIx64 "\n", s, host, size, index, iova);
 #line 1925 "trace/trace-util.h"
         }
@@ -1943,14 +1943,14 @@ static inline void _nocheck__trace_qemu_vfio_do_mapping(void * s, void * host, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_do_mapping " "s %p host %p <-> iova 0x%"PRIx64 " size 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, host, iova, size);
 #line 1952 "trace/trace-util.h"
         } else {
-#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 86 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_do_mapping " "s %p host %p <-> iova 0x%"PRIx64 " size 0x%zx" "\n", s, host, iova, size);
 #line 1956 "trace/trace-util.h"
         }
@@ -1974,14 +1974,14 @@ static inline void _nocheck__trace_qemu_vfio_dma_map(void * s, void * host, size
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_dma_map " "s %p host %p size 0x%zx temporary %d &iova %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, host, size, temporary, iova);
 #line 1983 "trace/trace-util.h"
         } else {
-#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 87 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_dma_map " "s %p host %p size 0x%zx temporary %d &iova %p" "\n", s, host, size, temporary, iova);
 #line 1987 "trace/trace-util.h"
         }
@@ -2005,14 +2005,14 @@ static inline void _nocheck__trace_qemu_vfio_dma_mapped(void * s, void * host, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_dma_mapped " "s %p host %p <-> iova 0x%"PRIx64" size 0x%zx" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, host, iova, size);
 #line 2014 "trace/trace-util.h"
         } else {
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_dma_mapped " "s %p host %p <-> iova 0x%"PRIx64" size 0x%zx" "\n", s, host, iova, size);
 #line 2018 "trace/trace-util.h"
         }
@@ -2036,14 +2036,14 @@ static inline void _nocheck__trace_qemu_vfio_dma_unmap(void * s, void * host)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_dma_unmap " "s %p host %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s, host);
 #line 2045 "trace/trace-util.h"
         } else {
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_dma_unmap " "s %p host %p" "\n", s, host);
 #line 2049 "trace/trace-util.h"
         }
@@ -2067,14 +2067,14 @@ static inline void _nocheck__trace_qemu_vfio_pci_read_config(void * buf, int ofs
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_pci_read_config " "read cfg ptr %p ofs 0x%x size 0x%x (region addr 0x%"PRIx64" size 0x%"PRIx64")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, ofs, size, region_ofs, region_size);
 #line 2076 "trace/trace-util.h"
         } else {
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_pci_read_config " "read cfg ptr %p ofs 0x%x size 0x%x (region addr 0x%"PRIx64" size 0x%"PRIx64")" "\n", buf, ofs, size, region_ofs, region_size);
 #line 2080 "trace/trace-util.h"
         }
@@ -2098,14 +2098,14 @@ static inline void _nocheck__trace_qemu_vfio_pci_write_config(void * buf, int of
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_pci_write_config " "write cfg ptr %p ofs 0x%x size 0x%x (region addr 0x%"PRIx64" size 0x%"PRIx64")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buf, ofs, size, region_ofs, region_size);
 #line 2107 "trace/trace-util.h"
         } else {
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_pci_write_config " "write cfg ptr %p ofs 0x%x size 0x%x (region addr 0x%"PRIx64" size 0x%"PRIx64")" "\n", buf, ofs, size, region_ofs, region_size);
 #line 2111 "trace/trace-util.h"
         }
@@ -2129,14 +2129,14 @@ static inline void _nocheck__trace_qemu_vfio_region_info(const char * desc, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_region_info " "region '%s' addr 0x%"PRIx64" size 0x%"PRIx64" cap_ofs 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , desc, region_ofs, region_size, cap_offset);
 #line 2138 "trace/trace-util.h"
         } else {
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_region_info " "region '%s' addr 0x%"PRIx64" size 0x%"PRIx64" cap_ofs 0x%"PRIx32 "\n", desc, region_ofs, region_size, cap_offset);
 #line 2142 "trace/trace-util.h"
         }
@@ -2160,14 +2160,14 @@ static inline void _nocheck__trace_qemu_vfio_pci_map_bar(int index, uint64_t reg
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_vfio_pci_map_bar " "map region bar#%d addr 0x%"PRIx64" size 0x%"PRIx64" ofs 0x%x host %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index, region_ofs, region_size, ofs, host);
 #line 2169 "trace/trace-util.h"
         } else {
-#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 93 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("qemu_vfio_pci_map_bar " "map region bar#%d addr 0x%"PRIx64" size 0x%"PRIx64" ofs 0x%x host %p" "\n", index, region_ofs, region_size, ofs, host);
 #line 2173 "trace/trace-util.h"
         }
@@ -2191,14 +2191,14 @@ static inline void _nocheck__trace_uffd_detect_open_mode(int mode)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_detect_open_mode " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mode);
 #line 2200 "trace/trace-util.h"
         } else {
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_detect_open_mode " "%d" "\n", mode);
 #line 2204 "trace/trace-util.h"
         }
@@ -2222,14 +2222,14 @@ static inline void _nocheck__trace_uffd_query_features_nosys(int err)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_query_features_nosys " "errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 2231 "trace/trace-util.h"
         } else {
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_query_features_nosys " "errno: %i" "\n", err);
 #line 2235 "trace/trace-util.h"
         }
@@ -2253,14 +2253,14 @@ static inline void _nocheck__trace_uffd_query_features_api_failed(int err)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_query_features_api_failed " "errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 2262 "trace/trace-util.h"
         } else {
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_query_features_api_failed " "errno: %i" "\n", err);
 #line 2266 "trace/trace-util.h"
         }
@@ -2284,14 +2284,14 @@ static inline void _nocheck__trace_uffd_create_fd_nosys(int err)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_create_fd_nosys " "errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 2293 "trace/trace-util.h"
         } else {
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_create_fd_nosys " "errno: %i" "\n", err);
 #line 2297 "trace/trace-util.h"
         }
@@ -2315,14 +2315,14 @@ static inline void _nocheck__trace_uffd_create_fd_api_failed(int err)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_create_fd_api_failed " "errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , err);
 #line 2324 "trace/trace-util.h"
         } else {
-#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 100 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_create_fd_api_failed " "errno: %i" "\n", err);
 #line 2328 "trace/trace-util.h"
         }
@@ -2346,14 +2346,14 @@ static inline void _nocheck__trace_uffd_create_fd_api_noioctl(uint64_t ioctl_req
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_create_fd_api_noioctl " "ioctl_req: 0x%" PRIx64 "ioctl_supp: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ioctl_req, ioctl_supp);
 #line 2355 "trace/trace-util.h"
         } else {
-#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 101 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_create_fd_api_noioctl " "ioctl_req: 0x%" PRIx64 "ioctl_supp: 0x%" PRIx64 "\n", ioctl_req, ioctl_supp);
 #line 2359 "trace/trace-util.h"
         }
@@ -2377,14 +2377,14 @@ static inline void _nocheck__trace_uffd_register_memory_failed(void * addr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_register_memory_failed " "addr: %p length: %" PRIu64 " mode: 0x%" PRIx64 " errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, length, mode, err);
 #line 2386 "trace/trace-util.h"
         } else {
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_register_memory_failed " "addr: %p length: %" PRIu64 " mode: 0x%" PRIx64 " errno: %i" "\n", addr, length, mode, err);
 #line 2390 "trace/trace-util.h"
         }
@@ -2408,14 +2408,14 @@ static inline void _nocheck__trace_uffd_unregister_memory_failed(void * addr, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:uffd_unregister_memory_failed " "addr: %p length: %" PRIu64 " errno: %i" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, length, err);
 #line 2417 "trace/trace-util.h"
         } else {
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("uffd_unregister_memory_failed " "addr: %p length: %" PRIu64 " errno: %i" "\n", addr, length, err);
 #line 2421 "trace/trace-util.h"
         }
@@ -2439,14 +2439,14 @@ static inline void _nocheck__trace_module_load_module(const char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:module_load_module " "file %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 2448 "trace/trace-util.h"
         } else {
-#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 106 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("module_load_module " "file %s" "\n", name);
 #line 2452 "trace/trace-util.h"
         }
@@ -2470,14 +2470,14 @@ static inline void _nocheck__trace_module_lookup_object_type(const char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("%d@%zu.%06zu:module_lookup_object_type " "name %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 2479 "trace/trace-util.h"
         } else {
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/util/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/util/trace-events"
             qemu_log("module_lookup_object_type " "name %s" "\n", name);
 #line 2483 "trace/trace-util.h"
         }

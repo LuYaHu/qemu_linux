@@ -397,14 +397,14 @@ static inline void _nocheck__trace_vhost_commit(bool started, bool changed)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_commit " "Started: %d Changed: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , started, changed);
 #line 406 "trace/trace-hw_virtio.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_commit " "Started: %d Changed: %d" "\n", started, changed);
 #line 410 "trace/trace-hw_virtio.h"
         }
@@ -428,14 +428,14 @@ static inline void _nocheck__trace_vhost_region_add_section(const char * name, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_region_add_section " "%s: 0x%"PRIx64"+0x%"PRIx64" @ 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, gpa, size, host);
 #line 437 "trace/trace-hw_virtio.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_region_add_section " "%s: 0x%"PRIx64"+0x%"PRIx64" @ 0x%"PRIx64 "\n", name, gpa, size, host);
 #line 441 "trace/trace-hw_virtio.h"
         }
@@ -459,14 +459,14 @@ static inline void _nocheck__trace_vhost_region_add_section_merge(const char * n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_region_add_section_merge " "%s: size: 0x%"PRIx64 " gpa: 0x%"PRIx64 " owr: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, new_size, gpa, owr);
 #line 468 "trace/trace-hw_virtio.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_region_add_section_merge " "%s: size: 0x%"PRIx64 " gpa: 0x%"PRIx64 " owr: 0x%"PRIx64 "\n", name, new_size, gpa, owr);
 #line 472 "trace/trace-hw_virtio.h"
         }
@@ -490,14 +490,14 @@ static inline void _nocheck__trace_vhost_region_add_section_aligned(const char *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_region_add_section_aligned " "%s: 0x%"PRIx64"+0x%"PRIx64" @ 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, gpa, size, host);
 #line 499 "trace/trace-hw_virtio.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_region_add_section_aligned " "%s: 0x%"PRIx64"+0x%"PRIx64" @ 0x%"PRIx64 "\n", name, gpa, size, host);
 #line 503 "trace/trace-hw_virtio.h"
         }
@@ -521,14 +521,14 @@ static inline void _nocheck__trace_vhost_section(const char * name)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_section " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 530 "trace/trace-hw_virtio.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_section " "%s" "\n", name);
 #line 534 "trace/trace-hw_virtio.h"
         }
@@ -552,14 +552,14 @@ static inline void _nocheck__trace_vhost_reject_section(const char * name, int d
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_reject_section " "%s:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, d);
 #line 561 "trace/trace-hw_virtio.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_reject_section " "%s:%d" "\n", name, d);
 #line 565 "trace/trace-hw_virtio.h"
         }
@@ -583,14 +583,14 @@ static inline void _nocheck__trace_vhost_iotlb_miss(void * dev, int step)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_iotlb_miss " "%p step %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, step);
 #line 592 "trace/trace-hw_virtio.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_iotlb_miss " "%p step %d" "\n", dev, step);
 #line 596 "trace/trace-hw_virtio.h"
         }
@@ -614,14 +614,14 @@ static inline void _nocheck__trace_vhost_dev_cleanup(void * dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_dev_cleanup " "%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 623 "trace/trace-hw_virtio.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_dev_cleanup " "%p" "\n", dev);
 #line 627 "trace/trace-hw_virtio.h"
         }
@@ -645,14 +645,14 @@ static inline void _nocheck__trace_vhost_dev_start(void * dev, const char * name
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_dev_start " "%p:%s vrings:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, name, vrings);
 #line 654 "trace/trace-hw_virtio.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_dev_start " "%p:%s vrings:%d" "\n", dev, name, vrings);
 #line 658 "trace/trace-hw_virtio.h"
         }
@@ -676,14 +676,14 @@ static inline void _nocheck__trace_vhost_dev_stop(void * dev, const char * name,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_dev_stop " "%p:%s vrings:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, name, vrings);
 #line 685 "trace/trace-hw_virtio.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_dev_stop " "%p:%s vrings:%d" "\n", dev, name, vrings);
 #line 689 "trace/trace-hw_virtio.h"
         }
@@ -707,14 +707,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_end_entry(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_end_entry " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 716 "trace/trace-hw_virtio.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_end_entry " "" "\n");
 #line 720 "trace/trace-hw_virtio.h"
         }
@@ -738,14 +738,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_end_exit(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_end_exit " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 747 "trace/trace-hw_virtio.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_end_exit " "" "\n");
 #line 751 "trace/trace-hw_virtio.h"
         }
@@ -769,14 +769,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_fault_handler(const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_fault_handler " "%s: @0x%"PRIx64" nregions:%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, fault_address, nregions);
 #line 778 "trace/trace-hw_virtio.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_fault_handler " "%s: @0x%"PRIx64" nregions:%d" "\n", name, fault_address, nregions);
 #line 782 "trace/trace-hw_virtio.h"
         }
@@ -800,14 +800,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_fault_handler_loop(int i,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_fault_handler_loop " "%d: client 0x%"PRIx64" +0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, client_base, size);
 #line 809 "trace/trace-hw_virtio.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_fault_handler_loop " "%d: client 0x%"PRIx64" +0x%"PRIx64 "\n", i, client_base, size);
 #line 813 "trace/trace-hw_virtio.h"
         }
@@ -831,14 +831,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_fault_handler_found(int i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_fault_handler_found " "%d: region_offset: 0x%"PRIx64" rb_offset:0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, region_offset, rb_offset);
 #line 840 "trace/trace-hw_virtio.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_fault_handler_found " "%d: region_offset: 0x%"PRIx64" rb_offset:0x%"PRIx64 "\n", i, region_offset, rb_offset);
 #line 844 "trace/trace-hw_virtio.h"
         }
@@ -862,14 +862,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_listen(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_listen " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 871 "trace/trace-hw_virtio.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_listen " "" "\n");
 #line 875 "trace/trace-hw_virtio.h"
         }
@@ -893,14 +893,14 @@ static inline void _nocheck__trace_vhost_user_set_mem_table_postcopy(uint64_t cl
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_set_mem_table_postcopy " "client:0x%"PRIx64" for hva: 0x%"PRIx64" reply %d region %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , client_addr, qhva, reply_i, region_i);
 #line 902 "trace/trace-hw_virtio.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_set_mem_table_postcopy " "client:0x%"PRIx64" for hva: 0x%"PRIx64" reply %d region %d" "\n", client_addr, qhva, reply_i, region_i);
 #line 906 "trace/trace-hw_virtio.h"
         }
@@ -924,14 +924,14 @@ static inline void _nocheck__trace_vhost_user_set_mem_table_withfd(int index, co
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_set_mem_table_withfd " "%d:%s: size:0x%"PRIx64" GPA:0x%"PRIx64" QVA/userspace:0x%"PRIx64" RB offset:0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , index, name, memory_size, guest_phys_addr, userspace_addr, offset);
 #line 933 "trace/trace-hw_virtio.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_set_mem_table_withfd " "%d:%s: size:0x%"PRIx64" GPA:0x%"PRIx64" QVA/userspace:0x%"PRIx64" RB offset:0x%"PRIx64 "\n", index, name, memory_size, guest_phys_addr, userspace_addr, offset);
 #line 937 "trace/trace-hw_virtio.h"
         }
@@ -955,14 +955,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_waker(const char * rb, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_waker " "%s + 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rb, rb_offset);
 #line 964 "trace/trace-hw_virtio.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_waker " "%s + 0x%"PRIx64 "\n", rb, rb_offset);
 #line 968 "trace/trace-hw_virtio.h"
         }
@@ -986,14 +986,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_waker_found(uint64_t clie
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_waker_found " "0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , client_addr);
 #line 995 "trace/trace-hw_virtio.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_waker_found " "0x%"PRIx64 "\n", client_addr);
 #line 999 "trace/trace-hw_virtio.h"
         }
@@ -1017,14 +1017,14 @@ static inline void _nocheck__trace_vhost_user_postcopy_waker_nomatch(const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_postcopy_waker_nomatch " "%s + 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rb, rb_offset);
 #line 1026 "trace/trace-hw_virtio.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_postcopy_waker_nomatch " "%s + 0x%"PRIx64 "\n", rb, rb_offset);
 #line 1030 "trace/trace-hw_virtio.h"
         }
@@ -1048,14 +1048,14 @@ static inline void _nocheck__trace_vhost_user_read(uint32_t req, uint32_t flags)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_read " "req:%d flags:0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , req, flags);
 #line 1057 "trace/trace-hw_virtio.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_read " "req:%d flags:0x%"PRIx32"" "\n", req, flags);
 #line 1061 "trace/trace-hw_virtio.h"
         }
@@ -1079,14 +1079,14 @@ static inline void _nocheck__trace_vhost_user_write(uint32_t req, uint32_t flags
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_write " "req:%d flags:0x%"PRIx32"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , req, flags);
 #line 1088 "trace/trace-hw_virtio.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_write " "req:%d flags:0x%"PRIx32"" "\n", req, flags);
 #line 1092 "trace/trace-hw_virtio.h"
         }
@@ -1110,14 +1110,14 @@ static inline void _nocheck__trace_vhost_user_create_notifier(int idx, void * n)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_user_create_notifier " "idx:%d n:%p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , idx, n);
 #line 1119 "trace/trace-hw_virtio.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_user_create_notifier " "idx:%d n:%p" "\n", idx, n);
 #line 1123 "trace/trace-hw_virtio.h"
         }
@@ -1141,14 +1141,14 @@ static inline void _nocheck__trace_vhost_vdpa_dma_map(void * vdpa, int fd, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_dma_map " "vdpa:%p fd: %d msg_type: %"PRIu32" asid: %"PRIu32" iova: 0x%"PRIx64" size: 0x%"PRIx64" uaddr: 0x%"PRIx64" perm: 0x%"PRIx8" type: %"PRIu8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdpa, fd, msg_type, asid, iova, size, uaddr, perm, type);
 #line 1150 "trace/trace-hw_virtio.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_dma_map " "vdpa:%p fd: %d msg_type: %"PRIu32" asid: %"PRIu32" iova: 0x%"PRIx64" size: 0x%"PRIx64" uaddr: 0x%"PRIx64" perm: 0x%"PRIx8" type: %"PRIu8 "\n", vdpa, fd, msg_type, asid, iova, size, uaddr, perm, type);
 #line 1154 "trace/trace-hw_virtio.h"
         }
@@ -1172,14 +1172,14 @@ static inline void _nocheck__trace_vhost_vdpa_dma_unmap(void * vdpa, int fd, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_dma_unmap " "vdpa:%p fd: %d msg_type: %"PRIu32" asid: %"PRIu32" iova: 0x%"PRIx64" size: 0x%"PRIx64" type: %"PRIu8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdpa, fd, msg_type, asid, iova, size, type);
 #line 1181 "trace/trace-hw_virtio.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_dma_unmap " "vdpa:%p fd: %d msg_type: %"PRIu32" asid: %"PRIu32" iova: 0x%"PRIx64" size: 0x%"PRIx64" type: %"PRIu8 "\n", vdpa, fd, msg_type, asid, iova, size, type);
 #line 1185 "trace/trace-hw_virtio.h"
         }
@@ -1203,14 +1203,14 @@ static inline void _nocheck__trace_vhost_vdpa_listener_begin_batch(void * v, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_listener_begin_batch " "vdpa:%p fd: %d msg_type: %"PRIu32" type: %"PRIu8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , v, fd, msg_type, type);
 #line 1212 "trace/trace-hw_virtio.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_listener_begin_batch " "vdpa:%p fd: %d msg_type: %"PRIu32" type: %"PRIu8 "\n", v, fd, msg_type, type);
 #line 1216 "trace/trace-hw_virtio.h"
         }
@@ -1234,14 +1234,14 @@ static inline void _nocheck__trace_vhost_vdpa_listener_commit(void * v, int fd, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_listener_commit " "vdpa:%p fd: %d msg_type: %"PRIu32" type: %"PRIu8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , v, fd, msg_type, type);
 #line 1243 "trace/trace-hw_virtio.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_listener_commit " "vdpa:%p fd: %d msg_type: %"PRIu32" type: %"PRIu8 "\n", v, fd, msg_type, type);
 #line 1247 "trace/trace-hw_virtio.h"
         }
@@ -1265,14 +1265,14 @@ static inline void _nocheck__trace_vhost_vdpa_listener_region_add(void * vdpa, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_listener_region_add " "vdpa: %p iova 0x%"PRIx64" llend 0x%"PRIx64" vaddr: %p read-only: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdpa, iova, llend, vaddr, readonly);
 #line 1274 "trace/trace-hw_virtio.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_listener_region_add " "vdpa: %p iova 0x%"PRIx64" llend 0x%"PRIx64" vaddr: %p read-only: %d" "\n", vdpa, iova, llend, vaddr, readonly);
 #line 1278 "trace/trace-hw_virtio.h"
         }
@@ -1296,14 +1296,14 @@ static inline void _nocheck__trace_vhost_vdpa_listener_region_del(void * vdpa, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_listener_region_del " "vdpa: %p iova 0x%"PRIx64" llend 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdpa, iova, llend);
 #line 1305 "trace/trace-hw_virtio.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_listener_region_del " "vdpa: %p iova 0x%"PRIx64" llend 0x%"PRIx64 "\n", vdpa, iova, llend);
 #line 1309 "trace/trace-hw_virtio.h"
         }
@@ -1327,14 +1327,14 @@ static inline void _nocheck__trace_vhost_vdpa_add_status(void * dev, uint8_t sta
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_add_status " "dev: %p status: 0x%"PRIx8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, status);
 #line 1336 "trace/trace-hw_virtio.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_add_status " "dev: %p status: 0x%"PRIx8 "\n", dev, status);
 #line 1340 "trace/trace-hw_virtio.h"
         }
@@ -1358,14 +1358,14 @@ static inline void _nocheck__trace_vhost_vdpa_init(void * dev, void * vdpa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_init " "dev: %p vdpa: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, vdpa);
 #line 1367 "trace/trace-hw_virtio.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_init " "dev: %p vdpa: %p" "\n", dev, vdpa);
 #line 1371 "trace/trace-hw_virtio.h"
         }
@@ -1389,14 +1389,14 @@ static inline void _nocheck__trace_vhost_vdpa_cleanup(void * dev, void * vdpa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_cleanup " "dev: %p vdpa: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, vdpa);
 #line 1398 "trace/trace-hw_virtio.h"
         } else {
-#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 41 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_cleanup " "dev: %p vdpa: %p" "\n", dev, vdpa);
 #line 1402 "trace/trace-hw_virtio.h"
         }
@@ -1420,14 +1420,14 @@ static inline void _nocheck__trace_vhost_vdpa_memslots_limit(void * dev, int ret
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_memslots_limit " "dev: %p = 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, ret);
 #line 1429 "trace/trace-hw_virtio.h"
         } else {
-#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 42 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_memslots_limit " "dev: %p = 0x%x" "\n", dev, ret);
 #line 1433 "trace/trace-hw_virtio.h"
         }
@@ -1451,14 +1451,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_mem_table(void * dev, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_mem_table " "dev: %p nregions: %"PRIu32" padding: 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, nregions, padding);
 #line 1460 "trace/trace-hw_virtio.h"
         } else {
-#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 43 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_mem_table " "dev: %p nregions: %"PRIu32" padding: 0x%"PRIx32 "\n", dev, nregions, padding);
 #line 1464 "trace/trace-hw_virtio.h"
         }
@@ -1482,14 +1482,14 @@ static inline void _nocheck__trace_vhost_vdpa_dump_regions(void * dev, int i, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_dump_regions " "dev: %p %d: guest_phys_addr: 0x%"PRIx64" memory_size: 0x%"PRIx64" userspace_addr: 0x%"PRIx64" flags_padding: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, i, guest_phys_addr, memory_size, userspace_addr, flags_padding);
 #line 1491 "trace/trace-hw_virtio.h"
         } else {
-#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 44 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_dump_regions " "dev: %p %d: guest_phys_addr: 0x%"PRIx64" memory_size: 0x%"PRIx64" userspace_addr: 0x%"PRIx64" flags_padding: 0x%"PRIx64 "\n", dev, i, guest_phys_addr, memory_size, userspace_addr, flags_padding);
 #line 1495 "trace/trace-hw_virtio.h"
         }
@@ -1513,14 +1513,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_features(void * dev, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_features " "dev: %p features: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, features);
 #line 1522 "trace/trace-hw_virtio.h"
         } else {
-#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 45 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_features " "dev: %p features: 0x%"PRIx64 "\n", dev, features);
 #line 1526 "trace/trace-hw_virtio.h"
         }
@@ -1544,14 +1544,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_device_id(void * dev, uint32_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_device_id " "dev: %p device_id %"PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, device_id);
 #line 1553 "trace/trace-hw_virtio.h"
         } else {
-#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 46 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_device_id " "dev: %p device_id %"PRIu32 "\n", dev, device_id);
 #line 1557 "trace/trace-hw_virtio.h"
         }
@@ -1575,14 +1575,14 @@ static inline void _nocheck__trace_vhost_vdpa_reset_device(void * dev, uint8_t s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_reset_device " "dev: %p status: 0x%"PRIx8 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, status);
 #line 1584 "trace/trace-hw_virtio.h"
         } else {
-#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 47 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_reset_device " "dev: %p status: 0x%"PRIx8 "\n", dev, status);
 #line 1588 "trace/trace-hw_virtio.h"
         }
@@ -1606,14 +1606,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_vq_index(void * dev, int idx, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_vq_index " "dev: %p idx: %d vq idx: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, idx, vq_idx);
 #line 1615 "trace/trace-hw_virtio.h"
         } else {
-#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 48 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_vq_index " "dev: %p idx: %d vq idx: %d" "\n", dev, idx, vq_idx);
 #line 1619 "trace/trace-hw_virtio.h"
         }
@@ -1637,14 +1637,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_ready(void * dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_ready " "dev: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 1646 "trace/trace-hw_virtio.h"
         } else {
-#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 49 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_ready " "dev: %p" "\n", dev);
 #line 1650 "trace/trace-hw_virtio.h"
         }
@@ -1668,14 +1668,14 @@ static inline void _nocheck__trace_vhost_vdpa_dump_config(void * dev, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_dump_config " "dev: %p %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, line);
 #line 1677 "trace/trace-hw_virtio.h"
         } else {
-#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 50 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_dump_config " "dev: %p %s" "\n", dev, line);
 #line 1681 "trace/trace-hw_virtio.h"
         }
@@ -1699,14 +1699,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_config(void * dev, uint32_t of
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_config " "dev: %p offset: %"PRIu32" size: %"PRIu32" flags: 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, offset, size, flags);
 #line 1708 "trace/trace-hw_virtio.h"
         } else {
-#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 51 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_config " "dev: %p offset: %"PRIu32" size: %"PRIu32" flags: 0x%"PRIx32 "\n", dev, offset, size, flags);
 #line 1712 "trace/trace-hw_virtio.h"
         }
@@ -1730,14 +1730,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_config(void * dev, void * conf
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_config " "dev: %p config: %p config_len: %"PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, config, config_len);
 #line 1739 "trace/trace-hw_virtio.h"
         } else {
-#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 52 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_config " "dev: %p config: %p config_len: %"PRIu32 "\n", dev, config, config_len);
 #line 1743 "trace/trace-hw_virtio.h"
         }
@@ -1761,14 +1761,14 @@ static inline void _nocheck__trace_vhost_vdpa_suspend(void * dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_suspend " "dev: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 1770 "trace/trace-hw_virtio.h"
         } else {
-#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 53 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_suspend " "dev: %p" "\n", dev);
 #line 1774 "trace/trace-hw_virtio.h"
         }
@@ -1792,14 +1792,14 @@ static inline void _nocheck__trace_vhost_vdpa_dev_start(void * dev, bool started
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_dev_start " "dev: %p started: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, started);
 #line 1801 "trace/trace-hw_virtio.h"
         } else {
-#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 54 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_dev_start " "dev: %p started: %d" "\n", dev, started);
 #line 1805 "trace/trace-hw_virtio.h"
         }
@@ -1823,14 +1823,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_log_base(void * dev, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_log_base " "dev: %p base: 0x%"PRIx64" size: %llu refcnt: %d fd: %d log: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, base, size, refcnt, fd, log);
 #line 1832 "trace/trace-hw_virtio.h"
         } else {
-#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 55 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_log_base " "dev: %p base: 0x%"PRIx64" size: %llu refcnt: %d fd: %d log: %p" "\n", dev, base, size, refcnt, fd, log);
 #line 1836 "trace/trace-hw_virtio.h"
         }
@@ -1854,14 +1854,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_addr(void * dev, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_addr " "dev: %p index: %u flags: 0x%x desc_user_addr: 0x%"PRIx64" used_user_addr: 0x%"PRIx64" avail_user_addr: 0x%"PRIx64" log_guest_addr: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, flags, desc_user_addr, used_user_addr, avail_user_addr, log_guest_addr);
 #line 1863 "trace/trace-hw_virtio.h"
         } else {
-#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 56 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_addr " "dev: %p index: %u flags: 0x%x desc_user_addr: 0x%"PRIx64" used_user_addr: 0x%"PRIx64" avail_user_addr: 0x%"PRIx64" log_guest_addr: 0x%"PRIx64 "\n", dev, index, flags, desc_user_addr, used_user_addr, avail_user_addr, log_guest_addr);
 #line 1867 "trace/trace-hw_virtio.h"
         }
@@ -1885,14 +1885,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_num(void * dev, unsigned
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_num " "dev: %p index: %u num: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, num);
 #line 1894 "trace/trace-hw_virtio.h"
         } else {
-#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 57 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_num " "dev: %p index: %u num: %u" "\n", dev, index, num);
 #line 1898 "trace/trace-hw_virtio.h"
         }
@@ -1916,14 +1916,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_base(void * dev, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_base " "dev: %p index: %u num: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, num);
 #line 1925 "trace/trace-hw_virtio.h"
         } else {
-#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 58 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_base " "dev: %p index: %u num: %u" "\n", dev, index, num);
 #line 1929 "trace/trace-hw_virtio.h"
         }
@@ -1947,14 +1947,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_vring_base(void * dev, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_vring_base " "dev: %p index: %u num: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, num);
 #line 1956 "trace/trace-hw_virtio.h"
         } else {
-#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 59 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_vring_base " "dev: %p index: %u num: %u" "\n", dev, index, num);
 #line 1960 "trace/trace-hw_virtio.h"
         }
@@ -1978,14 +1978,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_kick(void * dev, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_kick " "dev: %p index: %u fd: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, fd);
 #line 1987 "trace/trace-hw_virtio.h"
         } else {
-#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 60 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_kick " "dev: %p index: %u fd: %d" "\n", dev, index, fd);
 #line 1991 "trace/trace-hw_virtio.h"
         }
@@ -2009,14 +2009,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_vring_call(void * dev, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_vring_call " "dev: %p index: %u fd: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, index, fd);
 #line 2018 "trace/trace-hw_virtio.h"
         } else {
-#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 61 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_vring_call " "dev: %p index: %u fd: %d" "\n", dev, index, fd);
 #line 2022 "trace/trace-hw_virtio.h"
         }
@@ -2040,14 +2040,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_features(void * dev, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_features " "dev: %p features: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, features);
 #line 2049 "trace/trace-hw_virtio.h"
         } else {
-#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 62 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_features " "dev: %p features: 0x%"PRIx64 "\n", dev, features);
 #line 2053 "trace/trace-hw_virtio.h"
         }
@@ -2071,14 +2071,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_owner(void * dev)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_owner " "dev: %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev);
 #line 2080 "trace/trace-hw_virtio.h"
         } else {
-#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 63 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_owner " "dev: %p" "\n", dev);
 #line 2084 "trace/trace-hw_virtio.h"
         }
@@ -2102,14 +2102,14 @@ static inline void _nocheck__trace_vhost_vdpa_vq_get_addr(void * dev, void * vq,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_vq_get_addr " "dev: %p vq: %p desc_user_addr: 0x%"PRIx64" avail_user_addr: 0x%"PRIx64" used_user_addr: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, vq, desc_user_addr, avail_user_addr, used_user_addr);
 #line 2111 "trace/trace-hw_virtio.h"
         } else {
-#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 64 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_vq_get_addr " "dev: %p vq: %p desc_user_addr: 0x%"PRIx64" avail_user_addr: 0x%"PRIx64" used_user_addr: 0x%"PRIx64 "\n", dev, vq, desc_user_addr, avail_user_addr, used_user_addr);
 #line 2115 "trace/trace-hw_virtio.h"
         }
@@ -2133,14 +2133,14 @@ static inline void _nocheck__trace_vhost_vdpa_get_iova_range(void * dev, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_get_iova_range " "dev: %p first: 0x%"PRIx64" last: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, first, last);
 #line 2142 "trace/trace-hw_virtio.h"
         } else {
-#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 65 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_get_iova_range " "dev: %p first: 0x%"PRIx64" last: 0x%"PRIx64 "\n", dev, first, last);
 #line 2146 "trace/trace-hw_virtio.h"
         }
@@ -2164,14 +2164,14 @@ static inline void _nocheck__trace_vhost_vdpa_set_config_call(void * dev, int fd
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:vhost_vdpa_set_config_call " "dev: %p fd: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , dev, fd);
 #line 2173 "trace/trace-hw_virtio.h"
         } else {
-#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 66 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("vhost_vdpa_set_config_call " "dev: %p fd: %d" "\n", dev, fd);
 #line 2177 "trace/trace-hw_virtio.h"
         }
@@ -2195,14 +2195,14 @@ static inline void _nocheck__trace_virtqueue_alloc_element(void * elem, size_t s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtqueue_alloc_element " "elem %p size %zd in_num %u out_num %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , elem, sz, in_num, out_num);
 #line 2204 "trace/trace-hw_virtio.h"
         } else {
-#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 69 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtqueue_alloc_element " "elem %p size %zd in_num %u out_num %u" "\n", elem, sz, in_num, out_num);
 #line 2208 "trace/trace-hw_virtio.h"
         }
@@ -2226,14 +2226,14 @@ static inline void _nocheck__trace_virtqueue_fill(void * vq, const void * elem, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtqueue_fill " "vq %p elem %p len %u idx %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vq, elem, len, idx);
 #line 2235 "trace/trace-hw_virtio.h"
         } else {
-#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 70 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtqueue_fill " "vq %p elem %p len %u idx %u" "\n", vq, elem, len, idx);
 #line 2239 "trace/trace-hw_virtio.h"
         }
@@ -2257,14 +2257,14 @@ static inline void _nocheck__trace_virtqueue_flush(void * vq, unsigned int count
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtqueue_flush " "vq %p count %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vq, count);
 #line 2266 "trace/trace-hw_virtio.h"
         } else {
-#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 71 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtqueue_flush " "vq %p count %u" "\n", vq, count);
 #line 2270 "trace/trace-hw_virtio.h"
         }
@@ -2288,14 +2288,14 @@ static inline void _nocheck__trace_virtqueue_pop(void * vq, void * elem, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtqueue_pop " "vq %p elem %p in_num %u out_num %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vq, elem, in_num, out_num);
 #line 2297 "trace/trace-hw_virtio.h"
         } else {
-#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 72 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtqueue_pop " "vq %p elem %p in_num %u out_num %u" "\n", vq, elem, in_num, out_num);
 #line 2301 "trace/trace-hw_virtio.h"
         }
@@ -2319,14 +2319,14 @@ static inline void _nocheck__trace_virtio_queue_notify(void * vdev, int n, void 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_queue_notify " "vdev %p n %d vq %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdev, n, vq);
 #line 2328 "trace/trace-hw_virtio.h"
         } else {
-#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 73 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_queue_notify " "vdev %p n %d vq %p" "\n", vdev, n, vq);
 #line 2332 "trace/trace-hw_virtio.h"
         }
@@ -2350,14 +2350,14 @@ static inline void _nocheck__trace_virtio_notify_irqfd(void * vdev, void * vq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_notify_irqfd " "vdev %p vq %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdev, vq);
 #line 2359 "trace/trace-hw_virtio.h"
         } else {
-#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 74 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_notify_irqfd " "vdev %p vq %p" "\n", vdev, vq);
 #line 2363 "trace/trace-hw_virtio.h"
         }
@@ -2381,14 +2381,14 @@ static inline void _nocheck__trace_virtio_notify(void * vdev, void * vq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_notify " "vdev %p vq %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdev, vq);
 #line 2390 "trace/trace-hw_virtio.h"
         } else {
-#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 75 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_notify " "vdev %p vq %p" "\n", vdev, vq);
 #line 2394 "trace/trace-hw_virtio.h"
         }
@@ -2412,14 +2412,14 @@ static inline void _nocheck__trace_virtio_set_status(void * vdev, uint8_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_set_status " "vdev %p val %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vdev, val);
 #line 2421 "trace/trace-hw_virtio.h"
         } else {
-#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 76 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_set_status " "vdev %p val %u" "\n", vdev, val);
 #line 2425 "trace/trace-hw_virtio.h"
         }
@@ -2443,14 +2443,14 @@ static inline void _nocheck__trace_virtio_rng_guest_not_ready(void * rng)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_guest_not_ready " "rng %p: guest not ready" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng);
 #line 2452 "trace/trace-hw_virtio.h"
         } else {
-#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 79 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_guest_not_ready " "rng %p: guest not ready" "\n", rng);
 #line 2456 "trace/trace-hw_virtio.h"
         }
@@ -2474,14 +2474,14 @@ static inline void _nocheck__trace_virtio_rng_cpu_is_stopped(void * rng, int siz
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_cpu_is_stopped " "rng %p: cpu is stopped, dropping %d bytes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng, size);
 #line 2483 "trace/trace-hw_virtio.h"
         } else {
-#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 80 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_cpu_is_stopped " "rng %p: cpu is stopped, dropping %d bytes" "\n", rng, size);
 #line 2487 "trace/trace-hw_virtio.h"
         }
@@ -2505,14 +2505,14 @@ static inline void _nocheck__trace_virtio_rng_popped(void * rng)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_popped " "rng %p: elem popped" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng);
 #line 2514 "trace/trace-hw_virtio.h"
         } else {
-#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 81 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_popped " "rng %p: elem popped" "\n", rng);
 #line 2518 "trace/trace-hw_virtio.h"
         }
@@ -2536,14 +2536,14 @@ static inline void _nocheck__trace_virtio_rng_pushed(void * rng, size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_pushed " "rng %p: %zd bytes pushed" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng, len);
 #line 2545 "trace/trace-hw_virtio.h"
         } else {
-#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 82 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_pushed " "rng %p: %zd bytes pushed" "\n", rng, len);
 #line 2549 "trace/trace-hw_virtio.h"
         }
@@ -2567,14 +2567,14 @@ static inline void _nocheck__trace_virtio_rng_request(void * rng, size_t size, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_request " "rng %p: %zd bytes requested, %u bytes quota left" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng, size, quota);
 #line 2576 "trace/trace-hw_virtio.h"
         } else {
-#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 83 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_request " "rng %p: %zd bytes requested, %u bytes quota left" "\n", rng, size, quota);
 #line 2580 "trace/trace-hw_virtio.h"
         }
@@ -2598,14 +2598,14 @@ static inline void _nocheck__trace_virtio_rng_vm_state_change(void * rng, int ru
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_rng_vm_state_change " "rng %p: state change to running %d state %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rng, running, state);
 #line 2607 "trace/trace-hw_virtio.h"
         } else {
-#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 84 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_rng_vm_state_change " "rng %p: state change to running %d state %d" "\n", rng, running, state);
 #line 2611 "trace/trace-hw_virtio.h"
         }
@@ -2629,14 +2629,14 @@ static inline void _nocheck__trace_virtio_balloon_bad_addr(uint64_t gpa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_balloon_bad_addr " "0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpa);
 #line 2638 "trace/trace-hw_virtio.h"
         } else {
-#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 88 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_balloon_bad_addr " "0x%"PRIx64 "\n", gpa);
 #line 2642 "trace/trace-hw_virtio.h"
         }
@@ -2660,14 +2660,14 @@ static inline void _nocheck__trace_virtio_balloon_handle_output(const char * nam
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_balloon_handle_output " "section name: %s gpa: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, gpa);
 #line 2669 "trace/trace-hw_virtio.h"
         } else {
-#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 89 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_balloon_handle_output " "section name: %s gpa: 0x%"PRIx64 "\n", name, gpa);
 #line 2673 "trace/trace-hw_virtio.h"
         }
@@ -2691,14 +2691,14 @@ static inline void _nocheck__trace_virtio_balloon_get_config(uint32_t num_pages,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_balloon_get_config " "num_pages: %d actual: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num_pages, actual);
 #line 2700 "trace/trace-hw_virtio.h"
         } else {
-#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 90 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_balloon_get_config " "num_pages: %d actual: %d" "\n", num_pages, actual);
 #line 2704 "trace/trace-hw_virtio.h"
         }
@@ -2722,14 +2722,14 @@ static inline void _nocheck__trace_virtio_balloon_set_config(uint32_t actual, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_balloon_set_config " "actual: %d oldactual: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , actual, oldactual);
 #line 2731 "trace/trace-hw_virtio.h"
         } else {
-#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 91 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_balloon_set_config " "actual: %d oldactual: %d" "\n", actual, oldactual);
 #line 2735 "trace/trace-hw_virtio.h"
         }
@@ -2753,14 +2753,14 @@ static inline void _nocheck__trace_virtio_balloon_to_target(uint64_t target, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_balloon_to_target " "balloon target: 0x%"PRIx64" num_pages: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , target, num_pages);
 #line 2762 "trace/trace-hw_virtio.h"
         } else {
-#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 92 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_balloon_to_target " "balloon target: 0x%"PRIx64" num_pages: %d" "\n", target, num_pages);
 #line 2766 "trace/trace-hw_virtio.h"
         }
@@ -2784,14 +2784,14 @@ static inline void _nocheck__trace_virtio_mmio_read(uint64_t offset)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mmio_read " "virtio_mmio_read offset 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset);
 #line 2793 "trace/trace-hw_virtio.h"
         } else {
-#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 95 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mmio_read " "virtio_mmio_read offset 0x%" PRIx64 "\n", offset);
 #line 2797 "trace/trace-hw_virtio.h"
         }
@@ -2815,14 +2815,14 @@ static inline void _nocheck__trace_virtio_mmio_write_offset(uint64_t offset, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mmio_write_offset " "virtio_mmio_write offset 0x%" PRIx64 " value 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, value);
 #line 2824 "trace/trace-hw_virtio.h"
         } else {
-#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 96 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mmio_write_offset " "virtio_mmio_write offset 0x%" PRIx64 " value 0x%" PRIx64 "\n", offset, value);
 #line 2828 "trace/trace-hw_virtio.h"
         }
@@ -2846,14 +2846,14 @@ static inline void _nocheck__trace_virtio_mmio_guest_page(uint64_t size, int shi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mmio_guest_page " "guest page size 0x%" PRIx64 " shift %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , size, shift);
 #line 2855 "trace/trace-hw_virtio.h"
         } else {
-#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 97 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mmio_guest_page " "guest page size 0x%" PRIx64 " shift %d" "\n", size, shift);
 #line 2859 "trace/trace-hw_virtio.h"
         }
@@ -2877,14 +2877,14 @@ static inline void _nocheck__trace_virtio_mmio_queue_write(uint64_t value, int m
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mmio_queue_write " "mmio_queue write 0x%" PRIx64 " max %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , value, max_size);
 #line 2886 "trace/trace-hw_virtio.h"
         } else {
-#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 98 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mmio_queue_write " "mmio_queue write 0x%" PRIx64 " max %d" "\n", value, max_size);
 #line 2890 "trace/trace-hw_virtio.h"
         }
@@ -2908,14 +2908,14 @@ static inline void _nocheck__trace_virtio_mmio_setting_irq(int level)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mmio_setting_irq " "virtio_mmio setting IRQ %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level);
 #line 2917 "trace/trace-hw_virtio.h"
         } else {
-#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 99 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mmio_setting_irq " "virtio_mmio setting IRQ %d" "\n", level);
 #line 2921 "trace/trace-hw_virtio.h"
         }
@@ -2939,14 +2939,14 @@ static inline void _nocheck__trace_virtio_pci_notify(uint16_t vector)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pci_notify " "virtio_pci_notify vec 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , vector);
 #line 2948 "trace/trace-hw_virtio.h"
         } else {
-#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 102 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pci_notify " "virtio_pci_notify vec 0x%x" "\n", vector);
 #line 2952 "trace/trace-hw_virtio.h"
         }
@@ -2970,14 +2970,14 @@ static inline void _nocheck__trace_virtio_pci_notify_write(uint64_t addr, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pci_notify_write " "0x%" PRIx64" = 0x%" PRIx64 " (%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, size);
 #line 2979 "trace/trace-hw_virtio.h"
         } else {
-#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 103 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pci_notify_write " "0x%" PRIx64" = 0x%" PRIx64 " (%d)" "\n", addr, val, size);
 #line 2983 "trace/trace-hw_virtio.h"
         }
@@ -3001,14 +3001,14 @@ static inline void _nocheck__trace_virtio_pci_notify_write_pio(uint64_t addr, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pci_notify_write_pio " "0x%" PRIx64" = 0x%" PRIx64 " (%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, val, size);
 #line 3010 "trace/trace-hw_virtio.h"
         } else {
-#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 104 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pci_notify_write_pio " "0x%" PRIx64" = 0x%" PRIx64 " (%d)" "\n", addr, val, size);
 #line 3014 "trace/trace-hw_virtio.h"
         }
@@ -3032,14 +3032,14 @@ static inline void _nocheck__trace_virtio_iommu_device_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_device_reset " "reset!" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3041 "trace/trace-hw_virtio.h"
         } else {
-#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 107 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_device_reset " "reset!" "\n");
 #line 3045 "trace/trace-hw_virtio.h"
         }
@@ -3063,14 +3063,14 @@ static inline void _nocheck__trace_virtio_iommu_system_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_system_reset " "system reset!" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3072 "trace/trace-hw_virtio.h"
         } else {
-#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 108 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_system_reset " "system reset!" "\n");
 #line 3076 "trace/trace-hw_virtio.h"
         }
@@ -3094,14 +3094,14 @@ static inline void _nocheck__trace_virtio_iommu_get_features(uint64_t features)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_get_features " "device supports features=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , features);
 #line 3103 "trace/trace-hw_virtio.h"
         } else {
-#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 109 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_get_features " "device supports features=0x%"PRIx64 "\n", features);
 #line 3107 "trace/trace-hw_virtio.h"
         }
@@ -3125,14 +3125,14 @@ static inline void _nocheck__trace_virtio_iommu_device_status(uint8_t status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_device_status " "driver status = %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 3134 "trace/trace-hw_virtio.h"
         } else {
-#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 110 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_device_status " "driver status = %d" "\n", status);
 #line 3138 "trace/trace-hw_virtio.h"
         }
@@ -3156,14 +3156,14 @@ static inline void _nocheck__trace_virtio_iommu_get_config(uint64_t page_size_ma
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_get_config " "page_size_mask=0x%"PRIx64" input range start=0x%"PRIx64" input range end=0x%"PRIx64" domain range start=%d domain range end=%d probe_size=0x%x bypass=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , page_size_mask, start, end, domain_start, domain_end, probe_size, bypass);
 #line 3165 "trace/trace-hw_virtio.h"
         } else {
-#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 111 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_get_config " "page_size_mask=0x%"PRIx64" input range start=0x%"PRIx64" input range end=0x%"PRIx64" domain range start=%d domain range end=%d probe_size=0x%x bypass=0x%x" "\n", page_size_mask, start, end, domain_start, domain_end, probe_size, bypass);
 #line 3169 "trace/trace-hw_virtio.h"
         }
@@ -3187,14 +3187,14 @@ static inline void _nocheck__trace_virtio_iommu_set_config(uint8_t bypass)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_set_config " "bypass=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bypass);
 #line 3196 "trace/trace-hw_virtio.h"
         } else {
-#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 112 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_set_config " "bypass=0x%x" "\n", bypass);
 #line 3200 "trace/trace-hw_virtio.h"
         }
@@ -3218,14 +3218,14 @@ static inline void _nocheck__trace_virtio_iommu_attach(uint32_t domain_id, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_attach " "domain=%d endpoint=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id, ep_id);
 #line 3227 "trace/trace-hw_virtio.h"
         } else {
-#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 113 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_attach " "domain=%d endpoint=%d" "\n", domain_id, ep_id);
 #line 3231 "trace/trace-hw_virtio.h"
         }
@@ -3249,14 +3249,14 @@ static inline void _nocheck__trace_virtio_iommu_detach(uint32_t domain_id, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_detach " "domain=%d endpoint=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id, ep_id);
 #line 3258 "trace/trace-hw_virtio.h"
         } else {
-#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 114 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_detach " "domain=%d endpoint=%d" "\n", domain_id, ep_id);
 #line 3262 "trace/trace-hw_virtio.h"
         }
@@ -3280,14 +3280,14 @@ static inline void _nocheck__trace_virtio_iommu_map(uint32_t domain_id, uint64_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_map " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 " phys_start=0x%"PRIx64" flags=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id, virt_start, virt_end, phys_start, flags);
 #line 3289 "trace/trace-hw_virtio.h"
         } else {
-#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 115 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_map " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 " phys_start=0x%"PRIx64" flags=%d" "\n", domain_id, virt_start, virt_end, phys_start, flags);
 #line 3293 "trace/trace-hw_virtio.h"
         }
@@ -3311,14 +3311,14 @@ static inline void _nocheck__trace_virtio_iommu_unmap(uint32_t domain_id, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_unmap " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id, virt_start, virt_end);
 #line 3320 "trace/trace-hw_virtio.h"
         } else {
-#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 116 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_unmap " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n", domain_id, virt_start, virt_end);
 #line 3324 "trace/trace-hw_virtio.h"
         }
@@ -3342,14 +3342,14 @@ static inline void _nocheck__trace_virtio_iommu_unmap_done(uint32_t domain_id, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_unmap_done " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id, virt_start, virt_end);
 #line 3351 "trace/trace-hw_virtio.h"
         } else {
-#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 117 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_unmap_done " "domain=%d virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n", domain_id, virt_start, virt_end);
 #line 3355 "trace/trace-hw_virtio.h"
         }
@@ -3373,14 +3373,14 @@ static inline void _nocheck__trace_virtio_iommu_translate(const char * name, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_translate " "mr=%s rid=%d addr=0x%"PRIx64" flag=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, rid, iova, flag);
 #line 3382 "trace/trace-hw_virtio.h"
         } else {
-#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 118 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_translate " "mr=%s rid=%d addr=0x%"PRIx64" flag=%d" "\n", name, rid, iova, flag);
 #line 3386 "trace/trace-hw_virtio.h"
         }
@@ -3404,14 +3404,14 @@ static inline void _nocheck__trace_virtio_iommu_init_iommu_mr(char * iommu_mr)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_init_iommu_mr " "init %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , iommu_mr);
 #line 3413 "trace/trace-hw_virtio.h"
         } else {
-#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 119 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_init_iommu_mr " "init %s" "\n", iommu_mr);
 #line 3417 "trace/trace-hw_virtio.h"
         }
@@ -3435,14 +3435,14 @@ static inline void _nocheck__trace_virtio_iommu_get_endpoint(uint32_t ep_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_get_endpoint " "Alloc endpoint=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep_id);
 #line 3444 "trace/trace-hw_virtio.h"
         } else {
-#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 120 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_get_endpoint " "Alloc endpoint=%d" "\n", ep_id);
 #line 3448 "trace/trace-hw_virtio.h"
         }
@@ -3466,14 +3466,14 @@ static inline void _nocheck__trace_virtio_iommu_put_endpoint(uint32_t ep_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_put_endpoint " "Free endpoint=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ep_id);
 #line 3475 "trace/trace-hw_virtio.h"
         } else {
-#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 121 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_put_endpoint " "Free endpoint=%d" "\n", ep_id);
 #line 3479 "trace/trace-hw_virtio.h"
         }
@@ -3497,14 +3497,14 @@ static inline void _nocheck__trace_virtio_iommu_get_domain(uint32_t domain_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_get_domain " "Alloc domain=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id);
 #line 3506 "trace/trace-hw_virtio.h"
         } else {
-#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 122 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_get_domain " "Alloc domain=%d" "\n", domain_id);
 #line 3510 "trace/trace-hw_virtio.h"
         }
@@ -3528,14 +3528,14 @@ static inline void _nocheck__trace_virtio_iommu_put_domain(uint32_t domain_id)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_put_domain " "Free domain=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , domain_id);
 #line 3537 "trace/trace-hw_virtio.h"
         } else {
-#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 123 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_put_domain " "Free domain=%d" "\n", domain_id);
 #line 3541 "trace/trace-hw_virtio.h"
         }
@@ -3559,14 +3559,14 @@ static inline void _nocheck__trace_virtio_iommu_translate_out(uint64_t virt_addr
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_translate_out " "0x%"PRIx64" -> 0x%"PRIx64 " for sid=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , virt_addr, phys_addr, sid);
 #line 3568 "trace/trace-hw_virtio.h"
         } else {
-#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 124 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_translate_out " "0x%"PRIx64" -> 0x%"PRIx64 " for sid=%d" "\n", virt_addr, phys_addr, sid);
 #line 3572 "trace/trace-hw_virtio.h"
         }
@@ -3590,14 +3590,14 @@ static inline void _nocheck__trace_virtio_iommu_report_fault(uint8_t reason, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_report_fault " "FAULT reason=%d flags=%d endpoint=%d address =0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reason, flags, endpoint, addr);
 #line 3599 "trace/trace-hw_virtio.h"
         } else {
-#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 125 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_report_fault " "FAULT reason=%d flags=%d endpoint=%d address =0x%"PRIx64 "\n", reason, flags, endpoint, addr);
 #line 3603 "trace/trace-hw_virtio.h"
         }
@@ -3621,14 +3621,14 @@ static inline void _nocheck__trace_virtio_iommu_fill_resv_property(uint32_t devi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_fill_resv_property " "dev= %d, type=%d start=0x%"PRIx64" end=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , devid, subtype, start, end);
 #line 3630 "trace/trace-hw_virtio.h"
         } else {
-#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 126 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_fill_resv_property " "dev= %d, type=%d start=0x%"PRIx64" end=0x%"PRIx64 "\n", devid, subtype, start, end);
 #line 3634 "trace/trace-hw_virtio.h"
         }
@@ -3652,14 +3652,14 @@ static inline void _nocheck__trace_virtio_iommu_notify_map(const char * name, ui
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_notify_map " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64" phys_start=0x%"PRIx64" flags=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, virt_start, virt_end, phys_start, flags);
 #line 3661 "trace/trace-hw_virtio.h"
         } else {
-#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 127 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_notify_map " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64" phys_start=0x%"PRIx64" flags=%d" "\n", name, virt_start, virt_end, phys_start, flags);
 #line 3665 "trace/trace-hw_virtio.h"
         }
@@ -3683,14 +3683,14 @@ static inline void _nocheck__trace_virtio_iommu_notify_unmap(const char * name, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_notify_unmap " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, virt_start, virt_end);
 #line 3692 "trace/trace-hw_virtio.h"
         } else {
-#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 128 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_notify_unmap " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64 "\n", name, virt_start, virt_end);
 #line 3696 "trace/trace-hw_virtio.h"
         }
@@ -3714,14 +3714,14 @@ static inline void _nocheck__trace_virtio_iommu_remap(const char * name, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_remap " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64" phys_start=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, virt_start, virt_end, phys_start);
 #line 3723 "trace/trace-hw_virtio.h"
         } else {
-#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 129 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_remap " "mr=%s virt_start=0x%"PRIx64" virt_end=0x%"PRIx64" phys_start=0x%"PRIx64 "\n", name, virt_start, virt_end, phys_start);
 #line 3727 "trace/trace-hw_virtio.h"
         }
@@ -3745,14 +3745,14 @@ static inline void _nocheck__trace_virtio_iommu_set_page_size_mask(const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_set_page_size_mask " "mr=%s old_mask=0x%"PRIx64" new_mask=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, old, new);
 #line 3754 "trace/trace-hw_virtio.h"
         } else {
-#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 130 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_set_page_size_mask " "mr=%s old_mask=0x%"PRIx64" new_mask=0x%"PRIx64 "\n", name, old, new);
 #line 3758 "trace/trace-hw_virtio.h"
         }
@@ -3776,14 +3776,14 @@ static inline void _nocheck__trace_virtio_iommu_notify_flag_add(const char * nam
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_notify_flag_add " "add notifier to mr %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 3785 "trace/trace-hw_virtio.h"
         } else {
-#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 131 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_notify_flag_add " "add notifier to mr %s" "\n", name);
 #line 3789 "trace/trace-hw_virtio.h"
         }
@@ -3807,14 +3807,14 @@ static inline void _nocheck__trace_virtio_iommu_notify_flag_del(const char * nam
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_notify_flag_del " "del notifier from mr %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name);
 #line 3816 "trace/trace-hw_virtio.h"
         } else {
-#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 132 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_notify_flag_del " "del notifier from mr %s" "\n", name);
 #line 3820 "trace/trace-hw_virtio.h"
         }
@@ -3838,14 +3838,14 @@ static inline void _nocheck__trace_virtio_iommu_switch_address_space(uint8_t bus
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_iommu_switch_address_space " "Device %02x:%02x.%x switching address space (iommu enabled=%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bus, slot, fn, on);
 #line 3847 "trace/trace-hw_virtio.h"
         } else {
-#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 133 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_iommu_switch_address_space " "Device %02x:%02x.%x switching address space (iommu enabled=%d)" "\n", bus, slot, fn, on);
 #line 3851 "trace/trace-hw_virtio.h"
         }
@@ -3869,14 +3869,14 @@ static inline void _nocheck__trace_virtio_mem_send_response(uint16_t type)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_send_response " "type=%" PRIu16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type);
 #line 3878 "trace/trace-hw_virtio.h"
         } else {
-#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 136 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_send_response " "type=%" PRIu16 "\n", type);
 #line 3882 "trace/trace-hw_virtio.h"
         }
@@ -3900,14 +3900,14 @@ static inline void _nocheck__trace_virtio_mem_plug_request(uint64_t addr, uint16
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_plug_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nb_blocks);
 #line 3909 "trace/trace-hw_virtio.h"
         } else {
-#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 137 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_plug_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n", addr, nb_blocks);
 #line 3913 "trace/trace-hw_virtio.h"
         }
@@ -3931,14 +3931,14 @@ static inline void _nocheck__trace_virtio_mem_unplug_request(uint64_t addr, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_unplug_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nb_blocks);
 #line 3940 "trace/trace-hw_virtio.h"
         } else {
-#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 138 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_unplug_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n", addr, nb_blocks);
 #line 3944 "trace/trace-hw_virtio.h"
         }
@@ -3962,14 +3962,14 @@ static inline void _nocheck__trace_virtio_mem_unplugged_all(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_unplugged_all " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 3971 "trace/trace-hw_virtio.h"
         } else {
-#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 139 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_unplugged_all " "" "\n");
 #line 3975 "trace/trace-hw_virtio.h"
         }
@@ -3993,14 +3993,14 @@ static inline void _nocheck__trace_virtio_mem_unplug_all_request(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_unplug_all_request " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4002 "trace/trace-hw_virtio.h"
         } else {
-#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 140 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_unplug_all_request " "" "\n");
 #line 4006 "trace/trace-hw_virtio.h"
         }
@@ -4024,14 +4024,14 @@ static inline void _nocheck__trace_virtio_mem_resized_usable_region(uint64_t old
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_resized_usable_region " "old_size=0x%" PRIx64 "new_size=0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , old_size, new_size);
 #line 4033 "trace/trace-hw_virtio.h"
         } else {
-#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 141 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_resized_usable_region " "old_size=0x%" PRIx64 "new_size=0x%" PRIx64 "\n", old_size, new_size);
 #line 4037 "trace/trace-hw_virtio.h"
         }
@@ -4055,14 +4055,14 @@ static inline void _nocheck__trace_virtio_mem_state_request(uint64_t addr, uint1
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_state_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, nb_blocks);
 #line 4064 "trace/trace-hw_virtio.h"
         } else {
-#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 142 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_state_request " "addr=0x%" PRIx64 " nb_blocks=%" PRIu16 "\n", addr, nb_blocks);
 #line 4068 "trace/trace-hw_virtio.h"
         }
@@ -4086,14 +4086,14 @@ static inline void _nocheck__trace_virtio_mem_state_response(uint16_t state)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_mem_state_response " "state=%" PRIu16 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , state);
 #line 4095 "trace/trace-hw_virtio.h"
         } else {
-#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 143 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_mem_state_response " "state=%" PRIu16 "\n", state);
 #line 4099 "trace/trace-hw_virtio.h"
         }
@@ -4117,14 +4117,14 @@ static inline void _nocheck__trace_virtio_pmem_flush_request(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pmem_flush_request " "flush request" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4126 "trace/trace-hw_virtio.h"
         } else {
-#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 146 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pmem_flush_request " "flush request" "\n");
 #line 4130 "trace/trace-hw_virtio.h"
         }
@@ -4148,14 +4148,14 @@ static inline void _nocheck__trace_virtio_pmem_response(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pmem_response " "flush response" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4157 "trace/trace-hw_virtio.h"
         } else {
-#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 147 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pmem_response " "flush response" "\n");
 #line 4161 "trace/trace-hw_virtio.h"
         }
@@ -4179,14 +4179,14 @@ static inline void _nocheck__trace_virtio_pmem_flush_done(int type)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_pmem_flush_done " "fsync return=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type);
 #line 4188 "trace/trace-hw_virtio.h"
         } else {
-#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 148 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_pmem_flush_done " "fsync return=%d" "\n", type);
 #line 4192 "trace/trace-hw_virtio.h"
         }
@@ -4210,14 +4210,14 @@ static inline void _nocheck__trace_virtio_gpio_start(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_gpio_start " "start" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4219 "trace/trace-hw_virtio.h"
         } else {
-#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 151 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_gpio_start " "start" "\n");
 #line 4223 "trace/trace-hw_virtio.h"
         }
@@ -4241,14 +4241,14 @@ static inline void _nocheck__trace_virtio_gpio_stop(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_gpio_stop " "stop" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 4250 "trace/trace-hw_virtio.h"
         } else {
-#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 152 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_gpio_stop " "stop" "\n");
 #line 4254 "trace/trace-hw_virtio.h"
         }
@@ -4272,14 +4272,14 @@ static inline void _nocheck__trace_virtio_gpio_set_status(uint8_t status)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("%d@%zu.%06zu:virtio_gpio_set_status " "0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , status);
 #line 4281 "trace/trace-hw_virtio.h"
         } else {
-#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/virtio/trace-events"
+#line 153 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/virtio/trace-events"
             qemu_log("virtio_gpio_set_status " "0x%x" "\n", status);
 #line 4285 "trace/trace-hw_virtio.h"
         }

@@ -31,14 +31,14 @@ static inline void _nocheck__trace_mhp_pc_dimm_assigned_slot(int slot)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("%d@%zu.%06zu:mhp_pc_dimm_assigned_slot " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , slot);
 #line 40 "trace/trace-hw_mem.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("mhp_pc_dimm_assigned_slot " "%d" "\n", slot);
 #line 44 "trace/trace-hw_mem.h"
         }
@@ -62,14 +62,14 @@ static inline void _nocheck__trace_memory_device_pre_plug(const char * id, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("%d@%zu.%06zu:memory_device_pre_plug " "id=%s addr=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, addr);
 #line 71 "trace/trace-hw_mem.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("memory_device_pre_plug " "id=%s addr=0x%"PRIx64 "\n", id, addr);
 #line 75 "trace/trace-hw_mem.h"
         }
@@ -93,14 +93,14 @@ static inline void _nocheck__trace_memory_device_plug(const char * id, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("%d@%zu.%06zu:memory_device_plug " "id=%s addr=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, addr);
 #line 102 "trace/trace-hw_mem.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("memory_device_plug " "id=%s addr=0x%"PRIx64 "\n", id, addr);
 #line 106 "trace/trace-hw_mem.h"
         }
@@ -124,14 +124,14 @@ static inline void _nocheck__trace_memory_device_unplug(const char * id, uint64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("%d@%zu.%06zu:memory_device_unplug " "id=%s addr=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, addr);
 #line 133 "trace/trace-hw_mem.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/mem/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/mem/trace-events"
             qemu_log("memory_device_unplug " "id=%s addr=0x%"PRIx64 "\n", id, addr);
 #line 137 "trace/trace-hw_mem.h"
         }

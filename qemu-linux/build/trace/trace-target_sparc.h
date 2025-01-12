@@ -88,14 +88,14 @@ static inline void _nocheck__trace_mmu_helper_dfault(uint64_t address, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_dfault " "DFAULT at 0x%"PRIx64" context 0x%"PRIx64" mmu_idx=%d tl=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, context, mmu_idx, tl);
 #line 97 "trace/trace-target_sparc.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_dfault " "DFAULT at 0x%"PRIx64" context 0x%"PRIx64" mmu_idx=%d tl=%d" "\n", address, context, mmu_idx, tl);
 #line 101 "trace/trace-target_sparc.h"
         }
@@ -119,14 +119,14 @@ static inline void _nocheck__trace_mmu_helper_dprot(uint64_t address, uint64_t c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_dprot " "DPROT at 0x%"PRIx64" context 0x%"PRIx64" mmu_idx=%d tl=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, context, mmu_idx, tl);
 #line 128 "trace/trace-target_sparc.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_dprot " "DPROT at 0x%"PRIx64" context 0x%"PRIx64" mmu_idx=%d tl=%d" "\n", address, context, mmu_idx, tl);
 #line 132 "trace/trace-target_sparc.h"
         }
@@ -150,14 +150,14 @@ static inline void _nocheck__trace_mmu_helper_dmiss(uint64_t address, uint64_t c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_dmiss " "DMISS at 0x%"PRIx64" context 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, context);
 #line 159 "trace/trace-target_sparc.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_dmiss " "DMISS at 0x%"PRIx64" context 0x%"PRIx64 "\n", address, context);
 #line 163 "trace/trace-target_sparc.h"
         }
@@ -181,14 +181,14 @@ static inline void _nocheck__trace_mmu_helper_tfault(uint64_t address, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_tfault " "TFAULT at 0x%"PRIx64" context 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, context);
 #line 190 "trace/trace-target_sparc.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_tfault " "TFAULT at 0x%"PRIx64" context 0x%"PRIx64 "\n", address, context);
 #line 194 "trace/trace-target_sparc.h"
         }
@@ -212,14 +212,14 @@ static inline void _nocheck__trace_mmu_helper_tmiss(uint64_t address, uint64_t c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_tmiss " "TMISS at 0x%"PRIx64" context 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, context);
 #line 221 "trace/trace-target_sparc.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_tmiss " "TMISS at 0x%"PRIx64" context 0x%"PRIx64 "\n", address, context);
 #line 225 "trace/trace-target_sparc.h"
         }
@@ -243,14 +243,14 @@ static inline void _nocheck__trace_mmu_helper_get_phys_addr_code(uint32_t tl, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_get_phys_addr_code " "tl=%d mmu_idx=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64" address=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tl, mmu_idx, prim_context, sec_context, address);
 #line 252 "trace/trace-target_sparc.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_get_phys_addr_code " "tl=%d mmu_idx=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64" address=0x%"PRIx64 "\n", tl, mmu_idx, prim_context, sec_context, address);
 #line 256 "trace/trace-target_sparc.h"
         }
@@ -274,14 +274,14 @@ static inline void _nocheck__trace_mmu_helper_get_phys_addr_data(uint32_t tl, in
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_get_phys_addr_data " "tl=%d mmu_idx=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64" address=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tl, mmu_idx, prim_context, sec_context, address);
 #line 283 "trace/trace-target_sparc.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_get_phys_addr_data " "tl=%d mmu_idx=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64" address=0x%"PRIx64 "\n", tl, mmu_idx, prim_context, sec_context, address);
 #line 287 "trace/trace-target_sparc.h"
         }
@@ -305,14 +305,14 @@ static inline void _nocheck__trace_mmu_helper_mmu_fault(uint64_t address, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:mmu_helper_mmu_fault " "Translate at 0x%"PRIx64" -> 0x%"PRIx64", mmu_idx=%d tl=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , address, paddr, mmu_idx, tl, prim_context, sec_context);
 #line 314 "trace/trace-target_sparc.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("mmu_helper_mmu_fault " "Translate at 0x%"PRIx64" -> 0x%"PRIx64", mmu_idx=%d tl=%d primary context=0x%"PRIx64" secondary context=0x%"PRIx64 "\n", address, paddr, mmu_idx, tl, prim_context, sec_context);
 #line 318 "trace/trace-target_sparc.h"
         }
@@ -336,14 +336,14 @@ static inline void _nocheck__trace_sun4m_cpu_interrupt(unsigned int level)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sun4m_cpu_interrupt " "Set CPU IRQ %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level);
 #line 345 "trace/trace-target_sparc.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sun4m_cpu_interrupt " "Set CPU IRQ %d" "\n", level);
 #line 349 "trace/trace-target_sparc.h"
         }
@@ -367,14 +367,14 @@ static inline void _nocheck__trace_sun4m_cpu_reset_interrupt(unsigned int level)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sun4m_cpu_reset_interrupt " "Reset CPU IRQ %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , level);
 #line 376 "trace/trace-target_sparc.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sun4m_cpu_reset_interrupt " "Reset CPU IRQ %d" "\n", level);
 #line 380 "trace/trace-target_sparc.h"
         }
@@ -398,14 +398,14 @@ static inline void _nocheck__trace_int_helper_set_softint(uint32_t softint)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:int_helper_set_softint " "new 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , softint);
 #line 407 "trace/trace-target_sparc.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("int_helper_set_softint " "new 0x%08x" "\n", softint);
 #line 411 "trace/trace-target_sparc.h"
         }
@@ -429,14 +429,14 @@ static inline void _nocheck__trace_int_helper_clear_softint(uint32_t softint)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:int_helper_clear_softint " "new 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , softint);
 #line 438 "trace/trace-target_sparc.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("int_helper_clear_softint " "new 0x%08x" "\n", softint);
 #line 442 "trace/trace-target_sparc.h"
         }
@@ -460,14 +460,14 @@ static inline void _nocheck__trace_int_helper_write_softint(uint32_t softint)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:int_helper_write_softint " "new 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , softint);
 #line 469 "trace/trace-target_sparc.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("int_helper_write_softint " "new 0x%08x" "\n", softint);
 #line 473 "trace/trace-target_sparc.h"
         }
@@ -491,14 +491,14 @@ static inline void _nocheck__trace_sparc64_cpu_check_irqs_reset_irq(int intno)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sparc64_cpu_check_irqs_reset_irq " "Reset CPU IRQ (current interrupt 0x%x)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , intno);
 #line 500 "trace/trace-target_sparc.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sparc64_cpu_check_irqs_reset_irq " "Reset CPU IRQ (current interrupt 0x%x)" "\n", intno);
 #line 504 "trace/trace-target_sparc.h"
         }
@@ -522,14 +522,14 @@ static inline void _nocheck__trace_sparc64_cpu_check_irqs_noset_irq(uint32_t tl,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sparc64_cpu_check_irqs_noset_irq " "Not setting CPU IRQ: TL=%d current 0x%x >= pending 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tl, tt, intno);
 #line 531 "trace/trace-target_sparc.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sparc64_cpu_check_irqs_noset_irq " "Not setting CPU IRQ: TL=%d current 0x%x >= pending 0x%x" "\n", tl, tt, intno);
 #line 535 "trace/trace-target_sparc.h"
         }
@@ -553,14 +553,14 @@ static inline void _nocheck__trace_sparc64_cpu_check_irqs_set_irq(unsigned int i
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sparc64_cpu_check_irqs_set_irq " "Set CPU IRQ %d old=0x%x new=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, old, new);
 #line 562 "trace/trace-target_sparc.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sparc64_cpu_check_irqs_set_irq " "Set CPU IRQ %d old=0x%x new=0x%x" "\n", i, old, new);
 #line 566 "trace/trace-target_sparc.h"
         }
@@ -584,14 +584,14 @@ static inline void _nocheck__trace_sparc64_cpu_check_irqs_disabled(uint32_t pil,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:sparc64_cpu_check_irqs_disabled " "Interrupts disabled, pil=0x%08x pil_in=0x%08x softint=0x%08x current interrupt 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pil, pil_in, softint, intno);
 #line 593 "trace/trace-target_sparc.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("sparc64_cpu_check_irqs_disabled " "Interrupts disabled, pil=0x%08x pil_in=0x%08x softint=0x%08x current interrupt 0x%x" "\n", pil, pil_in, softint, intno);
 #line 597 "trace/trace-target_sparc.h"
         }
@@ -615,14 +615,14 @@ static inline void _nocheck__trace_win_helper_gregset_error(uint32_t pstate)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_gregset_error " "ERROR in get_gregset: active pstate bits=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pstate);
 #line 624 "trace/trace-target_sparc.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_gregset_error " "ERROR in get_gregset: active pstate bits=0x%x" "\n", pstate);
 #line 628 "trace/trace-target_sparc.h"
         }
@@ -646,14 +646,14 @@ static inline void _nocheck__trace_win_helper_switch_pstate(uint32_t pstate_regs
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_switch_pstate " "change_pstate: switching regs old=0x%x new=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pstate_regs, new_pstate_regs);
 #line 655 "trace/trace-target_sparc.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_switch_pstate " "change_pstate: switching regs old=0x%x new=0x%x" "\n", pstate_regs, new_pstate_regs);
 #line 659 "trace/trace-target_sparc.h"
         }
@@ -677,14 +677,14 @@ static inline void _nocheck__trace_win_helper_no_switch_pstate(uint32_t new_psta
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_no_switch_pstate " "change_pstate: regs new=0x%x (unchanged)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_pstate_regs);
 #line 686 "trace/trace-target_sparc.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_no_switch_pstate " "change_pstate: regs new=0x%x (unchanged)" "\n", new_pstate_regs);
 #line 690 "trace/trace-target_sparc.h"
         }
@@ -708,14 +708,14 @@ static inline void _nocheck__trace_win_helper_wrpil(uint32_t psrpil, uint32_t ne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_wrpil " "old=0x%x new=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , psrpil, new_pil);
 #line 717 "trace/trace-target_sparc.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_wrpil " "old=0x%x new=0x%x" "\n", psrpil, new_pil);
 #line 721 "trace/trace-target_sparc.h"
         }
@@ -739,14 +739,14 @@ static inline void _nocheck__trace_win_helper_done(uint32_t tl)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_done " "tl=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tl);
 #line 748 "trace/trace-target_sparc.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_done " "tl=%d" "\n", tl);
 #line 752 "trace/trace-target_sparc.h"
         }
@@ -770,14 +770,14 @@ static inline void _nocheck__trace_win_helper_retry(uint32_t tl)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("%d@%zu.%06zu:win_helper_retry " "tl=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tl);
 #line 779 "trace/trace-target_sparc.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/target/sparc/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/sparc/trace-events"
             qemu_log("win_helper_retry " "tl=%d" "\n", tl);
 #line 783 "trace/trace-target_sparc.h"
         }

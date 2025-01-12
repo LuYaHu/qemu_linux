@@ -22,14 +22,14 @@ static inline void _nocheck__trace_ebpf_error(const char * s1, const char * s2)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/ebpf/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/ebpf/trace-events"
             qemu_log("%d@%zu.%06zu:ebpf_error " "error in %s: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , s1, s2);
 #line 31 "trace/trace-ebpf.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/ebpf/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/ebpf/trace-events"
             qemu_log("ebpf_error " "error in %s: %s" "\n", s1, s2);
 #line 35 "trace/trace-ebpf.h"
         }

@@ -97,14 +97,14 @@ static inline void _nocheck__trace_balloon_event(void * opaque, unsigned long ad
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:balloon_event " "opaque %p addr %lu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , opaque, addr);
 #line 106 "trace/trace-softmmu.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("balloon_event " "opaque %p addr %lu" "\n", opaque, addr);
 #line 110 "trace/trace-softmmu.h"
         }
@@ -128,14 +128,14 @@ static inline void _nocheck__trace_cpu_in(unsigned int addr, char size, unsigned
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:cpu_in " "addr 0x%x(%c) value %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size, val);
 #line 137 "trace/trace-softmmu.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("cpu_in " "addr 0x%x(%c) value %u" "\n", addr, size, val);
 #line 141 "trace/trace-softmmu.h"
         }
@@ -159,14 +159,14 @@ static inline void _nocheck__trace_cpu_out(unsigned int addr, char size, unsigne
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:cpu_out " "addr 0x%x(%c) value %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , addr, size, val);
 #line 168 "trace/trace-softmmu.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("cpu_out " "addr 0x%x(%c) value %u" "\n", addr, size, val);
 #line 172 "trace/trace-softmmu.h"
         }
@@ -190,14 +190,14 @@ static inline void _nocheck__trace_memory_region_ops_read(int cpu_index, void * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_ops_read " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u name '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, addr, value, size, name);
 #line 199 "trace/trace-softmmu.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_ops_read " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u name '%s'" "\n", cpu_index, mr, addr, value, size, name);
 #line 203 "trace/trace-softmmu.h"
         }
@@ -221,14 +221,14 @@ static inline void _nocheck__trace_memory_region_ops_write(int cpu_index, void *
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_ops_write " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u name '%s'" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, addr, value, size, name);
 #line 230 "trace/trace-softmmu.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_ops_write " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u name '%s'" "\n", cpu_index, mr, addr, value, size, name);
 #line 234 "trace/trace-softmmu.h"
         }
@@ -252,14 +252,14 @@ static inline void _nocheck__trace_memory_region_subpage_read(int cpu_index, voi
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_subpage_read " "cpu %d mr %p offset 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, offset, value, size);
 #line 261 "trace/trace-softmmu.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_subpage_read " "cpu %d mr %p offset 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n", cpu_index, mr, offset, value, size);
 #line 265 "trace/trace-softmmu.h"
         }
@@ -283,14 +283,14 @@ static inline void _nocheck__trace_memory_region_subpage_write(int cpu_index, vo
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_subpage_write " "cpu %d mr %p offset 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, offset, value, size);
 #line 292 "trace/trace-softmmu.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_subpage_write " "cpu %d mr %p offset 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n", cpu_index, mr, offset, value, size);
 #line 296 "trace/trace-softmmu.h"
         }
@@ -314,14 +314,14 @@ static inline void _nocheck__trace_memory_region_ram_device_read(int cpu_index, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_ram_device_read " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, addr, value, size);
 #line 323 "trace/trace-softmmu.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_ram_device_read " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n", cpu_index, mr, addr, value, size);
 #line 327 "trace/trace-softmmu.h"
         }
@@ -345,14 +345,14 @@ static inline void _nocheck__trace_memory_region_ram_device_write(int cpu_index,
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_ram_device_write " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, mr, addr, value, size);
 #line 354 "trace/trace-softmmu.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_ram_device_write " "cpu %d mr %p addr 0x%"PRIx64" value 0x%"PRIx64" size %u" "\n", cpu_index, mr, addr, value, size);
 #line 358 "trace/trace-softmmu.h"
         }
@@ -376,14 +376,14 @@ static inline void _nocheck__trace_memory_region_sync_dirty(const char * mr, con
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:memory_region_sync_dirty " "mr '%s' listener '%s' synced (global=%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mr, listener, global);
 #line 385 "trace/trace-softmmu.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("memory_region_sync_dirty " "mr '%s' listener '%s' synced (global=%d)" "\n", mr, listener, global);
 #line 389 "trace/trace-softmmu.h"
         }
@@ -407,14 +407,14 @@ static inline void _nocheck__trace_flatview_new(void * view, void * root)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:flatview_new " "%p (root %p)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , view, root);
 #line 416 "trace/trace-softmmu.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("flatview_new " "%p (root %p)" "\n", view, root);
 #line 420 "trace/trace-softmmu.h"
         }
@@ -438,14 +438,14 @@ static inline void _nocheck__trace_flatview_destroy(void * view, void * root)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:flatview_destroy " "%p (root %p)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , view, root);
 #line 447 "trace/trace-softmmu.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("flatview_destroy " "%p (root %p)" "\n", view, root);
 #line 451 "trace/trace-softmmu.h"
         }
@@ -469,14 +469,14 @@ static inline void _nocheck__trace_flatview_destroy_rcu(void * view, void * root
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:flatview_destroy_rcu " "%p (root %p)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , view, root);
 #line 478 "trace/trace-softmmu.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("flatview_destroy_rcu " "%p (root %p)" "\n", view, root);
 #line 482 "trace/trace-softmmu.h"
         }
@@ -500,14 +500,14 @@ static inline void _nocheck__trace_global_dirty_changed(unsigned int bitmask)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:global_dirty_changed " "bitmask 0x%"PRIx32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bitmask);
 #line 509 "trace/trace-softmmu.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("global_dirty_changed " "bitmask 0x%"PRIx32 "\n", bitmask);
 #line 513 "trace/trace-softmmu.h"
         }
@@ -531,14 +531,14 @@ static inline void _nocheck__trace_vm_stop_flush_all(int ret)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:vm_stop_flush_all " "ret %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , ret);
 #line 540 "trace/trace-softmmu.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("vm_stop_flush_all " "ret %d" "\n", ret);
 #line 544 "trace/trace-softmmu.h"
         }
@@ -562,14 +562,14 @@ static inline void _nocheck__trace_vm_state_notify(int running, int reason, cons
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:vm_state_notify " "running %d reason %d (%s)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , running, reason, reason_str);
 #line 571 "trace/trace-softmmu.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("vm_state_notify " "running %d reason %d (%s)" "\n", running, reason, reason_str);
 #line 575 "trace/trace-softmmu.h"
         }
@@ -593,14 +593,14 @@ static inline void _nocheck__trace_load_file(const char * name, const char * pat
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:load_file " "name %s location %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, path);
 #line 602 "trace/trace-softmmu.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("load_file " "name %s location %s" "\n", name, path);
 #line 606 "trace/trace-softmmu.h"
         }
@@ -624,14 +624,14 @@ static inline void _nocheck__trace_runstate_set(int current_state, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:runstate_set " "current_run_state %d (%s) new_state %d (%s)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , current_state, current_state_str, new_state, new_state_str);
 #line 633 "trace/trace-softmmu.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("runstate_set " "current_run_state %d (%s) new_state %d (%s)" "\n", current_state, current_state_str, new_state, new_state_str);
 #line 637 "trace/trace-softmmu.h"
         }
@@ -655,14 +655,14 @@ static inline void _nocheck__trace_system_wakeup_request(int reason)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:system_wakeup_request " "reason=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reason);
 #line 664 "trace/trace-softmmu.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("system_wakeup_request " "reason=%d" "\n", reason);
 #line 668 "trace/trace-softmmu.h"
         }
@@ -686,14 +686,14 @@ static inline void _nocheck__trace_qemu_system_shutdown_request(int reason)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_system_shutdown_request " "reason=%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reason);
 #line 695 "trace/trace-softmmu.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("qemu_system_shutdown_request " "reason=%d" "\n", reason);
 #line 699 "trace/trace-softmmu.h"
         }
@@ -717,14 +717,14 @@ static inline void _nocheck__trace_qemu_system_powerdown_request(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:qemu_system_powerdown_request " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 726 "trace/trace-softmmu.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("qemu_system_powerdown_request " "" "\n");
 #line 730 "trace/trace-softmmu.h"
         }
@@ -748,14 +748,14 @@ static inline void _nocheck__trace_dirtylimit_state_initialize(int max_cpus)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:dirtylimit_state_initialize " "dirtylimit state initialize: max cpus %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , max_cpus);
 #line 757 "trace/trace-softmmu.h"
         } else {
-#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 36 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("dirtylimit_state_initialize " "dirtylimit state initialize: max cpus %d" "\n", max_cpus);
 #line 761 "trace/trace-softmmu.h"
         }
@@ -779,14 +779,14 @@ static inline void _nocheck__trace_dirtylimit_state_finalize(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:dirtylimit_state_finalize "  "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 788 "trace/trace-softmmu.h"
         } else {
-#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 37 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("dirtylimit_state_finalize "  "\n");
 #line 792 "trace/trace-softmmu.h"
         }
@@ -810,14 +810,14 @@ static inline void _nocheck__trace_dirtylimit_throttle_pct(int cpu_index, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:dirtylimit_throttle_pct " "CPU[%d] throttle percent: %" PRIu64 ", throttle adjust time %"PRIi64 " us" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, pct, time_us);
 #line 819 "trace/trace-softmmu.h"
         } else {
-#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 38 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("dirtylimit_throttle_pct " "CPU[%d] throttle percent: %" PRIu64 ", throttle adjust time %"PRIi64 " us" "\n", cpu_index, pct, time_us);
 #line 823 "trace/trace-softmmu.h"
         }
@@ -841,14 +841,14 @@ static inline void _nocheck__trace_dirtylimit_set_vcpu(int cpu_index, uint64_t q
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:dirtylimit_set_vcpu " "CPU[%d] set dirty page rate limit %"PRIu64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, quota);
 #line 850 "trace/trace-softmmu.h"
         } else {
-#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 39 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("dirtylimit_set_vcpu " "CPU[%d] set dirty page rate limit %"PRIu64 "\n", cpu_index, quota);
 #line 854 "trace/trace-softmmu.h"
         }
@@ -872,14 +872,14 @@ static inline void _nocheck__trace_dirtylimit_vcpu_execute(int cpu_index, int64_
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("%d@%zu.%06zu:dirtylimit_vcpu_execute " "CPU[%d] sleep %"PRIi64 " us" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, sleep_time_us);
 #line 881 "trace/trace-softmmu.h"
         } else {
-#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/softmmu/trace-events"
+#line 40 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/softmmu/trace-events"
             qemu_log("dirtylimit_vcpu_execute " "CPU[%d] sleep %"PRIi64 " us" "\n", cpu_index, sleep_time_us);
 #line 885 "trace/trace-softmmu.h"
         }

@@ -46,14 +46,14 @@ static inline void _nocheck__trace_kvm_x86_fixup_msi_error(uint32_t gsi)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_x86_fixup_msi_error " "VT-d failed to remap interrupt for GSI %" PRIu32 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gsi);
 #line 55 "trace/trace-target_i386_kvm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_x86_fixup_msi_error " "VT-d failed to remap interrupt for GSI %" PRIu32 "\n", gsi);
 #line 59 "trace/trace-target_i386_kvm.h"
         }
@@ -77,14 +77,14 @@ static inline void _nocheck__trace_kvm_x86_add_msi_route(int virq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_x86_add_msi_route " "Adding route entry for virq %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , virq);
 #line 86 "trace/trace-target_i386_kvm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_x86_add_msi_route " "Adding route entry for virq %d" "\n", virq);
 #line 90 "trace/trace-target_i386_kvm.h"
         }
@@ -108,14 +108,14 @@ static inline void _nocheck__trace_kvm_x86_remove_msi_route(int virq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_x86_remove_msi_route " "Removing route entry for virq %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , virq);
 #line 117 "trace/trace-target_i386_kvm.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_x86_remove_msi_route " "Removing route entry for virq %d" "\n", virq);
 #line 121 "trace/trace-target_i386_kvm.h"
         }
@@ -139,14 +139,14 @@ static inline void _nocheck__trace_kvm_x86_update_msi_routes(int num)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_x86_update_msi_routes " "Updated %d MSI routes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , num);
 #line 148 "trace/trace-target_i386_kvm.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_x86_update_msi_routes " "Updated %d MSI routes" "\n", num);
 #line 152 "trace/trace-target_i386_kvm.h"
         }
@@ -170,14 +170,14 @@ static inline void _nocheck__trace_kvm_xen_hypercall(int cpu, uint8_t cpl, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_hypercall " "xen_hypercall: cpu %d cpl %d input %" PRIu64 " a0 0x%" PRIx64 " a1 0x%" PRIx64 " a2 0x%" PRIx64" ret 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu, cpl, input, a0, a1, a2, ret);
 #line 179 "trace/trace-target_i386_kvm.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_xen_hypercall " "xen_hypercall: cpu %d cpl %d input %" PRIu64 " a0 0x%" PRIx64 " a1 0x%" PRIx64 " a2 0x%" PRIx64" ret 0x%" PRIx64 "\n", cpu, cpl, input, a0, a1, a2, ret);
 #line 183 "trace/trace-target_i386_kvm.h"
         }
@@ -201,14 +201,14 @@ static inline void _nocheck__trace_kvm_xen_soft_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_soft_reset " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 210 "trace/trace-target_i386_kvm.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_xen_soft_reset " "" "\n");
 #line 214 "trace/trace-target_i386_kvm.h"
         }
@@ -232,14 +232,14 @@ static inline void _nocheck__trace_kvm_xen_set_shared_info(uint64_t gfn)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_set_shared_info " "shared info at gfn 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gfn);
 #line 241 "trace/trace-target_i386_kvm.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_xen_set_shared_info " "shared info at gfn 0x%" PRIx64 "\n", gfn);
 #line 245 "trace/trace-target_i386_kvm.h"
         }
@@ -263,14 +263,14 @@ static inline void _nocheck__trace_kvm_xen_set_vcpu_attr(int cpu, int type, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_set_vcpu_attr " "vcpu attr cpu %d type %d gpa 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu, type, gpa);
 #line 272 "trace/trace-target_i386_kvm.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_xen_set_vcpu_attr " "vcpu attr cpu %d type %d gpa 0x%" PRIx64 "\n", cpu, type, gpa);
 #line 276 "trace/trace-target_i386_kvm.h"
         }
@@ -294,14 +294,14 @@ static inline void _nocheck__trace_kvm_xen_set_vcpu_callback(int cpu, int vector
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_set_vcpu_callback " "callback vcpu %d vector %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu, vector);
 #line 303 "trace/trace-target_i386_kvm.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/target/i386/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/i386/kvm/trace-events"
             qemu_log("kvm_xen_set_vcpu_callback " "callback vcpu %d vector %d" "\n", cpu, vector);
 #line 307 "trace/trace-target_i386_kvm.h"
         }

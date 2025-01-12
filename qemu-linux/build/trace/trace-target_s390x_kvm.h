@@ -31,14 +31,14 @@ static inline void _nocheck__trace_kvm_enable_cmma(int rc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_enable_cmma " "CMMA: enabling with result code %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rc);
 #line 40 "trace/trace-target_s390x_kvm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("kvm_enable_cmma " "CMMA: enabling with result code %d" "\n", rc);
 #line 44 "trace/trace-target_s390x_kvm.h"
         }
@@ -62,14 +62,14 @@ static inline void _nocheck__trace_kvm_clear_cmma(int rc)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_clear_cmma " "CMMA: clearing with result code %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , rc);
 #line 71 "trace/trace-target_s390x_kvm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("kvm_clear_cmma " "CMMA: clearing with result code %d" "\n", rc);
 #line 75 "trace/trace-target_s390x_kvm.h"
         }
@@ -93,14 +93,14 @@ static inline void _nocheck__trace_kvm_failed_cpu_state_set(int cpu_index, uint8
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_failed_cpu_state_set " "Warning: Unable to set cpu %d state %" PRIu8 " to KVM: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cpu_index, state, msg);
 #line 102 "trace/trace-target_s390x_kvm.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("kvm_failed_cpu_state_set " "Warning: Unable to set cpu %d state %" PRIu8 " to KVM: %s" "\n", cpu_index, state, msg);
 #line 106 "trace/trace-target_s390x_kvm.h"
         }
@@ -124,14 +124,14 @@ static inline void _nocheck__trace_kvm_assign_subch_ioeventfd(int fd, uint32_t a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_assign_subch_ioeventfd " "fd: %d sch: @0x%x assign: %d vq: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , fd, addr, assign, datamatch);
 #line 133 "trace/trace-target_s390x_kvm.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/s390x/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/s390x/kvm/trace-events"
             qemu_log("kvm_assign_subch_ioeventfd " "fd: %d sch: @0x%x assign: %d vq: %d" "\n", fd, addr, assign, datamatch);
 #line 137 "trace/trace-target_s390x_kvm.h"
         }

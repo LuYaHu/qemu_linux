@@ -56,5 +56,5 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_fail.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h ../tests/fp/platform.h \
- /home/luyahu/qemu_linux/qemu-8.0.2/include/qemu/compiler.h \
+ /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/fail.h

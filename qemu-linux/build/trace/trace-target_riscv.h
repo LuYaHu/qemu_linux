@@ -40,14 +40,14 @@ static inline void _nocheck__trace_riscv_trap(uint64_t hartid, bool async, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:riscv_trap " "hart:%"PRId64", async:%d, cause:%"PRId64", epc:0x%"PRIx64", tval:0x%"PRIx64", desc=%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , hartid, async, cause, epc, tval, desc);
 #line 49 "trace/trace-target_riscv.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("riscv_trap " "hart:%"PRId64", async:%d, cause:%"PRId64", epc:0x%"PRIx64", tval:0x%"PRIx64", desc=%s" "\n", hartid, async, cause, epc, tval, desc);
 #line 53 "trace/trace-target_riscv.h"
         }
@@ -71,14 +71,14 @@ static inline void _nocheck__trace_pmpcfg_csr_read(uint64_t mhartid, uint32_t re
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:pmpcfg_csr_read " "hart %" PRIu64 ": read reg%" PRIu32", val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, reg_index, val);
 #line 80 "trace/trace-target_riscv.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("pmpcfg_csr_read " "hart %" PRIu64 ": read reg%" PRIu32", val: 0x%" PRIx64 "\n", mhartid, reg_index, val);
 #line 84 "trace/trace-target_riscv.h"
         }
@@ -102,14 +102,14 @@ static inline void _nocheck__trace_pmpcfg_csr_write(uint64_t mhartid, uint32_t r
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:pmpcfg_csr_write " "hart %" PRIu64 ": write reg%" PRIu32", val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, reg_index, val);
 #line 111 "trace/trace-target_riscv.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("pmpcfg_csr_write " "hart %" PRIu64 ": write reg%" PRIu32", val: 0x%" PRIx64 "\n", mhartid, reg_index, val);
 #line 115 "trace/trace-target_riscv.h"
         }
@@ -133,14 +133,14 @@ static inline void _nocheck__trace_pmpaddr_csr_read(uint64_t mhartid, uint32_t a
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:pmpaddr_csr_read " "hart %" PRIu64 ": read addr%" PRIu32", val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, addr_index, val);
 #line 142 "trace/trace-target_riscv.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("pmpaddr_csr_read " "hart %" PRIu64 ": read addr%" PRIu32", val: 0x%" PRIx64 "\n", mhartid, addr_index, val);
 #line 146 "trace/trace-target_riscv.h"
         }
@@ -164,14 +164,14 @@ static inline void _nocheck__trace_pmpaddr_csr_write(uint64_t mhartid, uint32_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:pmpaddr_csr_write " "hart %" PRIu64 ": write addr%" PRIu32", val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, addr_index, val);
 #line 173 "trace/trace-target_riscv.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("pmpaddr_csr_write " "hart %" PRIu64 ": write addr%" PRIu32", val: 0x%" PRIx64 "\n", mhartid, addr_index, val);
 #line 177 "trace/trace-target_riscv.h"
         }
@@ -195,14 +195,14 @@ static inline void _nocheck__trace_mseccfg_csr_read(uint64_t mhartid, uint64_t v
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:mseccfg_csr_read " "hart %" PRIu64 ": read mseccfg, val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, val);
 #line 204 "trace/trace-target_riscv.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("mseccfg_csr_read " "hart %" PRIu64 ": read mseccfg, val: 0x%" PRIx64 "\n", mhartid, val);
 #line 208 "trace/trace-target_riscv.h"
         }
@@ -226,14 +226,14 @@ static inline void _nocheck__trace_mseccfg_csr_write(uint64_t mhartid, uint64_t 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("%d@%zu.%06zu:mseccfg_csr_write " "hart %" PRIu64 ": write mseccfg, val: 0x%" PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , mhartid, val);
 #line 235 "trace/trace-target_riscv.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/riscv/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/riscv/trace-events"
             qemu_log("mseccfg_csr_write " "hart %" PRIu64 ": write mseccfg, val: 0x%" PRIx64 "\n", mhartid, val);
 #line 239 "trace/trace-target_riscv.h"
         }

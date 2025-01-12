@@ -103,14 +103,14 @@ static inline void _nocheck__trace_tpm_passthrough_handle_request(void * cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_passthrough_handle_request " "processing command %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 112 "trace/trace-backends_tpm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_passthrough_handle_request " "processing command %p" "\n", cmd);
 #line 116 "trace/trace-backends_tpm.h"
         }
@@ -134,14 +134,14 @@ static inline void _nocheck__trace_tpm_passthrough_reset(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_passthrough_reset " "reset" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 143 "trace/trace-backends_tpm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_passthrough_reset " "reset" "\n");
 #line 147 "trace/trace-backends_tpm.h"
         }
@@ -165,14 +165,14 @@ static inline void _nocheck__trace_tpm_util_get_buffer_size_hdr_len(uint32_t len
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_get_buffer_size_hdr_len " "tpm_resp->hdr.len = %u, expected = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, expected);
 #line 174 "trace/trace-backends_tpm.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_get_buffer_size_hdr_len " "tpm_resp->hdr.len = %u, expected = %zu" "\n", len, expected);
 #line 178 "trace/trace-backends_tpm.h"
         }
@@ -196,14 +196,14 @@ static inline void _nocheck__trace_tpm_util_get_buffer_size_len(uint32_t len, si
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_get_buffer_size_len " "tpm_resp->len = %u, expected = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, expected);
 #line 205 "trace/trace-backends_tpm.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_get_buffer_size_len " "tpm_resp->len = %u, expected = %zu" "\n", len, expected);
 #line 209 "trace/trace-backends_tpm.h"
         }
@@ -227,14 +227,14 @@ static inline void _nocheck__trace_tpm_util_get_buffer_size_hdr_len2(uint32_t le
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_get_buffer_size_hdr_len2 " "tpm2_resp->hdr.len = %u, expected = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, expected);
 #line 236 "trace/trace-backends_tpm.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_get_buffer_size_hdr_len2 " "tpm2_resp->hdr.len = %u, expected = %zu" "\n", len, expected);
 #line 240 "trace/trace-backends_tpm.h"
         }
@@ -258,14 +258,14 @@ static inline void _nocheck__trace_tpm_util_get_buffer_size_len2(uint32_t len, s
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_get_buffer_size_len2 " "tpm2_resp->len = %u, expected = %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len, expected);
 #line 267 "trace/trace-backends_tpm.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_get_buffer_size_len2 " "tpm2_resp->len = %u, expected = %zu" "\n", len, expected);
 #line 271 "trace/trace-backends_tpm.h"
         }
@@ -289,14 +289,14 @@ static inline void _nocheck__trace_tpm_util_get_buffer_size(size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_get_buffer_size " "buffersize of device: %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 298 "trace/trace-backends_tpm.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_get_buffer_size " "buffersize of device: %zu" "\n", len);
 #line 302 "trace/trace-backends_tpm.h"
         }
@@ -320,14 +320,14 @@ static inline void _nocheck__trace_tpm_util_show_buffer(const char * direction, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_util_show_buffer " "direction: %s len: %zu\n%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , direction, len, buf);
 #line 329 "trace/trace-backends_tpm.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_util_show_buffer " "direction: %s len: %zu\n%s" "\n", direction, len, buf);
 #line 333 "trace/trace-backends_tpm.h"
         }
@@ -351,14 +351,14 @@ static inline void _nocheck__trace_tpm_emulator_set_locality(uint8_t locty)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_locality " "setting locality to %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , locty);
 #line 360 "trace/trace-backends_tpm.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_locality " "setting locality to %d" "\n", locty);
 #line 364 "trace/trace-backends_tpm.h"
         }
@@ -382,14 +382,14 @@ static inline void _nocheck__trace_tpm_emulator_handle_request(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_handle_request " "processing TPM command" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 391 "trace/trace-backends_tpm.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_handle_request " "processing TPM command" "\n");
 #line 395 "trace/trace-backends_tpm.h"
         }
@@ -413,14 +413,14 @@ static inline void _nocheck__trace_tpm_emulator_probe_caps(uint64_t caps)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_probe_caps " "capabilities: 0x%"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , caps);
 #line 422 "trace/trace-backends_tpm.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_probe_caps " "capabilities: 0x%"PRIx64 "\n", caps);
 #line 426 "trace/trace-backends_tpm.h"
         }
@@ -444,14 +444,14 @@ static inline void _nocheck__trace_tpm_emulator_set_buffer_size(uint32_t buffers
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_buffer_size " "buffer size: %u, min: %u, max: %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , buffersize, minsize, maxsize);
 #line 453 "trace/trace-backends_tpm.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_buffer_size " "buffer size: %u, min: %u, max: %u" "\n", buffersize, minsize, maxsize);
 #line 457 "trace/trace-backends_tpm.h"
         }
@@ -475,14 +475,14 @@ static inline void _nocheck__trace_tpm_emulator_startup_tpm_resume(bool is_resum
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_startup_tpm_resume " "is_resume: %d, buffer size: %zu" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , is_resume, buffersize);
 #line 484 "trace/trace-backends_tpm.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_startup_tpm_resume " "is_resume: %d, buffer size: %zu" "\n", is_resume, buffersize);
 #line 488 "trace/trace-backends_tpm.h"
         }
@@ -506,14 +506,14 @@ static inline void _nocheck__trace_tpm_emulator_get_tpm_established_flag(uint8_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_get_tpm_established_flag " "got established flag: %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , flag);
 #line 515 "trace/trace-backends_tpm.h"
         } else {
-#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 21 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_get_tpm_established_flag " "got established flag: %d" "\n", flag);
 #line 519 "trace/trace-backends_tpm.h"
         }
@@ -537,14 +537,14 @@ static inline void _nocheck__trace_tpm_emulator_cancel_cmd_not_supt(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_cancel_cmd_not_supt " "Backend does not support CANCEL_TPM_CMD" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 546 "trace/trace-backends_tpm.h"
         } else {
-#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 22 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_cancel_cmd_not_supt " "Backend does not support CANCEL_TPM_CMD" "\n");
 #line 550 "trace/trace-backends_tpm.h"
         }
@@ -568,14 +568,14 @@ static inline void _nocheck__trace_tpm_emulator_lock_storage_cmd_not_supt(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_lock_storage_cmd_not_supt " "Backend does not support LOCK_STORAGE" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 577 "trace/trace-backends_tpm.h"
         } else {
-#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 23 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_lock_storage_cmd_not_supt " "Backend does not support LOCK_STORAGE" "\n");
 #line 581 "trace/trace-backends_tpm.h"
         }
@@ -599,14 +599,14 @@ static inline void _nocheck__trace_tpm_emulator_vm_state_change(int running, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_vm_state_change " "state change to running %d state %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , running, state);
 #line 608 "trace/trace-backends_tpm.h"
         } else {
-#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 24 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_vm_state_change " "state change to running %d state %d" "\n", running, state);
 #line 612 "trace/trace-backends_tpm.h"
         }
@@ -630,14 +630,14 @@ static inline void _nocheck__trace_tpm_emulator_handle_device_opts_tpm12(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_handle_device_opts_tpm12 " "TPM Version 1.2" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 639 "trace/trace-backends_tpm.h"
         } else {
-#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 25 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_handle_device_opts_tpm12 " "TPM Version 1.2" "\n");
 #line 643 "trace/trace-backends_tpm.h"
         }
@@ -661,14 +661,14 @@ static inline void _nocheck__trace_tpm_emulator_handle_device_opts_tpm2(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_handle_device_opts_tpm2 " "TPM Version 2" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 670 "trace/trace-backends_tpm.h"
         } else {
-#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 26 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_handle_device_opts_tpm2 " "TPM Version 2" "\n");
 #line 674 "trace/trace-backends_tpm.h"
         }
@@ -692,14 +692,14 @@ static inline void _nocheck__trace_tpm_emulator_handle_device_opts_unspec(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_handle_device_opts_unspec " "TPM Version Unspecified" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 701 "trace/trace-backends_tpm.h"
         } else {
-#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 27 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_handle_device_opts_unspec " "TPM Version Unspecified" "\n");
 #line 705 "trace/trace-backends_tpm.h"
         }
@@ -723,14 +723,14 @@ static inline void _nocheck__trace_tpm_emulator_handle_device_opts_startup_error
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_handle_device_opts_startup_error " "Startup error" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 732 "trace/trace-backends_tpm.h"
         } else {
-#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 28 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_handle_device_opts_startup_error " "Startup error" "\n");
 #line 736 "trace/trace-backends_tpm.h"
         }
@@ -754,14 +754,14 @@ static inline void _nocheck__trace_tpm_emulator_get_state_blob(uint8_t type, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_get_state_blob " "got state blob type %d, %u bytes, flags 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, size, flags);
 #line 763 "trace/trace-backends_tpm.h"
         } else {
-#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 29 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_get_state_blob " "got state blob type %d, %u bytes, flags 0x%08x" "\n", type, size, flags);
 #line 767 "trace/trace-backends_tpm.h"
         }
@@ -785,14 +785,14 @@ static inline void _nocheck__trace_tpm_emulator_set_state_blob(uint8_t type, uin
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_state_blob " "set state blob type %d, %u bytes, flags 0x%08x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , type, size, flags);
 #line 794 "trace/trace-backends_tpm.h"
         } else {
-#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 30 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_state_blob " "set state blob type %d, %u bytes, flags 0x%08x" "\n", type, size, flags);
 #line 798 "trace/trace-backends_tpm.h"
         }
@@ -816,14 +816,14 @@ static inline void _nocheck__trace_tpm_emulator_set_state_blobs(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_state_blobs " "setting state blobs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 825 "trace/trace-backends_tpm.h"
         } else {
-#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 31 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_state_blobs " "setting state blobs" "\n");
 #line 829 "trace/trace-backends_tpm.h"
         }
@@ -847,14 +847,14 @@ static inline void _nocheck__trace_tpm_emulator_set_state_blobs_error(const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_state_blobs_error " "error while setting state blobs: %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , msg);
 #line 856 "trace/trace-backends_tpm.h"
         } else {
-#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 32 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_state_blobs_error " "error while setting state blobs: %s" "\n", msg);
 #line 860 "trace/trace-backends_tpm.h"
         }
@@ -878,14 +878,14 @@ static inline void _nocheck__trace_tpm_emulator_set_state_blobs_done(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_set_state_blobs_done " "Done setting state blobs" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 887 "trace/trace-backends_tpm.h"
         } else {
-#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 33 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_set_state_blobs_done " "Done setting state blobs" "\n");
 #line 891 "trace/trace-backends_tpm.h"
         }
@@ -909,14 +909,14 @@ static inline void _nocheck__trace_tpm_emulator_pre_save(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_pre_save " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 918 "trace/trace-backends_tpm.h"
         } else {
-#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 34 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_pre_save " "" "\n");
 #line 922 "trace/trace-backends_tpm.h"
         }
@@ -940,14 +940,14 @@ static inline void _nocheck__trace_tpm_emulator_inst_init(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("%d@%zu.%06zu:tpm_emulator_inst_init " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 949 "trace/trace-backends_tpm.h"
         } else {
-#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/backends/tpm/trace-events"
+#line 35 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/backends/tpm/trace-events"
             qemu_log("tpm_emulator_inst_init " "" "\n");
 #line 953 "trace/trace-backends_tpm.h"
         }

@@ -58,14 +58,14 @@ static inline void _nocheck__trace_hvf_unhandled_sysreg_read(uint64_t pc, uint32
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_unhandled_sysreg_read " "unhandled sysreg read at pc=0x%"PRIx64": 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pc, reg, op0, op1, crn, crm, op2);
 #line 67 "trace/trace-target_arm_hvf.h"
         } else {
-#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_unhandled_sysreg_read " "unhandled sysreg read at pc=0x%"PRIx64": 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d)" "\n", pc, reg, op0, op1, crn, crm, op2);
 #line 71 "trace/trace-target_arm_hvf.h"
         }
@@ -89,14 +89,14 @@ static inline void _nocheck__trace_hvf_unhandled_sysreg_write(uint64_t pc, uint3
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_unhandled_sysreg_write " "unhandled sysreg write at pc=0x%"PRIx64": 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d)" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pc, reg, op0, op1, crn, crm, op2);
 #line 98 "trace/trace-target_arm_hvf.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_unhandled_sysreg_write " "unhandled sysreg write at pc=0x%"PRIx64": 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d)" "\n", pc, reg, op0, op1, crn, crm, op2);
 #line 102 "trace/trace-target_arm_hvf.h"
         }
@@ -120,14 +120,14 @@ static inline void _nocheck__trace_hvf_inject_fiq(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_inject_fiq " "injecting FIQ" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 129 "trace/trace-target_arm_hvf.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_inject_fiq " "injecting FIQ" "\n");
 #line 133 "trace/trace-target_arm_hvf.h"
         }
@@ -151,14 +151,14 @@ static inline void _nocheck__trace_hvf_inject_irq(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_inject_irq " "injecting IRQ" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 160 "trace/trace-target_arm_hvf.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_inject_irq " "injecting IRQ" "\n");
 #line 164 "trace/trace-target_arm_hvf.h"
         }
@@ -182,14 +182,14 @@ static inline void _nocheck__trace_hvf_data_abort(uint64_t pc, uint64_t va, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_data_abort " "data abort: [pc=0x%"PRIx64" va=0x%016"PRIx64" pa=0x%016"PRIx64" isv=%d iswrite=%d s1ptw=%d len=%d srt=%d]" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pc, va, pa, isv, iswrite, s1ptw, len, srt);
 #line 191 "trace/trace-target_arm_hvf.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_data_abort " "data abort: [pc=0x%"PRIx64" va=0x%016"PRIx64" pa=0x%016"PRIx64" isv=%d iswrite=%d s1ptw=%d len=%d srt=%d]" "\n", pc, va, pa, isv, iswrite, s1ptw, len, srt);
 #line 195 "trace/trace-target_arm_hvf.h"
         }
@@ -213,14 +213,14 @@ static inline void _nocheck__trace_hvf_sysreg_read(uint32_t reg, uint32_t op0, u
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_sysreg_read " "sysreg read 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d) = 0x%016"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reg, op0, op1, crn, crm, op2, val);
 #line 222 "trace/trace-target_arm_hvf.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_sysreg_read " "sysreg read 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d) = 0x%016"PRIx64 "\n", reg, op0, op1, crn, crm, op2, val);
 #line 226 "trace/trace-target_arm_hvf.h"
         }
@@ -244,14 +244,14 @@ static inline void _nocheck__trace_hvf_sysreg_write(uint32_t reg, uint32_t op0, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_sysreg_write " "sysreg write 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d, val=0x%016"PRIx64")" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , reg, op0, op1, crn, crm, op2, val);
 #line 253 "trace/trace-target_arm_hvf.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_sysreg_write " "sysreg write 0x%08x (op0=%d op1=%d crn=%d crm=%d op2=%d, val=0x%016"PRIx64")" "\n", reg, op0, op1, crn, crm, op2, val);
 #line 257 "trace/trace-target_arm_hvf.h"
         }
@@ -275,14 +275,14 @@ static inline void _nocheck__trace_hvf_unknown_hvc(uint64_t x0)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_unknown_hvc " "unknown HVC! 0x%016"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , x0);
 #line 284 "trace/trace-target_arm_hvf.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_unknown_hvc " "unknown HVC! 0x%016"PRIx64 "\n", x0);
 #line 288 "trace/trace-target_arm_hvf.h"
         }
@@ -306,14 +306,14 @@ static inline void _nocheck__trace_hvf_unknown_smc(uint64_t x0)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_unknown_smc " "unknown SMC! 0x%016"PRIx64 "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , x0);
 #line 315 "trace/trace-target_arm_hvf.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_unknown_smc " "unknown SMC! 0x%016"PRIx64 "\n", x0);
 #line 319 "trace/trace-target_arm_hvf.h"
         }
@@ -337,14 +337,14 @@ static inline void _nocheck__trace_hvf_exit(uint64_t syndrome, uint32_t ec, uint
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_exit " "exit: 0x%"PRIx64" [ec=0x%x pc=0x%"PRIx64"]" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , syndrome, ec, pc);
 #line 346 "trace/trace-target_arm_hvf.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_exit " "exit: 0x%"PRIx64" [ec=0x%x pc=0x%"PRIx64"]" "\n", syndrome, ec, pc);
 #line 350 "trace/trace-target_arm_hvf.h"
         }
@@ -368,14 +368,14 @@ static inline void _nocheck__trace_hvf_psci_call(uint64_t x0, uint64_t x1, uint6
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_psci_call " "PSCI Call x0=0x%016"PRIx64" x1=0x%016"PRIx64" x2=0x%016"PRIx64" x3=0x%016"PRIx64" cpu=0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , x0, x1, x2, x3, cpuid);
 #line 377 "trace/trace-target_arm_hvf.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_psci_call " "PSCI Call x0=0x%016"PRIx64" x1=0x%016"PRIx64" x2=0x%016"PRIx64" x3=0x%016"PRIx64" cpu=0x%x" "\n", x0, x1, x2, x3, cpuid);
 #line 381 "trace/trace-target_arm_hvf.h"
         }
@@ -399,14 +399,14 @@ static inline void _nocheck__trace_hvf_vgic_write(const char * name, uint64_t va
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_vgic_write " "vgic write to %s [val=0x%016"PRIx64"]" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, val);
 #line 408 "trace/trace-target_arm_hvf.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_vgic_write " "vgic write to %s [val=0x%016"PRIx64"]" "\n", name, val);
 #line 412 "trace/trace-target_arm_hvf.h"
         }
@@ -430,14 +430,14 @@ static inline void _nocheck__trace_hvf_vgic_read(const char * name, uint64_t val
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("%d@%zu.%06zu:hvf_vgic_read " "vgic read from %s [val=0x%016"PRIx64"]" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , name, val);
 #line 439 "trace/trace-target_arm_hvf.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/target/arm/hvf/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/target/arm/hvf/trace-events"
             qemu_log("hvf_vgic_read " "vgic read from %s [val=0x%016"PRIx64"]" "\n", name, val);
 #line 443 "trace/trace-target_arm_hvf.h"
         }

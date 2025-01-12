@@ -58,14 +58,14 @@ static inline void _nocheck__trace_wct_init(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_init " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 67 "trace/trace-chardev.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_init " "" "\n");
 #line 71 "trace/trace-chardev.h"
         }
@@ -89,14 +89,14 @@ static inline void _nocheck__trace_wct_cmd_re(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_cmd_re " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 98 "trace/trace-chardev.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_cmd_re " "" "\n");
 #line 102 "trace/trace-chardev.h"
         }
@@ -120,14 +120,14 @@ static inline void _nocheck__trace_wct_cmd_st(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_cmd_st " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 129 "trace/trace-chardev.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_cmd_st " "" "\n");
 #line 133 "trace/trace-chardev.h"
         }
@@ -151,14 +151,14 @@ static inline void _nocheck__trace_wct_cmd_sp(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_cmd_sp " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 160 "trace/trace-chardev.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_cmd_sp " "" "\n");
 #line 164 "trace/trace-chardev.h"
         }
@@ -182,14 +182,14 @@ static inline void _nocheck__trace_wct_cmd_ts(int input)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_cmd_ts " "0x%02x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , input);
 #line 191 "trace/trace-chardev.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_cmd_ts " "0x%02x" "\n", input);
 #line 195 "trace/trace-chardev.h"
         }
@@ -213,14 +213,14 @@ static inline void _nocheck__trace_wct_cmd_other(const char * cmd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_cmd_other " "%s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd);
 #line 222 "trace/trace-chardev.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_cmd_other " "%s" "\n", cmd);
 #line 226 "trace/trace-chardev.h"
         }
@@ -244,14 +244,14 @@ static inline void _nocheck__trace_wct_speed(int speed)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:wct_speed " "%d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , speed);
 #line 253 "trace/trace-chardev.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("wct_speed " "%d" "\n", speed);
 #line 257 "trace/trace-chardev.h"
         }
@@ -275,14 +275,14 @@ static inline void _nocheck__trace_spice_chr_discard_write(int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_chr_discard_write " "spice chr write discarded %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , len);
 #line 284 "trace/trace-chardev.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_chr_discard_write " "spice chr write discarded %d" "\n", len);
 #line 288 "trace/trace-chardev.h"
         }
@@ -306,14 +306,14 @@ static inline void _nocheck__trace_spice_vmc_write(ssize_t out, int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_vmc_write " "spice wrote %zd of requested %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , out, len);
 #line 315 "trace/trace-chardev.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_vmc_write " "spice wrote %zd of requested %d" "\n", out, len);
 #line 319 "trace/trace-chardev.h"
         }
@@ -337,14 +337,14 @@ static inline void _nocheck__trace_spice_vmc_read(int bytes, int len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_vmc_read " "spice read %d of requested %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , bytes, len);
 #line 346 "trace/trace-chardev.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_vmc_read " "spice read %d of requested %d" "\n", bytes, len);
 #line 350 "trace/trace-chardev.h"
         }
@@ -368,14 +368,14 @@ static inline void _nocheck__trace_spice_vmc_register_interface(void * scd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_vmc_register_interface " "spice vmc registered interface %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , scd);
 #line 377 "trace/trace-chardev.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_vmc_register_interface " "spice vmc registered interface %p" "\n", scd);
 #line 381 "trace/trace-chardev.h"
         }
@@ -399,14 +399,14 @@ static inline void _nocheck__trace_spice_vmc_unregister_interface(void * scd)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_vmc_unregister_interface " "spice vmc unregistered interface %p" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , scd);
 #line 408 "trace/trace-chardev.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_vmc_unregister_interface " "spice vmc unregistered interface %p" "\n", scd);
 #line 412 "trace/trace-chardev.h"
         }
@@ -430,14 +430,14 @@ static inline void _nocheck__trace_spice_vmc_event(int event)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("%d@%zu.%06zu:spice_vmc_event " "spice vmc event %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , event);
 #line 439 "trace/trace-chardev.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/chardev/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/chardev/trace-events"
             qemu_log("spice_vmc_event " "spice vmc event %d" "\n", event);
 #line 443 "trace/trace-chardev.h"
         }

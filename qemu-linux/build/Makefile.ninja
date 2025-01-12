@@ -2763,7 +2763,7 @@ tests/unit/test-uuid.p/test-uuid.c.o \
 tests/unit/test-uuid \
 tests/unit/ptimer-test.p/ptimer-test.c.o \
 tests/unit/ptimer-test.p/ptimer-test-stubs.c.o \
-tests/unit/ptimer-test.p/_home_luyahu_qemu_linux_qemu-8.0.2_hw_core_ptimer.c.o \
+tests/unit/ptimer-test.p/_home_luyahu_qemu_linux_qemu-8.0.2_qemu-linux_hw_core_ptimer.c.o \
 tests/unit/ptimer-test \
 tests/unit/test-qapi-util.p/test-qapi-util.c.o \
 tests/unit/test-qapi-util \
@@ -2882,7 +2882,7 @@ tests/unit/test-base64 \
 tests/unit/test-bufferiszero.p/test-bufferiszero.c.o \
 tests/unit/test-bufferiszero \
 tests/unit/test-smp-parse.p/test-smp-parse.c.o \
-tests/unit/test-smp-parse.p/_home_luyahu_qemu_linux_qemu-8.0.2_hw_core_machine-smp.c.o \
+tests/unit/test-smp-parse.p/_home_luyahu_qemu_linux_qemu-8.0.2_qemu-linux_hw_core_machine-smp.c.o \
 tests/unit/test-smp-parse \
 tests/unit/test-vmstate.p/test-vmstate.c.o \
 tests/unit/test-vmstate \
@@ -3004,111 +3004,111 @@ clean-ctlist \
 meson-clean \
 build.ninja \
 reconfigure \
-../hw/acpi/Kconfig \
-../hw/gpio/Kconfig \
-../accel/Kconfig \
-../hw/rtc/Kconfig \
-../hw/pci/Kconfig \
-/home/luyahu/qemu_linux/qemu-8.0.2/configs/targets/riscv64-softmmu.mak \
-../hw/cris/Kconfig \
-../backends/tpm/Kconfig \
-../scripts/xen-detect.c \
-../hw/i2c/Kconfig \
-../hw/nvram/Kconfig \
-../target/avr/Kconfig \
-../hw/Kconfig \
-../hw/hppa/Kconfig \
-../hw/display/Kconfig \
-../target/tricore/Kconfig \
-../hw/riscv/Kconfig \
-../hw/m68k/Kconfig \
-../hw/adc/Kconfig \
-../target/sparc/Kconfig \
-../hw/misc/macio/Kconfig \
-../hw/net/Kconfig \
-../hw/timer/Kconfig \
-../target/xtensa/Kconfig \
-../target/cris/Kconfig \
-../meson.build \
-../hw/rx/Kconfig \
-../hw/pcmcia/Kconfig \
-../target/m68k/Kconfig \
-../target/loongarch/Kconfig \
-../hw/nios2/Kconfig \
-../hw/sd/Kconfig \
-../hw/9pfs/Kconfig \
-../target/rx/Kconfig \
-../hw/hyperv/Kconfig \
-../hw/microblaze/Kconfig \
-../target/ppc/Kconfig \
-../hw/sh4/Kconfig \
-../Kconfig.host \
-../semihosting/Kconfig \
-../hw/nvme/Kconfig \
-../hw/tpm/Kconfig \
-../hw/core/Kconfig \
-../target/Kconfig \
-../hw/isa/Kconfig \
-../target/mips/Kconfig \
-../hw/vfio/Kconfig \
-../hw/scsi/Kconfig \
-../target/openrisc/Kconfig \
-../hw/ipack/Kconfig \
-../target/nios2/Kconfig \
-../hw/cxl/Kconfig \
-../target/alpha/Kconfig \
-../hw/virtio/Kconfig \
-../hw/pci-host/Kconfig \
-../backends/Kconfig \
-../hw/xen/Kconfig \
-../scripts/main.c \
-../configs/devices/riscv64-softmmu/default.mak \
-../hw/usb/Kconfig \
-../hw/remote/Kconfig \
-../hw/audio/Kconfig \
-../hw/mips/Kconfig \
-/home/luyahu/qemu_linux/qemu-8.0.2/build/config-host.mak \
-../target/arm/Kconfig \
-../hw/openrisc/Kconfig \
-../hw/block/Kconfig \
-../hw/sparc64/Kconfig \
-../hw/alpha/Kconfig \
-../target/hppa/Kconfig \
-../hw/tricore/Kconfig \
-../subprojects/libvhost-user/meson.build \
-../hw/sensor/Kconfig \
-../hw/input/Kconfig \
-../hw/intc/Kconfig \
-../hw/nubus/Kconfig \
-../hw/sparc/Kconfig \
-../hw/ppc/Kconfig \
-../hw/loongarch/Kconfig \
-../target/i386/Kconfig \
-../hw/avr/Kconfig \
-../hw/mem/Kconfig \
-../target/riscv/Kconfig \
-../hw/pci-bridge/Kconfig \
 ../Kconfig \
 ../hw/ide/Kconfig \
-../meson_options.txt \
-../hw/smbios/Kconfig \
-../hw/misc/Kconfig \
-../hw/ssi/Kconfig \
-../hw/i386/Kconfig \
-../target/microblaze/Kconfig \
-../target/s390x/Kconfig \
-../hw/xtensa/Kconfig \
+../hw/virtio/Kconfig \
+../hw/gpio/Kconfig \
 ../hw/arm/Kconfig \
-../VERSION \
-../target/sh4/Kconfig \
-../scripts/minikconf.py \
-../hw/s390x/Kconfig \
-../hw/ipmi/Kconfig \
-../subprojects/libvduse/meson.build \
+../hw/block/Kconfig \
+../hw/avr/Kconfig \
+../target/alpha/Kconfig \
+../hw/misc/Kconfig \
+../target/xtensa/Kconfig \
+../hw/sparc/Kconfig \
+../hw/Kconfig \
+../hw/scsi/Kconfig \
+../hw/ssi/Kconfig \
+../target/sparc/Kconfig \
+../meson_options.txt \
+../hw/isa/Kconfig \
+../hw/riscv/Kconfig \
+../target/cris/Kconfig \
+../hw/ipack/Kconfig \
+../meson.build \
+../hw/cris/Kconfig \
+../hw/adc/Kconfig \
+../hw/9pfs/Kconfig \
+../hw/input/Kconfig \
+../target/arm/Kconfig \
+../hw/smbios/Kconfig \
 ../hw/char/Kconfig \
-../hw/rdma/Kconfig \
-../hw/watchdog/Kconfig \
+../hw/ppc/Kconfig \
+../hw/alpha/Kconfig \
+../target/sh4/Kconfig \
+../hw/hyperv/Kconfig \
+../subprojects/libvduse/meson.build \
+../hw/nubus/Kconfig \
+../scripts/minikconf.py \
+../hw/core/Kconfig \
+../hw/timer/Kconfig \
+../scripts/main.c \
+../hw/cxl/Kconfig \
+../hw/rtc/Kconfig \
+../backends/Kconfig \
+../hw/vfio/Kconfig \
+../hw/misc/macio/Kconfig \
+../hw/sparc64/Kconfig \
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/configs/targets/riscv64-softmmu.mak \
+../hw/sd/Kconfig \
+../hw/tricore/Kconfig \
+../backends/tpm/Kconfig \
 ../hw/dma/Kconfig \
+../target/rx/Kconfig \
+../hw/i2c/Kconfig \
+../hw/openrisc/Kconfig \
+../hw/nios2/Kconfig \
+../hw/sensor/Kconfig \
+../hw/pci/Kconfig \
+../target/ppc/Kconfig \
+../hw/xtensa/Kconfig \
+../target/riscv/Kconfig \
+../semihosting/Kconfig \
+../target/mips/Kconfig \
+../target/loongarch/Kconfig \
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/config-host.mak \
+../hw/microblaze/Kconfig \
+../hw/display/Kconfig \
+../hw/nvram/Kconfig \
+../hw/remote/Kconfig \
+../hw/audio/Kconfig \
+../hw/ipmi/Kconfig \
+../hw/rdma/Kconfig \
+../target/hppa/Kconfig \
+../hw/net/Kconfig \
+../target/m68k/Kconfig \
+../hw/pcmcia/Kconfig \
+../target/i386/Kconfig \
+../hw/mips/Kconfig \
+../hw/sh4/Kconfig \
+../target/Kconfig \
+../accel/Kconfig \
+../hw/acpi/Kconfig \
+../hw/mem/Kconfig \
+../hw/usb/Kconfig \
+../target/nios2/Kconfig \
+../target/avr/Kconfig \
+../hw/loongarch/Kconfig \
+../hw/intc/Kconfig \
+../hw/xen/Kconfig \
+../hw/tpm/Kconfig \
+../hw/s390x/Kconfig \
+../target/s390x/Kconfig \
+../hw/nvme/Kconfig \
+../hw/rx/Kconfig \
+../hw/pci-host/Kconfig \
+../subprojects/libvhost-user/meson.build \
+../target/openrisc/Kconfig \
+../hw/pci-bridge/Kconfig \
+../hw/m68k/Kconfig \
+../configs/devices/riscv64-softmmu/default.mak \
+../VERSION \
+../hw/i386/Kconfig \
+../scripts/xen-detect.c \
+../Kconfig.host \
+../hw/watchdog/Kconfig \
+../target/microblaze/Kconfig \
+../target/tricore/Kconfig \
+../hw/hppa/Kconfig \
 ../qapi/meson.build \
 ../qobject/meson.build \
 ../stubs/meson.build \
@@ -3301,115 +3301,115 @@ reconfigure \
 ../tests/qtest/meson.build \
 ../tests/migration/meson.build \
 ../po/meson.build \
-/home/luyahu/qemu_linux/qemu-8.0.2/build/tests/tcg/riscv64-softmmu/config-target.mak \
-/home/luyahu/qemu_linux/qemu-8.0.2/build/config-meson.cross \
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/tests/tcg/riscv64-softmmu/config-target.mak \
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/config-meson.cross \
 meson-private/coredata.dat
 build-files = \
-    ../hw/acpi/Kconfig \
-    ../hw/gpio/Kconfig \
-    ../accel/Kconfig \
-    ../hw/rtc/Kconfig \
-    ../hw/pci/Kconfig \
-    /home/luyahu/qemu_linux/qemu-8.0.2/configs/targets/riscv64-softmmu.mak \
-    ../hw/cris/Kconfig \
-    ../backends/tpm/Kconfig \
-    ../scripts/xen-detect.c \
-    ../hw/i2c/Kconfig \
-    ../hw/nvram/Kconfig \
-    ../target/avr/Kconfig \
-    ../hw/Kconfig \
-    ../hw/hppa/Kconfig \
-    ../hw/display/Kconfig \
-    ../target/tricore/Kconfig \
-    ../hw/riscv/Kconfig \
-    ../hw/m68k/Kconfig \
-    ../hw/adc/Kconfig \
-    ../target/sparc/Kconfig \
-    ../hw/misc/macio/Kconfig \
-    ../hw/net/Kconfig \
-    ../hw/timer/Kconfig \
-    ../target/xtensa/Kconfig \
-    ../target/cris/Kconfig \
-    ../meson.build \
-    ../hw/rx/Kconfig \
-    ../hw/pcmcia/Kconfig \
-    ../target/m68k/Kconfig \
-    ../target/loongarch/Kconfig \
-    ../hw/nios2/Kconfig \
-    ../hw/sd/Kconfig \
-    ../hw/9pfs/Kconfig \
-    ../target/rx/Kconfig \
-    ../hw/hyperv/Kconfig \
-    ../hw/microblaze/Kconfig \
-    ../target/ppc/Kconfig \
-    ../hw/sh4/Kconfig \
-    ../Kconfig.host \
-    ../semihosting/Kconfig \
-    ../hw/nvme/Kconfig \
-    ../hw/tpm/Kconfig \
-    ../hw/core/Kconfig \
-    ../target/Kconfig \
-    ../hw/isa/Kconfig \
-    ../target/mips/Kconfig \
-    ../hw/vfio/Kconfig \
-    ../hw/scsi/Kconfig \
-    ../target/openrisc/Kconfig \
-    ../hw/ipack/Kconfig \
-    ../target/nios2/Kconfig \
-    ../hw/cxl/Kconfig \
-    ../target/alpha/Kconfig \
-    ../hw/virtio/Kconfig \
-    ../hw/pci-host/Kconfig \
-    ../backends/Kconfig \
-    ../hw/xen/Kconfig \
-    ../scripts/main.c \
-    ../configs/devices/riscv64-softmmu/default.mak \
-    ../hw/usb/Kconfig \
-    ../hw/remote/Kconfig \
-    ../hw/audio/Kconfig \
-    ../hw/mips/Kconfig \
-    /home/luyahu/qemu_linux/qemu-8.0.2/build/config-host.mak \
-    ../target/arm/Kconfig \
-    ../hw/openrisc/Kconfig \
-    ../hw/block/Kconfig \
-    ../hw/sparc64/Kconfig \
-    ../hw/alpha/Kconfig \
-    ../target/hppa/Kconfig \
-    ../hw/tricore/Kconfig \
-    ../subprojects/libvhost-user/meson.build \
-    ../hw/sensor/Kconfig \
-    ../hw/input/Kconfig \
-    ../hw/intc/Kconfig \
-    ../hw/nubus/Kconfig \
-    ../hw/sparc/Kconfig \
-    ../hw/ppc/Kconfig \
-    ../hw/loongarch/Kconfig \
-    ../target/i386/Kconfig \
-    ../hw/avr/Kconfig \
-    ../hw/mem/Kconfig \
-    ../target/riscv/Kconfig \
-    ../hw/pci-bridge/Kconfig \
     ../Kconfig \
     ../hw/ide/Kconfig \
-    ../meson_options.txt \
-    ../hw/smbios/Kconfig \
-    ../hw/misc/Kconfig \
-    ../hw/ssi/Kconfig \
-    ../hw/i386/Kconfig \
-    ../target/microblaze/Kconfig \
-    ../target/s390x/Kconfig \
-    ../hw/xtensa/Kconfig \
+    ../hw/virtio/Kconfig \
+    ../hw/gpio/Kconfig \
     ../hw/arm/Kconfig \
-    ../VERSION \
-    ../target/sh4/Kconfig \
-    ../scripts/minikconf.py \
-    ../hw/s390x/Kconfig \
-    ../hw/ipmi/Kconfig \
-    ../subprojects/libvduse/meson.build \
+    ../hw/block/Kconfig \
+    ../hw/avr/Kconfig \
+    ../target/alpha/Kconfig \
+    ../hw/misc/Kconfig \
+    ../target/xtensa/Kconfig \
+    ../hw/sparc/Kconfig \
+    ../hw/Kconfig \
+    ../hw/scsi/Kconfig \
+    ../hw/ssi/Kconfig \
+    ../target/sparc/Kconfig \
+    ../meson_options.txt \
+    ../hw/isa/Kconfig \
+    ../hw/riscv/Kconfig \
+    ../target/cris/Kconfig \
+    ../hw/ipack/Kconfig \
+    ../meson.build \
+    ../hw/cris/Kconfig \
+    ../hw/adc/Kconfig \
+    ../hw/9pfs/Kconfig \
+    ../hw/input/Kconfig \
+    ../target/arm/Kconfig \
+    ../hw/smbios/Kconfig \
     ../hw/char/Kconfig \
-    ../hw/rdma/Kconfig \
-    ../hw/watchdog/Kconfig \
+    ../hw/ppc/Kconfig \
+    ../hw/alpha/Kconfig \
+    ../target/sh4/Kconfig \
+    ../hw/hyperv/Kconfig \
+    ../subprojects/libvduse/meson.build \
+    ../hw/nubus/Kconfig \
+    ../scripts/minikconf.py \
+    ../hw/core/Kconfig \
+    ../hw/timer/Kconfig \
+    ../scripts/main.c \
+    ../hw/cxl/Kconfig \
+    ../hw/rtc/Kconfig \
+    ../backends/Kconfig \
+    ../hw/vfio/Kconfig \
+    ../hw/misc/macio/Kconfig \
+    ../hw/sparc64/Kconfig \
+    /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/configs/targets/riscv64-softmmu.mak \
+    ../hw/sd/Kconfig \
+    ../hw/tricore/Kconfig \
+    ../backends/tpm/Kconfig \
     ../hw/dma/Kconfig \
+    ../target/rx/Kconfig \
+    ../hw/i2c/Kconfig \
+    ../hw/openrisc/Kconfig \
+    ../hw/nios2/Kconfig \
+    ../hw/sensor/Kconfig \
+    ../hw/pci/Kconfig \
+    ../target/ppc/Kconfig \
+    ../hw/xtensa/Kconfig \
+    ../target/riscv/Kconfig \
+    ../semihosting/Kconfig \
+    ../target/mips/Kconfig \
+    ../target/loongarch/Kconfig \
+    /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/config-host.mak \
+    ../hw/microblaze/Kconfig \
+    ../hw/display/Kconfig \
+    ../hw/nvram/Kconfig \
+    ../hw/remote/Kconfig \
+    ../hw/audio/Kconfig \
+    ../hw/ipmi/Kconfig \
+    ../hw/rdma/Kconfig \
+    ../target/hppa/Kconfig \
+    ../hw/net/Kconfig \
+    ../target/m68k/Kconfig \
+    ../hw/pcmcia/Kconfig \
+    ../target/i386/Kconfig \
+    ../hw/mips/Kconfig \
+    ../hw/sh4/Kconfig \
+    ../target/Kconfig \
+    ../accel/Kconfig \
+    ../hw/acpi/Kconfig \
+    ../hw/mem/Kconfig \
+    ../hw/usb/Kconfig \
+    ../target/nios2/Kconfig \
+    ../target/avr/Kconfig \
+    ../hw/loongarch/Kconfig \
+    ../hw/intc/Kconfig \
+    ../hw/xen/Kconfig \
+    ../hw/tpm/Kconfig \
+    ../hw/s390x/Kconfig \
+    ../target/s390x/Kconfig \
+    ../hw/nvme/Kconfig \
+    ../hw/rx/Kconfig \
+    ../hw/pci-host/Kconfig \
+    ../subprojects/libvhost-user/meson.build \
+    ../target/openrisc/Kconfig \
+    ../hw/pci-bridge/Kconfig \
+    ../hw/m68k/Kconfig \
+    ../configs/devices/riscv64-softmmu/default.mak \
+    ../VERSION \
+    ../hw/i386/Kconfig \
+    ../scripts/xen-detect.c \
+    ../Kconfig.host \
+    ../hw/watchdog/Kconfig \
+    ../target/microblaze/Kconfig \
+    ../target/tricore/Kconfig \
+    ../hw/hppa/Kconfig \
     ../qapi/meson.build \
     ../qobject/meson.build \
     ../stubs/meson.build \
@@ -3602,6 +3602,6 @@ build-files = \
     ../tests/qtest/meson.build \
     ../tests/migration/meson.build \
     ../po/meson.build \
-    /home/luyahu/qemu_linux/qemu-8.0.2/build/tests/tcg/riscv64-softmmu/config-target.mak \
-    /home/luyahu/qemu_linux/qemu-8.0.2/build/config-meson.cross \
+    /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/tests/tcg/riscv64-softmmu/config-target.mak \
+    /home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/config-meson.cross \
     meson-private/coredata.dat \

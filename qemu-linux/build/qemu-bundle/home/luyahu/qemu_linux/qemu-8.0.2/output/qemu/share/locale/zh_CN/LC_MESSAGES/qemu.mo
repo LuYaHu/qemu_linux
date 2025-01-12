@@ -1,1 +1,1 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/build/po/zh_CN/LC_MESSAGES/qemu.mo
+/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/po/zh_CN/LC_MESSAGES/qemu.mo

@@ -79,14 +79,14 @@ static inline void _nocheck__trace_kvm_xen_map_pirq(int pirq, int gsi)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_map_pirq " "pirq %d gsi %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq, gsi);
 #line 88 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 1 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("kvm_xen_map_pirq " "pirq %d gsi %d" "\n", pirq, gsi);
 #line 92 "trace/trace-hw_i386_kvm.h"
         }
@@ -110,14 +110,14 @@ static inline void _nocheck__trace_kvm_xen_unmap_pirq(int pirq, int gsi)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_unmap_pirq " "pirq %d gsi %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq, gsi);
 #line 119 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 2 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("kvm_xen_unmap_pirq " "pirq %d gsi %d" "\n", pirq, gsi);
 #line 123 "trace/trace-hw_i386_kvm.h"
         }
@@ -141,14 +141,14 @@ static inline void _nocheck__trace_kvm_xen_get_free_pirq(int pirq, int type)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_get_free_pirq " "pirq %d type %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq, type);
 #line 150 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("kvm_xen_get_free_pirq " "pirq %d type %d" "\n", pirq, type);
 #line 154 "trace/trace-hw_i386_kvm.h"
         }
@@ -172,14 +172,14 @@ static inline void _nocheck__trace_kvm_xen_bind_pirq(int pirq, int port)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_bind_pirq " "pirq %d port %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq, port);
 #line 181 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("kvm_xen_bind_pirq " "pirq %d port %d" "\n", pirq, port);
 #line 185 "trace/trace-hw_i386_kvm.h"
         }
@@ -203,14 +203,14 @@ static inline void _nocheck__trace_kvm_xen_unmask_pirq(int pirq, char * dev, int
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:kvm_xen_unmask_pirq " "pirq %d dev %s vector %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq, dev, vector);
 #line 212 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 5 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("kvm_xen_unmask_pirq " "pirq %d dev %s vector %d" "\n", pirq, dev, vector);
 #line 216 "trace/trace-hw_i386_kvm.h"
         }
@@ -234,14 +234,14 @@ static inline void _nocheck__trace_xenstore_error(unsigned int id, unsigned int 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_error " "req %u tx %u err %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , id, tx_id, err);
 #line 243 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 6 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_error " "req %u tx %u err %s" "\n", id, tx_id, err);
 #line 247 "trace/trace-hw_i386_kvm.h"
         }
@@ -265,14 +265,14 @@ static inline void _nocheck__trace_xenstore_read(unsigned int tx_id, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_read " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 274 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_read " "tx %u path %s" "\n", tx_id, path);
 #line 278 "trace/trace-hw_i386_kvm.h"
         }
@@ -296,14 +296,14 @@ static inline void _nocheck__trace_xenstore_write(unsigned int tx_id, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_write " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 305 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_write " "tx %u path %s" "\n", tx_id, path);
 #line 309 "trace/trace-hw_i386_kvm.h"
         }
@@ -327,14 +327,14 @@ static inline void _nocheck__trace_xenstore_mkdir(unsigned int tx_id, const char
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_mkdir " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 336 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_mkdir " "tx %u path %s" "\n", tx_id, path);
 #line 340 "trace/trace-hw_i386_kvm.h"
         }
@@ -358,14 +358,14 @@ static inline void _nocheck__trace_xenstore_directory(unsigned int tx_id, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_directory " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 367 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_directory " "tx %u path %s" "\n", tx_id, path);
 #line 371 "trace/trace-hw_i386_kvm.h"
         }
@@ -389,14 +389,14 @@ static inline void _nocheck__trace_xenstore_directory_part(unsigned int tx_id, c
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_directory_part " "tx %u path %s offset %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path, offset);
 #line 398 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_directory_part " "tx %u path %s offset %u" "\n", tx_id, path, offset);
 #line 402 "trace/trace-hw_i386_kvm.h"
         }
@@ -420,14 +420,14 @@ static inline void _nocheck__trace_xenstore_transaction_start(unsigned int new_t
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_transaction_start " "new_tx %u" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , new_tx);
 #line 429 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_transaction_start " "new_tx %u" "\n", new_tx);
 #line 433 "trace/trace-hw_i386_kvm.h"
         }
@@ -451,14 +451,14 @@ static inline void _nocheck__trace_xenstore_transaction_end(unsigned int tx_id, 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_transaction_end " "tx %u commit %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, commit);
 #line 460 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_transaction_end " "tx %u commit %d" "\n", tx_id, commit);
 #line 464 "trace/trace-hw_i386_kvm.h"
         }
@@ -482,14 +482,14 @@ static inline void _nocheck__trace_xenstore_rm(unsigned int tx_id, const char * 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_rm " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 491 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_rm " "tx %u path %s" "\n", tx_id, path);
 #line 495 "trace/trace-hw_i386_kvm.h"
         }
@@ -513,14 +513,14 @@ static inline void _nocheck__trace_xenstore_get_perms(unsigned int tx_id, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_get_perms " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 522 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_get_perms " "tx %u path %s" "\n", tx_id, path);
 #line 526 "trace/trace-hw_i386_kvm.h"
         }
@@ -544,14 +544,14 @@ static inline void _nocheck__trace_xenstore_set_perms(unsigned int tx_id, const 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_set_perms " "tx %u path %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , tx_id, path);
 #line 553 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 16 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_set_perms " "tx %u path %s" "\n", tx_id, path);
 #line 557 "trace/trace-hw_i386_kvm.h"
         }
@@ -575,14 +575,14 @@ static inline void _nocheck__trace_xenstore_watch(const char * path, const char 
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_watch " "path %s token %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , path, token);
 #line 584 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 17 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_watch " "path %s token %s" "\n", path, token);
 #line 588 "trace/trace-hw_i386_kvm.h"
         }
@@ -606,14 +606,14 @@ static inline void _nocheck__trace_xenstore_unwatch(const char * path, const cha
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_unwatch " "path %s token %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , path, token);
 #line 615 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 18 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_unwatch " "path %s token %s" "\n", path, token);
 #line 619 "trace/trace-hw_i386_kvm.h"
         }
@@ -637,14 +637,14 @@ static inline void _nocheck__trace_xenstore_reset_watches(void)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_reset_watches " "" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      );
 #line 646 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 19 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_reset_watches " "" "\n");
 #line 650 "trace/trace-hw_i386_kvm.h"
         }
@@ -668,14 +668,14 @@ static inline void _nocheck__trace_xenstore_watch_event(const char * path, const
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("%d@%zu.%06zu:xenstore_watch_event " "path %s token %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , path, token);
 #line 677 "trace/trace-hw_i386_kvm.h"
         } else {
-#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/i386/kvm/trace-events"
+#line 20 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/i386/kvm/trace-events"
             qemu_log("xenstore_watch_event " "path %s token %s" "\n", path, token);
 #line 681 "trace/trace-hw_i386_kvm.h"
         }

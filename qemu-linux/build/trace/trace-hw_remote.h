@@ -52,14 +52,14 @@ static inline void _nocheck__trace_mpqemu_send_io_error(int cmd, int size, int n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:mpqemu_send_io_error " "send command %d size %d, %d file descriptors to remote process" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, size, nfds);
 #line 61 "trace/trace-hw_remote.h"
         } else {
-#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 3 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("mpqemu_send_io_error " "send command %d size %d, %d file descriptors to remote process" "\n", cmd, size, nfds);
 #line 65 "trace/trace-hw_remote.h"
         }
@@ -83,14 +83,14 @@ static inline void _nocheck__trace_mpqemu_recv_io_error(int cmd, int size, int n
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:mpqemu_recv_io_error " "failed to receive %d size %d, %d file descriptors to remote process" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , cmd, size, nfds);
 #line 92 "trace/trace-hw_remote.h"
         } else {
-#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 4 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("mpqemu_recv_io_error " "failed to receive %d size %d, %d file descriptors to remote process" "\n", cmd, size, nfds);
 #line 96 "trace/trace-hw_remote.h"
         }
@@ -114,14 +114,14 @@ static inline void _nocheck__trace_vfu_prop(const char * prop, const char * val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_prop " "vfu: setting %s as %s" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , prop, val);
 #line 123 "trace/trace-hw_remote.h"
         } else {
-#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 7 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_prop " "vfu: setting %s as %s" "\n", prop, val);
 #line 127 "trace/trace-hw_remote.h"
         }
@@ -145,14 +145,14 @@ static inline void _nocheck__trace_vfu_cfg_read(uint32_t offset, uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_cfg_read " "vfu: cfg: 0x%u -> 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, val);
 #line 154 "trace/trace-hw_remote.h"
         } else {
-#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 8 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_cfg_read " "vfu: cfg: 0x%u -> 0x%x" "\n", offset, val);
 #line 158 "trace/trace-hw_remote.h"
         }
@@ -176,14 +176,14 @@ static inline void _nocheck__trace_vfu_cfg_write(uint32_t offset, uint32_t val)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_cfg_write " "vfu: cfg: 0x%u <- 0x%x" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , offset, val);
 #line 185 "trace/trace-hw_remote.h"
         } else {
-#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 9 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_cfg_write " "vfu: cfg: 0x%u <- 0x%x" "\n", offset, val);
 #line 189 "trace/trace-hw_remote.h"
         }
@@ -207,14 +207,14 @@ static inline void _nocheck__trace_vfu_dma_register(uint64_t gpa, size_t len)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_dma_register " "vfu: registering GPA 0x%"PRIx64", %zu bytes" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpa, len);
 #line 216 "trace/trace-hw_remote.h"
         } else {
-#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 10 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_dma_register " "vfu: registering GPA 0x%"PRIx64", %zu bytes" "\n", gpa, len);
 #line 220 "trace/trace-hw_remote.h"
         }
@@ -238,14 +238,14 @@ static inline void _nocheck__trace_vfu_dma_unregister(uint64_t gpa)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_dma_unregister " "vfu: unregistering GPA 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , gpa);
 #line 247 "trace/trace-hw_remote.h"
         } else {
-#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 11 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_dma_unregister " "vfu: unregistering GPA 0x%"PRIx64"" "\n", gpa);
 #line 251 "trace/trace-hw_remote.h"
         }
@@ -269,14 +269,14 @@ static inline void _nocheck__trace_vfu_bar_register(int i, uint64_t addr, uint64
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_bar_register " "vfu: BAR %d: addr 0x%"PRIx64" size 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , i, addr, size);
 #line 278 "trace/trace-hw_remote.h"
         } else {
-#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 12 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_bar_register " "vfu: BAR %d: addr 0x%"PRIx64" size 0x%"PRIx64"" "\n", i, addr, size);
 #line 282 "trace/trace-hw_remote.h"
         }
@@ -300,14 +300,14 @@ static inline void _nocheck__trace_vfu_bar_rw_enter(const char * op, uint64_t ad
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_bar_rw_enter " "vfu: %s request for BAR address 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , op, addr);
 #line 309 "trace/trace-hw_remote.h"
         } else {
-#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 13 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_bar_rw_enter " "vfu: %s request for BAR address 0x%"PRIx64"" "\n", op, addr);
 #line 313 "trace/trace-hw_remote.h"
         }
@@ -331,14 +331,14 @@ static inline void _nocheck__trace_vfu_bar_rw_exit(const char * op, uint64_t add
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_bar_rw_exit " "vfu: Finished %s of BAR address 0x%"PRIx64"" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , op, addr);
 #line 340 "trace/trace-hw_remote.h"
         } else {
-#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 14 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_bar_rw_exit " "vfu: Finished %s of BAR address 0x%"PRIx64"" "\n", op, addr);
 #line 344 "trace/trace-hw_remote.h"
         }
@@ -362,14 +362,14 @@ static inline void _nocheck__trace_vfu_interrupt(int pirq)
         if (message_with_timestamp) {
             struct timeval _now;
             gettimeofday(&_now, NULL);
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("%d@%zu.%06zu:vfu_interrupt " "vfu: sending interrupt to device - PIRQ %d" "\n",
                      qemu_get_thread_id(),
                      (size_t)_now.tv_sec, (size_t)_now.tv_usec
                      , pirq);
 #line 371 "trace/trace-hw_remote.h"
         } else {
-#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/hw/remote/trace-events"
+#line 15 "/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/hw/remote/trace-events"
             qemu_log("vfu_interrupt " "vfu: sending interrupt to device - PIRQ %d" "\n", pirq);
 #line 375 "trace/trace-hw_remote.h"
         }
