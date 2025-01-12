@@ -1,0 +1,12 @@
+[options]
+gtk = enabled
+virtfs = enabled
+gio = disabled
+werror = true
+vfio_user_server = disabled
+prefix = /home/luyahu/qemu_linux/qemu-8.0.2/output/qemu
+backend = ninja
+
+[properties]
+native_file = ['/home/luyahu/qemu_linux/qemu-8.0.2/build/config-meson.cross']
+
