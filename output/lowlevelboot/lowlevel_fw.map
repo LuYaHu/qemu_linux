@@ -1,99 +1,32 @@
 
 Discarded input sections
 
- .data          0x0000000000000000        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
- .bss           0x0000000000000000        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
+ .data          0x0000000000000000        0x0 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+ .bss           0x0000000000000000        0x0 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
-flash            0x0000000020000000 0x0000000000080000 axrl !w
+flash            0x0000000020000000 0x0000000000080000 axrl!w
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
-LOAD /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc.a
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc_s.so
+LOAD /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/libgcc.a
 START GROUP
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/../../../../riscv64-linux-gnu/lib/libgcc_s.so.1
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc.a
+LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/../../../../riscv64-unknown-elf/lib/libc.a
+LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/../../../../riscv64-unknown-elf/lib/libgloss.a
 END GROUP
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/../../../../riscv64-linux-gnu/lib/libc.so
-START GROUP
-LOAD /usr/riscv64-linux-gnu/lib/libc.so.6
-LOAD /usr/riscv64-linux-gnu/lib/libc_nonshared.a
-LOAD /usr/riscv64-linux-gnu/lib/ld-linux-riscv64-lp64d.so.1
-END GROUP
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc.a
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc_s.so
-START GROUP
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/../../../../riscv64-linux-gnu/lib/libgcc_s.so.1
-LOAD /usr/lib/gcc-cross/riscv64-linux-gnu/11/libgcc.a
-END GROUP
+LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/libgcc.a
 
-.text           0x0000000020000000       0xd2
+.text           0x0000000020000000       0xdc
  *(.text)
- .text          0x0000000020000000       0xd2 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
+ .text          0x0000000020000000       0xdc /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
                 0x0000000020000000                _start
-OUTPUT(/home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/lowlevel_fw.elf elf64-littleriscv)
-
-.plt            0x00000000200000e0        0x0
- .plt           0x00000000200000e0        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.interp         0x00000000200000d2       0x21
- .interp        0x00000000200000d2       0x21 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.note.gnu.build-id
-                0x00000000200000f4       0x24
- .note.gnu.build-id
-                0x00000000200000f4       0x24 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.gnu.version_d  0x0000000020000118        0x0
- .gnu.version_d
-                0x0000000020000118        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.gnu.version    0x0000000020000118        0x0
- .gnu.version   0x0000000020000118        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.gnu.version_r  0x0000000020000118        0x0
- .gnu.version_r
-                0x0000000020000118        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.dynsym         0x0000000020000118       0x30
- .dynsym        0x0000000020000118       0x30 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.dynstr         0x0000000020000148        0x1
- .dynstr        0x0000000020000148        0x1 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.gnu.hash       0x0000000020000150       0x1c
- .gnu.hash      0x0000000020000150       0x1c /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.rela.dyn       0x0000000020000170        0x0
- .rela.got      0x0000000020000170        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
- .rela.plt      0x0000000020000170        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
- .rela.bss      0x0000000020000170        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
- .rela.data.rel.ro
-                0x0000000020000170        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.dynamic        0x0000000020000170      0x110
- .dynamic       0x0000000020000170      0x110 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-                0x0000000020000170                _DYNAMIC
-
-.got            0x0000000020000280        0x8
- .got           0x0000000020000280        0x8 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-                0x0000000020000280                _GLOBAL_OFFSET_TABLE_
-
-.got.plt        0x0000000020000288        0x0
- .got.plt       0x0000000020000288        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.data.rel.ro    0x0000000020000288        0x0
- .data.rel.ro   0x0000000020000288        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
-
-.dynbss         0x0000000020000288        0x0
- .dynbss        0x0000000020000288        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
+OUTPUT(/home/luyahu/qemu_linux/quard-star/output/lowlevelboot/lowlevel_fw.elf elf64-littleriscv)
 
 .riscv.attributes
-                0x0000000000000000       0x37
+                0x0000000000000000       0x55
  .riscv.attributes
-                0x0000000000000000       0x37 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
+                0x0000000000000000       0x55 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o

@@ -1,1 +1,0 @@
-/home/luyahu/qemu_linux/qemu-8.0.2/qemu-linux/build/po/uk/LC_MESSAGES/qemu.mo
