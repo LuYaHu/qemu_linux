@@ -1,5 +1,5 @@
 
-/home/luyahu/qemu_linux/quard-star/output/trusted_domain/trusted_fw.elf:     file format elf64-littleriscv
+/home/luyahu/qemu_linux/qemu-8.0.2/output/trusted_domain/trusted_fw.elf:     file format elf64-littleriscv
 
 
 Disassembly of section .text:

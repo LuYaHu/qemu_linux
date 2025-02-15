@@ -1,8 +1,8 @@
 
 Discarded input sections
 
- .data          0x0000000000000000        0x0 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
- .bss           0x0000000000000000        0x0 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+ .data          0x0000000000000000        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
+ .bss           0x0000000000000000        0x0 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
 
 Memory Configuration
 
@@ -12,7 +12,7 @@ flash            0x0000000020000000 0x0000000000080000 axrl!w
 
 Linker script and memory map
 
-LOAD /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+LOAD /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
 LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/libgcc.a
 START GROUP
 LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/../../../../riscv64-unknown-elf/lib/libc.a
@@ -22,11 +22,11 @@ LOAD /home/luyahu/Downloads/riscv/bin/../lib/gcc/riscv64-unknown-elf/13.2.0/libg
 
 .text           0x0000000020000000       0xdc
  *(.text)
- .text          0x0000000020000000       0xdc /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+ .text          0x0000000020000000       0xdc /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
                 0x0000000020000000                _start
-OUTPUT(/home/luyahu/qemu_linux/quard-star/output/lowlevelboot/lowlevel_fw.elf elf64-littleriscv)
+OUTPUT(/home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/lowlevel_fw.elf elf64-littleriscv)
 
 .riscv.attributes
                 0x0000000000000000       0x55
  .riscv.attributes
-                0x0000000000000000       0x55 /home/luyahu/qemu_linux/quard-star/output/lowlevelboot/start.o
+                0x0000000000000000       0x55 /home/luyahu/qemu_linux/qemu-8.0.2/output/lowlevelboot/start.o
